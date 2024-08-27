@@ -1,0 +1,157 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT Võ Thị Sáu}
+\setcounter{bt}{0}
+%%Câu 1.
+\begin{bt}%[0D1N3-2]%[Dự án đề kiểm tra GHKI NH23-24-Nguyễn Văn Sang]%[THPT VÕ THỊ SÁU]
+	Cho $A=\{-5;-3;1;2;3;4\}$; $B=\{-5;-1;3;5\}$; $C=\{-1;0;1;2\}$.
+	Tìm $(A \cup B) \cap C$; $B \cap C$; $C \setminus  A$; $C  \setminus (A \cap B)$.
+	\loigiai{
+		\begin{itemize}
+			\item Ta có $A \cup B=\{-5;-3;-1;1;2;3;4;5\}$ suy ra $(A \cup B) \cap C=\{-1;1;2\}$.
+			\item Ta có  $B \cap C=\{-1\}$.
+			\item Ta có  $C \setminus  A=\{-1;0\}$.
+			\item Ta có $A \cap B=\{-5;3\}$, suy ra $C  \setminus (A \cap B)=\{-1;0;1;2\}$.
+		\end{itemize}
+	}
+\end{bt}
+%%Câu 2.
+\begin{bt}%[0D1N3-4]%[Dự án đề kiểm tra GHKI NH23-24-Nguyễn Văn Sang]%[THPT VÕ THỊ SÁU]
+	Cho hai tập hợp $A=(-\infty;-2) \cup(1;4)$ và $B=[-2;3]$.
+	Xác định tập hợp $A \cap B$, $A \cup B$, $A  \setminus  B$.
+	\loigiai{
+		Ta có\\
+		\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+			\node at (-8,0) {Tập hợp $A$};
+			\node at (-8,-1) {Tập hợp $B$};
+			\draw[->] (-5,-1)node[above]{$-\infty$}--(5,-1)node[above]{$+\infty$};
+			\draw (-2,0)node{$)$}--(1,0)node{$($};
+			\draw (-2,-1)node{$[$}--(3,-1)node{$]$};
+			\draw[->] (-5,0)node[above]{$-\infty$}--(5,0)node[above]{$+\infty$};
+			\draw (-2,0)node{$)$}--(1,0)node{$($};
+			\draw (-2,0)node[above]{$2$}--(1,0)node[above]{$1$};
+			\draw (-2,-1)node[above]{$2$}--(3,-1)node[above]{$3$};
+			\filldraw[pattern=north east lines,draw=none] (-2,-.125) rectangle (1,0.125);
+			\filldraw[pattern=north east lines,draw=none] (-5,-1.125) rectangle (-2,-1.125+0.25);
+			\filldraw[pattern=north east lines,draw=none] (3,-1.125) rectangle (5,-1.125+0.25);
+		\end{tikzpicture}
+		\begin{itemize}
+			\item Ta có $A \cap B=\left(1;3\right]$.
+			\item Ta có $A \cup B=\left(-\infty;3\right]$.
+			\item Ta có $A \setminus  B=\left(3;+\infty\right)$.
+		\end{itemize}
+	}
+\end{bt}
+%%Câu 3.
+\begin{bt}%[0D1V3-5]%[Dự án đề kiểm tra GHKI NH23-24-Nguyễn Văn Sang]%[THPT VÕ THỊ SÁU]
+	Một lớp học $40$ học sinh trong đó có $28$ học sinh thích cầu lông, $15$ học sinh thích đá bóng. Biết số học sinh thích cầu lông và đá bóng nhiều gấp đôi số học sinh không thích cả hai môn trên (cầu lông và đá bóng). Hỏi có bao nhiêu học sinh trong lớp thích đá bóng nhưng không thích cầu lông?
+	\loigiai{
+		Gọi số học sinh thích cầu lông là $A$, số học sinh thích đá bóng là $B$, số học sinh không thích cả hai môn là $C$. Theo đề bài, ta có
+		\begin{itemize}
+			\item $A = 28$ (học sinh thích cầu lông).
+			\item $B = 15$ (học sinh thích đá bóng).
+			\item Số học sinh thích cả cầu lông và đá bóng gấp đôi số học sinh không thích cả hai môn nên có $2C$ học sinh.
+		\end{itemize}
+		Số học sinh thích đá bóng nhưng không thích cầu lông là $15 - 2C$.\\
+		Tổng số học sinh trong lớp là $40$, nên ta được 
+		\begin{eqnarray*}
+			&&A + B - 2C + C = 40\\
+			&\Leftrightarrow&28 + 15 - 2C + C = 40\\
+			&\Leftrightarrow&C=3.
+		\end{eqnarray*}
+		Vậy có $15 - 2C=9$ học sinh trong lớp thích đá bóng nhưng không thích cầu lông.
+	}
+\end{bt}
+
+%Bài 4
+\begin{bt}%[0D2V2-3]
+	Một xưởng cơ khí có hai công nhân A, B sản xuất loại sản phẩm I và II. Mỗi sản phẩm I bán lãi được 600 ngàn đồng, Mỗi sản phẩm II bán lãi được 500 ngàn đồng. Để sản xuất được sản phẩm I thì A làm việc trong 3 giờ, B làm việc trong 2 giờ. Để sản xuất được sản phẩm II thì A làm việc trong 2 giờ, B làm việc trong 4 giờ. Một người không thể làm đồng thời hai sản phẩm. Biết rằng trong một tháng A không thể làm việc quá 180 giờ và B không thể làm việc quá 200 giờ. Tính số tiền lãi lớn nhất trong một tháng của xưởng.
+	\loigiai{
+		Gọi $x$ và $y$ lần lượt là số sản phẩm loại I và II cần làm để thu được lãi lớn nhất($x\ge 0; \, y\ge 0$).\\
+		Khi đó số tiền lãi thu được là $F=600\,000x+500\,000y$ đồng.\\
+		Ta có hệ bất phương trình
+		$$\heva{&3x+2y\leq 180\\&2x+4y\leq 200\\&x\ge 0\\&y\ge 0}\Leftrightarrow \heva{&3x+2y\leq 180\\&x+2y\leq 100\\&x\ge 0\\&y\ge 0.}$$	
+		Bài toán trở thành Tìm GTLN của $F=600\,000x+500\,000y$ với $x$, $y$ thỏa hệ trên.\\
+		Giải hệ bất phương trình trên, ta có miền nghiệm là tứ giác $OABC$ (hình bên) với tọa độ các đỉnh là $O(0;0)$, $A(60;0)$, $B(40;30)$, $C(0;50)$.\begin{center}
+			\begin{tikzpicture}[scale=0.7, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\def\xmin{-1} \def\xmax{7}
+				\def\ymin{-1.5} \def\ymax{7}
+				\foreach \x/\y/\t in {0/0/O,6/0/A,4/3/B,0/5/C}{
+					\path (\x,\y) coordinate (\t);
+				}
+				\fill[pattern=north east lines,pattern color=blue!60] (O)--(A)--(B)--(C)--cycle;
+				\draw[domain=1:6.5] plot(\x,{9-1.5*(\x)}) node[below] {$d_2:3x+2y=180$};
+				\draw[domain=-0.5:6] plot(\x,{5-0.5*(\x)})node[right] {$d_1:x+2y=100$};
+				\draw[dashed] (4,0)--(4,3)--(0,3);
+				\begin{scriptsize}
+					\draw[->](\xmin,0)--(\xmax,0); \draw(\xmax-0.1,0) node[below]{$x$};
+					\draw[->](0,\ymin)--(0,\ymax); \draw(0,\ymax-0.2) node[right]{$y$};
+					\draw (4,0.05)  node [below] {$40$};
+					\draw (5.8,0.05)  node [below] {$60$};
+					\draw (0,4.8)  node [left] {$50$};
+					\draw (0,3) node [left] {$30$};
+					\draw node [below left]{$O$};
+				\end{scriptsize}
+				\foreach \i/\g in {A/40,B/65,C/30}{\draw[fill=black](\i) circle (1.5pt) ($(\i)+(\g:4mm)$) node[scale=1]{$\i$};}
+			\end{tikzpicture}
+		\end{center}
+		Tại $O(0;0)$: $F=0$.\\
+		Tại $A(60;0)$: $F=36\,000\,000$.\\
+		Tại $B(40;30)$: $F=39\,000\,000$.\\
+		Tại $C(0;50)$: $F=25\,000\,000$.\\
+		Vậy số tiền lãi lớn nhất thu được là $39\,000\,000$ đồng khi làm $40$ sản phẩm loại I và $30$ sản phẩm loại II.}
+\end{bt}
+%Bài 5
+\begin{bt}%[0D3H1-2]
+	Tìm tập xác định của hàm số $y=f(x)=\sqrt{2-x}+\dfrac{2}{x\left(x^2-1\right)}$.
+	\loigiai{Điều kiện xác định $\heva{&2-x\ge0\\&x\left(x^2-1\right)\ne0}$ $\Leftrightarrow \heva{&x\le2\\&x\ne0\\&x\ne 1\\ &x\ne -1.}$\\ Vậy tập xác định của hàm số là $\mathscr D=(-\infty;2] \setminus \{-1;0;1\}$.} 
+\end{bt}
+%Câu 6...........................
+\begin{bt}%[0H4H2-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Mui Doan]%[THPT ]
+Giải tam giác $ABC$, biết $AB=100$, $\widehat{B}=125^\circ$, $\widehat{A}=15^\circ$.
+\loigiai{
+	\immini{
+	Ta có $\widehat{C}=180^\circ-\widehat{B}-\widehat{A}=180^\circ-125^\circ-15^\circ=40^\circ$.\\
+	Theo định lí sin ta có $\dfrac{AC}{\sin B}= \dfrac{BC}{\sin A}=\dfrac{AB}{\sin C}$.\\
+	Suy ra $AC=\dfrac{AB\cdot \sin B}{\sin C}= \dfrac{100\cdot \sin 125^\circ}{\sin 40^\circ}\approx 127{,}44$;\\
+	$BC=\dfrac{AB\cdot \sin A}{\sin C}= \dfrac{100\cdot \sin 15^\circ}{\sin 40^\circ}\approx 40{,}27$.
+	}
+	{
+	\begin{tikzpicture}
+	\path (0,0) coordinate (A)--+(3,0) coordinate (B)
+	($(A)!1!15:(B)$)  coordinate (x)
+	($(B)!1!-125:(A)$)  coordinate (y)
+	(intersection of A--x and B--y)  coordinate (C)
+	;
+	\path pic["\scriptsize$15^\circ$", angle eccentricity=2,draw,angle radius=17pt, double]{angle= B--A--C};
+	\path pic["\scriptsize$125^\circ$", angle eccentricity=2,draw,angle radius=7pt]{angle= C--B--A};
+	\draw (A)--(B)node[below,pos=0.5 ]{$100$}--(C)--cycle;
+	\foreach \t/\g in {A/180,B/0,C/90}{
+		\draw[fill=black] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+	}
+	\end{tikzpicture}
+		}
+	}
+\end{bt}
+
+%Câu 7...........................
+\begin{bt}%[0H5H1-5]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Mui Doan]%[THPT ]
+	Cho hình chữ nhật $ABCD$ tâm $O$, cạnh $AB=5$, $AD=12$. Tính độ dài vectơ $\overrightarrow{OB}$, $\overrightarrow{OC}$.
+	\loigiai{
+	\immini{
+	Ta có $\left| \overrightarrow{OB}\right|=OB=\dfrac{1}{2}BD=\dfrac{1}{2}\cdot\sqrt{5^2+12^2}=\dfrac{13}{2}$.\\
+	$\left| \overrightarrow{OC}\right|=OC=\dfrac{1}{2}AC=\dfrac{1}{2}\cdot\sqrt{5^2+12^2}=\dfrac{13}{2}$.
+	}
+	{
+	\begin{tikzpicture}
+	\path (0,0) coordinate (A)--+(3,0) coordinate (D)--++(3,-2) coordinate (C)
+	($(A)+(C)-(D)$) coordinate (B)
+	($(A)!.5!(C)$) coordinate (O)
+	;
+	\draw (A)--(D)node[above,pos=0.5]{$12$}--(C)--(B)--cycle (A)node[left,pos=0.5]{$5$}--(C) (B)--(D);
+	\foreach \t/\g in {A/90,B/-90,C/-90,D/90,O/-90}{
+		\draw[fill=white] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+	}
+	\end{tikzpicture}
+		}
+	}
+\end{bt}

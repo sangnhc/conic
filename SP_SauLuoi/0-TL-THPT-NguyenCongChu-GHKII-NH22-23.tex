@@ -1,0 +1,226 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Nguyễn Công Trứ}
+
+
+\begin{bt}%[0T7B1-1]%[Dự án đề kiểm tra Giữa HKII NH22-23- Thành Lê]%[THPT Nguyễn Công Trứ]
+	Xác định $m$ để các đa thức sau là tam thức bậc hai
+	\begin{enumEX}{2}
+		\item $f(x)=(m + 1) x^2 + 2x + m$.
+		\item $f(x)=(m - 1) x^3 + 2x^2 - x + m$.
+	\end{enumEX}
+\loigiai{
+	\begin{enumerate}
+		\item $f(x)$ là tam thức bậc hai $\Leftrightarrow m+1\neq0\Leftrightarrow m\neq-1$.
+		\item $f(x)$ là tam thức bậc hai $\Leftrightarrow m-1=0\Leftrightarrow m=1$.
+	\end{enumerate}
+}
+\end{bt}
+
+\begin{bt}%[0T7B2-1]%[Dự án đề kiểm tra Giữa HKII NH22-23- Thành Lê]%[THPT Nguyễn Công Trứ]
+	Dựa vào đồ thị của hàm số bậc hai tương ứng, hãy xác định tập nghiệm của các bất phương trình bậc hai sau đây
+	\begin{enumEX}{2}
+		\item $x^2 + 2{,}5x - 1{,}5\geq0$.
+		\begin{center}
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=.8,transform shape]
+				\clip (-5,-4.2) rectangle (4.5,5.1);
+				\draw[->,line width = 1pt,red] (-4.5,0)--(0,0) node[above  left]{$O$}--(4,0) node[below]{$x$};
+				\draw[->,line width = 1pt,red] (0,-4)--(0,5) node[right]{$y$};
+				\draw (0,-1.5) node[right] {$\dfrac{-1}{2}$};
+				\draw (0,-1.5) circle (2pt);
+				%%============
+				\foreach \x in {-4,-3,-2,-1,1,2,3} \draw[thin] (\x,2pt)--(\x,-2pt) node [below left,blue] {$\x$};
+				\foreach \y in {-4,-3,-2,-1,1,2,3,4} \draw[thin] (2pt,\y)--(-2pt,\y) node [left,blue] {$\y$};
+				%%===========
+				\draw[samples=100,domain=-4:1.5,smooth] plot (\x, {(\x)^2+5/2*(\x)-3/2});
+			\end{tikzpicture}
+		\end{center}
+		\item $ - x^2 - 8x - 16<0$.
+		\begin{center}
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=.8,transform shape]
+			\draw[->,line width = 1pt,red] (-7.5,0)--(0,0) node[below right]{$O$}--(2,0) node[above]{$x$};
+			\draw[->,line width = 1pt,red] (0,-7.5)--(0,2) node[right]{$y$};
+			%%===============
+			\foreach \x in {-7,-6,-5,-4,-3,-2,-1,1} \draw[thin] (\x,2pt)node [above,blue] {$\x$}--(\x,-2pt);
+			\foreach \y in {-7,-6,-5,-4,-3,-2,-1,1} \draw[thin] (2pt,\y)--(-2pt,\y) node [left,blue] {$\y$};
+			%%==============
+			\draw[samples=100,domain=-6.65:-1.35,smooth] plot (\x, {-(\x)^2-8*(\x)-16});
+			\end{tikzpicture}
+		\end{center}
+	\end{enumEX}
+	\loigiai{
+	\begin{enumEX}{1}
+		\item Dựa vào đồ thị, ta có tập nghiệm $\left(-\infty;-3\right]\cup\left[\dfrac{1}{2};+\infty\right)$.
+		\item Dựa vào đồ thị, ta có tập nghiệm là $\mathbb{R}\setminus\{-4\}$.
+	\end{enumEX}
+	}
+\end{bt}
+
+\begin{bt}%[0T9B1-2]%[Dự án đề kiểm tra Giữa HKII NH22-23- Thành Lê]%[THPT Nguyễn Công Trứ]
+	Cho hai véc-tơ $\vec{m}=(-6,1)$, $\vec{n}=(0,2)$.\\
+	Tìm tọa độ của các véc-tơ $\vec{m}+\vec{n}$, $\vec{m}-\vec{n}$, $10\vec{m}$, $-4\vec{n}$.
+	\loigiai{
+	\begin{itemize}
+		\item $\vec{m}+\vec{n}=(-6+0,1+2)=(-6,3)$.
+		\item $\vec{m}-\vec{n}=(-6-0,1-2)=(-6,-1)$.
+		\item $10\vec{m}=(10\cdot(-6),10\cdot1)=(-60,10)$.
+		\item $-4\vec{n}=(-4\cdot0,-4\cdot2)=(0,-8)$.
+	\end{itemize}
+	}
+\end{bt}
+
+\begin{bt}%[0T9B2-3]%[Dự án đề kiểm tra Giữa HKII NH22-23- Thành Lê]%[THPT Nguyễn Công Trứ]
+	Xét vị trí tương đối của các cặp đường thẳng sau
+	\begin{enumerate}
+		\item $d_1\colon x + y - 3=0$; $d_2\colon 2x + 2y=0$
+		\item $d_1\colon - 4x + 6y - 2=0$; $d_2\colon 2x - 3y + 1=0$.
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item
+		\begin{itemize}
+			\item $d_1$ và $d_2$ có  véc-tơ pháp tuyến lần lượt là $\vec{n_1}=(1;1)$ và $\vec{n_2}=(2;2)$.
+			\item Ta có $\dfrac{1}{1}=\dfrac{2}{2}$, suy ra $\vec{n_1}$ và $\vec{n_2}$ cùng phương.
+			\item  Lấy $M(1,2)\in d_1$, thay tọa độ $M$ vào $d_2$, ta được $2\cdot1+2\cdot2=6\neq0$, suy ra $M\not\in d_2$.
+		\end{itemize}
+		Vậy $d_1\parallel d_2$.
+		\item 
+		\begin{itemize}
+			\item $d_1$ và $d_2$ có  véc-tơ pháp tuyến lần lượt là $\vec{n_1}=(-4;6)$ và $\vec{n_2}=(2;3)$.
+			\item Ta có $\dfrac{-4}{6}\neq\dfrac{2}{3}$, suy ra $\vec{n_1}$ và $\vec{n_2}$ không cùng phương.
+		\end{itemize}
+		Vậy $d_1$ cắt $d_2$.
+	\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[0T7K2-3]%[Dự án đề kiểm tra Giữa HKII NH22-23- Thành Lê]%[THPT Nguyễn Công Trứ]
+	Bằng cách lập bảng xét dấu, hãy giải các bất phương trình sau
+	\begin{enumEX}{2}
+		\item $-3x^2+2x+1<0$.
+		\item $\left(x^2 - 5x + 4\right)\left(2 - 5x + 2x^2\right)>0$.
+	\end{enumEX}
+	\loigiai{
+	\begin{enumerate}
+		\item Tam thức bậc hai $f(x)=-3x^2+2x+1$ có hai nghiệm phân biệt là $x_1=1$ và $x_2=\dfrac{-1}{3}$.
+		\begin{center}
+			\begin{tikzpicture}[font=\normalsize,t style/.style={style=solid}]
+				\tkzTabInit[nocadre=false,lgt=1.2,espcl=2.5,deltacl=0.5]
+				{$x$ /1.2, $f(x)$/1.2}
+				{$ -\infty $,$ \dfrac{-1}{3} $,$1$,$ +\infty $}
+				\tkzTabLine{  , -,0 , +,0,-  }
+			\end{tikzpicture}
+		\end{center}
+		Tập nghiệm của bất phương trình là $\left(-\infty;\dfrac{-1}{3}\right)\cup\left(1;+\infty\right)$.
+		\item 
+		\begin{itemize}
+			\item Tam thức bậc hai $f(x)=x^2 - 5x + 4$ có hai nghiệm phân biệt là $x_1=1$ và $x_2=4$.
+			\item Tam thức bậc hai $g(x)=2 - 5x + 2x^2$ có hai nghiệm phân biệt là $x_1=2$ và $x_2=\dfrac{1}{2}$.
+		\end{itemize}
+		
+		\begin{center}
+			\begin{tikzpicture}[font=\normalsize,t style/.style={style=solid}]
+				\tkzTabInit[nocadre=false,lgt=2,espcl=2.5,deltacl=0.5]
+				{$x$ /1.2, $f(x)$/1.2,$g(x)$/1.2,$f(x)g(x)$/1.2}
+				{$ -\infty $,$ \dfrac{1}{2} $,$1$,$2$, $4$,$ +\infty $}
+				\tkzTabLine{  , +,t,+,0,-,t,-,0,+  }
+				\tkzTabLine{  , +,0 , -,t,-,0,+,d,+  }
+				\tkzTabLine{  , +,0 , -,0,+,0,-,0,+  }
+			\end{tikzpicture}
+		\end{center}
+		Tập nghiệm của bất phương trình là $\left(-\infty;\dfrac{1}{2}\right)\cup\left(1;2\right)\cup\left(4;+\infty\right)$.
+	\end{enumerate}
+	}
+\end{bt}
+
+
+
+\begin{bt}%[0T9B1-3]%[0T9B1-4]%[Dự án đề kiểm tra GHK1 22-23-Nhật Thiện]%[THPT Nguyễn Công Trứ]
+	Cho $\vec{a}=(2;1)$, $\vec{b}=(3;4)$, $\vec{c}=(7;2)$.
+	\begin{enumerate}
+		\item Tìm $\vec{u}$ sao cho $\vec{u}=2\vec{a}-3\vec{b}+\vec{c}$;
+		\item Tìm $m$ và $n$ sao cho $\vec{c}=m\vec{a}+n\vec{b}$.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Ta có $\vec{u}=(x;y)$. Khi đó
+	\begin{eqnarray*}
+		& &\vec{u}=2\vec{a}-3\vec{b}+\vec{c}\\
+		&\Leftrightarrow&\heva{&x=2\cdot2-3\cdot3+7\\&y=2\cdot 1-3\cdot 4+2}\\
+		&\Leftrightarrow& \heva{&x=2\\&y=-8.}
+	\end{eqnarray*}
+	Vậy $\vec{u}=(2;-8)$.
+	\item Ta có
+	\begin{eqnarray*}
+		& &\vec{c}=m\vec{a}+n\vec{b}\\
+		&\Leftrightarrow& \heva{&7=m\cdot 2+n\cdot 3\\&2=m\cdot 1+n\cdot 4}\\
+		&\Leftrightarrow& \heva{&m=\dfrac{22}{5}\\&n=-\dfrac{3}{5}.}
+	\end{eqnarray*}
+	Vậy $m=\dfrac{22}{5}$ và $n=-\dfrac{3}{5}$.
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T9B3-2]%[Dự án đề kiểm tra GHK1 22-23-Nhật Thiện]%[THPT Nguyễn Công Trứ]
+	Lập phương trình đường tròn ngoại tiếp tam giác có tọa độ các đỉnh là $A(0;6)$, $B(7;7)$, $C(8;0)$.
+	\loigiai{
+	Đường tròn ngoại tiếp tam giác $ABC$ có dạng $x^2+y^2-2ax-2by+c=0$ với $a^2+b^2-c>0$.\\
+	Đường tròn đi qua các đỉnh $A$, $B$, $C$ nên ta có hệ phương trình 
+	\begin{eqnarray*}
+		& &\heva{&0^2+6^2-2a\cdot 0-2b\cdot 6+c=0\\&7^2+7^2-2a\cdot 7-2b\cdot 7+c=0\\&8^2+0^2-2a\cdot 8-2b\cdot 0+c=0}\\
+		&\Leftrightarrow& \heva{&12b-c=36\\&14a+14b-c=98\\&16a-c=64}\\
+		&\Leftrightarrow& \heva{&a=4\\&b=3\\&c=0.}
+	\end{eqnarray*}
+	Vậy đường tròn ngoại tiếp tam giác $ABC$ có phương trình là $x^2+y^2-8x-6y=0$.
+}
+\end{bt}
+\begin{bt}%[0T7B3-2]%[Dự án đề kiểm tra GHK1 22-23-Nhật Thiện]%[THPT Nguyễn Công Trứ]
+	Giải phương trình sau $\sqrt{11x^2-14x-12}=\sqrt{3x^2+4x-7}$.
+	\loigiai{
+	Ta có 
+	\begin{eqnarray*}
+		& &\sqrt{11x^2-14x-12}=\sqrt{3x^2+4x-7}\\
+		&\Rightarrow& 11x^2-14x-12=3x^2+4x-7\\
+		&\Rightarrow& 8x^2-18x+5=0\\
+		&\Rightarrow& \hoac{&x=\dfrac{5}{2}\\&x=-\dfrac{1}{4}.}
+	\end{eqnarray*}
+	Thử lại, ta thấy $x=\dfrac{5}{2}$ thỏa mãn phương trình.\\
+	Vậy tập nghiệm của phương trình là $S=\left\{\dfrac{5}{2}\right\}$.
+}
+\end{bt}
+\begin{bt}%[0T9B2-2]%[Dự án đề kiểm tra GHK1 22-23-Nhật Thiện]%[THPT Nguyễn Công Trứ]
+	Viết phương trình tham số và phương trình tổng quát của đường thẳng $d$ trong các trường hợp sau
+	\begin{enumerate}
+		\item Đường thẳng $d$ đi qua điểm $A(2;1)$ và có véc-tơ chỉ phương $\vec{u}=(3;2)$.
+		\item Đường thẳng $d$ đi qua điểm $B(3;3)$ và có véc-tơ pháp tuyến $\vec{n}=(5;-2)$.
+	\end{enumerate}
+\loigiai{	
+	\begin{enumerate}
+		\item Phương trình tham số đường thẳng $d$ đi qua điểm $A(2;1)$ và có véc-tơ chỉ phương $\vec{u}=(3;2)$ là
+		$$\heva{&x=2+3t\\&y=1+2t.}$$
+		Đường thẳng $d$ có véc-tơ chỉ phương $\vec{u}=(3;2)$ nên nhận véc-tơ $\vec{n}=(2;-3)$ làm một véc-tơ pháp tuyến.
+		Phương trình tổng quát đường thẳng $d$ đi qua điểm $A(2;1)$ và có véc-tơ pháp tuyến $\vec{n}=(2;-3)$ là
+		$$2(x-2)-3(y-1)=0\Leftrightarrow 2x-3y-1=0.$$
+		\item Phương trình tổng quát đường thẳng $d$ đi qua điểm $B(3;3)$ và có véc-tơ pháp tuyến $\vec{n}=(5;-2)$ là
+		$$5(x-3)-2(y-3)=0\Leftrightarrow 5x-2y-9=0.$$
+		Đường thẳng $d$ có véc-tơ pháp tuyến $\vec{n}=(5;-2)$ nên nhận véc-tơ $\vec{u}=(2;5)$ làm một véc-tơ chỉ phương.
+		Phương trình tham số đường thẳng $d$ đi qua điểm $B(3;3)$ và có véc-tơ chỉ phương $\vec{u}=(2;5)$ là
+		$$\heva{&x=3+2t\\&y=3+5t.}$$
+	\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T7K3-2]%[Dự án đề kiểm tra GHK1 22-23-Nhật Thiện]%[THPT Nguyễn Công Trứ]
+	Một tam giác vuông có một cạnh góc vuông ngắn hơn cạnh huyền $8$ cm. Tính độ dài của cạnh huyền, biết chu vi tam giác bằng $30$ cm.
+	\loigiai{
+	Gọi $x$ cm là độ dài một cạnh góc vuông ($x>0$).\\
+	Độ dài cạnh huyền bằng $x+8$ cm.\\
+	Độ dài cạnh góc vuông còn lại $\sqrt{(x+8)^2-x^2}$ hay $\sqrt{16x+64}$ cm.\\
+	Chu vi tam giắc bằng $30$ cm, tức là
+	\begin{eqnarray*}
+		\sqrt{16x+64}+x+x+8=30&\Leftrightarrow &\sqrt{16x+64}=22-2x\\
+		&\Rightarrow & 16x+64=(22-2x)^2\\
+		&\Rightarrow & \hoac{&x=5\\&x=21.}
+	\end{eqnarray*}
+Thử lại, ta thấy $x=5$ thỏa mãn.\\
+Vậy độ dài của cạnh huyền bằng $5+8=13$ cm.
+}
+\end{bt}
+

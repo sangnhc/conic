@@ -1,0 +1,182 @@
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT Marie-Curie}
+%Câu 1...........................
+\begin{bt}%[1D1V1-5]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Tư Đô Nguyên]%[THPT Marie-Curie]
+\begin{listEX}
+\item  Trên đường tròn lượng giác gốc $A$, biết góc lượng giác $(O A, O M)$ có số đo $410^{\circ}$. Hãy cho biết điểm $M$ nằm ở góc phần tư thứ mãy trên đường tròn lượng giác?
+\item  Không dùng máy tính cầm tay, hãy tính giá trị $\sin \dfrac{13 \pi}{6}$.
+\end{listEX}
+\loigiai{
+\begin{listEX}
+	\item \immini{
+		Ta có $410^\circ=360^\circ+50^\circ$. \\
+		Vậy điểm $M$ biểu diễn góc lượng giác $410^\circ$ nằm trên phần đường tròn lượng giác thuộc góc phần tư thứ I sao cho $\widehat{AOM}=50^\circ$.%Điền câu hỏi
+	}
+	{
+		\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick,scale=.6]
+			\tikzset{every node/.style={scale=0.9}}
+			\draw[->] (-2.4,0)--(2.4,0) node[below] {$x$};
+			\draw[->] (0,-2.4)--(0,2.4) node[left] {$y$};
+			\draw (0,0) node [below left] {$O$};
+			\draw (0,0) circle (2);
+			\path (2,0) coordinate (A);
+	\foreach \x/\g in {A/55}
+			\fill[black] 	(\x) circle (3pt)
+			($(\g:5mm)+(\x)$) node {$\x$};
+			\foreach \i in {0,...,1}
+			{
+				\draw plot[mark=*] coordinates {({410+\i*360/1}:2)}node[above right]{$M$};
+			}
+		\end{tikzpicture}%Chèn hình
+	}
+	\item $\sin \dfrac{13 \pi}{6}=\sin\left(2\pi+\dfrac{\pi}{6}\right)=\sin\dfrac{\pi}{6}=\dfrac{1}{2}$.
+\end{listEX}
+
+}
+\end{bt}
+
+\begin{bt}%[1D1V2-4]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Tư Đô Nguyên]%[THPT Marie-Curie]
+Cho góc $\alpha$ thỏa mãn $\cos \alpha=\dfrac{3}{5}$ và $0<\alpha<\dfrac{\pi}{2}$.
+\begin{listEX}
+\item  Tính giá tri $\sin \alpha$.
+\item  Tính giá tri $\cos \left(\dfrac{\pi}{2}-2 \alpha\right)$.	
+\end{listEX}
+\loigiai{
+\begin{listEX}
+\item  
+Vì $0<\alpha<\dfrac{\pi}{2}$ nên $\sin \alpha>0$. Khi đó:
+$$
+\sin ^2 \alpha=1-\cos ^2 \alpha=\dfrac{16}{25} \Leftrightarrow\hoac{
+&	\sin \alpha=\dfrac{4}{5}\,(\text{Nhận}) \\
+&	\sin \alpha=-\dfrac{4}{5}\,(\text{Loại}).
+}
+$$
+\item Ta có
+$$
+\cos \left(\dfrac{\pi}{2}-2 \alpha\right)=\sin 2 \alpha=2 \sin \alpha \cos \alpha=\dfrac{24}{25}.
+$$
+\end{listEX}	
+}
+\end{bt}
+
+\begin{bt}%[1D1V2-3]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Tư Đô Nguyên]%[THPT Marie-Curie]
+Chứng minh đẳng thức lượng giác sau trong điều kiện biểu thức có nghĩa
+$$
+\dfrac{1-\cos \alpha}{\sin ^2 \alpha}-\dfrac{1}{1+\cos \alpha}=0.
+$$
+\loigiai{
+Ta có:
+$$\dfrac{1-\cos \alpha}{\sin ^2 \alpha}-\dfrac{1}{1+\cos \alpha}=\dfrac{1-\cos ^2 \alpha-\sin ^2 \alpha}{\sin ^2 \alpha(1+\cos \alpha)}=\dfrac{1-\left(\cos ^2 \alpha+\sin ^2 \alpha\right)}{\sin ^2 \alpha(1+\cos \alpha)}=0.$$
+}
+\end{bt}
+\begin{bt}%[1D1B4-1]%[Dự án Tex đề GHK-HK 2023-2024]%[Nhật Thiện]%[THPT Marie Curie]
+    Tìm tập xác  định của hàm số $y=\dfrac{2003}{\sin x}+\cos (x-2004)$.
+    \loigiai{
+        Hàm số có nghĩa khi và chỉ khi $\sin x\ne 0\Leftrightarrow x\ne k\pi$, $k\in \mathbb{Z}$.\\
+        Vậy tập xác định $\mathscr{D}=\mathbb{R}\setminus\left\{k\pi,k\in\mathbb{Z}\right\}$.
+    }
+\end{bt}
+\begin{bt}%[1D1B5-3]%[Dự án Tex đề GHK-HK 2023-2024]%[Nhật Thiện]%[THPT Marie Curie]
+    Giải các phương trình lượng giác sau
+    \begin{enumEX}{2}
+        \item $\cos  x=\dfrac{\sqrt{3}}{2}$;
+        \item $\sin x+\cos \dfrac{\pi}{7}=0$.
+    \end{enumEX}
+    \loigiai{
+        \begin{enumerate}
+            \item Ta có  $\cos x=\dfrac{\sqrt{3}}{2}\Leftrightarrow \cos x=\cos \dfrac{\pi}{3}\Leftrightarrow \hoac{&x=\dfrac{\pi}{3}+k2\pi\\&x=-\dfrac{\pi}{3}+k2\pi}$, $k\in\mathbb{Z}$.
+            \item Ta có
+            \begin{eqnarray*}
+                & &\sin x=-\cos \dfrac{\pi}{7}\Leftrightarrow \sin x=-\sin \left(\dfrac{5\pi}{14}\right)\Leftrightarrow \sin x=\sin \left(-\dfrac{5\pi}{14}\right)\\
+                &\Leftrightarrow&  \hoac{&x=-\dfrac{5\pi}{14}+k2\pi\\&x=\pi-\dfrac{5\pi}{14}+k2\pi},\,k\in\mathbb{Z}\\
+                &\Leftrightarrow& \hoac{&x=-\dfrac{5\pi}{14}+k2\pi\\&x=\dfrac{9\pi}{14}+k2\pi},\,k\in\mathbb{Z}.
+            \end{eqnarray*}
+        \end{enumerate}
+    }
+\end{bt}
+\begin{bt}%[1D2B1-2]%[Dự án Tex đề GHK-HK 2023-2024]%[Nhật Thiện]%[THPT Marie Curie]
+    Cho dãy số $(u_n)$, biết $u_n=\dfrac{2n+1}{n+2}$. Hỏi số $\dfrac{167}{84}$ là số hạng thứ bao nhiêu của dãy số đã cho?
+    \loigiai{
+        Ta có $u_n=\dfrac{167}{84}\Leftrightarrow \dfrac{2n+1}{n+2}=\dfrac{167}{84}\Leftrightarrow 84(2n+1)=167(n+2)\Leftrightarrow  n=250$.\\
+        Vậy số $\dfrac{167}{84}$  là số hạng thứ $250$ của dãy số đã cho.
+    }
+\end{bt}
+\begin{bt}%[1D2H2-6]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Hieu Phan]%[THPT Marie Curie ]
+    Cho cấp số cộng $\left(u_n\right)$ có số hạng tổng quát $u_n=3 n+1$.
+    \begin{enumerate}
+        \item Xác định ba số hạng đầu tiên của cấp số cộng đó. Suy ra công sai $\mathrm{d}$ của cấp số cộng $\left(u_n\right)$.
+        \item Tính tổng $50$ số hạng đầu tiên của cấp số cộng đó.
+    \end{enumerate}
+    \loigiai
+    {
+        \begin{enumerate}
+            \item Ta có $
+            u_1=4$; $u_2=7$; $u_3=10 \Rightarrow \mathrm{d}=u_2-u_1=3
+            $.
+            \item $
+            S_{50}=\dfrac{50}{2}(2\cdot 4+49\cdot 3)=3875
+            $.
+        \end{enumerate}
+    }
+\end{bt}
+\begin{bt}%[1D2V2-7]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Hieu Phan]%[THPT Marie Curie ]
+    Vào năm $2023$, nhiệt độ trung bình của thành phố $\mathrm{A}$ là $29{,}5^{\circ} \mathrm{C}$. Giả sử do biến đổi khí hậu nên nhiệt độ trung bình của thành phố $\mathrm{A}$ mỗi năm đều tăng lên khoảng $0{,}1^{\circ} \mathrm{C}$. Hãy ước tính kể từ năm nào thì nhiệt độ trung bình của thành phố $\mathrm{A}$ đạt từ $35^{\circ} \mathrm{C}$ trở lên.
+    \loigiai
+    { Theo đề bài ta có nhiệt độ mỗi năm lập thành một cấp số cộng với  $u_1=29{,}5^\circ \mathrm{C},\, d=0{,}1^\circ \mathrm{C}$.
+        Suy ra
+        $u_n \geq 35 \Leftrightarrow u_n=29{,}5+(n-1) \cdot 0{,}1 \geq 35
+        \Leftrightarrow n \geq 56$.\\
+        Khi đó $u_1$ là nhiệt độ năm 2023 nên $u_{56}$ là nhiệt độ năm $2078$.
+    }
+\end{bt}
+\begin{bt}%[1H4V1-4]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Hieu Phan]%[THPT Marie Curie ]
+    Cho hình chóp $S.ABCD$. Gọi $M$, $N$ lần lượt là trung điểm các cạnh $SA$ và $AB$. Lấy điểm $P$ là điểm nằm trên cạnh $SD$, sao cho $SP=\dfrac{1}{4}SD$.
+    \begin{enumerate}
+        \item Đường thẳng $MP$ có nằm trên mặt phẳng $(SAD)$ không? Giải thích?
+        \item Tìm giao tuyến của hai mặt phẳng $(MNP)$ và $(ABCD)$.
+        \item Tìm giao điểm $K$ của đường thẳng $NP$ và mặt phằng $(SAC)$.
+    \end{enumerate}
+    
+    \loigiai
+    { 
+        \immini
+        {
+            \begin{enumerate}
+                \item 
+                Ta có $\heva{&M \in SA \subset(SAD)  \\ &P \in S D \subset(S A D) }\Rightarrow MP \subset(SAD)$.
+                \item Ta có $M \in(MNP) \cap(ABCD)$.\\
+                Trong $(SAD)$, gọi $E=MP \cap AD$.\\
+                Khi đó $\heva{& E \in MP \subset(MNP)  \\ &E \in AD \subset(ABCD)}\\ \Rightarrow E \in(MNP) \cap(ABCD)$.\\
+                Suy ra $ME=(MNP) \cap(ABCD)$.
+                \item Trong $(ABCD)$, gọi $O=AC \cap ND $.\\
+                Suy ra $(SAC) \cap(SND)=SO$.\\
+                Trong $(SND)$, gọi $K=NP \cap SO$. \\
+                Khi đó $\heva{& K \in NP \\ &K \in(SAC) }\Rightarrow K=NP \cap(SAC)$.
+            \end{enumerate}
+        }
+        {
+            \begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+                \def\ad{4} % cạnh AD
+                \def\ab{2} % cạnh AB
+                \def\bc{2} % chéo AC
+                \def\as{3.5} % cạnh AS
+                \def\gocA{50} % góc A của đáy
+                \def\gocB{120} % góc B của đáy
+                \coordinate[label=below:$A$] (A) at (0,0);
+                \coordinate[label=below left:$B$] (B) at (-\gocA:\ab);
+                \coordinate[label=below right:$C$] (C) at ($(B)+(180-\gocA-\gocB:\bc)$);
+                \coordinate[label=right:$D$] (D) at (\ad,0);
+                \coordinate[label=above:$S$] (S) at (75:\as); % chỉnh 75 và as để thay đổi S
+                \coordinate[label=left:$M$] (M) at ($(S)!0.5!(A)$);
+                \coordinate[label=left:$N$] (N) at ($(B)!0.5!(A)$);
+                \coordinate[label=right:$P$] (P) at ($(S)!0.25!(D)$);
+                \coordinate [label=below:$E$] (E) at (intersection of A--D and M--P);
+                \coordinate [label=below:$O$] (O) at (intersection of A--C and N--D);
+                \coordinate [label=right:$K$] (K) at (intersection of S--O and N--P);
+                \draw (A)--(B)--(C)--(D)--(S)--cycle (B)--(S)--(C) (N)--(M)--(E)--(A);
+                \draw[dashed] (A)--(D)--(N) (M)--(P)--(N) (S)--(O) (A)--(C);
+                \foreach \diem in {A,B,C,D,S,M,N,P,E,O,K}	\fill (\diem)circle(1.5pt);
+            \end{tikzpicture}
+        }
+    }
+\end{bt}
+

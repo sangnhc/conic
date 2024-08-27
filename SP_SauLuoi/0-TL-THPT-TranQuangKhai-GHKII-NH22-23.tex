@@ -1,0 +1,190 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Trần Quang Khải}
+
+
+\begin{bt}%[0T7Y1-1]%[ID]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[THPT TRẦN QUANG KHẢI]
+\immini
+{
+Dựa vào đồ thị của hàm số bậc hai trong hình vẽ, em hãy xét dấu của tam thức bậc hai $f(x)$.
+}
+{
+\begin{tikzpicture}[>=stealth,x=1cm,y=1cm,scale=.75]
+	\draw[->] (-5,0) -- (1.5,0) node[below] {$x$};
+	\draw[->] (0,-2) -- (0,3) node[left] { $y$};
+	\fill (0,0)circle (1.5pt) node[below left]{ $O$};
+	\fill (-4,0)circle (1.5pt) node[below left]{$-4$};
+	\fill (-1,0)circle (1.5pt) node[below left]{$-1$};
+	\draw (-2.5,2.25)node[above]{$f(x)$};
+	\draw[samples=150,smooth,domain=-4.5:-0.5] plot(\x,{-(\x)^2-5*\x-4});
+\end{tikzpicture}
+}
+\loigiai{
+	Dựa vào đồ thị hàm số $y=f(x)$ ta có bảng xét dấu như sau
+\begin{center}
+	\begin{tikzpicture}
+		\tkzTabInit[lgt=2,espcl=2,deltacl=0.5]
+		{$x$/1 ,$f(x)$/1}
+		{$-\infty$ , $-4$ , $-1$, $+\infty$}
+		\tkzTabLine{,-,0,+,0,-,}
+	\end{tikzpicture}
+\end{center}
+Vậy
+\begin{itemize}
+	\item  $f(x)>0$ với mọi $x\in \left(-4;-1 \right) $.
+	\item  $f(x)<0$ với mọi $x\in \left(-\infty;-4\right)\cup \left(-1;+\infty\right) $.
+	\item $f(x)=0$ tại $x=-1$ và $x=-4$.
+\end{itemize}
+}
+\end{bt}
+
+\begin{bt}%[0T7Y1-1]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[THPT TRẦN QUANG KHẢI]
+Xét dấu tam thức bậc hai $f(x)=(3x+3)(x+1)$. 
+	\loigiai{
+	 $f(x)=(3x+3)(x+1)=3x^2+6x+3$ có $\Delta=0$, tam thức có nghiệm kép $x_1=x_2=-1$ và $a=3>0$.\\
+	 Ta có bảng xét dấu như sau
+	 \begin{center}
+	 	\begin{tikzpicture}
+	 		\tkzTabInit[deltacl=0.5,espcl=2.5,lgt=2]
+	 		{$x$/1,$f(x)$/1}
+	 		{$-\infty$,$-1$,$+\infty$}
+	 		\tkzTabLine{,+,0,+,}
+	 	\end{tikzpicture}
+	 \end{center}
+	 Vậy $f(x)>0$ với mọi $x \neq-1$ và  $f(x)=0$ tại $x=-1$.
+}
+\end{bt}
+
+\begin{bt}%[0T7Y2-1]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[THPT TRẦN QUANG KHẢI]
+	\immini
+	{
+	Dựa vào đồ thị của hàm số trong hình vẽ, hãy xác định nghiệm của bất phương trình $f(x) \leq 0$.
+	}
+	{
+	\begin{tikzpicture}[>=stealth,x=1cm,y=1cm,scale=.75]
+		\draw[->] (-4,0) -- (2,0) node[below] {$x$};
+		\draw[->] (0,-3.5) -- (0,3) node[left] { $y$};
+		\fill (0,0)circle (1.5pt) node[below left]{ $O$};
+		\fill (-3,0)circle (1.5pt) node[below left]{$-3$};
+		\fill (0.5,0)circle (1.5pt) node[below right]{$0.5$};
+		\draw (-2.75,2)node[above]{$f(x)$};
+		\draw[samples=150,smooth,domain=-3.5:1] plot(\x,{(\x)^2+2.5*\x-1.5});
+	\end{tikzpicture}
+	}
+	\loigiai{
+	Dựa vào đồ thị hàm số $y=f(x)$ ta có bảng xét dấu như sau
+\begin{center}
+	\begin{tikzpicture}
+		\tkzTabInit[lgt=2,espcl=2,deltacl=0.5]
+		{$x$/1 ,$f(x)$/1}
+		{$-\infty$ , $-3$ , $\dfrac{1}{2}$, $+\infty$}
+		\tkzTabLine{,+,0,-,0,+,}
+	\end{tikzpicture}
+\end{center}
+Ta được $f(x)\leq 0$ với mọi $x\in \left[-3;-\dfrac{1}{2}\right] $.\\
+Vậy tập nghiệm của bất phương trình là $S=\left[-3;\dfrac{1}{2}\right]$.
+	}
+\end{bt}
+
+\begin{bt}%[0T7Y2-1]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[THPT TRẦN QUANG KHẢI]
+Giải bất phương trình sau bằng cách xét dấu $4x^2-x+1 \leq 2\left(x^2+2x-1\right)$.
+	\loigiai{
+	Ta có $4x^2-x+1 \leq 2\left(x^2+2x-1\right)\Leftrightarrow 2x^2-5x+3\leq 0$.\\
+	Đặt $f(x)=2x^2-5x+3$, tam thức có hai nghiệm $x_1=1$, $x_2=\dfrac{3}{2}$ và $a=2>0$.\\
+	Ta có bảng xét dấu như sau
+	\begin{center}
+		\begin{tikzpicture}
+			\tkzTabInit[lgt=2,espcl=2,deltacl=0.5]
+			{$x$/1 ,$f(x)$/1}
+			{$-\infty$ , $1$ , $\dfrac{3}{2}$, $+\infty$}
+			\tkzTabLine{,+,0,-,0,+,}
+		\end{tikzpicture}
+	\end{center}
+	Ta được $f(x)\leq 0$ với mọi $x\in \left[1;\dfrac{3}{2}\right] $.\\
+	Vậy tập nghiệm của bất phương trình là $S=\left[1;\dfrac{3}{2}\right]$.
+}
+\end{bt}
+
+\begin{bt}%[3 điểm]%[0T7Y3-2]%[Dự án đề kiểm tra GHKII NH 22-23-Trương Đăng Khoa]%[THPT Trần Quang Khải]
+	Giải các phương trình sau.
+	\begin{enumerate}
+		\item  $\sqrt{x^2+5x-5}=2x-1$.
+		\item  $\sqrt{-x^2+x+17}=\sqrt{x^2-12x+2}$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Ta có $\begin{aligned}[t]
+				&\ \sqrt{x^2+5x-5}=2x-1\\
+				\Rightarrow&\ x^2+5x-5=(2x-1)^2\\
+				\Leftrightarrow&\ x^2+x-5=4x^2-4x+1\\
+				\Leftrightarrow&\ 3x^2-9x+6=0\\
+				\Leftrightarrow&\ \hoac{&x=1\\ &x=2.}
+			\end{aligned}$\\
+			Thay lần lượt các giá trị trên vào phương trình đã cho, ta thấy $x=1$, $x=2$ đều thỏa mãn.\\
+			Vậy nghiệm của phương trình đã cho là $x=1$, $x=2$.
+			\item Ta có $\begin{aligned}[t]
+				&\ \sqrt{-x^2+x+17}=\sqrt{x^2-12x+2}\\
+				\Rightarrow&\ -x^2+x+17=x^2-12x+2\\
+				\Leftrightarrow&\ 2x^2-13x-15=0\\
+				\Leftrightarrow&\ \hoac{&x=-1 \\& x=\dfrac{15}{2}.}
+			\end{aligned}$\\
+			Thay lần lượt các giá trị trên vào phương trình đã cho, ta thấy $x=-1$, $x=\dfrac{15}{2}$ đều thỏa mãn.\\
+			Vậy nghiệm của phương trình đã cho là $x=-1$, $x=\dfrac{15}{2}$.
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[1 điểm]%[0T7K2-1]%[Dự án đề kiểm tra GHKII NH 22-23-Trương Đăng Khoa]%[THPT Trần Quang Khải]
+	Tìm giá trị của $m$ để $x^2-x+m>0$ với mọi $x\in\mathbb{R}$.
+	\loigiai{
+		Ta có $a=1$, $b=-1$, $c=m$.\\
+		$x^2-x+m>0$, $\forall x\in\mathbb{R}\Leftrightarrow\heva{&a>0\\ &\Delta <0}\Leftrightarrow\heva{& 1>0\quad (\text{luôn đúng})\\ &(-1)^2-4\cdot 1 \cdot m<0}\Leftrightarrow 1-4m<0\Leftrightarrow m>\dfrac{1}{4}$.
+	}
+\end{bt}
+
+\begin{bt}%[1 điểm]%[0T7T2-1]%[Dự án đề kiểm tra GHKII NH 22-23-Trương Đăng Khoa]%[THPT Trần Quang Khải]
+	Lợi nhuận $T$ thu được trong một ngày từ việc kinh doanh một loại gạo của cửa hàng phụ thuộc vào giá bán $x$ của một kilôgam loại gạo đó theo công thức \break $T(x)=-3x^2+200x-2325$ với $T$ và $x$ được tính bằng nghìn đồng. Hỏi với giá trị $x$ như thế nào thì cửa hàng có lãi từ loại gạo đó?
+	\loigiai{
+		Xét $T(x)=-3x^2+200x-2325=0\Leftrightarrow \hoac{&x=15 \\ &x=\dfrac{100}{3}.}$\\
+		Bảng xét dấu $T(x)$ ta có 
+		\begin{center}
+			\begin{tikzpicture}[scale=1, font=\footnotesize]
+				\tkzTabInit[nocadre=false, lgt=1.2, espcl=2, deltacl=0.6]
+				{$x$/0.8,$T(x)$/0.6}
+				{$0$,$15$,$\dfrac{100}{3}$,$+\infty$};
+				\tkzTabLine{d,-,$0$,+,$0$,-,};
+			\end{tikzpicture}
+		\end{center}
+		Do đó $T(x)>0$ khi $x\in\left(15;\dfrac{100}{3}\right)$.\\
+		Vậy để có lãi từ loại gạo đó cửa hàng phải bán với từ $15$ nghìn đồng đến $\dfrac{100}{3}$ nghìn đồng.
+	}
+\end{bt}
+
+\begin{bt}%[1 điểm]%[0T7T3-2]%[Dự án đề kiểm tra GHKII NH 22-23-Trương Đăng Khoa]%[THPT Trần Quang Khải]
+	\immini{Một con tàu biển $M$ rời cảng $O$ và chuyển động theo phương tạo với bờ biển một góc $60^\circ$. Trên bờ biển có đài quan sát $A$ cách cảng $O$ khoảng cách $2$ km. Đặt độ dài cùa $MO$ là $x$ km. Tìm $x$ để khoảng cách từ tàu đến $A$ nhỏ hơn khoảng cách từ tàu đến $O$ đúng $500$ m.}{
+		\begin{tikzpicture}[line join=round, line cap=round,thick]
+			\coordinate (M) at (0,3);
+			\coordinate (O) at (-2,0);
+			\coordinate (A) at (2,0);
+			\draw(M)--node [above]{$x$}(O)--node [below]{$2$ km}(A)--cycle;
+			\draw pic["$60^\circ$",draw,angle eccentricity=1.7,angle radius=0.5cm]{angle=A--O--M};
+			\foreach \i/\g in {M/90,O/-90,A/-90}{\draw[fill=white](\i) circle (1.5pt) ($(\i)+(\g:3mm)$) node[scale=1]{$\i$};}
+		\end{tikzpicture}
+	}
+	\loigiai{
+		Đổi $500$ m $=\dfrac{1}{2}$ km.\\
+		Áp dụng định lí $\cos$ vào tam giác $ABC$ ta có
+		\begin{align*}
+			&\ MB^2=OM^2+OA^2-2\cdot OM\cdot OA\cdot \cos B\\
+			\Rightarrow&\ MB=\sqrt{x^2+2^2-2\cdot x\cdot 2\cdot \cos 60^\circ}\\
+			\Leftrightarrow&\ MB=\sqrt{x^2-2x+4}.
+		\end{align*}
+		Để khoảng cách từ tàu đến $A$ nhỏ hơn khoảng cách từ tàu đến $O$ đúng $500$ m thì.
+		\begin{align*}
+			&\ \sqrt{x^2-2x+4}=x-\dfrac{1}{2}\\
+			\Rightarrow&\ x^2-2x+4=x^2-2\cdot x\cdot \dfrac{1}{2}+\dfrac{1}{4}\\
+			\Leftrightarrow&\ x=\dfrac{15}{4}.
+		\end{align*}
+		Thử lại giá trị trên vào phương trình, ta thấy $x=\dfrac{15}{4}$ thỏa mãn.\\
+		Vậy $x=\dfrac{15}{4}$ thì khoảng cách từ tàu đến $A$ nhỏ hơn khoảng cách từ tàu đến $O$ đúng $500$ m.
+	}
+\end{bt}

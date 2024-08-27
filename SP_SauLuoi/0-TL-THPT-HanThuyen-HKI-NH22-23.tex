@@ -1,0 +1,599 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Hàn Thuyên}
+\begin{center}
+	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+\end{center}
+\Opensolutionfile{ans}[ans/ans]
+%Câu 1...........................
+\begin{ex}%[0T5Y2-1]
+	Cho tam giác $ABC$, trọng tâm là $G$. Phát biểu nào sau đây là \textbf{đúng}?
+	\choice
+	{\True $\vec{GA}+\vec{GB}+\vec{GC}=\vec{0}$}
+	{$|\vec{GA}|+|\vec{GB}|+|\vec{GC}|=0$}
+	{$|\vec{AB}+\vec{BC}|=\vec{AC}$}
+	{$\vec{AB}+\vec{BC}=|\vec{AC}|$}
+	\loigiai{
+	Theo tính chất $G$ là trọng tâm trong tam giác $\triangle ABC$ ta có
+	\begin{center}
+	$\vec{GA} + \vec{GB} +\vec{GC}=\vec{0}.$
+	\end{center}
+	}
+\end{ex}
+%Câu 2...........................
+\begin{ex}%[0T4Y2-1]
+	Cho tam giác $ABC$ có $AB=c, AC=b, CB=a$. Chọn mệnh đề \textbf{sai}?
+	\choice
+	{$b^2=a^2+c^2-2ac\cdot\cos B$}
+	{$a^2=b^2+c^2-2bc\cdot\cos A$}
+	{$c^2=b^2+a^2-2ba\cdot\cos C$}
+	{\True $c^2=a^2+b^2-2ab\cdot\cos B$}
+	\loigiai{
+		Theo định lý Côsin trong tam giác $\triangle ABC$ ta có
+	\begin{center}
+		$c^2=a^2+b^2-2ab\cdot\cos C.$
+	\end{center}	
+	}
+\end{ex}
+%Câu 3...........................
+\begin{ex}%[0T1Y2-2]
+	Trong các tập hợp sau, tập hợp nào là con của tập hợp $A=\{1 ; 2 ; 3 ; 4 ; 5\}$?
+	\choice
+	{\True $A_3=\{4;5\}$}
+	{$A_2=\{0;1;3\}$}
+	{$A_4=\{0\}$}
+	{$A_1=\{1;6\}$}
+	\loigiai{
+	Ta có $\{4;5\} \subset \{1 ; 2 ; 3 ; 4 ; 5\}$.
+	}
+\end{ex}
+%Câu 4...........................
+\begin{ex}%[0T2Y1-3]
+	\immini{Miền nghiệm của bất phương trình nào sau đây được biểu diễn bởi nửa mặt phẳng không bị gạch trong hình vẽ sau?
+	\choice
+	{$x-y \geq 3$}
+	{$2x-y \geq 3$}
+	{$2x+y \leq 3$}
+	{\True $2x-y \leq 3$}}
+	{	\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\draw[step=1,help lines,color=black!10!white] (-2,-4.0) grid (3.0,1.0);
+		\draw[->] (-2.0,0)--(0,0) node[above left]{O}--(3.2,0) node[below]{$x$};
+		\draw[->] (0,-4.0)--(0,1.2) node[left]{$y$};
+		\draw[color=black]  plot[domain=-0.5:2.0](\x,{2*(\x)-3});
+		
+		\draw (1.5,0) node[above] {$\frac{3}{2}$};
+		\draw (0,-3) node[left] {$-3$};	
+		\path 
+		(-0.5,-4) coordinate (M) 
+		(2,1) coordinate (N) 
+		(3,1) coordinate (P)
+		(3,-4) coordinate (K)
+		;
+		\fill[pattern=north east lines,opacity=.3] (M)--(N)--(P)--(K)--cycle;	\fill[black] (1.5,0) circle(1pt);
+		\fill[black] (0,-3) circle(1pt);
+		\end{tikzpicture}}
+	\loigiai{
+	Nhận thấy miền nghiệm có chứa điểm $O$ nên loại phương án $x-y \geq 3$ và $2x-y \geq 3$.\\
+	Đường thẳng $2x-y-3=0$ đi qua hai điểm $A(0;-3)$ và $B(\dfrac{3}{2};0).$ Nên chọn phương án $2x-y \leq 3$.	
+	}
+\end{ex}
+%Câu 5...........................
+\begin{ex}%[0T6B4-2]
+	Điểm kiểm tra học kì của một học sinh được thống kê trong bảng dữ liệu sau:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|} \hline
+		\textbf{Môn học} & \textbf{Toán} & \textbf{Ngữ Văn}& \textbf{Tiếng Anh} & \textbf{Vật Lý} & \textbf{Hóa Học}\\ \hline
+		Điểm & $95$ & $ 78 $ & $ 84 $ & $ 85 $ & $ 92 $ \\ \hline
+	\end{tabular}
+\end{center}
+	Phương sai và độ lệch chuẩn của bảng số liệu trên lần lượt xấp xỉ bằng
+	\choice
+	{$34{,}5$ và $5{,}9$}
+	{$84$ và $81$}
+	{\True $36{,}6$ và $6{,}1$}
+	{$6{,}1$ và $37{,}2$}
+	\loigiai{
+	Ta có $n=5$, tính được giá trị trung bình là
+	\begin{center}
+		$\overline{x}=\dfrac{x_1+x_2+x_3+x_4+x_5}{5}=\dfrac{95+78+84+85+92}{5}=\dfrac{434}{5}$.
+	\end{center}
+	Tính phương sai theo công thức là
+	\begin{center}
+	$ s^{2}=\dfrac{\left(x_1-\overline{x}\right)^{2}+\left(x_2-\overline{x}\right)^{2}+\left(x_3-\overline{x}\right)^{2}+\left(x_4-\overline{x}\right)^{2}+\left(x_5-\overline{x}\right)^{2}}{5}=\dfrac{914}{25}\approx 36{,}56.$	
+	\end{center}
+	Độ lệch chuẩn là $ s=\sqrt{s^{2}}\approx 6{,}05.$
+		}
+\end{ex}
+%Câu 6...........................
+\begin{ex}%[0T4B2-1]
+	Cho tam giác $ABC$ có $\widehat{A}=30^{\circ}$, $BC=5$. Tính bán kính đường tròn ngoại tiếp tam giác $ABC$.
+	\choice
+	{$10$}
+	{$\dfrac{10}{\sqrt{3}}$}
+	{$10\sqrt{3}$}
+	{\True $5$}
+	\loigiai{
+	Theo định lý sin trong $\triangle ABC$ ta có\\
+	$\dfrac{BC}{\sin A}=2R\Rightarrow R=\dfrac{BC}{2\sin A}=\dfrac{5}{2 \sin 30^{\circ}}=5.$
+	}
+\end{ex}
+%Câu 7...........................
+\begin{ex}%[0T6Y3-3]
+	Các giá trị xuất hiện nhiều nhất trong mẫu số liệu được gọi là
+	\choice
+	{Độ lệch chuẩn}
+	{Số trung vị}
+	{\True Mốt}
+	{Số trung bình}
+	\loigiai{
+	Các giá trị xuất hiện nhiều nhất trong mẫu số liệu được gọi là mốt.
+	}
+\end{ex}
+%Câu 8...........................
+\begin{ex}%[0T3Y2-1]
+	Parabol $y=2x^2-4x+1$ có đỉnh là
+	\choice
+	{$I(2;1)$}
+	{\True $I(1;-1)$}
+	{$I(-2;17)$}
+	{$I(-1;7)$}
+	\loigiai{
+	Ta có $x=-\dfrac{b}{2a}=1\Rightarrow y=2-4+1=-1$. Nên parabol $y=2x^2-4x+1$ có đỉnh là $I\left ( 1;-1 \right )$.
+	}
+\end{ex}
+%Câu 9...........................
+\begin{ex}%[0T3B2-3]
+	\immini{Cho hàm số $y=ax^2+bx+c$ có đồ thị như hình bên. Khẳng định nào sau đây đúng?
+	\choice
+	{$a<0,b<0,c>0$}
+	{\True $a>0,b<0,c>0$}
+	{$a>0,b>0,c>0$}
+	{$a>0,b<0,c<0$}}
+	{	\begin{tikzpicture}[scale=0.7, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\draw[->] (-1.0,0) -- (3.5,0) node[above] {$x$};
+		\draw[->] (0,-1.0) -- (0,5.5) node[left] {$y$};
+		\draw (0,0)node[below left]{$O$};
+		\draw[samples=150,smooth,domain=-1.1:3.1] plot(\x,{(\x)^2+(-2)*(\x)+2});
+		\end{tikzpicture}}
+	\loigiai{
+	Dựa vào đồ thị hàm số đã cho ta có parabol có bề lõm hướng lên nên $ a>0$.\\
+	Với $x=0$ ta có $y=c>0$.\\
+	Hoành độ đỉnh $x_{I}=-\dfrac{b}{2a}>0\Rightarrow b<0$.
+	}
+\end{ex}
+%Câu 10...........................
+\begin{ex}%[0T2Y1-1]
+	Bất phương trình nào là bất phương trình bậc nhất hai ẩn?
+	\choice
+	{$\dfrac{y}{x}+10y \geq 4$}
+	{$3x+4y^2 \leq 7$}
+	{$x^3+2x+4y>100$}
+	{\True $x+3y>7$}
+	\loigiai{
+	Dễ dàng nhận thấy $x+3y>7$ là bất phương trình bậc nhất hai ẩn.
+	}
+\end{ex}
+%Câu 11...........................
+\begin{ex}%[0T6B3-1]
+	Tiền thưởng (triệu đồng) của cán bộ và nhân viên trong một công ty được cho trong bảng dưới đây. 
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+			Tiền thưởng & $ 2 $ & $ 3 $ & $ 4 $ & $ 5 $ & $ 6 $ & Cộng \\ \hline
+			Tần số & $ 5 $ & $ 15 $ & $ 10 $ & $ 6 $ & $ 4 $ & $ 40 $ \\ \hline
+		\end{tabular}
+	\end{center}
+Tính tiền thưởng trung bình.
+	\choice
+	{$3\,625\,000$ đồng}
+	{$3\,745\,000$ đồng}
+	{$3\,715\,000$ đồng}
+	{\True $3\,725\,000$ đồng}
+	\loigiai{ Theo công thức tính giá trị trung bình dựa vào bảng tần số ta có \\$\overline{X}=\dfrac{n_1\cdot x_1+n_2\cdot x_2+n_3\cdot x_3+n_4\cdot x_4+n_5\cdot x_5}{n_1+n_2+n_3+n_4+n_5}$.\\
+		Suy ra $\overline{X}=\dfrac{5\cdot 2+15\cdot 3+10\cdot 4+6\cdot 5+4\cdot 6}{40}=3{,}725$ (triệu đồng)=$3\,725\,000$ đồng.
+	}
+\end{ex}
+%Câu 12...........................
+\begin{ex}%[0T6B4-1]
+	Khoảng tứ phân vị của tập hợp số dữ liệu $4;7;9;12;20$ là
+	\choice
+	{$10$}
+	{$11$}
+	{\True $11{,}5$}
+	{$9$}
+	\loigiai{ Sắp xếp các dữ liệu tăng dần là $4;7;9;12;20$. Vì mẫu số liệu có 5 phần tử là số lẻ nên số trung vị của mẫu số là $Q_2=9$.\\
+	 Trung vị của của nửa số liệu bên trái là $Q_1=\dfrac{4+7}{2}=5{,}5$.\\
+	 Trung vị của nửa số liệu bên phải là $Q_3=\dfrac{12+20}{2}=16$.\\ Khoảng tứ phân vị của mẫu số liệu là $\Delta_Q=Q_3-Q_1=11{,}5$.
+	}
+\end{ex}
+%Câu 13...........................
+\begin{ex}%[0T4Y1-3]
+	Khẳng định nào sau đây là \textbf{sai}?
+	\choice
+	{\True $\cot x=\dfrac{\sin x}{\cos x}$}
+	{$\tan x\cdot\cot x=1$}
+	{$\sin^2x+\cos^2x=1$}
+	{$\cot^2x+1=\dfrac{1}{\sin^2x}$}
+	\loigiai{ Vì $\cot x=\dfrac{\cos x}{\sin x}$ nên $\cot x=\dfrac{\sin x}{\cos x}$ là khẳng định \textbf{sai}.
+		
+	}
+\end{ex}
+%Câu 14...........................
+\begin{ex}%[0T2Y2-3]
+	Cho hệ bất phương trình $\heva{&x+3y-2 \geq 0\\&2x+y+1 \leq 0}$. Trong các điểm sau, điểm nào thuộc miền nghiệm của hệ bất phương trình?
+	\choice
+	{$Q(-1;0)$}
+	{\True $N(-1;1)$}
+	{$M(0;1)$}
+	{$P(1;3)$}
+	\loigiai{ Thay lần lượt tọa độ các điểm vào hệ bất phương trình $\heva{&-1+3.1-2=0 \geq 0\\&2.-1+1+1=0 \leq 0}$ thỏa mãn. Vậy điểm $N(-1;1)$ thuộc miền nghiệm của hệ bất phương trình.
+		
+	}
+\end{ex}
+%Câu 15...........................
+\begin{ex}%[0T5Y1-3]
+	\immini{Cho lục giác đều $ABCDEF$ tâm $O$ (như hình vẽ). Véc-tơ $\overrightarrow{OB}$ ngược hướng với véc-tơ nào sau đây?
+		\choice
+		{\True $\overrightarrow{CD}$}
+		{$\overrightarrow{EB}$}
+		{$\overrightarrow{BC}$}
+		{$\overrightarrow{OC}$}}
+	{\begin{tikzpicture}[scale=0.5,font=\footnotesize,line join=round, line cap=round,>=stealth]
+			\def\r{3}
+			\path
+			(0,0) coordinate (O)
+			($(O)+(90:\r)$) coordinate (A)
+			($(O)+(30:\r)$) coordinate (B)
+			($(O)+(-30:\r)$) coordinate (C)
+			($(O)+(-90:\r)$) coordinate (D)
+			($(O)+(-150:\r)$) coordinate (E)
+			($(O)+(150:\r)$) coordinate (F)
+			;
+			
+			\draw
+			(A)--(B)--(C)--(D)--(E)--(F)--cycle
+			(A)--(D) (B)--(E)  (C)--(F)
+			;
+			
+			\foreach \x/\g in {O/60,A/90,B/45,C/-45,D/-90,E/-135,F/135}
+			\fill[black] (\x) circle (0.6pt)+(\g:.5)node{$\x$};
+		\end{tikzpicture}
+	}
+	\loigiai{ Dựa vào hình vẽ ta có véc-tơ $\overrightarrow{CD}$ ngược hướng với véc-tơ  $\overrightarrow{OB}$ .
+		
+	}
+\end{ex}
+%Câu 16...........................
+\begin{ex}%[0T1B3-4]
+	Cho các tập hợp $A=\{x \in \mathbb{R}\mid-5 \leq x<1\}$ và $B=\{x \in \mathbb{R}\mid-3<x \leq 3\}$. Tìm tập hợp $A\cup B$.
+	\choice
+	{\True $A\cup B=[-5;3]$}
+	{$A\cup B=(-3;1)$}
+	{$A\cup B=(-3;3]$}
+	{$A\cup B=[-5;1)$}
+	\loigiai{Biểu diễn các tập hợp $A$ và $B$ ta có\\ 
+		\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round,>=stealth]
+			\def\xmin{-6};\def\xmax{4};
+			%[-5;1)
+			\draw[->] (\xmin,0)--(\xmax,0);
+			\node (a0) at (-5,{0}){[};
+			\node (b0) at (1,0){)};
+			\draw (a0.-90)node[below]{$-5$} (b0.-90)node[below]{$1$};
+			\draw[draw=none, pattern=north west lines] ($(a0)+(90:0.1)$)--(\xmin,0.1)--(\xmin,-0.1)--($(a0)+(-90:0.1)$) ($(b0)+(90:0.1)$)--(\xmax,0.1)--(\xmax,-0.1)--($(b0)+(-90:0.1)$);
+			%(-3;3]
+			\draw[->] (\xmin,-1)--(\xmax,-1);
+			\node (a1) at (-3,{-1}){(};
+			\node (b1) at (3,{-1}){]};
+			\draw (a1.-90)node[below]{$-3$} (b1.-90)node[below]{$3$};
+			\draw[draw=none, pattern=north west lines] ($(a1)+(90:0.1)$)--(\xmin,{0.1-1})--(\xmin,{-0.1-1})--($(a1)+(-90:0.1)$) ($(b1)+(90:0.1)$)--(\xmax,{0.1-1})--(\xmax,{-0.1-1})--($(b1)+(-90:0.1)$);
+		\end{tikzpicture}.
+		\\Khi đó $A\cup B=[-5;3]$ .			
+	}
+\end{ex}
+%Câu 17...........................
+\begin{ex}%[0T4B3-1]
+	Tam giác $ABC$ có các cạnh $a, b, c$ thỏa mãn điều kiện $(a+b+c)(a+b-c)=2ab$. Tính số đo của góc $C$.
+	\choice
+	{$45^\circ$}
+	{\True $90^\circ$}
+	{$120^\circ$}
+	{$30^\circ$}
+	\loigiai{Từ giả thiết $(a+b+c)(a+b-c)=2ab\Rightarrow a^2+2ab+b^2-c^2=2ab\Rightarrow a^2+b^2=c^2$ .\\
+	Theo định lý Pytago, tam giác $ABC$ vuông tại $C$, suy ra góc {$\widehat C=90^\circ$}. 
+		
+	}
+\end{ex}
+%Câu 18...........................
+\begin{ex}%[0T4K3-1]
+	Do tránh núi, đường giao thông hiện tại phải đi vòng như hình dưới. Để rút ngắn khoảng cách người ta dự tính làm đường hầm xuyên núi, nối thẳng từ $A$ tới $E$. Hỏi độ dài đường mới sẽ giảm bao nhiêu kilômét so với đường cũ? (Làm tròn đến chữ số hàng đơn vị). Biết $AB=10$ km , $BD=8$ km, $DE=14$ km, góc $ABD=110^{\circ}$, góc $BDE=130^{\circ}$.
+	\definecolor{tumbleweed}{rgb}{0.87, 0.67, 0.53}%màu cát	
+	\definecolor{battleshipgrey}{rgb}{0.52, 0.52, 0.51}
+	\definecolor{darkgray}{rgb}{0.66, 0.66, 0.66}
+	\definecolor{dimgray}{rgb}{0.41, 0.41, 0.41}
+	\definecolor{forestgreen(web)}{rgb}{0.13, 0.55, 0.13}
+	\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+	\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+	\tikzset{
+		ex_markstyle/.style={},
+		ex_mark/.style  n args={1}{decoration={ markings, %
+				mark= at position 0.5 with
+				with{
+					\ifnum#1=1
+					\draw[ex_markstyle] (0pt,-2pt) -- (0pt,2pt);
+					\fi
+					\ifnum#1=2
+					\draw[ex_markstyle] (-1pt,-2pt) -- (-1pt,2pt);
+					\draw[ex_markstyle] (1pt,-2pt) -- (1pt,2pt);
+					\fi
+					\ifnum#1=3
+					\draw[ex_markstyle] (-2pt,-2pt) -- (-2pt,2pt);
+					\draw[ex_markstyle] (0pt,-2pt) -- (0pt,2pt);
+					\draw[ex_markstyle] (2pt,-2pt) -- (2pt,2pt);
+					\fi
+					\ifnum#1=4
+					\draw[ex_markstyle] (-1pt,-1pt) -- (1pt,1pt);
+					\draw[ex_markstyle] (-1pt,1pt) -- (1pt,-1pt);
+					\fi
+			} },
+			pic actions/.append code=\tikzset{postaction=decorate}},
+	}
+	
+	\begin{tikzpicture}[line join=round, line cap=round,scale=1,transform shape]
+		\clip (-7,-3) rectangle (8,3);
+		
+		\fill[tumbleweed] (-6,-2) rectangle (6,-.4);
+		\tikzset{nui/.pic={
+				\def\C{ %cỏ chân núi
+					(4.5,-1.3)%chân núi phải
+					..controls +(165:.8) and +(5:.5) ..  
+					(1,-.9)
+					..controls +(-175:.8) and +(5:1) ..  
+					(-2,-.8)
+					..controls +(-175:.8) and +(5:1) ..  
+					(-4.2,-1)
+					..controls +(5:1) and +(175:.5) ..  
+					(1,-1.2)
+					..controls +(-5:2) and +(155:.5) ..  
+					(5,-1.6)
+					..controls +(150:.2) and +(-25:.2) ..  
+					cycle
+					;}
+				\draw \C;
+				\fill[forestgreen(web)] \C;
+				\def\N{ 
+					(-4.2,-1)
+					..controls +(42:1) and +(-140:1) ..  (-2,.55)
+					..controls +(45:1) and +(-140:1) ..  (-.6,1.65)%đỉnh núi
+					..controls +(-25:.2) and +(140:.2) ..  (-.15,1.25)
+					..controls +(-25:.2) and +(140:.2) ..  (.4,.95)
+					..controls +(-25:.5) and +(140:.5) ..  (2,.2)
+					..controls +(-45:.5) and +(140:.5) ..  (4.5,-1.3)%chân núi phải
+					..controls +(165:.8) and +(5:.5) ..  
+					(1,-.9)
+					..controls +(-175:.8) and +(5:1) ..  
+					(-2,-.8)
+					..controls +(-175:.8) and +(5:1) ..  
+					(-4.2,-1)
+					;}
+				\draw \N;
+				\fill[darkgray] \N;
+				\def\T{ %Bóng núi phải
+					(-.6,1.65)%đỉnh núi
+					..controls +(-25:.2) and +(140:.2) ..  (-.15,1.25)
+					..controls +(-25:.2) and +(140:.2) ..  (.4,.95)
+					..controls +(-25:.5) and +(140:.5) ..  (2,.2)
+					..controls +(-45:.5) and +(140:.5) ..  (4.5,-1.3)%chân núi phải
+					..controls +(165:.8) and +(-25:.5) ..  (3,-1)
+					..controls +(165:.8) and +(-25:.5) ..  (1.5,-.2)
+					..controls +(165:.8) and +(-25:.5) ..  (.7,.2)
+					..controls +(165:.8) and +(-55:.5) ..  (-.6,1.65)
+					;}
+				\draw \T;
+				\fill[dimgray] \T;
+		}}
+		
+		%========================
+		\tikzset{cay/.pic={%Cây
+				\def\T{ 
+					(-1.73,-2.85)
+					..controls +(40:.03) and +(40:.01) ..  (-1.74,-2.7)
+					..controls +(140:.04) and +(60:.02) ..  (-1.78,-2.6)
+					..controls +(140:.04) and +(60:.02) ..  (-1.8,-2.55)
+					..controls +(100:.03) and +(70:.02) ..  (-1.82,-2.5)
+					..controls +(140:.04) and +(60:.02) ..  (-1.815,-2.4)
+					..controls +(140:.04) and +(60:.02) ..  (-1.818,-2.3)
+					..controls +(85:.03) and +(-30:.03) ..  (-1.8,-2.2)
+					..controls +(80:.04) and +(50:.02) ..  (-1.78,-2)
+					..controls +(60:.04) and +(120:.02) ..  (-1.76,-1.9)
+					..controls +(80:.03) and +(-100:.02) ..  (-1.74,-1.8)
+					..controls +(80:.01) and +(-100:.02) ..  (-1.72,-1.9)
+					..controls +(60:.02) and +(-120:.02) ..  (-1.7,-2)
+					..controls +(-80:.02) and +(110:.03) ..  (-1.66,-2.2)
+					..controls +(-100:.02) and +(60:.03) ..  (-1.64,-2.3)
+					..controls +(-30:.02) and +(70:.02) ..  (-1.6,-2.44)
+					..controls +(-100:.02) and +(70:.02) ..  (-1.63,-2.52)
+					..controls +(-60:.02) and +(70:.01) ..  (-1.66,-2.6)
+					..controls +(60:.01) and +(70:.02) ..  (-1.7,-2.7)
+					..controls +(-120:.02) and +(120:.03) ..  (-1.68,-2.85)
+					;}
+				\draw \T;
+				\fill[cadmiumgreen!90!] \T;
+		}}
+		
+		\path 
+		(2.2,-.2)pic[scale=.8]{nui}
+		
+		(-2,0)pic[scale=.6]{nui}
+		(-1.8,2.2)pic[scale=1.1]{cay}
+		(-1.95,2.2)pic[scale=1.1]{cay}
+		(-2,2.7)pic[scale=1.3]{cay}
+		%%
+		(4.8,2.2)pic[scale=1.1]{cay}
+		(5,2.3)pic[scale=1.1]{cay}
+		(6,2.7)pic[scale=1.3]{cay}
+		(7.2,2.1)pic[scale=1.3]{cay}
+		%%
+		(0,0)pic[scale=1]{nui}
+		(0,2.5)pic[scale=1.2]{cay}
+		(1,2.5)pic[scale=1.2]{cay}
+		(1.2,2.6)pic[scale=1.2]{cay}
+		(2,2.5)pic[scale=1.2]{cay}
+		(6.55,2)pic[scale=1.2]{cay}
+		;
+		\fill[white] (-7,-.4)--(-5,-.4)--(-3,-2)--(4.5,-2)--(6,-.4)--(8,-.4)--(8,-2)--(-7,-3)--cycle;
+		\draw[line width=1] (-7,-.4)--(-5,-.4)--(-3,-2)--(4.5,-2)--(6,-.4)--(8,-.4);
+		
+		\path (-5,-.4) coordinate (E)
+		(-3,-2) coordinate (D)
+		(4.5,-2) coordinate (B)
+		(6,-.4) coordinate (A)
+		;
+		\node at (A) [above right]{\large $A$};
+		\node at (E) [above left]{\large $E$};
+		\node at (B) [below]{\large $C$};
+		\node at (0.5,-2.2) [right]{\large $8$ km};
+		\node at (5.3,-1.2) [right]{\large $10$ km};
+		\node at (-5.7,-1.2) [right]{\large $14$ km};
+		\node at (D) [below]{\large $D$};
+		\draw pic["\large $130^\circ$", draw=black, angle eccentricity=2, ex_mark=1,angle radius=.3cm, color=black]
+		{angle=B--D--E};
+		\draw pic["\large $110^\circ$", draw=black, angle eccentricity=1.9, angle radius=.2cm, color=black]
+		{angle=A--B--D}; 
+	\end{tikzpicture}
+	\choice
+	{$\approx 22$ km}
+	{$\approx 24$ km}
+	{\True $\approx 13$ km}
+	{$\approx 12$ km}
+	\loigiai{
+		Áp dụng định lý Côsin trong tam giác $ADC$ ta có\\
+		$AD^2=AC^2+CD^2-2\cdot AC\cdot CD \cdot \cos \widehat{ACD} = 10^2+8^2-2\cdot 10\cdot 8 \cdot \cos \widehat{110^\circ} \approx 218 {,}72 $.\\
+		$\Rightarrow AD \approx 14{,}79$.\\
+		$\widehat{DEA}=180^\circ - \widehat {EDC}=180^\circ - 130^\circ = 50^\circ $ (Vì $AE$ song song $CD$ nên hai góc kề bù).\\
+		Áp dụng định lý Côsin trong tam giác $ADE$ ta có\\
+		$AD^2=AE^2+ED^2-2\cdot AE\cdot ED \cdot \cos \widehat{AED}$
+		$\Leftrightarrow 218{,}72 =AE^2 + 14^2 - 2 \cdot AE \cdot 14 \cdot \cos 50^\circ $.\\
+		Suy ra $AE \approx 19{,}18$.\\
+		Do đó độ dài đường mới sẽ giảm so với đường cũ là $14+8+10 - 19{,}18 \approx 12{,}82$ km $\approx 13$ km.
+		
+	}
+\end{ex}
+%Câu 19...........................
+\begin{ex}%[0T5B3-4]
+	Cho tam giác $ABC$, điểm $I$ là trung điểm của $AB$, $N$ là một điểm trên cạnh $AC$ sao cho $NA=\dfrac{1}{2} NC$. Gọi $M$ là trung điểm của $IN$, mệnh đề nào sau đây là đúng?
+	\choice
+	{$\overrightarrow{AM}=\dfrac{1}{2}\overrightarrow{CA}+\dfrac{1}{4}\overrightarrow{AB}$}
+	{\True $\overrightarrow{AM}=\dfrac{1}{6}\overrightarrow{AC}+\dfrac{1}{4}\overrightarrow{AB}$}
+	{$\overrightarrow{AM}=\dfrac{1}{6}\overrightarrow{CA}+\dfrac{1}{4}\overrightarrow{AB}$}
+	{$\overrightarrow{AM}=\dfrac{1}{6}\overrightarrow{AB}-\dfrac{1}{4}\overrightarrow{AC}$}
+	\loigiai{
+		\immini
+		{
+			$\overrightarrow{AM}=\dfrac{1}{2} \left( \overrightarrow{AI}+\overrightarrow{AN}\right)$ (Do $M$ là trung điểm $IN$)\\
+			$=\dfrac{1}{2} \left( \dfrac{1}{2} \overrightarrow{AB}+ \dfrac{1}{3}\overrightarrow{AC}\right)$
+			$ =\dfrac{1}{4} \overrightarrow{AB}+ \dfrac{1}{6}\overrightarrow{AC}$
+		}
+		{
+				\begin{tikzpicture}
+					\path 
+					(1,3) coordinate (A)
+					(4,0) coordinate (C)
+					(0,0) coordinate (B)
+					($(A)!0.5!(B)$) coordinate (I)
+					($(A)!0.33!(C)$) coordinate (N)
+					($(I)!0.5!(N)$) coordinate (M);
+					\draw (A)--(B)--(C)--(A)->(M);
+					\draw (I)--(N);
+					\foreach \x/\y in {A/145,B/180,C/0,I/180,M/-45,N/0}{\fill (\x) circle(1pt)node[shift={(\y:.35)}]{$\x$};}
+				\end{tikzpicture}
+
+		}
+	
+	
+}	
+\end{ex}
+%Câu 20...........................
+\begin{ex}%[0T5B4-2]
+	An chèo thuyền qua một dòng sông về hướng Đông với vận tốc $7{,}5 \mathrm{~km} / \mathrm{h}$. Dòng nước chảy về hướng Bắc với vận tốc $3{,}6 \mathrm{~km} / \mathrm{h}$. Tính gần đúng vận tốc của thuyền.
+	\choice
+	{\True $8{,}3\mathrm{~km} /h$}
+	{$10{,}4\mathrm{~km} /h$}
+	{$7{,}9\mathrm{~km} /h$}
+	{$5{,}2\mathrm{~km} /h$}
+	\loigiai{
+		Đặt $\overrightarrow{v_t}$ là vận tốc của thuyền, suy ra $\left|\overrightarrow{v_t}\right|$ $=7{,}5 \mathrm{~km}/h$.\\
+		Đặt $\overrightarrow{v_n}$ là vận tốc của dòng nước chảy, suy ra $\left|\overrightarrow{v_n}\right|$ $=3{,}6 \mathrm{~km}/h$.\\
+		Ta có $\overrightarrow{v}=\overrightarrow{v_t}+\overrightarrow{v_n}$,
+		do hướng chèo của thuyền là hướng Đông sẽ vuông góc với hướng của dòng nước chảy về hướng Bắc nên ta có
+		$v=\sqrt{v_t^2 + v_n^2}=\sqrt{7{,}5^2+3{,}6^2}\approx8{,}3\mathrm{~km}/h$ 
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+%\begin{center}
+%	\textbf{ĐÁP ÁN}
+%	\inputansbox{10}{ans/ans}	
+%\end{center}
+\begin{center}
+	\textbf{PHẦN 2 - TỰ LUẬN}
+\end{center}
+\begin{bt}%[0T3Y1-2]
+	Tìm tập xác định của các hàm số sau:
+	\begin{enumerate}
+		\item $y=\dfrac{3x}{1-x^2}$,
+		\item $y=\sqrt{3-x}+\dfrac{2}{x}$.
+	\end{enumerate}
+	\dapso{a) $\mathscr{D}=\mathbb{R}\setminus\{\pm 1\}$; b) $\mathscr{D}=(-\infty;3]\setminus \{0\}$}
+	\loigiai{
+		\begin{enumerate}
+			\item Hàm số xác định khi $1-x^2\neq 0\Leftrightarrow x\neq \pm 1$. \\
+			Vậy $\mathscr{D}=\mathbb{R}\setminus\{ -1; 1\}$.
+			\item Hàm số xác định khi $\heva{&3-x\geq 0\\& x\neq 0}\Leftrightarrow 0\neq x\leq 3$.\\
+			Vậy $\mathscr{D}=(-\infty;3]\setminus \{0\}$.
+		\end{enumerate}
+	}
+\end{bt}
+\begin{bt}%[0T4B1-3]
+	Chứng minh $\dfrac{1-2\cos^2x}{\sin x-\cos x}=\sin x+\cos x$.
+	\dapso{}
+	\loigiai{
+		Ta có 
+		\begin{eqnarray*}
+			& & \dfrac{1-2\cos^2x}{\sin x-\cos x}\\
+			&=&\dfrac{\sin^2x+\cos^2 x -2\cos^2x}{\sin x-\cos x}\\
+			&=&\dfrac{\sin^2 x-\cos^2 x}{\sin x-\cos x}\\
+			&=&\dfrac{(\sin x-\cos x)(\sin x+\cos x)}{\sin x-\cos x}\\
+			&=&\sin x+\cos x.
+		\end{eqnarray*}
+	}
+\end{bt}
+\begin{bt}%[0T5Y2-2]
+	Cho 5 điểm $A, B, C, D, E$. Chứng minh rằng $\overrightarrow{\mathrm{DE}}+\overrightarrow{\mathrm{AB}}+\overrightarrow{\mathrm{BC}}-\overrightarrow{\mathrm{DC}}=\overrightarrow{\mathrm{AE}}$.
+	\dapso{}
+	\loigiai{
+		Ta có $\overrightarrow{\mathrm{DE}}+\overrightarrow{\mathrm{AB}}+\overrightarrow{\mathrm{BC}}-\overrightarrow{\mathrm{DC}}=\overrightarrow{\mathrm{DE}}-\overrightarrow{\mathrm{DC}}+\overrightarrow{\mathrm{AC}}=\overrightarrow{\mathrm{AC}}+\overrightarrow{\mathrm{CE}}=\overrightarrow{\mathrm{AE}}$.
+	}
+\end{bt}
+\begin{bt}%[0T5B4-1]
+	Cho tam giác $ABC$ có $AB=12 \mathrm{~cm}, BC=13 \mathrm{~cm}, AC=18 \mathrm{~cm}$. Tính tích vô hướng $\overrightarrow{BA} \cdot\overrightarrow{CB}$.
+	\dapso{$\dfrac{11}{2}$}
+	\loigiai{
+		Áp dụng định lý Côsin trong tam giác $ABC$ có $\cos B= \dfrac{AB^2+BC^2-AC^2}{2AB\cdot BC}=-\dfrac{11}{312}$.\\
+		Ta có $\overrightarrow{BA} \cdot\overrightarrow{CB}=-\overrightarrow{BA} \cdot\overrightarrow{BC}=-BA\cdot BC\cdot \cos B=\dfrac{11}{2}$.
+	}
+\end{bt}
+\begin{bt}%[0T3K2-5]
+	Một cửa hàng buôn giày nhập một đôi với giá $60$ (nghìn đồng). Cửa hàng ước tính rằng nếu đôi giày được bán với giá $x$ (nghìn đồng) thì mỗi tháng khách hàng sẽ mua $(150-x)$ đôi. Hỏi cửa hàng bán một đôi giày với giá bao nhiêu thì thu được nhiều lãi nhất?
+	\dapso{$105$ (nghìn đồng)}
+	\loigiai{
+		Số tiền để nhập giày là $60(150-x)$ (nghìn đồng).\\
+		Số tiền mà khách mua là $x(150-x)$ (nghìn đồng).\\
+		Do đó, số tiền lãi là $x(150-x)-60(150-x)=-x^2+210x-9000$.\\
+		\begin{eqnarray*}
+			& =& -\left(x^2-210x+9000\right) \\
+			& =& -\left(x^2-210x+11025-2025\right) \\
+			& =& -\left(x^2-210x+11025\right)+2025 \\
+			& =& 2025-(x-105)^2\leq 2025.
+		\end{eqnarray*}
+		Dấu  \lq\lq $=$ \rq\rq  xảy ra khi $x=105$.\\
+		Vậy số tiền lãi lớn nhất là $2025$ (nghìn đồng) khi bán đôi giày với giá $105$ (nghìn đồng).
+	}
+\end{bt}

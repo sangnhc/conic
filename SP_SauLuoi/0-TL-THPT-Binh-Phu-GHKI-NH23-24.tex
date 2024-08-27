@@ -1,0 +1,177 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT BÌNH PHÚ}
+%Câu 1...........................
+\begin{bt}%[0D1N1-2]%[0D1N3-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24-VU Ngoc Hao]%[THPT Bình phú ]
+	\begin{enumerate} 
+		\item Cho mệnh đề: $\forall x \in \mathbb{R},(x-1)^2>0$. \\
+		Mệnh đề đã cho đúng hay sai? Vì sao? Viết mệnh đề phủ định của nó?
+		\item Cho các tập hợp \\
+		$A=\left\{x=2 k \,|\, k \in \mathbb{Z}, 0 \leq k \leq 3\right\} $;\\
+		$B=\left\{x \in \mathbb{Z} \,|\,  x^2+2x=0\right\}$; \\
+		$C=\{6;8\}$ và $D=\left[6;8\right)$.\\
+		Liệt kê các phần tử của $A$, $B$. Tìm $A \cap B$; $ A \backslash B$; $C \cap D$; $ C \cup D$.
+	\end{enumerate}
+	
+	\loigiai{
+		\begin{enumerate}
+			\item 
+			Mệnh đề đã cho sai vì $(x-1)^2 = 0$ khi $x=1$.\\ Mệnh đề phủ định của nó là: $\exists x \in \mathbb{R},(x-1)^2 \leq 0$.
+			\item 
+			$A=\left\{ 0; 2; 4; 6 \right\} $; $B=\left\{ -2; 0 \right\} $.\\
+			$A \cap B =\left\{ 0 \right\}$; $A \backslash B =\left\{ 2; 4; 6 \right\}$; 
+			$C \cap D=\left\{ 6 \right\}$;
+			$C \cup D=\left[6;8\right]$
+		\end{enumerate}	
+		
+	}
+\end{bt}
+
+%Câu 2...........................
+\begin{bt}%[0D2H1-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24-VU Ngoc Hao]%[THPT Bình phú ]
+	Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn $ x+y-2 \leq 0$ lên mặt phẳng tọa độ $Oxy$.
+	\loigiai{
+		\immini{
+			Vẽ đường thẳng $\Delta \colon x+y-2=0$ đi qua hai điểm $A(2;0)$ và $B(0;2)$.\\
+			Xét gốc tọa độ $O(0;0)$.\\
+			Ta thấy $O \notin \Delta $ và $0+0-1<0$.\\
+			Do đó miền nghiệm của bất phương trình là nửa mặt phẳng kể cả bờ $\Delta$, chứa gốc tọa độ $O$ (miền không gạch chéo trên hình bên).
+		}{\vspace{-0.5cm}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\draw[->] (-3.6,0)--(3.8,0) node [below]{$x$};
+				\draw[->] (0,-2)--(0,1.8) node [left]{$y$};
+				\node at (0,0) [below left=-3pt]{$O$};
+				\clip (-3.6,-2) rectangle (3.8,1.8);
+				\fill[pattern=north east lines,opacity=0.6] plot[domain=-3.6:3.8](\x,{-(\x)+1})--(3.8,1.8)--cycle;
+				\draw plot[domain=-3.6:3](\x,{-(\x)+1})node[shift={(153:15pt)}]{$\Delta$};
+				\draw[fill=black] (1,0)circle(1pt) +(65:8pt)node{$A$};
+				\draw[fill=black] (0,1)circle(1pt) +(15:8pt)node{$B$};
+				\node at (1,0)[shift={(-90:8pt)}]{$2$};
+				\node at (0,1)[shift={(185:8pt)}]{$2$};
+			\end{tikzpicture}
+		}	
+	}
+\end{bt}
+
+
+%Câu 3...........................
+\begin{bt}%[0D7V2-7]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- VU Ngoc Hao]%[THPT Bình phú ]
+	Một người thợ may có một máy may và một máy vắt sổ dùng để may áo veston và áo dài. Để may một áo veston thì máy may chạy trong 3 giờ và máy vắt sổ chạy trong 1 giờ, tiền lãi là 2 triệu đồng. Để may một áo dài thì máy may chạy trong 1 giờ và máy vắt sổ chạy trong 1 giờ, tiền lãi là 1 triệu đồng. Máy may chạy không quá 6 giờ/ngày, máy vắt sổ chạy không quá 4 giờ/ngày và một máy không thể may cả 2 loại áo. Hỏi trong một ngày, người thợ may đó nên sản xuất bao nhiêu cái áo mỗi loại để tiền lãi cao nhất?
+	\loigiai{
+		\immini{	Gọi $x$, $y$ lần lượt là số áo veston và số áo dài cần sản xuất ($ x,y\ge 0 $).\\
+			Số tiền lãi mỗi ngày: $ F(x;y) =2x+y $ (triệu đồng).\\
+			Số giờ làm việc mỗi ngày của máy may: $3x+y\le 6$.\\
+			Số giờ làm việc mỗi ngày của máy vắt sổ: $x+y\le 4$.\\
+			Ta có bài toán tìm giá trị lớn nhất của $F(x;y)$ biết $ \heva{&x\ge 0\\&y\ge 0\\&3x+y\le 6\\&x+y\le 4.} $\\
+			Biểu diễn miền nghiệm của hệ bất phương trình như hình bên.}{\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+				\tikzset{every node/.style={scale=0.9}}
+				\begin{scope}
+					\clip (-1,-1) rectangle (6,6);
+					\fill[pattern=north east lines] (0,-1)--(-1,-1)--(-1,6)--(0,6)--cycle;
+					\fill[pattern=north east lines] (-1,0)--(-1,-1)--(6,-1)--(6,0)--cycle;
+					\fill[pattern=north east lines] (-2,12)--(7,12)--(7,-15)--cycle;
+					\fill[pattern=north east lines] (-3,7)--(7,7)--(7,-3)--cycle;
+					\draw (0,6)--(2.33,-1) node [pos=0.45, above, sloped] {};
+					\draw (-2,6)--(5,-1) node [pos=0.45, above, sloped] {};
+				\end{scope}
+				
+				\draw[->] (-1,0)--(6,0) node[below]{$x$};
+				\draw[->] (0,-1)--(0,6) node[left]{$y$};
+				\draw (0,0) node[below left]{$O$};
+				\draw[fill=black] (2,0) circle (1pt) node[below left]{$ C $};
+				\draw[fill=black] (0,4) circle (1pt) node[shift={(-150:0.3)}]{$ A $};
+				\draw[fill=black] (1,3) circle (1pt) node[shift={(80:0.3 )}]{$ B $};
+				\draw[fill=black] (2,0) circle (1pt) node[shift={(60:0.3 )}]{$ 2 $};
+				\draw[fill=black] (0,4) circle (1pt) node[shift={(20:0.3)}]{$ 4 $};
+				%		\draw[fill=black] (1,3) circle (1pt) node[shift={(-120:0.3 )}]{$ B $};
+				\draw[dashed] (1,0) node[below]{$ 1 $} --(1,3)--(0,3)node[left]{$ 3 $};
+		\end{tikzpicture}}
+		\noindent Miền nghiệm của hệ bất phương trình là tứ giác $ OABC $ với $ O(0;0) $, $ A(0,4) $, $ B(1;3)  $, $ C(2,0) $.\\
+		Ta có $ F(0,0)=0 $, $ F(0,4) =4$, $ F(1,3) =5$, $ F(2,0)=4 $.\\
+		Do đó để sản xuất mỗi ngày đạt tiền lãi cao nhất, người thợ may nên sản xuất $ 1 $ áo veston và $ 3 $ áo dài.
+	}
+\end{bt}
+%Câu 4...........................
+\begin{bt}%[0D3B1-2]%[0D3B1-5]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Phan Trung Hiếu]%[THPT Bình Phú]
+\begin{enumerate}
+	\item Tìm tập xác định của hàm số $y=\sqrt{x}+\dfrac{1}{x^2-x}$.
+	\item Xét sự biến thiên của hàm số $y=f(x)=x^2+2$ trên khoảng $(0;+\infty)$.
+\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Điều kiện xác định
+	\begin{equation*}
+		\heva{&x\geq0\\&x^2-x\ne0}\Leftrightarrow\heva{&x\geq0\\&x\ne0\\&x\ne1.}
+	\end{equation*}
+	Tập xác định của hàm số là $\mathscr{D}=(0;+\infty)\setminus\{1\}$.
+	\item Với mọi $x_1,x_2$ thuộc $(0;+\infty)$ sao cho $x_1<x_2$, khi đó $x_1+x_2>0$ và $x_1-x_2<0$.\\
+	Mặt khác, ta có
+	\begin{equation*}
+		f\left(x_1\right)-f\left(x_2\right) = x_1^2-x_2^2 = (x_1+x_2)(x_1-x_2) < 0\Rightarrow f\left(x_1\right)<f\left(x_2\right).
+	\end{equation*}
+	Do đó, hàm số đồng biến trên $(0;+\infty)$.
+\end{enumerate}
+}
+\end{bt}
+%Câu 5...........................
+\begin{bt}%[0H1B1-2]%[0H1B2-1]%[0H2B1-5]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Phan Trung Hiếu]%[THPT Bình Phú]
+	\begin{enumerate}
+		\item Cho $\sin\alpha=\dfrac{1}{3},\left(90^\circ<0<120^\circ\right)$. Tính $\cos\alpha$, $\tan\alpha$.
+		\item Cho tam giác $ABC$ có các cạnh $AB=4\sqrt{2}$, $BC=6$ và $AC=2$. Tính số đo góc $A$ và góc $B$ của tam giác $ABC$.
+		\item Cho tam giác $ABC$ cân tại $A$ có $AH$ là đường cao. Biết $AB=5$ và $AH=4$. Tính độ dài véctơ $\vv{u}=\vv{BA}+\vv{AC}$.
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item Vì $90^\circ<0<120^\circ$ nên $\cos\alpha<0$ và $\tan\alpha<0$. Ta có
+		\begin{itemize}
+			\item $\sin^2\alpha+\cos^2\alpha=1\Rightarrow\cos\alpha=-\sqrt{1-\sin^2\alpha}=-\sqrt{1-\left(\dfrac{1}{3}\right)^2}=-\dfrac{2\sqrt{2}}{3}$.
+			\item $\tan\alpha=\dfrac{\sin\alpha}{\cos\alpha}=-\dfrac{1}{3}\cdot\dfrac{3}{2\sqrt{2}} = -\dfrac{\sqrt{2}}{4}$.
+		\end{itemize}
+		\item Áp dụng hệ quả định lí Cosin trong tam giác $ABC$, ta có
+		\begin{equation*}
+			\cos\widehat{A}=\dfrac{AB^2+AC^2-BC^2}{2\cdot AB\cdot AC}=\dfrac{32+4-36}{2\cdot2\sqrt{2}\cdot2} = 0\Rightarrow\widehat{A}=90^\circ.
+		\end{equation*}
+		Do đó, tam giác $ABC$ vuông tại A.\\
+		Mặt khác,
+		\begin{equation*}
+			\sin\widehat{B}=\dfrac{AC}{BC}=\dfrac{1}{3}\Rightarrow\widehat{B}\approx19{,}47^\circ.
+		\end{equation*}
+		\item \immini{
+		Ta có
+		\begin{eqnarray*}
+			\left|\vv{u}\right|&=&\left|\vv{BA}+\vv{AC}\right|\\
+			&=&\left|\vv{BC}\right|\\
+			&=& BC\\
+			&=&2BH\\
+			&=& 2\sqrt{AB^2-AH^2}\\
+			&=&2\sqrt{5^2-4^2}\\
+			&=&6.
+		\end{eqnarray*}
+		}{
+			\begin{tikzpicture}[font=\footnotesize, thick,scale=1]
+				\path
+				(0,0) coordinate (B)
+				(4,0) coordinate (C)
+				(2,0) coordinate (H)
+				(2,4) coordinate (A)
+				;
+				\draw (A)--(B)--(C)--cycle (A)--(H);
+				\foreach \x/\g in {A/90,B/180,C/0,H/-90}
+			\fill[black] 	(\x) circle (1pt)
+			($(\g:3mm)+(\x)$) node {$\x$};
+			\end{tikzpicture}
+		}
+	\end{enumerate}
+	}
+\end{bt}
+%Câu 6...........................
+\begin{bt}%[0H1B3-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Phan Trung Hiếu]%[THPT Bình Phú]
+	Hằng ngày, một người thầy giáo chạy xe máy từ nhà đến trường để dạy học. Quãng đường đi từ nhà thầy tới trường phải qua một con dốc với góc ở đỉnh dốc là $120^\circ$. Biết rằng từ đoạn đường từ nhà thầy đến đỉnh dốc dài $4~\text{km}$, từ đỉnh dốc tới trường dài $20~\text{km}$. Giả sử năm 2024, người ra mở rộng đường và san phẳng con dốc đó thì người thầy chạy xe máy từ nhà đến trường trên đường mới, rút ngắn được khoảng bao nhiêu mét (làm tròn đến hàng đơn vị) so với quãng đường có con dốc như trước đây?
+	\loigiai{
+	Quãng đường người thầy giáo chạy xe máy từ nhà đến trường để dạy học trên đường mới là
+	\begin{equation*}
+		4^2+20^2-2\cdot4\cdot20\cdot\cos(120^\circ) \approx21~(\text{km}).
+	\end{equation*}
+	Vậy quãng đường được rút ngắn $3~\text{km}=3000~\text{m}$.
+	}
+\end{bt}
+

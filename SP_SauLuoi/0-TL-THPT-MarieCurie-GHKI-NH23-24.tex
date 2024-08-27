@@ -1,0 +1,209 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT MARIE CURIE}
+
+%Câu 1...........................
+\begin{bt}%[0D1H3-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Phạm Văn Long]%[THPT MARIE CURIE]
+	Gọi $M$ là tập hợp các số tự nhiên chẵn và không vượt quá $10$, $N=\{-2 ;-1 ; 0 ; 1 ; 2\}$.
+	\begin{enumerate}
+		\item Viết tập hợp $M$ dưới dạng liệt kê các phần tử.
+		\item Xác định các tập hợp sau $M \cap N ; M \backslash N$.
+		\item Tìm tất cả các tập hợp $X$ thỏa mãn $X \subset M$ và $X \subset N$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item $M=\{0;2;4;6;8;10\}$.
+			\item $M \cap N=\{0;2\}$.\\
+			$M \backslash N=\{4;6;8;10\}$.
+			\item Ta có $X \subset M$ và $X \subset N\Rightarrow X\subset (M \cap N)$.\\
+			Vậy $X\in \{\varnothing;\{0\};\{2\};\{0;2\}\}$.
+	\end{enumerate}}
+\end{bt}
+\begin{bt}%[0D1H3-4]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Phạm Văn Long]%[THPT MARIE CURIE]
+	Cho tập hợp $A=(2 ;+\infty)$ và tập hợp $B=[-5 ; 4)$. Xác định các tập hợp sau:
+	\begin{listEX}[4]
+		\item $A \cap B$.
+		\item $A \cup B$.
+		\item $A \backslash B$.
+		\item $C_{\mathbb{R}}(A \cap B)$.
+	\end{listEX}
+	\loigiai{\begin{enumerate}
+			\item $A \cap B=(2;4)$.
+			\item $A \cup B=[-5;+\infty)$.
+			\item $A \backslash B=[4;+\infty)$.
+			\item $C_{\mathbb{R}}(A \cap B)=(-\infty;2]\cup [4;+\infty)$.
+	\end{enumerate}}
+\end{bt}
+\begin{bt}%[0D1V3-5]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Phạm Văn Long]%[THPT MARIE CURIE]
+	\begin{enumerate}
+		\item Tập hợp $A$ có số phần tử là $n(A)$; tập hợp $B$ có số phần tử là $n(B)$; tập hợp $A \cap B$ có số phần tử là $n(A \cap B)$; tập hợp $A \cup B$ có số phần tử là $n(A \cup B)$. Viết công thức tính số phần tử của tập hợp $(A \cap B)$.
+		\item Để phục vụ cho một hội nghị quốc tế, ban tổ chức huy động 35 người phiên dịch tiếng Anh, 30 người phiên dịch tiếng Pháp, trong đó có 16 người phiên dịch được cả hai thứ tiếng Anh và Pháp. Hỏi ban tổ chức đã huy động bao nhiêu người phiên dịch cho hội nghị và trong đó có bao nhiêu người chỉ phiên dịch được tiếng Anh?
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item $n(A \cap B)=n(A)+n(B)-n(A \cup B)$.
+			\item Số người phiên dịch cho hội nghị là: $35+30-16=49$.\\
+			Số người chỉ phiên dịch được tiếng Anh là: $35-16=19$.
+	\end{enumerate}}
+\end{bt}
+
+%Câu 4...........................
+\begin{bt}%[0H5H1-5]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24 - Quan Ón]%[THPT Marie Curie - Tp HCM]
+	\immini{
+		Cho hình thoi $ABCD$ có $AB = 3$ và $\widehat{BAD} = 120^\circ$ như hình bên. Tính độ dài vectơ $\overrightarrow{u} = \overrightarrow{AB} + \overrightarrow{AD}$.
+	}{
+		\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=1]
+			\path 
+			(1.5,0.89) coordinate (A)
+			(0,0) coordinate (B)
+			(1.5,-0.89) coordinate (C)
+			($(A)-(B)+(C)$) coordinate (D);
+			\draw (A)--(B)--(C)--(D)--(A);
+			\foreach \l/\g in {A/90,B/180,C/-90,D/0}
+			\draw[fill=black] (\l) circle (1pt) +(\g:.3) node{$\l$};
+		\end{tikzpicture}
+	}
+	\loigiai{
+		Vì $ABCD$ là hình thoi nên $ABCD$ cũng là hình bình hành, do đó $\widehat{BAD} = \widehat{BCD}$ và $\widehat{ABC} = \widehat{ADC}$ suy ra
+		\begin{eqnarray*}
+			& &\widehat{BAD} + \widehat{BCD} + \widehat{ABC} + \widehat{ADC} = 360^\circ\\
+			&\Rightarrow& 2\widehat{BAD} + 2\widehat{ABC} = 360^\circ\\
+			&\Rightarrow& 2\cdot 120^\circ + 2\widehat{ABC} = 360^\circ\\
+			&\Rightarrow& 2\widehat{ABC} = 120^\circ\\
+			&\Rightarrow& \widehat{ABC} = 60^\circ.
+		\end{eqnarray*}
+		Mặt khác, ta có $ABCD$ là hình thoi nên $BC = AB = 3$.\\
+		Xét $\triangle ABC$, ta có $BC = AB = 3$ nên $\triangle ABC$ cân tại $A$ mà $\widehat{ABC} = 60^\circ$ suy ra $\triangle ABC$ đều.\\
+		Do đó $AC = 3$.\\
+		Vì $\overrightarrow{u} = \overrightarrow{AB} + \overrightarrow{AD} = \overrightarrow{AC}$ nên $\left| \overrightarrow{u}\right| = \left| \overrightarrow{AC}\right| = AC = 3$.
+	}
+\end{bt}
+
+%Câu 5...........................
+\begin{bt}%[0H5H3-2]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24 - Quan Ón]%[THPT Marie Curie - Tp HCM]
+	Cho tứ giác $ABCD$. Gọi $M$ là điểm nằm trên cạnh $BC$ và thỏa mãn $BC = 3CM$. Chứng minh rằng
+	\begin{listEX}[2]
+		\item $\overrightarrow{AB} + \overrightarrow{CD} = \overrightarrow{AD} + \overrightarrow{CB}$.
+		\item $3\overrightarrow{AM} = \overrightarrow{AB} + 2\overrightarrow{AC}$.
+	\end{listEX}
+	\loigiai{
+		\begin{enumerate}
+			\item Ta có 
+			\begin{eqnarray*}
+				\overrightarrow{AB} + \overrightarrow{CD} &=& \overrightarrow{AD} + \overrightarrow{DB} + \overrightarrow{CB} + \overrightarrow{BD}\\
+				&=& \overrightarrow{AD} + \overrightarrow{CB} + \overrightarrow{DB} + \overrightarrow{BD}\\
+				&=& \overrightarrow{AD} + \overrightarrow{CB} + \overrightarrow{0}\\
+				&=& \overrightarrow{AD} + \overrightarrow{CB}.
+			\end{eqnarray*}
+			Vậy $\overrightarrow{AB} + \overrightarrow{CD} = \overrightarrow{AD} + \overrightarrow{CB}$.
+			\item Vì $M$ là điểm nằm trên cạnh $BC$ và thỏa mãn $BC = 3CM$ nên $\overrightarrow{BC} = -3\overrightarrow{CM}$.\\
+			Ta có
+			\begin{eqnarray*}
+				3\overrightarrow{AM} &=& 3\left( \overrightarrow{AC} + \overrightarrow{CM} \right)\\
+				&=& 3\overrightarrow{AC} + 3\overrightarrow{CM}\\
+				&=& 2\overrightarrow{AC} + \overrightarrow{AC} + 3\overrightarrow{CM}\\
+				&=& 2\overrightarrow{AC} + \overrightarrow{AB} + \overrightarrow{BC} + 3\overrightarrow{CM}\\
+				&=& 2\overrightarrow{AC} + \overrightarrow{AB} + \left(-3\overrightarrow{CM}\right) + 3\overrightarrow{CM}\\
+				&=& \overrightarrow{AB} + 2\overrightarrow{AC}.
+			\end{eqnarray*}
+			Vậy $3\overrightarrow{AM} = \overrightarrow{AB} + 2\overrightarrow{AC}$.
+		\end{enumerate}
+	}
+\end{bt}
+%Câu 6...........................
+\begin{bt}%[0H5H4-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Tổng Nguyễn]%[THPT Marie Curie- Tp HCM]
+	Cho tam giác đều $ABC$ có $AB=2$, gọi $M$ là trung điểm của $AC$.
+	\begin{listEX}[2]
+		\item  Tính $\overrightarrow{AC}\cdot \overrightarrow{BM}$;
+		\item  Tính $\overrightarrow{AB}\cdot \overrightarrow{BC}$.
+	\end{listEX}
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[scale=0.7, font=\footnotesize,line join=round, line cap=round, >=stealth]
+				\def\canh{4}
+				\coordinate (B) at (0,0);
+				\coordinate (C) at (\canh,0);
+				\coordinate (A) at ($(B) + (60:\canh)$);
+				\coordinate (M) at ($(A)!0.5!(C)$);
+				\draw(A)--(B)--(C)--cycle;
+				\draw (B)--(M);
+				\foreach \i/\g in {M/30, A/90,B/-90,C/-90}{\draw[fill=black](\i) circle (1.5pt) ($(\i)+(\g:4mm)$) node[scale=1]{$\i$};}
+			\end{tikzpicture}
+		\end{center}	
+		\begin{listEX}[1]
+			\item  Tính $\overrightarrow{AC}\cdot \overrightarrow{BM}$.\\
+			Ta có $AC \perp BM $ nên $\overrightarrow{AC}\cdot \overrightarrow{BM}=0$.
+			\item  Tính $\overrightarrow{AB}\cdot \overrightarrow{BC}$.\\
+			Ta có
+			\begin{eqnarray*}
+				\overrightarrow{AB}\cdot \overrightarrow{BC}&=&(- \overrightarrow{BA})\cdot \overrightarrow{BC}=(-1)\cdot \overrightarrow{BA}\cdot \overrightarrow{BC}=(-1)\cdot  \left|\overrightarrow{BA}\right|\cdot \left|\overrightarrow{BC}\right|\cdot  \cos 60^\circ\\
+				&=&(-1)\cdot 2\cdot 2 \cdot \dfrac{1}{2}=-2.
+			\end{eqnarray*} 
+			
+		\end{listEX}
+	}
+\end{bt}
+
+\begin{bt}%[0D2C2-3]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Tổng Nguyễn]%[THPT Marie Curie- Tp HCM]
+	Một xưởng cơ khí có hai công nhân Tuấn và Hoàng. Xưởng sản xuất loại sản phẩm I và II. Mỗi sản phẩm I bán lãi $600$ nghìn đồng, mỗi sản phẩm II bán lãi $800$ nghìn đồng. Để sản xuất được một sản phẩm I thì Tuấn phải làm việc trong $3$ giờ, Hoàng phải làm việc trong $2$ giờ. Để sản xuất được một sản phẩm II thì Tuấn phải làm việc trong $2$ giờ, Hoàng phải làm việc trong $4$ giờ. Một người không thể làm được đồng thời hai sản phẩm. Biết rằng trong một tháng Tuấn không thể làm việc quá $180$ giờ và Hoàng không thể làm việc quá $200$ giờ. Gọi số sản phẩm I và II lần lượt là $x$ và $y$.
+	\begin{listEX}
+		\item Thiết lập điều kiện cho $x$.
+		\item Thiết lập điều kiện cho $y$.
+		\item Thiết lập điều kiện về số giờ làm việc của Tuấn khi sản xuất sản phẩm I và II.
+		\item Thiết lập điều kiện về số giờ làm việc của Hoàng khi sản xuất sản phẩm I và II.
+		\item Biểu diễn miền nghiệm của hệ bất phương trình thỏa các điều kiện trên. Kết luận miền nghiệm của hệ bất phương trình này.
+		\item Tìm số tiền lãi lớn nhất của xưởng trong một tháng.
+	\end{listEX}
+	\loigiai{ 
+		\begin{listEX}
+			\item Thiết lập điều kiện cho $x$ là $x\geq 0$.
+			\item Thiết lập điều kiện cho $y$ là $y \geq 0$.
+			\item Thiết lập điều kiện về số giờ làm việc của Tuấn khi sản xuất sản phẩm I và II.\\
+			Số giờ làm việc của Tuấn khi sản xuất $x$ sản phẩm I là  $3x$.\\
+			Số giờ làm việc của Tuấn khi sản xuất $y$ sản phẩm II là  $2y$.\\
+			Trong một tháng Tuấn không thể làm việc quá $180$ giờ nên
+			$3x+2y \leq 180$.
+			\item Thiết lập điều kiện về số giờ làm việc của Hoàng khi sản xuất sản phẩm I và II.\\
+			Số giờ làm việc của Hoàng khi sản xuất $x$ sản phẩm I là  $2x$.\\
+			Số giờ làm việc của Hoàng khi sản xuất $y$ sản phẩm II là  $4y$.\\
+			Trong một tháng Hoàng không thể làm việc quá $200$ giờ nên
+			$2x+4y \leq 200$.
+			\item Biểu diễn miền nghiệm của hệ bất phương trình thỏa các điều kiện trên. Kết luận miền nghiệm của hệ bất phương trình này.\\
+			Từ các điều kiện trên ta có hệ bất phương trình 
+			\[\heva{&x\geq 0\\&y\geq 0\\&3x+2y \leq 180\\&2x+4y \leq 200.}\]
+			Biểu diễn miền nghiệm của hệ bất phương trình trên ta được miền nghiệm là tứ giác $OABC$ (phần không bị gạch chéo như hình vẽ).
+			\begin{center}
+				\begin{tikzpicture}[scale=0.7, font=\footnotesize, line join=round, line cap=round, >=stealth]
+					\draw[->] (-2,0)--(12,0) node [below]{$x$};
+					\draw[->] (0,-2)--(0,12) node [right]{$y$};
+					\coordinate [label=below left:$60$] (60) at (6,0);
+					\coordinate [label=left:$90$] (90) at (0,9);
+					\coordinate [label=above left:$O$] (O) at (0,0);
+					\coordinate [label=above right:$100$] (100) at (10,0);
+					\coordinate [label= below:$40$] (40) at (4,0);
+					\coordinate [label= left:$30$] (30) at (0,3);
+					\coordinate [label=above right:$50$] (50) at (0,5);
+					\clip (-2,-2) rectangle (12,12);
+					\fill[pattern=north west lines,opacity=0.6](-2,-2)--(-2,13)--(0,12)--(0,-2);
+					\fill[pattern=north west lines,opacity=0.6](-2,-2)--(-2,0)--(12,0)--(12,-2);
+					\fill[pattern=north west lines,opacity=0.6] plot[domain=-2:12](\x,{5-0.5*(\x)})--(-2,12)--cycle;
+					\fill[pattern=north west lines,opacity=0.6] plot[domain=-2:12](\x,{-3/2*(\x)+9})--(12,12)--cycle;
+					\draw plot[domain=-2:12](\x,{-3/2*(\x)+9});	
+					\draw [dashed](4,0)--(4,3)--(0,3);	
+					\draw plot[domain=-2:12](\x,{5-0.5*(\x)});	
+					\coordinate [label=below left:$A$] (A) at (0,5);
+					\coordinate [label=above right:$C$] (C) at (6,0);
+					\coordinate [label=above right:$B$] (B) at (4,3);
+					\foreach \diem in {30,40,100,90,60,A,C,B, O} \fill (\diem) circle(1pt);
+				\end{tikzpicture}
+			\end{center}
+			\item Tìm số tiền lãi lớn nhất của xưởng trong một tháng.\\
+			Số tiền lãi của xưởng trong một tháng $F=600\, 000x+800\, 000y$.\\
+			Tại $O(0;0)$ ta có $F=600\,000\cdot 0+800\,000\cdot 0=0$.\\
+			Tại $A(0;50)$ ta có $F=600\,000\cdot 0+800\,000\cdot 50=40\,000\,000$.\\
+			Tại $B(40;30)$ ta có $F=600\,000\cdot 40+800\,000\cdot 30=48\,000\,000$.\\
+			Tại $C(60;0)$ ta có $F=600\,000\cdot 60+800\,000\cdot 0=36\,000\,000$.\\
+			Vậy số tiền lãi lớn nhất của xưởng trong một tháng là $48\,000\,000$ đồng tại $B(40;30)$.\\
+			Vậy để số tiền lãi lớn nhất trong một tháng, xưởng cần  sản xuất $40$ sản phẩm I và $30$ sản phẩm II.
+		\end{listEX}
+	}
+\end{bt}

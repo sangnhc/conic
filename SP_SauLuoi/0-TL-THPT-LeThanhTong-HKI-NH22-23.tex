@@ -1,0 +1,243 @@
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Lê Thánh Tông}
+
+
+%==Câu 1==	
+\begin{bt}%[0T1B3-5]%[0D1B3-1]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Cho $ A=\{0;2;4;6;8\} $, $ B=\{0;3;6;9\} $, $ E=\{0;1;2;3;4;5;6;8;9\} $. Xác định các tập hợp $ A\cap B $, $ A\cup B $, $ A\setminus B $, $ C_EB $.
+	\loigiai{
+		Ta có 
+		\begin{itemize}
+			\item $ A\cap B =\{0;6\}$.
+			\item $ A\cup B =\{0;2;3;4;6;8;9\}$.
+			\item $ A\setminus B =\{2;4;8\}$.
+			\item $ C_EB =E\setminus B=\{1;2;4;5;8\}$.
+		\end{itemize}
+	}
+\end{bt}
+%==Câu 2==	
+\begin{bt}%[0T2Y2-1]%[0D4Y4-1]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Cho bất phương trình bậc nhất hai ẩn $ 2x-3y+5\leq 0 $	và $ x+2y-3\geq 0 $. Cặp số nào sau đây thỏa mãn đồng thời đồng thời cả hai bất phương trình đã cho? Vì sao?
+	\begin{listEX}[2]
+		\item $ (1;3) $.
+		\item $ (-2;2) $.
+	\end{listEX}
+	\loigiai{
+		\begin{enumerate}
+			\item Xét cặp số $ (1;3) $. Ta có $ 2\cdot 1-3\cdot 3+5\leq 0 \Leftrightarrow -2 \leq 0$ (đúng)	và $ 1+2\cdot 3-3\geq 0 \Leftrightarrow 4 \geq 0$ (đúng). 
+			\item Xét cặp số $ (-2;2) $. Ta có $ 2\cdot (-2)-3\cdot 2+5\leq 0 \Leftrightarrow -5 \leq 0$ (đúng) và $ -2+2\cdot 2-3\geq 0 \Leftrightarrow -1 \geq 0$ (sai). 
+		\end{enumerate}	
+		Vậy cặp số $ (1;3) $ thỏa mãn đồng thời đồng thời cả hai bất phương trình đã cho.
+	}
+\end{bt}
+%==Câu 3==	
+\begin{bt}%[0T5B4-1]%[0H2B2-1]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Cho hình bình hành $ ABCD $	có $ \widehat{ABC}=120^\circ $ và $ AB=2 $; $ AD=4 $. Tính tích vô hướng $ \overrightarrow{AB}\cdot \overrightarrow{AD}$.
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[declare function={r=3;}]
+				\path (0,0) coordinate (A)
+				(2,0) coordinate (M)
+				($(A)!1!60:(M)$) coordinate (B)
+				($ (M)!-1!(A) $)coordinate (D)
+				($ (B)+(D)-(A) $)coordinate (C)
+				;
+				\path (A)--(B)--([turn]90:0.35) coordinate (xt)
+				($(A)-(B)+(xt)$) coordinate (yt);
+				\draw[dash pattern=on 2pt off 2pt] (A)--(yt) (B)--(xt);
+				\draw[>=stealth,|<->|] (xt)--(yt) node[fill=white,inner sep=0pt,font=\scriptsize,midway,sloped]{$\,\,2\ \mathrm{}$};
+				\path (A)--(D)--([turn]-90:0.35) coordinate (xt)
+				($(A)-(D)+(xt)$) coordinate (yt);
+				\draw[dash pattern=on 2pt off 2pt] (A)--(yt) (D)--(xt);
+				\draw[>=stealth,|<->|] (xt)--(yt) node[fill=white,inner sep=0pt,font=\scriptsize,midway,sloped]{$\,\,4\ \mathrm{}$};
+				\path pic["\scriptsize$120^\circ$", angle eccentricity=2,draw,angle radius=7pt, double]{angle= A--B--C};
+				\draw (A)--(B)--(C)--(D)--cycle ;
+				\foreach \t/\g in {A/-135,B/90,D/-45,C/45}{
+					\draw[fill=white] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+				}	
+			\end{tikzpicture}
+		\end{center}
+		Ta có $ \widehat{ABC}=120^\circ \Rightarrow \widehat{BAC}=60^\circ $.\\
+		$ \overrightarrow{AB}\cdot \overrightarrow{AD}=\left\vert \overrightarrow{AB}\right\vert\cdot \left\vert\overrightarrow{AD}\right\vert\cdot \cos \left( \overrightarrow{AB}, \overrightarrow{AD}\right)=2\cdot 4\cdot \cos 60^\circ=4$.
+	}
+\end{bt}
+
+%==Câu 4==	
+\begin{bt}%[0T5B3-2]%[0H1B3-2]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Gọi $ I $ là trung điểm đoạn thẳng $ AB $ cho trước và $ O $ là một điểm tùy ý. Chứng minh rằng $ \overrightarrow{OA}+\overrightarrow{OB}=2\overrightarrow{OI} $.
+	\loigiai{
+		Ta có 	
+		\allowdisplaybreaks
+		\begin{eqnarray*}
+			\overrightarrow{OA}+\overrightarrow{OB}&=& \overrightarrow{OI}+\overrightarrow{IA}+ \overrightarrow{OI}+\overrightarrow{IB}\\
+			&=& 2\overrightarrow{OI}+\left(\overrightarrow{IA}+ \overrightarrow{IB}\right)\\
+			&=&2\overrightarrow{OI}\,(\text{vì}\,\overrightarrow{IA}+\overrightarrow{IB}=\overrightarrow{0}\,\text{do}\,I\,\text{là trung điểm đoạn thẳng}\,AB).
+		\end{eqnarray*}
+	}
+\end{bt}
+
+%==Câu 5==	
+\begin{bt}%[0T6B4-2]%[0D5B3-1]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Điểm kiểm ta thường xuyên môn Toán của học sinh tổ $ 1 $ trong lớp $ 10A $ được thống kê lại ở bảng sau
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Điểm  &$5 $ &$6$ &$ 7 $ &$8 $ &$10 $\\
+			\hline
+			Số học sinh & $1$ & $ 4 $& $ 3 $ & $ 6$ & $ 1 $ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	Hãy tìm số trung vị và số trung bình của mẫu số liệu trên.
+	\loigiai{
+		Sắp xếp dãy số điểm của $ 15 $ học sinh theo thứ tự không giảm $$ 5	~ 6 ~ 6~ 6~ 6~7~7~7~8~ \ldots ~ 8~ 10.$$
+		Suy ra trung vị là $ M_e=7 $.\\
+		Số trung bình $ \overline{x}=\dfrac{5\cdot 1+6\cdot 4+7\cdot 3+8\cdot 6+10\cdot 1}{15} $
+	}
+\end{bt}
+
+%==Câu 6==	
+\begin{bt}%[0T3K1-2]%[0D2K1-2]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	\hfill
+	\begin{enumerate}
+		\item Tìm tập xác định của hàm số $ y=f(x)=x^2+\dfrac{\sqrt{2}}{x^2-1} $.
+		\item Tìm các giá trị của tham số $ m $ để tập xác định của hàm số $ y=\sqrt{x-1}+\dfrac{1}{\sqrt{m-x}} $ chứa đúng $ 5 $ số nguyên.
+	\end{enumerate}	
+	\loigiai{
+		\begin{enumerate}
+			\item Điều kiện $ x^2-1\neq 0\Leftrightarrow \heva{&x\neq 1\\&x\neq -1.} $\\
+			Tập xác định của hàm số là $ \mathscr{D}=\mathbb{R}\setminus\{-1;1\} $.
+			\item Điều kiện $ \heva{&x-1\geq 1\\&m-x>0}\Leftrightarrow\heva{&x\geq 1\\&x<m}\Leftrightarrow 1\leq x<m $.\\
+			Tập xác định của hàm số là $ \mathscr{D}=[1;m)$.\\
+			Tập xác định của hàm số  chứa đúng $ 5 $ số nguyên ta có $ \{1;2;3;4;5\}\subset  \mathscr{D}=[1;m)\Leftrightarrow m=6$.
+		\end{enumerate}		
+	}
+\end{bt}
+
+%==Câu 7==	
+\begin{bt}%[0T3B2-4]%[0D2B3-1]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Cho parabol $ (P)\colon y=f(x)=x^2-2x+m $.
+	\begin{enumerate}
+		\item Chỉ ra đỉnh và các khoảng đồng biến, nghịch biến của parabol $ (P) $.
+		\item Tìm $ m $ để parabol $ (P) $ cắt trục hoành tại hai điểm phân biệt có hoành độ $ x_1 $, $ x_2 $ thỏa $ x_1^2+x_2^2=10 $.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Tọa độ đỉnh \\
+			$x_S=-\dfrac{b}{2a}=-\dfrac{-2}{2}=1  $;\\
+			$ y_S=m-1 $.\\
+			Do $ a=1>0 $ nên ta có bảng biến thiên
+			\begin{center}
+				\begin{tikzpicture}
+					\tkzTabInit[espcl=2.5,lgt=1.5,nocadre=false]
+					{$x$/1,$f(x)$/2.1}
+					{$-\infty$,$1$,$+\infty$}
+					\tkzTabVar{+/$+\infty$,-/$m-1$,+/$+\infty$}
+				\end{tikzpicture}
+			\end{center}
+			Vậy hàm số đồng biến trên $ (1;+\infty) $; hàm số nghịch biến trên $ (-\infty;1) $.
+			\item Theo bảng biến thiên, hàm số cắt trục hoành tại hai điểm phân biệt ta phải có\\ $ m-1<0\Leftrightarrow m<1 $.\\
+			Phương trình hoành độ giao điểm của $ (P) $ và $ Ox $ là $ x^2-2x+m=0 $.\\
+			Theo định lí Vi-ét, ta có $ \heva{&S=x_1+x_2=2\\&P=x_1x_2=m.} $\\
+			Ta có $ x_1^2+x_2^2=10 \Leftrightarrow S^2-2P=10\Leftrightarrow 4-2m=10\Leftrightarrow m=-3$ (thỏa điều kiện).
+		\end{enumerate}	
+	}
+\end{bt}
+
+%==Câu 8==	
+\begin{bt}%[0T4B2-3]%[0H2B3-1]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	\hfill
+	\begin{enumerate}
+		\item Cho tam giác $ ABC $ có $ AB=3a $, $ AC=5a $, $ BC=7a $. Chứng minh tam giác $ ABC $ có một góc tù.
+		\item Cho tam giác $ ABC $ có $ \widehat{ABC}=108^\circ $, $ \widehat{ACB}=58^\circ $, $ BC=42$. Tính chiều cao hạ từ $ A $ của tam giác $ ABC $.
+	\end{enumerate}
+	\loigiai{
+			\immini{
+			\begin{enumerate}
+				\item Ta có $ AB< AC< BC\Rightarrow C<B<A $.\\
+				Theo hệ quả định lí cosin ta có\\
+				$ \cos A = \dfrac{AB^2+AC^2-BC^2}{2\cdot AB\cdot AC}=\dfrac{(3a)^2+(5a)^2-(7a)^2}{2\cdot 3a\cdot 5a}=-\dfrac{1}{2}$.\\
+				Vì $\cos A = -\dfrac{1}{2} < 0 \Rightarrow A$ tù.
+				\item Tính chiều cao hạ từ $ A $ của $ \triangle ABC $.
+				Áp dụng định lí $ \sin $ trong tam giác $ ABC $, ta có\\
+				$ \dfrac{AC}{\sin 108^\circ}= \dfrac{BC}{\sin 14^\circ}\Rightarrow AC= \dfrac{BC\cdot \sin 108^\circ}{\sin 14^\circ}= \dfrac{42\cdot \sin 108^\circ}{\sin 14^\circ}$.\\
+				Vì tam giác $ ABC $ có $ \widehat{ABC}=108^\circ $ nên $ H $ nằm ngoài đoạn $ BC $.\\
+				Tam giác $ AHC $ vuông tai $ H $ có \\
+				$ AH=AC\sin 58^\circ= \dfrac{42\cdot \sin 108^\circ}{\sin 14^\circ}\cdot \sin 58^\circ\approx140$.
+			\end{enumerate}	
+			}
+			{
+				\begin{tikzpicture}[scale=0.8, font=\footnotesize, line join=round, line cap=round, >=stealth]
+					\path (0,0) coordinate (B)
+					(2,0) coordinate (C)
+					($ (B)!1!108:(C) $)coordinate (x)
+					($ (C)!1!-58:(B) $)coordinate (y)
+					(intersection of B--x and C--y) coordinate (A)	
+					($ (B)!(A)!(C) $)coordinate (H)	
+					;
+					\path pic[draw,angle radius=5pt]{right angle= A--H--B};
+					\path pic["\scriptsize$108^\circ$", angle eccentricity= 2,draw,angle radius=7pt, double]{angle= C--B--A};
+					\path pic["\scriptsize$58^\circ$", angle eccentricity=2,draw,angle radius=7pt]{angle= A--C--B};
+					\path (B)--(C)--([turn]-90:0.35) coordinate (xt)
+					($(B)-(C)+(xt)$) coordinate (yt);
+					\draw[dash pattern=on 2pt off 2pt] (B)--(yt) (C)--(xt);
+					\draw[>=stealth,|<->|] (xt)--(yt) node[fill=white,inner sep=0pt,font=\scriptsize,midway,sloped]{$\,\,42\ \mathrm{}$};
+					\foreach \t/\g in {B/-120,C/0,A/90,H/-90}{
+						\draw[fill=white] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+						\draw (A)--(B)--(C)--cycle (A)--(H)--(B)
+						;
+					}
+				\end{tikzpicture}
+			}
+	}
+\end{bt}
+
+%==Câu 9==	
+\begin{bt}%[0T3G2-5]%[0D2G3-5]%[Dự án đề kiểm tra HKI NH22-23 - Quan Ón]%[Lê Thánh Tông]
+	Một phần công viên của thị trấn $ X $	có hình dạng là tam giác đều $ ABC $ cạnh bằng $ 12 $ m. Người ta muốn sử dụng phần diện tích đất hình chữ nhật $ MNPQ $ (có $ M $, $ N $ thuộc cạnh $ BC $; $ P $, $ Q $ lần lượt thuộc cạnh $ AC $, $ AB $) để xây dựng một hồ nước. Tìm diện tích lớn nhất của hình chữ nhật $ MNPQ $ đó.
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[scale=0.8, font=\footnotesize, line join=round, line cap=round, >=stealth,declare function={r=3;}]
+				\path (0,0) coordinate (O)
+				(90:r) coordinate (A);
+				%Tọa độ đỉnh A của tam giác đều
+				\tikzset{declare function={gocA=90;}}
+				\path (gocA:r) coordinate (A)
+				({gocA+120}:r) coordinate (B)
+				({gocA+240}:r) coordinate (C);
+				\path 
+				($ (A)!2/3!(B) $)coordinate (Q)
+				($ (A)!2/3!(C) $)coordinate (P)
+				($ (B)!(Q)!(C) $)coordinate (M)
+				($ (B)!(P)!(C) $)coordinate (N)
+				;
+				\path (N)--(C)--([turn]-90:0.35) coordinate (xt)
+				($(N)-(C)+(xt)$) coordinate (yt);
+				\draw[dash pattern=on 2pt off 2pt] (N)--(yt) (C)--(xt);
+				\draw[>=stealth,|<->|] (xt)--(yt) node[fill=white,inner sep=0pt,font=\scriptsize,midway,sloped]{$x$};
+				\draw (A)--(B)--(C)--cycle (M)--(Q)--(P)--(N);
+				\foreach \t/\g in {A/90,B/180,C/0,Q/180,P/0,M/-90,N/-130}{
+					\draw[fill=white] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+				}
+			\end{tikzpicture}
+		\end{center}
+		Đặt $ NC=x $. Ta có $ \tan \widehat{PCN}=\dfrac{PN}{x}\Leftrightarrow \tan 60^\circ=\dfrac{PN}{x}\Rightarrow PN=x\sqrt{3}$.\\
+		$ MN=BC-2NC=12-2x $.\\
+		$ S_{MNPQ}=PN\cdot MN=x\sqrt{3}(12-2x)=-2\sqrt{3}x^2+12\sqrt{3}x$.\\
+		Xét $ f(x)=-2\sqrt{3}x^2+12\sqrt{3}x $ có đồ thị là parabol $(P)$ có tọa độ đỉnh là\\
+		$ x_S=-\dfrac{b}{2a}=-\dfrac{-12\sqrt{3}}{2\cdot \left(-2\sqrt{3}\right)}=3 $.\\
+		$ y_S=24\sqrt{3} $.\\
+		Ta có bảng biến thiên
+		\begin{center}
+			\begin{tikzpicture}
+				\tkzTabInit[espcl=2.5,lgt=1.5,nocadre=false]
+				{$x$/1,$f(x)$/2.1}
+				{$-\infty$,$3$,$+\infty$}
+				\tkzTabVar{-/$-\infty$,+/$24\sqrt{2}$,-/$-\infty$}
+			\end{tikzpicture}
+		\end{center}
+		Vậy diện tích lớn nhất của hình chữ nhật $ MNPQ $ là $ 24\sqrt{3} $ m.
+	}
+\end{bt}
+
+
+

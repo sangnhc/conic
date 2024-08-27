@@ -1,0 +1,147 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{THPT Bình Phú}
+
+
+\begin{bt}%[0T7B3-2]%[0T7B2-2]%[0T7K2-1]%[0T7B2-1]%[Dự án đề kiểm tra HKII NH22-23-Nhật Thiện]%[THPT Bình Phú]
+	\begin{enumerate}
+		\item Giải phương trình $\sqrt{4x+9}=x+2$.
+		\item Giải bất phương trình $(x^2-x-2)(x^2+x)<0$.
+		\item Tìm các giá trị của $m$ để $f(x)=mx^2-2mx-3\le 0$, $\forall x\in \mathbb{R}$.
+	\end{enumerate}
+\loigiai{
+	\begin{enumerate}
+		\item Ta có
+		\begin{eqnarray*}
+			& &\sqrt{4x+9}=x+2\\
+			&\Rightarrow& 4x+9=(x+2)^2\\
+			&\Rightarrow& 4x+9=x^2+4x+4\\
+			&\Rightarrow& -x^2+5=0\\
+			&\Rightarrow& \hoac{&x=\sqrt{5}\\&x=-\sqrt{5}.}
+		\end{eqnarray*}
+	Thử lại, ta thấy $x=\sqrt{5}$ thỏa mãn phương trình.\\
+	Vậy tập nghiệm của phương trình là $S=\{\sqrt{5}\}$.
+	\item 
+	Xét biểu thức $f(x)=(x^2-x-2)(x^2+x)$.
+	Ta có bảng xét dấu sau
+	\begin{center}
+		\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+			\tkzTabInit[nocadre=false,lgt=2.5,espcl=1.5,deltacl=0.6]
+			{$x$ /0.6,$x^2-x-2$ /0.6,$x^2+x$ /.6,$f(x)$/.6}
+			{$-\infty$,$-1$,$0$,$2$,$+\infty$}
+			\tkzTabLine{,+,0,-,|,-,0,+,}
+			\tkzTabLine{,+,0,-,0,+,|,+,}
+			\tkzTabLine{,+,0,+,0,-,0,+,}
+		\end{tikzpicture} 
+	\end{center}
+	Dựa vào bảng xét dấu, biểu thức $f(x)$ âm khi $x\in (0;2)$.\\
+	Vậy tập nghiệm của bất phương trình là $S=(0;2)$.
+	\item
+	Xét $m=0$, suy ra $f(x)=-3\le 0$, $\forall x\in \mathbb{R}$ luôn đúng.\\
+	Suy ra nhận $m=0$.\\
+	Xét $m\ne 0$, ta có $f(x)=mx^2-2mx-3\le 0$, $\forall x\in \mathbb{R}$ khi và chỉ khi
+	\begin{eqnarray*}
+		& &\heva{&\Delta'=m^2+3m\le 0\\&m<0}\\
+		&\Leftrightarrow& \heva{&-3\le m\le 0\\&m<0}\\
+		&\Leftrightarrow& -3\le m<0.
+	\end{eqnarray*}
+	Vậy $-3\le m\le 0$ thỏa mãn yêu cầu đề bài.
+	\end{enumerate}
+}
+\end{bt}
+
+
+\begin{bt}%[0T8B2-1]%[Dự án đề kiểm tra HKII NH22-23-Nhật Thiện]%[THPT Bình Phú]
+	\begin{enumerate}
+		\item Có bao nhiêu cách sắp xếp tùy ý $7$ bạn nữ và $3$ bạn nam vào một ghế dài có $10$ chỗ ngồi.
+		\item Một hộp có $4$ viên bi đỏ, $5$ viên bi màu xanh, $6$ viên bi màu vàng. Hỏi có bao nhiêu cách lấy $3$ viên bi từ hộp đó mà có đủ $3$ màu?
+		\item Từ các chữ số $0$; $1$; $2$; $3$; $4$; $5$; $6$ có thể lập được baoo nhiêu số tự nhiên chẵn có $5$ chữ số khác nhau trong đó có đúng hai số lẻ và hai số lẻ đứng cạnh nhau.
+	\end{enumerate}
+\loigiai{
+	\begin{enumerate}
+		\item Xếp tùy ý $7$ bạn nữ và $3$ bạn nam vào một ghế dài có $10!=3628800$ cách.
+		\item Chọn $1$  viên bi đỏ, $1$ viên bi xanh, $1$ viên bi vàng có $\mathrm{C}_4^1\cdot \mathrm{C}_5^1\cdot \mathrm{C}_6^1=120$ cách lấy thỏa mãn đề bài.
+		\item 
+		\begin{itemize}
+			\item Xét số có $5$ chữ số khác nhau, trong đó có đúng hai số lẻ và hai số lẻ đứng cạnh nhau.\\
+			Chọn $2$ chữ số lẻ có $\mathrm{C}_3^2$ cách. Xếp $2$ chữ số lẻ đứng cạnh nhau có $2!$ cách.\\
+			Chọn $3$ số chẵn tùy ý có $\mathrm{C}_4^3$ cách.\\
+			Xếp $3$ số chẵn và nhóm $2$ số lẻ có $4!$ cách.\\
+			Suy ra có $\mathrm{C}_3^2\cdot 2!\cdot \mathrm{C}_4^3\cdot 4!=576$ cách.
+			\item Xét số có $5$ chữ số khác nhau mà đứng đầu là chữ số $0$, trong đó có đúng hai số lẻ và hai số lẻ đứng cạnh nhau.\\
+			Chọn $2$ chữ số lẻ có $\mathrm{C}_3^2$ cách. Xếp $2$ chữ số lẻ đứng cạnh nhau có $2!$ cách.\\
+			Chọn $2$ số chẵn tùy ý có $\mathrm{C}_4^2$ cách.\\
+			Xếp $2$ số chẵn và nhóm $2$ số lẻ có $3!$ cách.\\
+			Suy ra có $\mathrm{C}_3^2\cdot 2!\cdot \mathrm{C}_4^2\cdot 3!=216$ cách.
+		\end{itemize}
+		Vậy có $576-216=360$ số được tạo thành thỏa mãn yêu cầu đề bài.
+	\end{enumerate}
+}
+\end{bt}
+
+
+\begin{bt}%[0T0B2-2]%[Dự án đề kiểm tra HKII NH22-23-Nhật Thiện]%[THPT Bình Phú]
+	Một tổ có $4$ học sinh nam và $5$ học sinh nữ. Chọn ngẫu nhiên $2$ bạn từ tổ đó. Tính xác suất để $2$ bạn được chọn đều là nữ.
+	\loigiai{
+	Không gian mẫu $\Omega$ là chọn ngẫu nhiên $2$ bạn.\\
+	Suy ra $n(\Omega)=\mathrm{C}_9^2$.\\
+	Gọi $A$ là biến cố $2$ bạn được chọn đều là nữ.\\
+	Suy ra $n(A)=\mathrm{C}_5^2$.\\
+	Vậy $\mathrm{P}(A)=\dfrac{n(A)}{n(\Omega)}=\dfrac{\mathrm{C}_5^2}{\mathrm{C}_9^2}=\dfrac{5}{18}$.
+}
+\end{bt}
+
+
+
+\begin{bt}%[0H9K3-3]%[Dự án đề kiểm tra HKII NH22-23-Phạm Văn Long]%[THPT Bình Phú]
+	%\textbf{(2,5 điểm)} 
+	Trong mặt phẳng toạ độ $Oxy$, cho đường tròn $(C)\colon (x-2)^2+(y+3)^2=10$ và 2 điểm $A(-1 ; 3)$; $B(1 ; 2)$.
+	\begin{enumerate}
+		\item Xác định tâm và bán kính của đường tròn $(C)$.
+		\item Viết phương trình tiếp tuyến của đường tròn $(C)$ biết tiếp tuyến song song với đường thẳng $d\colon 3 x-y+1=0$.
+		\item Viết phương trình đường thẳng qua điểm $A$ và vuông góc với đường thẳng $AB$.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Đường tròn $(C)$ có tâm $I(2;-3)$ và bán kính $R=\sqrt{10}$.
+	\item Vì tiếp tuyến song song với đường thẳng $d\colon 3 x-y+1=0$ nên phương trình tiếp tuyến $\Delta$ có dạng $3 x-y+C=0$ với $C\ne 1$.\\
+	Do $\Delta$ tiếp xúc với đường tròn $(C)$ nên 
+	\allowdisplaybreaks
+	\begin{eqnarray*}
+		\mathrm{d}(I,\Delta)=R&\Leftrightarrow&\dfrac{|3\cdot 2+3+C|}{\sqrt{10}}=\sqrt{10}\\
+		&\Leftrightarrow& \left|9+C\right|=10\\
+		&\Leftrightarrow& \hoac{&9+C=10\\&9+C=-10}\\
+		&\Leftrightarrow& \hoac{&C=1 \text{ (loại)}\\&C=-19 \text{ (nhận)}.}
+	\end{eqnarray*} 
+Vậy phương trình tiếp tuyến $\Delta$ là $3 x-y-19=0$.
+	\item Đường thẳng $(d')\heva{&\text{qua điểm } A(-1 ; 3)\\&\text{vuông góc với đường thẳng } AB\Rightarrow \text{ véc-tơ pháp tuyến }\vec{n}=\overrightarrow{AB}=(2;-1).}$\\
+	Suy ra phương trình tổng quát của đường thẳng $(d')\colon 2x-y+5=0$.
+\end{enumerate}
+}
+\end{bt}
+
+
+\begin{bt}%[0H9G3-3]%[Dự án đề kiểm tra HKII NH22-23-Phạm Văn Long]%[THPT Bình Phú]
+%	\textbf{(1,5 điểm)}
+	\begin{enumerate}
+		\item Viết phương trình chính tắc của elip, biết elip có một đỉnh là $(5 ; 0)$ và tiêu cự là $4$.
+		\item Trong mặt phẳng với hệ tọa độ $Oxy$ cho đường tròn $(C)\colon(x+1)^2+(y-2)^2=9$ và điềm $M(2; 3)$. Viết phương trình đường thẳng $\Delta$ qua điểm $M$ và cắt đường tròn $(C)$ tại hai điểm $A$, $B$ sao cho $MA^2+MB^2=18$
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item Elip có một đỉnh là $(5 ; 0)$ suy ra $a=5$.\\
+		Tiêu cự là $4$ suy ra $c=2$ khi đó $b=\sqrt{a^2-b^2}=\sqrt{21}$.\\
+		Phương trình chính tắc của elip là $\dfrac{x^2}{25}+\dfrac{y^2}{21}=1$.
+		\item Đường tròn $(C)\colon(x+1)^2+(y-2)^2=9$ có tâm $I(-1;2)$ và bán kính $R=3$.\\
+		Có $MI=\sqrt{10}>R$ nên điểm $M$ nằm ngoài đường tròn.\\
+		Ta có $\heva{&MA\cdot MB=MI^2-R^2=1\\&MA^2+MB^2=18}\Rightarrow \left(MA-MB\right)^2=16\Rightarrow AB=4$.\\
+		Phương trình đường thẳng có dạng $\Delta\colon ax+by-2a-3b=0 \text{ với }\left(a^2+b^2>0\right)$.\\
+		Ta có 
+		\allowdisplaybreaks
+		\begin{eqnarray*}
+			&&\mathrm{d}(I ; \Delta)=\sqrt{R^2-\dfrac{AB^2}{4}}=\sqrt{5}\\
+			&\Leftrightarrow&\dfrac{|3a+2b|}{\sqrt{a^2+b^2}}=\sqrt{5}\\
+			&\Leftrightarrow& 2 a^2+3 a b-2 b^2=0 \Leftrightarrow \hoac{&a=-2 b\\&b=2 a.}
+		\end{eqnarray*}		
+		Vậy hai đường thẳng $2 x-y-1=0$ hoặc $x+2 y-8=0$.
+	\end{enumerate}
+}
+\end{bt}

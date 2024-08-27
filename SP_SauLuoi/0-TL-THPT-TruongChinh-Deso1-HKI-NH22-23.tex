@@ -1,0 +1,300 @@
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Trường Chinh - Đề số 1}
+
+\begin{bt}%[0D1B3-5]%[Dự án đề kiểm tra HKI NH22-23 - Thy Nguyen Vo Diem]%[THPT Trường Chinh - Đề 1]
+Cho hai tập hợp $A=(-1 ; 7)$, $B=[-2 ; 5)$. Tìm $A \cup B$; $A \cap B$; $A \setminus B$; $C_{\mathbb{R}} A$.
+%\dapso{$A \cup B=[-2;7)$, $A \cap B=(-1;5)$, $A \setminus B=[5;7)$, $C_{\mathbb{R}}A=(-\infty;-1] \cup [7;+\infty)$}
+\loigiai{
+$A \cup B=[-2;7)$, $A \cap B=(-1;5)$, $A \setminus B=[5;7)$, $C_{\mathbb{R}}A=(-\infty;-1] \cup [7;+\infty)$
+}
+\end{bt} 
+
+\begin{bt}%[Dự án đề kiểm tra HKI NH22-23 - Thy Nguyen Vo Diem]%[THPT Trường Chinh - Đề 1]
+Biểu diễn miền nghiệm của hệ bất phương trình sau trên mặt phẳng tọa độ $Oxy$:
+$$\left\{\begin{aligned}
+	& 3x+y-4<0 \\
+	& x-y+5<0
+\end{aligned}\right.$$.
+\loigiai{\immini{Vẽ các đường thẳng
+	\begin{itemize}
+		\item $d_1\colon 3x+y-4=0$; 
+		\item $d_2\colon x-y+5=0$.
+	\end{itemize}
+	Gạch đi các phần không thuộc miền nghiệm của mỗi bất phương trình.\\
+	Miền nghiệm của hệ bất phương trình là phần hình không bị gạch (không kể các đường thẳng).}
+	{\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+		\tikzset{every node/.style={scale=0.9}}
+		\begin{scope}
+			\clip (-6,-1) rectangle (2,6);
+			\fill[pattern=horizontal lines light gray] (-7,25)--(3,25)--(3,-5)--cycle;
+			\fill[pattern=dots] (-7,-2)--(3,-2)--(3,8)--cycle;
+			\draw (-0.67,6)--(1.67,-1) node [pos=0.45, above, sloped] {$d_2 \colon 3x+y-4=0$};
+			\draw (1,6)--(-6,-1) node [pos=0.45, above, sloped] {$d_1 \colon x-y+5=0$};
+		\end{scope}
+		\draw[->] (-6,0)--(2,0) node[below]{$x$};
+		\draw[->] (0,-1)--(0,6) node[left]{$y$};
+		\draw (0,0) node[below left]{$O$};
+	\end{tikzpicture}
+}
+	}
+\end{bt}
+
+\begin{bt}%[0D3B1-2]%[Dự án đề kiểm tra HKI NH22-23 - Thy Nguyen Vo Diem]%[THPT Trường Chinh - Đề 1]
+Tìm tập xác định của hàm số $y=\sqrt{x+1}+\dfrac{x+4}{\sqrt{2x-3}}$.
+	%\dapso{$D=\left(\dfrac{3}{2};+\infty\right)$}
+	\loigiai{
+	Điều kiện xác định $\heva{&x+1 \ge 0\\&2x-3>0} \Leftrightarrow \heva{&x \ge -1\\&x>\dfrac{3}{2}} \Leftrightarrow x>\dfrac{3}{2}$.\\
+	Tập xác định $D=\left(\dfrac{3}{2};+\infty\right)$.
+	}
+\end{bt}
+
+\begin{bt}%[0D3B2-3]%[Dự án đề kiểm tra HKI NH22-23 - Thy Nguyen Vo Diem]%[THPT Trường Chinh - Đề 1]
+Cho hàm số $y=-x^2+6x-5$.
+\begin{enumerate}
+	\item Tìm tọa độ đỉnh, lập bảng biến thiên và chỉ ra các khoảng đơn điệu của hàm số trên.
+	\item Hàm số đạt giá trị nhỏ nhất hay giá trị lớn nhất? Tìm giá trị đó.
+\end{enumerate}
+	%\dapso{a) Đỉnh $I(3;4)$, đồng biến trên $(-\infty;3)$, nghịch biến trên $(3;+\infty)$.\\ b) Hàm số đạt GTLN bằng $4$ khi $x=3$.}
+	\loigiai{Hàm số $y=-x^2+6x-5$ có $a=-1$; $b=6$; $c=-5$.
+	\begin{enumerate}
+		\item Hoành độ đỉnh $x_I=-\dfrac{b}{2a}=-\dfrac{6}{2\cdot (-1)}=3$.\\
+		Tung độ đỉnh $y_I=-3^2+6\cdot 3-5=4$.\\
+		Tọa độ đỉnh là $I(3;4)$.\\
+		Bảng biến thiên
+	\begin{center}
+\begin{tikzpicture}
+\tkzTabInit[lgt=1.2,espcl=4]
+{$x$/1,$y$/2}
+{$-\infty$,$3$,$+\infty$}
+\tkzTabVar{-/$-\infty$,+/$4$,-/$-\infty$}
+\end{tikzpicture}
+\end{center}
+Hàm số đồng biến trên $(-\infty;3)$ và nghịch biến trên $(3;+\infty)$.
+		\item Hàm số đạt giá trị lớn nhất là $4$ tại $x_0=3$.
+	\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[0D6B4-1]%[Dự án đề kiểm tra HKI NH22-23 - Thy Nguyen Vo Diem]%[THPT Trường Chinh - Đề 1]
+Một hộ gia đình có sản lượng điện sử dụng trong $12$ tháng của năm $2021$ như sau:
+\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Tháng & $1$ & $2$ & $3$ & $4$ &  $5$ & $6$ & $7$ & $8$ & $9$ & $10$ & $11$ & $12$ \\
+		\hline
+		Điện năng
+		(kWh) & $447$ & $458$ & $396$ & $415$ & $459$ & $510$ & $366$ & $451$ & $430$ & $447$ & $380$ & $415$ \\
+		\hline
+	\end{tabular}
+\end{center}
+Hãy tìm số trung bình, tứ phân vị, khoảng tứ phân vị và khoảng biến thiên của mẫu số liệu trên.
+%\dapso{$\overline{x} \approx 431,16$; $Q_1=405,5$; $Q_2=438,5$; $Q_3=454,5$; $\Delta_Q=49$; $R=144$}
+	\loigiai{
+	Số trung  bình $$\overline{x} =\dfrac{447+458+396+415+459+510+366+451+430+337+380+415}{12}\approx 431,16.$$
+	Sắp xếp mẫu số liệu theo thứ tự không giảm
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			$366$ & $380$ & $396$ & $415$ & $415$ & $430$ & $447$ & $447$ & $451$ & $458$ & $459$ & $510$ \\
+			\hline
+	\end{tabular}
+	\end{center}
+	Tứ phân vị của mẫu số liệu 
+	\begin{itemize}
+		\item $Q_2=M_e=\dfrac{430+447}{2}=438{,}5$;
+		\item $Q_1=\dfrac{396+415}{2}=405{,}5$;
+		\item $Q_3=\dfrac{451+458}{2}=454{,}5$.
+	\end{itemize}
+Khoảng biến thiên $R=x_{\max}-x_{\min}=510-366=144$.\\
+Khoảng tứ phân vị $\Delta_Q=Q_3-Q_1=454{,}5-405{,}5=49$.
+	}
+\end{bt}
+
+	\begin{bt}%[0T4B3-1]%[Dự án đề kiểm tra HKI NH22-23- Võ Thị Thùy Trang]%[Trường Chinh]
+		Cho tam giác $ABC$ có $AB=9$, $AC=8$, $BC=7$. Tính diện tích tam giác $ABC$, đường cao $AH$, bán kính đường tròn ngoại tiếp và bán kính đường tròn nội tiếp của tam giác $ABC$.
+		%\dapso{$S_{ABC}=12\sqrt{5}$; $AH=\dfrac{24\sqrt{5}}{7}$; $R=\dfrac{21\sqrt{5}}{10}$; $r=\sqrt{5}$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có $p=\dfrac{AB+AC+BC}{2}=\dfrac{9+8+7}{2}=12$.
+				\item Diện tích tam giác $ABC$ là $$S_{ABC}=\sqrt{p(p-AB)(p-AC)(p-BC)}=\sqrt{12\cdot 3\cdot 4\cdot 5}=12\sqrt{5}$$.
+				\item $AH=\dfrac{2S_{ABC}}{BC}=\dfrac{24\sqrt{5}}{7}$.
+				\item $R=\dfrac{AB\cdot AC\cdot BC}{4S_{ABC}}=\dfrac{9\cdot 8\cdot 7}{4\cdot 12\sqrt{5}}=\dfrac{21\sqrt{5}}{10}$.
+				\item $r=\dfrac{S_{ABC}}{p}=\dfrac{12\sqrt{5}}{12}=\sqrt{5}$.
+			\end{itemize}
+		}
+	\end{bt}
+	\begin{bt}%[0T5K4-1]%[Dự án đề kiểm tra HKI NH22-23- Võ Thị Thùy Trang]%[Trường Chinh]
+		Cho tam giác đều $ABC$ cạnh $a$. Gọi $E$, $F$ lần lượt là trung điểm của $AC$ và $BC$; $I$ là trọng tâm của tam giác $ABC$.
+		\begin{enumerate}
+			\item Tính độ dài vectơ $\overrightarrow{v}$ biết $\overrightarrow{v}=\overrightarrow{BA}+\overrightarrow{BC}$.
+			\item Chứng minh rằng $\overrightarrow{IF}=-\dfrac{1}{3}\overrightarrow{BA}+\dfrac{1}{6}\overrightarrow{BC}$.
+			\item Tính $\overrightarrow{IA} \cdot \overrightarrow{AB}$.
+		\end{enumerate}
+		%\dapso{a) $a\sqrt{3}$; c) $-\dfrac{a^2}{2}$ }
+		\loigiai{
+			\immini{\begin{enumerate}
+					\item  $\left|\overrightarrow{v}\right|=\left|\overrightarrow{BA}+\overrightarrow{BC}\right|=\left|2\overrightarrow{BE}\right|=2BE=a\sqrt{3}$.
+					\item  $\overrightarrow{IF}=\dfrac{1}{3}\overrightarrow{AF}=\dfrac{1}{6}\left(\overrightarrow{AB}+\overrightarrow{AC}\right)=\dfrac{1}{6}\left(2\overrightarrow{AB}+\overrightarrow{BC}\right)=-\dfrac{1}{3}\overrightarrow{BA}+\dfrac{1}{6}\overrightarrow{BC}$.\\ Vậy $\overrightarrow{IF}=-\dfrac{1}{3}\overrightarrow{BA}+\dfrac{1}{6}\overrightarrow{BC}$.
+					\item Ta có $\left(\overrightarrow{IA},\overrightarrow{AB}\right)=180^\circ-\widehat{BAI}=180^\circ-30^\circ=150^\circ$.\\
+					 $\overrightarrow{IA} \cdot \overrightarrow{AB}=IA\cdot AB\cdot \cos 150^\circ=\dfrac{2}{3}\cdot \dfrac{a\sqrt{3}}{2}\cdot \left(-\dfrac{\sqrt{3}}{2}\right)\cdot a=-\dfrac{a^2}{2}$.
+				\end{enumerate}
+			}
+		{\begin{tikzpicture}[scale=0.7, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\def\bc{4} % cạnh BC
+				\def\ba{4} % cạnh BA
+				\def\h{4} % đường cao
+				\def\gocB{60} % góc B của đáy
+				\coordinate[label=below left:$B$] (B) at (0,0);
+				\coordinate[label=above:$A$] (A) at (\gocB:\ba);
+				\coordinate[label=below:$C$] (C) at (\bc,0);
+				\coordinate[label=below:$F$] (F) at ($(C)!0.5!(B)$);
+				\coordinate[label=right:$E$] (E) at ($(A)!0.5!(C)$);
+				\coordinate[label=above left:$I$] (I) at ($(A)!2/3!(F)$);
+				\draw (A)--(B)--(C)--(A)--(F) (B)--(E);
+				\foreach \diem in {A,B,C,E,F,I}	\fill (\diem)circle(1.5pt);
+		\end{tikzpicture}}
+		}
+	\end{bt}
+	\begin{bt}%[0T4B2-1]%[0T5B2-1]%[0T2K2-2]%[Dự án đề kiểm tra HKI NH22-23- Võ Thị Thùy Trang]%[Trường Chinh]
+		\begin{enumerate}
+			\item Hai chiếc xe cùng xuất phát ở vị trí $A$, đi theo hai hướng tạo với nhau một góc $\widehat{BAC}=30^{\circ}$ (tham khảo hình vẽ). Sau $1$ giờ, xe thứ nhất chạy được $35$ (km), xe thứ hai chạy được $50$ (km). Hỏi khoảng cách giữa $2$ xe sau khi chạy được $1$ giờ là bao nhiêu?
+			\begin{center}	
+				\begin{tikzpicture}[scale=1, font={\fontsize{12pt}{0pt}}, line join=round, line cap=round, >=stealth]
+					%% Khai bao diem		
+					\path
+					(-3,-3) coordinate (A)
+					(2,-3) coordinate (C)
+					($(A)!3.75cm!33:(C)$) coordinate (B)
+					;
+					\draw (A) node [xshift=24,yshift=5] {\footnotesize$30^\circ$};
+					\draw ($(A)!1/2!(C)$) node [below] {\footnotesize xe 2};
+					\draw ($(A)!1/2!(B)$) node [left] {\footnotesize xe 1};
+					%% vẽ đoạn thẳng
+					\draw[line width=0.9pt] (A)--(B)--(C)--(A);
+					\draw[line width=0.9pt] ;
+					%% vẽ điểm
+					\foreach \x/\g in {A/180,B/60,C/0}
+					\draw[fill=black] (\x) circle (.05)+(\g:.34)
+					node{$\x$};	
+					
+				\end{tikzpicture}
+			\end{center}
+			\item Cho 3 lực $\vec{F_1}=\overrightarrow{M A}$, $\vec{F_2}=\overrightarrow{M B}$ và $\vec{F_3}=\overrightarrow{M C}$ (như hình vẽ) cùng tác động vào một vật tại điểm $M$ và vật đứng yên. Cường độ của $\vec{F_1}$, $\vec{F_2}$ đều là $50$ (N), $\widehat{AMB}=60^{\circ}$. Tìm độ lớn của lực $\vec{F_3}$. (Biết rằng vật đứng yên khi tổng các vectơ lực tác động vào vật bằng $\vec{0}$)
+			\begin{center}	
+				\begin{tikzpicture}[scale=1, font={\fontsize{12pt}{0pt}}, line join=round, line cap=round, >=stealth]
+					%% Khai bao diem		
+					\path
+					(0,0) coordinate (M)
+					(-4.330127019,0) coordinate (C)
+					($(M)!2.5 cm!-150:(C)$) coordinate (A)
+					($(M)!2.5 cm!150:(C)$) coordinate (B)
+					
+					;
+					\draw (M) circle (4pt);
+					\draw ($(M)!2/3!(C)$) node[above] {\small$\vec{F_3}$};
+					\draw ($(M)!3/4!(A)$) node[xshift=-20] {\small$\vec{F_1}$};
+					\draw ($(M)!1/2!(B)$) node[yshift=-10] {\small$\vec{F_2}$};
+					%% vẽ đoạn thẳng
+					\draw[-latex,line width=1pt] (M)--(C);
+					\draw[-latex,line width=1pt] (M)--(A);
+					\draw[-latex,line width=1pt] (M)--(B);
+					%% vẽ điểm
+					\foreach \x/\g in {A/60,B/-40,C/180,M/120}
+					\draw[fill=black] (\x) circle (.04)+(\g:.34)
+					node{$\x$};	
+					
+				\end{tikzpicture}
+			\end{center}
+			\item  Người ta dự định dùng hai nguyên liệu là mía và củ cải đường để chiết xuất ít nhất $140$ (kg) đường kính và $9$ (kg) đường cát. Từ mỗi tấn mía giá $4$ (triệu đồng) có thể chiết xuất được $20$ (kg) đường kính và $0,6$ (kg) đường cát. Từ mỗi tấn củ cải đường giá $3$ (triệu đồng) chiết xuất được $10$ (kg) đường kính và $1,5$ (kg) đường cát. Hỏi phải dùng bao nhiêu tấn nguyên liệu mỗi loại để chi phí mua nguyên liệu là ít nhất, biết cơ sở cung cấp nguyên liệu chỉ cung cấp không quá $10$ tấn mía và không quá $9$ tấn củ cải đường.
+		\end{enumerate}
+		%\dapso{a) $BC \approx 26,34$; b) $50\sqrt{3} \approx 86,6$ (N), c) $5$ tấn mía, $4$ tấn củ cải đường }
+		\loigiai{
+			\begin{enumerate}
+				\item Theo định lý côsin ta có $$BC^2=AB^2+AC^2-2AB\cdot AC\cdot  \cos\widehat{BAC}=35^2+50^2-2\cdot 35\cdot 50\cdot\cos 30^{\circ}$$
+				$\Rightarrow BC \approx 26{,}34$ (km).
+				\item 
+				\immini{
+					Dựng hình bình hành $ADBM$, lại có $MA=MB$ nên $ADBM$ là hình thoi. Suy ra $MD \perp AB$ và $MD=2MH$, với $H$ là giao điểm của $AB$ và $MD$.\\
+					Tam giác $MAB$ có $MA=MB=50$ và $\widehat{AMB}=60^\circ$ nên $MAB$ là tam giác đều cạnh $50$.
+				}
+					{\begin{tikzpicture}[smooth,font=\footnotesize,scale=0.7,>=stealth]
+						\path
+						(0,0) coordinate (M)
+						(3,0) coordinate (M1)
+						($(M)!1!30:(M1)$) coordinate (A)
+						($(M)!1!-30:(M1)$) coordinate (B)
+						($(A)+(B)-(M)$) coordinate (D)
+						($(M)+(M)-(D)$) coordinate (C)
+						(intersection of A--B and M--D) coordinate (H)
+						;
+						\fill[ball color=red](0,0) circle (0.16);
+						\draw[->] (M)--(A);
+						\draw[->] (M)--(B);
+						\draw[->] (M)--(C);
+						\draw[->] (M)--(D);
+						\draw[->] (A)--(B);
+						\draw[dashed] (A)--(D)--(B);
+						\foreach \x/\g in {A/90,B/-90,C/180,M/90,D/0} \draw [fill=black] (\x) circle (.05) + (\g:.5) node{$\x$};
+						\begin{scope}
+							\clip (B)--(M)--(A);
+							\draw[double] (M) circle(0.6cm);
+						\end{scope}
+						\node[right] at (0.6,0) {$60^\circ$};
+					\end{tikzpicture}}
+					Khi đó $MH=\dfrac{50\sqrt{3}}{2}=25\sqrt{3}$ và $MD=50\sqrt{3}$.\\
+				Ba lực $\overrightarrow{F_1}$, $\overrightarrow{F_2}$, $\overrightarrow{F_3}$ cùng tác động vào một vật và vật đó đứng yên khi và chỉ khi
+				\allowdisplaybreaks
+				\begin{eqnarray*}
+					\overrightarrow{F_1}+\overrightarrow{F_2}+\overrightarrow{F_3}=\overrightarrow{0} &\Leftrightarrow & \overrightarrow{MA}+\overrightarrow{MB}+\overrightarrow{MC}=\overrightarrow{0}\\ &\Leftrightarrow & \overrightarrow{MD}+\overrightarrow{MC}=\overrightarrow{0} \Leftrightarrow \overrightarrow{MC}=-\overrightarrow{MD}.
+				\end{eqnarray*}
+				Do đó cường độ lực $\overrightarrow{F_3}$ là $\left|\overrightarrow{MC}\right| = \left|-\overrightarrow{MD}\right|=\left|\overrightarrow{MD}\right|=MD= 50\sqrt{3}\approx 86{,}6 N$
+				\item 
+				\immini{
+					Gọi số tấn mía cần dùng là $x$ và số tấn củ cải cần dùng là $y$\\ 
+				Theo đề bài ta có hệ bất phương trình sau
+				$$\heva{&0\le x\le 10\\ &0\le y\le 9\\ &20x+10y\ge 140\\ & 0,6x+1,5y\ge 9}$$
+				}
+			{
+					\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=.65]
+						\fill[pattern=dots](-2,-1)--(12,-1)--(12,12)--(-2,12)--cycle;
+						\fill[
+						color=white
+						](5,4)--(10,2)--(10,9)--(2.5,9)--cycle;
+						\fill[white] (-.2,-.2)circle(0.15) node[black]{\scriptsize $O$}
+						(12,-.2)circle(0.15) node[black]{\scriptsize $x$}
+						(-.2,12)circle(0.15) node[black]{\scriptsize $y$}
+						(5.2,4.2)circle(0.25) node[black]{\scriptsize $A$}
+						(10.2,2.1)circle(0.25) node[black]{\scriptsize $B$}
+						(10.2,9.2)circle(0.25) node[black]{\scriptsize $C$}
+						(2.7,9.2)circle(0.25) node[black]{\scriptsize $D$}
+						(10.2,-.2)circle(0.25) node[black]{\scriptsize $10$}
+						(-.2,9.2)circle(0.25) node[black]{\scriptsize $9$}
+						(2.5,-.2)circle(0.25) node[black]{\scriptsize $\dfrac{5}{2}$} (5,-.2)circle(0.25) node[black]{\scriptsize $5$}
+						(-.2,2)circle(0.25) node[black]{\scriptsize $2$}
+						(-.2,4)circle(0.25) node[black]{\scriptsize $4$}
+						;
+						\draw[line width=1.1,->] (-2,0) -- (12,0);
+						\draw[line width=1.1,->] (0,-1) -- (0,12);
+						\draw[line width=1.1] (-2,9) -- (12,9);
+						\draw[line width=1.1] (10,-1) -- (10,12);
+						\draw[dashed] (5,0)|-(0,4) (2.5,0)--(2.5,9) (0,2)--(10,2);
+						\clip (-2,-1)rectangle(12,12);
+						\draw[thick,line width=1.1,samples=150,smooth,domain=-2:14] plot(\x,{-2*\x+14});
+						\draw[thick,line width=1.1,samples=150,smooth,domain=-2:14] plot(\x,{-2/5*\x+6});
+						
+					\end{tikzpicture}}
+				Suy ra miền nghiệm của là miền tứ giác lồi $ABCD$, kể cả biên.\\
+				Ta có $A(5 ; 4),B(10 ; 2), C(10 ; 9), D\left(\dfrac{5}{2} ; 9\right)$.\\
+					Tìm $x$, $y$ để $F\left(x;y\right)=4x+3y$ nhỏ nhất\\
+					Ta có $F\left(5;4\right)=32$, $F\left(\dfrac{5}{2};9\right)=37$, $F\left(10;2\right)=46$, $F\left(10;9\right)=67$.\\
+					Vậy $F_{min}=F\left(5;4\right)=32$. Do đó cần mua $5$ tấn mía và $4$ tấn củ cải đường.	
+			\end{enumerate}
+		}
+	\end{bt}
+	
+
+
+
+
+
+
+

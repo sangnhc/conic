@@ -1,0 +1,242 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Nguyễn Chí Thanh}
+
+\begin{bt}%[0T1B3-5]%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Văn Sang ]%[THPT Nguyễn Chí Thanh]
+	\begin{enumerate}
+		\item Xét tính đúng sai và viết mệnh đề phủ định của mệnh đề $A\colon ``\exists x\in \mathbb{N}\colon x^2=4''$.
+		\item Xác định tập hợp sau bằng cách nêu tính chất đặc trưng $B=\{0;5;10;15;20\}$.
+		\item Cho $2$ tập hợp $A=[3;+\infty)$, $B=(0;4)$. Tìm $A\cap B$, $A\cup B$, $A\setminus B$, $B\setminus A$.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Mệnh đề $A\colon ``\exists x\in \mathbb{N}\colon x^2=4''$ là mệnh đề đúng vì có $x=2\in \mathbb{N}$ thoả $x^2=4$.\\
+	Mệnh đề phủ định $\overline{A}\colon ``\forall x\in \mathbb{N}\colon x^2 \ne 4''$.
+	\item Ta có $B=\{x\in \mathbb{N}\big| x\ \vdots\  5\text{ và } x\le 20\}$.
+	\item Ta có $A\cap B=[3;4)$, $A\cup B=(0;+\infty)$, $A\setminus B=[4;+\infty)$, $B\setminus A=(0;3)$.
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T3B1-2]%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Văn Sang ]%[THPT Nguyễn Chí Thanh]
+	\begin{enumerate}
+		\item Tìm tập xác định của hàm số $y=\dfrac{\sqrt{x+2}}{x^2+2x-3}$.
+		\item Biểu diễn miền nghiệm của bất phương trình sau $\dfrac{x-2y}{2}>\dfrac{2x-y+1}{3}$.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Điều kiện hàm số xác định $\heva{&x+2\ge 0\\&x^2+2x-3\ne 0}\Leftrightarrow \heva{&x\ge -2\\&x\ne 1\\&x\ne -3}\Leftrightarrow \heva{&x\ge -2\\&x\ne 1.}$\\
+	Tập xác định của hàm số là $\mathscr{D}=[-2;+\infty)\setminus\{1\}$.
+	\item 
+	\immini{Ta có 
+		\begin{eqnarray*}
+			& &\dfrac{x-2y}{2}>\dfrac{2x-y+1}{3}\\
+			&\Leftrightarrow& 3x-6y>4x-2y+2\\
+			&\Leftrightarrow& x+4y+2<0.
+		\end{eqnarray*}}
+{
+\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+	\begin{scope}
+		\clip (-3,-1) rectangle (1,1);
+		\fill[opacity=.2,pattern=north east lines] (-7,1.25)--(3,1.25)--(3,-1.25)--cycle;
+		\draw (-6,1)--(2,-1);
+	\end{scope}
+	\draw[->] (-3,0)--(1,0) node[below right]{$x$};
+	\draw[->] (0,-1)--(0,1) node[above left]{$y$};
+	\draw (0,0) node[above left]{$O$};
+	\draw (1pt,-.5)--(-1pt,-.5) node[left]{$-\dfrac{1}{2}$};
+	\draw (-2,1pt)--(-2,-1pt) node[below]{$-2$};
+\end{tikzpicture}
+}
+\noindent Vẽ đường thẳng $d\colon y=-\dfrac{1}{4}x-\dfrac{1}{2}$. Đường thẳng $d$ đi qua hai điểm $\left(0;-\dfrac{1}{2}\right)$, $(-2,0)$.\\
+Xét điểm $(0;0)$, ta có $0+4\cdot 0+2<0$ là mệnh đề sai. Nên điểm $(0;0)$ không thuộc miền nghiệm của bất phương trình.\\
+Do đó miền nghiệm của bất phương trình là phần không gạch sọc (không kể đường thẳng $d$) và không chứa điểm $(0;0)$.
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T4B3-1]%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Văn Sang ]%[THPT Nguyễn Chí Thanh]
+	\begin{enumerate}
+		\item Tính giá trị của $T=4\cos 60^\circ+2\sin 135^\circ+3\cot 120^\circ$.
+		\item Cho tam giác $ABC$. Chứng minh $\cos (B+C)=-\cos A$.
+		\item Tính khoảng cách từ vị trí $M$ của một người đang gọi điện thoại di động đến trạm phát sóng $B$ với số liệu đã cho trong hình.
+		\begin{center}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\begin{scope}[transform shape,scale=1.5]
+					\clip (-2,-1) rectangle (2,1);
+					\begin{pgfinterruptboundingbox}
+						
+						\draw (-1.3,-.5)coordinate [label=below right:\tiny $A$] (A)--(1.15,-.5)coordinate [label=below left:\tiny $B$] (B)--(0.3,0.45)coordinate [label=left:\tiny $M$] (M)--cycle;
+						%===========điện thoại
+						\def\T{  
+							(0.43,0.33)--(0.25,0.5)--(0.35,0.59)--(0.55,0.44)
+							;}
+						\draw \T;
+						\fill[brown!70!] \T;
+						\def\Q{  (0.55,0.44)..controls +(-120:0.05) and +(30:0.1) .. (0.43,0.33);}
+						\draw \Q;
+						\fill[black] \Q;
+						%------------Cột phát
+						\tikzset{cotphat/.pic={
+								\draw (-1.45,-.1)--(-1.45,-.55) 
+								(-1.55,-.55)--(-1.35,-.55)--(-1.45,-.15)--cycle
+								(-1.49,-.3)--(-1.41,-.34)--(-1.495,-.4)--(-1.37,-.475)--(-1.55,-.55);
+								\draw[thick] (-1.25,-.55)--(-1.7,-.55);
+								\draw[cyan](-1.25,.1)arc(45:-35:.34 and .34);
+								\draw[cyan](-1.27,.07)arc(45:-35:.3 and .3);
+								\draw[cyan](-1.3,.03)arc(45:-35:.24 and .24);
+								\draw[cyan](-1.34,-.02)arc(45:-35:.18 and .18);
+								\draw[cyan](-1.7,.05)arc(120:235:.23 and .23);
+								\draw[cyan](-1.65,.02)arc(120:235:.2 and .2);
+								\draw[cyan](-1.6,0)arc(120:235:.17 and .17);
+								\draw[cyan](-1.55,-0.02)arc(120:235:.15 and .15);
+						}}
+						\path pic[scale=1]{cotphat} pic[scale=1,xshift=2.8cm]{cotphat};
+						%============================
+						\draw[-] ($(A)!4mm!(M)$) to[bend right=-60] node[pos=.2,right]{\tiny $32^\circ$} ($(A)!4mm!(B)$);
+						\node at (-.8,-0.12) [above]{\tiny $1{,}8$ km};
+						\node at (.8,-0.12) [above]{\tiny $?$};
+						\node at (0,-.8) [above]{\tiny $2$ km};
+					\end{pgfinterruptboundingbox}
+				\end{scope}
+			\end{tikzpicture}
+		\end{center}
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Ta có 
+	\begin{eqnarray*}
+		T&=&4\cos 60^\circ+2\sin 135^\circ+3\cot 120^\circ\\
+		&=&4\cdot \dfrac{1}{2}+2\cdot \dfrac{\sqrt{2}}{2}+3\cdot \left(-\dfrac{\sqrt{3}}{3}\right)\\
+		&=&2+\sqrt{2}-\sqrt{3}.
+	\end{eqnarray*}
+	\item Ta có $\widehat{B}+\widehat{C}=180^\circ-\widehat{A}$.\\
+	Do đó $\cos (B+C)=\cos (180^\circ-A)=-\cos A$.\\
+	\item 
+	\immini
+	{
+	Áp dụng định lý cosin trong tam giác $ABM$,	ta có 
+	\begin{eqnarray*}
+		MB^2&=&AB^2+AM^2-2\cdot AB\cdot AM\cdot \cos \widehat{A}\\
+		    &=&1{,}8^2+2^2-2\cdot 1{,}8\cdot 2\cdot \cos 32^\circ\\
+		    &\approx& 1{,}1\text{ km}.
+	\end{eqnarray*}
+	Vậy $MB\approx 1{,}05$ km.
+	}
+	{
+	\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\begin{scope}[transform shape,scale=1.5]
+			\clip (-2,-1) rectangle (2,1);
+			\begin{pgfinterruptboundingbox}	
+				\draw (-1.3,-.5)coordinate [label=below right:\tiny $A$] (A)--(1.15,-.5)coordinate [label=below left:\tiny $B$] (B)--(0.3,0.45)coordinate [label=left:\tiny $M$] (M)--cycle;
+				%===========điện thoại
+				\def\T{  
+					(0.43,0.33)--(0.25,0.5)--(0.35,0.59)--(0.55,0.44)
+					;}
+				\draw \T;
+				\fill[brown!70!] \T;
+				\def\Q{  (0.55,0.44)..controls +(-120:0.05) and +(30:0.1) .. (0.43,0.33);}
+				\draw \Q;
+				\fill[black] \Q;
+				%------------Cột phát
+				\tikzset{cotphat/.pic={
+						\draw (-1.45,-.1)--(-1.45,-.55) 
+						(-1.55,-.55)--(-1.35,-.55)--(-1.45,-.15)--cycle
+						(-1.49,-.3)--(-1.41,-.34)--(-1.495,-.4)--(-1.37,-.475)--(-1.55,-.55);
+						\draw[thick] (-1.25,-.55)--(-1.7,-.55);
+						\draw[cyan](-1.25,.1)arc(45:-35:.34 and .34);
+						\draw[cyan](-1.27,.07)arc(45:-35:.3 and .3);
+						\draw[cyan](-1.3,.03)arc(45:-35:.24 and .24);
+						\draw[cyan](-1.34,-.02)arc(45:-35:.18 and .18);
+						\draw[cyan](-1.7,.05)arc(120:235:.23 and .23);
+						\draw[cyan](-1.65,.02)arc(120:235:.2 and .2);
+						\draw[cyan](-1.6,0)arc(120:235:.17 and .17);
+						\draw[cyan](-1.55,-0.02)arc(120:235:.15 and .15);
+				}}
+				\path pic[scale=1]{cotphat} pic[scale=1,xshift=2.8cm]{cotphat};
+				%============================
+				\draw[-] ($(A)!4mm!(M)$) to[bend right=-60] node[pos=.2,right]{\tiny $32^\circ$} ($(A)!4mm!(B)$);
+				\node at (-.8,-0.12) [above]{\tiny $1{,}8$ km};
+				\node at (.8,-0.12) [above]{\tiny $?$};
+				\node at (0,-.8) [above]{\tiny $2$ km};
+			\end{pgfinterruptboundingbox}
+		\end{scope}
+	\end{tikzpicture}
+	}
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T4K3-1]%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Văn Sang ]%[THPT Nguyễn Chí Thanh]
+	Cho tam giác $ABC$ có $AB=2$, $AC=2\sqrt{7}$, $BC=4$.
+	\begin{enumerate}
+		\item Tính góc $B$, diện tích tam giác $ABC$.
+		\item Tìm bán kính đường tròn ngoại tiếp và độ dài đường cao kẻ từ $A$ của tam giác $ABC$.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Ta có 
+	$$\cos B=\dfrac{AB^2+BC^2-AC^2}{2AB\cdot BC}=\dfrac{(2)^2+(4)^2-(2\sqrt{7})^2}{2\cdot 2\cdot 4}=-\dfrac{1}{2}.$$
+	Suy ra $\widehat{B}=120^\circ$.\\
+	Nửa chu vi tam giác $ABC$ là $p=\dfrac{AB+AC+BC}{2}=3+\sqrt{7}$.\\
+	Đặt $AB=c$, $AC=b$, $BC=a$, ta có diện tích tam giác $ABC$ là
+	$$S=\sqrt{p(p-a)(p-b)(p-c)}=2\sqrt{3}.$$
+	\item Ta có bán kính đường tròn ngoại tiếp tam giác $ABC$ là
+	$$R=\dfrac{abc}{4S}=\dfrac{2\cdot 4\cdot 2\sqrt{7}}{4\cdot 2\sqrt{3}}=\dfrac{2\sqrt{21}}{3}.$$
+	Độ dài đường cao kẻ từ $A$ của tam giác $ABC$ là
+	$$h_a=\dfrac{2S}{a}=\dfrac{2\cdot 2\sqrt{3}}{4}=\sqrt{3}.$$
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T1K3-4]%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Văn Sang ]%[THPT Nguyễn Chí Thanh]
+	Cho hai tập hợp $A=[0;5]$, $B=(2a;3a+1]$ và $B\ne \varnothing$. Tìm các giá trị của $a$ sao cho $A\cap B=\varnothing$.
+	\loigiai{
+	Ta có $A\cap B=\varnothing$ khi và chỉ khi
+	$$\hoac{&2a\ge 5\\&3a+1<0}\Leftrightarrow \hoac{&a\ge \dfrac{5}{2}\\&a<-\dfrac{1}{3}.}$$
+}
+\end{bt}
+\begin{bt}%[0T2K2-2]%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Văn Sang ]%[THPT Nguyễn Chí Thanh]
+	Một bãi xe đậu xe ban đêm có diện tích đậu xe là $150$ m$^2$ (không tính lối đi cho xe ra vào). Cho biết xe du lịch cần diện tích $3$ m$^2$/chiếc và phải trả chi phí $50$ nghìn đồng, xe tải cần diện tích $5$ m$^2$/chiếc và phải trả chi phí $70$ nghìn đồng. Nhân viên quản lý không thể phục vụ quá $40$ xe một đêm. Hãy tính số lượng mỗi loại mà chủ bãi xe có thể cho đăng kí đậu xe để có doanh thu cao nhất.
+	\loigiai{
+	Gọi $x$ là số lượng xe du dịch, $x\ge 0$, $x\in \mathbb{N}$.\\
+	Gọi $y$ là số lượng xe tải, $y\ge 0$, $y\in \mathbb{N}$.\\
+	Ta có diện tích đậu xe là $150$ m$^2$ nên $3\cdot x+5\cdot y\le 150$.\\
+	Mà mỗi đêm phục vụ không qua $40$ xe nên $x+y\le 40$.
+	\immini{Từ đó, ta có hệ bất phương trình mô tả các điều kiện 
+	$$\heva{&x+y\le 40\\&3x+5y\le 150\\&x\ge 0\\&y\ge 0.}$$
+	Biểu diễn miền nghiệm của hệ bất phương trình này trên hệ trục tọa độ $Oxy$, ta được miền tứ giác $OABC$ như hình.\\
+	Tọa độ các đỉnh của tứ giác đó là $O(0;0)$, $A(0;30)$, $B(25;15)$, $C(40;0)$}{
+\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+	\begin{scope}
+		\clip (-1,-1) rectangle (5.5,5);
+		\fill[opacity=.2,pattern=north east lines] (-2,6)--(6,6)--(6,-2)--cycle;
+		\fill[opacity=.2,pattern=north west lines] (-4,5.4)--(7,5.4)--(7,-1.2)--cycle;
+		\fill[opacity=.2,pattern=north east lines] (0,-1)--(-1,-1)--(-1,5)--(0,5)--cycle;
+		\fill[opacity=.2,pattern=north west lines] (-1,0)--(-1,-1)--(5.5,-1)--(5.5,0)--cycle;
+		\draw (-1,5)--(5,-1);
+		\draw (-3.33,5)--(6.67,-1);
+	\end{scope}
+	\draw[->] (-1,0)--(5.5,0) node[below right]{$x$};
+	\draw[->] (0,-1)--(0,5) node[above right]{$y$};
+	\draw (1pt,3)--(-1pt,3) node[left]{$30$};
+	\draw (1pt,4)--(-1pt,4) node[left]{$40$};
+	\draw (4,1pt)--(4,-1pt) node[below]{$40$};
+	\draw (2.5,1pt)--(2.5,-1pt) node[below]{$25$};
+	\draw (1pt,1.5)--(-1pt,1.5) node[left]{$15$};
+	\draw[dashed] (2.5,0)--(2.5,1.5)--(0,1.5);
+	\draw[fill=black] (0,0) circle (1pt) node[below left]{$O$} (0,3) circle (1pt) node[above right]{$A$} (2.5,1.5) circle (1pt) node[above right]{$B$} (4,0) circle (1pt) node[above]{$C$};
+\end{tikzpicture}
+}
+	\noindent Doanh thu mỗi đêm của bãi xe là $T=50x+70y$.\\
+	Để doanh thu mỗi đêm của bãi xe cao nhất, ta tìm giá trị lớn nhất của biểu thức $T=50x+70y$ trên miền tứ giác $OABC$.\\
+	Tính các giá trị của biểu thức $F$ tại các đỉnh của đa giác, ta có
+	\begin{center}
+		\begin{longtable}{|c|c|c|c|c|}
+			\hline
+			& $O(0;0)$& $A(0;30)$& $B(25;15)$& $C(40;0)$\\
+			\hline
+			$T=50x+70y$& $T=0$ & $T=2100$ &$T=2300$ & $T=2000$
+			\hline
+		\end{longtable}
+	\end{center}
+	Dựa vào bảng tính, ta thấy $T$ đạt giá trị lớn nhất bằng $2300$ tại $B(25;15)$.\\
+	Vậy để doanh thu bãi xe cao nhất, bãi xe cần đăng kí đậu xe cho $25$ xe du lịch và $15$ xe tải.
+	
+}
+\end{bt}

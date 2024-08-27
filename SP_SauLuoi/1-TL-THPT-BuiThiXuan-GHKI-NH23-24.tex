@@ -1,0 +1,143 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT BÙI THỊ XUÂN}
+%\begin{center}
+%	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+%\end{center}
+%\Opensolutionfile{ans}[ans/ans]
+%
+%%Câu 1
+%\begin{ex}%ID%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Võ Thị Thùy Trang]%[THPT BÙI THỊ XUÂN - Tp HCM]
+%
+%\choice
+%{}{}{}{}
+%\loigiai{
+%
+%}
+%\end{ex}
+%
+%
+%\Closesolutionfile{ans}
+%\begin{center}
+%	\textbf{ĐÁP ÁN}
+%	\inputansbox{10}{ans/ans}	
+%\end{center}
+\begin{center}
+	\textbf{PHẦN 2 - TỰ LUẬN}
+\end{center}
+
+\begin{bt}%[1D1N2-2]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Đạt Lê]%[THPT BÙI THỊ XUÂN - Tp HCM]
+	Cho $\tan \alpha=3$ với $0^{\circ}<\alpha<90^{\circ}$. Tính $\cot \alpha,$ $\cos \alpha,$ $\sin \alpha$.
+	\loigiai{
+		Ta có $ \cot \alpha  =\dfrac{1}{\tan \alpha }= \dfrac{1}{3}$.\\
+		Ta lại có $\dfrac{1}{\cos^2\alpha}=1+\tan^2\alpha=1+3^2=10 \Rightarrow \cos^2\alpha=\dfrac{1}{10}\Rightarrow \cos\alpha=\pm\dfrac{\sqrt{10}}{10}$.\\
+		Do $0^{\circ}<\alpha<90^{\circ}$ nên $\cos \alpha>0$, do đó $\cos\alpha=\dfrac{\sqrt{10}}{10}.$\\
+		Từ đó suy ra $\sin \alpha = \tan \alpha \cdot \cos \alpha = 3\cdot \dfrac{\sqrt{10}}{10} = \dfrac{3\sqrt{10}}{10}. $
+	}
+\end{bt}
+
+\begin{bt}%[1D1H3-2]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Đạt Lê]%[THPT BÙI THỊ XUÂN - Tp HCM]
+	Chứng minh rằng $\dfrac{\cos 3 x}{\sin x}+\dfrac{\sin 3 x}{\cos x}=2 \cot 2 x$.
+	\loigiai{
+		\begin{align*}
+			VT&=\dfrac{\cos 3 x}{\sin x}+\dfrac{\sin 3 x}{\cos x}\\
+			&=\dfrac{\cos 3 x \cdot \cos x +\sin 3x \cdot \sin x}{\sin x\cdot \cos x}\\
+			&=\dfrac{\cos (3x-x)}{\sin x\cdot\cos x}\\
+			&=\dfrac{\cos 2x}{\sin x\cdot\cos x}\\
+			&=\dfrac{2\cos 2x}{2\sin x\cdot\cos x}\\
+			&=\dfrac{2\cos 2x}{\sin 2x}\\
+			&=2 \cot 2x .
+		\end{align*}
+	}
+\end{bt}
+
+%Câu 3...........................
+\begin{bt}%[1D1H5-3]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Võ Thị Thùy Trang]%[THPT BÙI THỊ XUÂN - Tp HCM]
+	Giải phương trình $\cos \left(x+\dfrac{\pi}{3}\right)=\dfrac{1}{2}$.
+	\loigiai{\allowdisplaybreaks
+		\begin{eqnarray*}
+			\cos \left(x+\dfrac{\pi}{3}\right)=\dfrac{1}{2}&\Leftrightarrow &\cos \left(x+\dfrac{\pi}{3}\right)=\cos \dfrac{\pi}{3}\\
+			&\Leftrightarrow & \hoac{&x+\dfrac{\pi}{3}=\dfrac{\pi}{3}+k2\pi\\&x+\dfrac{\pi}{3}=-\dfrac{\pi}{3}+k2\pi} \\
+			&\Leftrightarrow & \hoac{&x=k2\pi\\&x=-\dfrac{2\pi}{3}+k2\pi} (k\in \mathbb{Z}).
+		\end{eqnarray*}
+		Vậy nghiệm của phương trình là $x=k2\pi$ $(k\in \mathbb{Z})$ và $x=-\dfrac{2\pi}{3}+k2\pi$ $(k\in \mathbb{Z})$.
+	}
+\end{bt}
+
+%Câu 4..........................
+	\begin{bt}%[1D2H2-4]%[1D2V2-5]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Võ Thị Thùy Trang]%[THPT BÙI THỊ XUÂN - Tp HCM]
+	Một khán đài của một Nhà thi đấu thể thao được thiết kế với $20$ hàng ghế, trong đó hàng thứ nhất có $25$ ghế ngồi; hàng thứ hai có $28$ ghế ngồi, hàng thứ ba là $31$ ghế ngồi,... và cứ như vậy cho đến hàng cuối cùng (số ghế ở hàng sau nhiều hơn $3$ ghế so với số ghế ở hàng liền trước nó).
+	\begin{enumerate}
+		\item  Tính số ghế ngồi ở hàng thứ $12$.
+		\item  Tính tổng số ghế ngồi của khán đài đó.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item  
+			\begin{itemize}
+				\item Gọi số ghế ở hàng thứ nhất là $u_1$ thì $u_1=25$.
+				\item Gọi số ghế ở hàng thứ hai là $u_2$ thì $u_2=28$.
+				\item Gọi số ghế ở hàng thứ ba là $u_3$ thì $u_3=31$.
+				\item $\cdots$ 
+				\item Gọi số ghế ở hàng thứ hai mươi là $u_{20}$.
+				\item Ta có dãy số $u_1$, $u_2$, $\cdots$, $u_{20}$ là cấp số cộng có công sai $d=3$.
+				\item Số ghế ngồi ở hàng thứ $12$ là $u_{12}=u_1+11\cdot d=25+11\cdot 3=58$ ghế.
+			\end{itemize}
+			\item Tổng số ghế ngồi của khán đài là $S_{20}=\dfrac{20}{2}\left( 2\cdot u_1+19\cdot d\right) =10\left( 50+57\right) =1070$ ghế.
+		\end{enumerate}
+	}
+\end{bt}
+
+%Câu 5...........................
+\begin{bt}%[1D2H3-6]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Don Lee]%[THPT Bùi Thị Xuân - Tp HCM]
+	[$1{,}25$ điểm] 
+	Tìm số hạng đầu, công bội và tổng của $2023$ số hạng đầu tiên của cấp số nhân $\left(u_n\right)$, biết $\heva{&u_1+u_2=4\\&u_2+u_3=4.}$
+	\loigiai{
+		Ta có $\heva{&u_1+u_2=4\\&u_2+u_3=4} \Leftrightarrow \heva{&u_1+u_1\cdot q=4\\&u_1\cdot q+u_1\cdot q^2=4} \Leftrightarrow \heva{&u_1\left(1+q\right)=4 &(1)\\&u_1q\left(1+q\right)=4. &(2)}$\\
+		Lấy $(2)$ chia $(1)$ vế theo vế ta có $q=1$.\\
+		Thay $q=1$ vào phương trình $(1)$ suy ra $u_1=2$.\\
+		Vậy tổng của $2023$ số hạng đầu là $S_{2023}=2023\cdot 2=4046$.
+	}
+\end{bt}
+
+%Câu 6...........................
+\begin{bt}%[1H4H1-3]%[1H4H1-6]%[1H4H1-4]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Don Lee]%[THPT Bùi Thị Xuân - Tp HCM]
+	[$3{,}75$ điểm]
+	Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình bình hành tâm $O$. Gọi $E$, $H$ lần lượt là trung điểm của $SA$ và $AB$.
+	\begin{enumerate}[a)]
+		\item Tìm giao tuyến của hai mặt phẳng $(SAC)$ và $(SBD)$.
+		\item Gọi $I$ là giao điểm của $SO$ và $CE$; $F$ là giao điểm của $SB$ và mặt phẳng $(ECD)$. Chứng minh ba điểm $D$, $I$, $F$ thẳng hàng.
+		\item Gọi $G$ là giao điểm của $SH$ và $BE$. Tìm giao điểm $K$ của của $GO$ và mặt phẳng $(SCD)$.
+	\end{enumerate}
+	\loigiai{
+		\immini
+		{\begin{enumerate}[a)]
+				\item Ta có $\heva{&O\in AC\subset (SAC)\\&O\in BD\subset (SBD)}$\\
+				suy ra $O\in (SAC)\cap (SBD)$.\\
+				Lại có $S\in (SAC)\cap (SBD)$,\\
+				suy ra $SO=(SAC)\cap (SBD)$.
+				\item Ta có $\heva{&I=SO\cap CE\\&F=SB\cap (CDE)}$ suy ra $\heva{&I\in (SBD)\cap (CDE)\\&F\in (SBD)\cap (CDE).}$\\
+				Lại có $D\in (SBD)\cap (CDE)$.\\
+				Do đó $D$, $I$, $F$ thẳng hàng.			
+				\item Gọi $M$ là trung điểm của $CD$.\\
+				Trong $(SHM)$, gọi $K=GO\cap SM$.\\
+				Ta có $\heva{&K\in GO\\&K\in SM\subset (SCD)}$ suy ra $K=GO\cap (SCD)$.
+		\end{enumerate}}
+		{\begin{tikzpicture}[>=stealth,line join=round,line cap=round,scale=1.2]
+				\path (0,0)coordinate[label=below:$A$](A) (-1.5,-1.5)coordinate[label=below:$B$](B) (4,0)coordinate[label=below:$D$](D) (2.5,-1.5)coordinate[label=below right:$C$](C);
+				\coordinate (N) at ($(A)!1/3!(C)$);
+				\coordinate[label=below:$O$] (O) at ($(A)!1/2!(C)$);
+				\coordinate[label=below right:$H$] (H) at ($(A)!1/2!(B)$);
+				\coordinate[label=above:$S$] (S) at ($(N)+(90:4)$);
+				\coordinate[label=above right:$E$] (E) at ($(A)!1/2!(S)$);
+				\coordinate[label=above right:$I$] (I) at ($(S)!2/3!(O)$);
+				\coordinate[label=left:$F$] (F) at ($(B)!1/2!(S)$);
+				\coordinate[label=below left:$G$] (G) at ($(S)!2/3!(H)$);
+				\coordinate[label=right:$M$] (M) at ($(C)!1/2!(D)$);
+				\coordinate[label=right:$K$] (K) at (intersection cs:first line={(G)--(O)}, second line={(S)--(M)});
+				\coordinate (J) at (intersection cs:first line={(G)--(K)},second line={(B)--(C)});
+				\draw (J)--(K)--(S)--(B)--(C)--(D)--(S)--(C);
+				\draw[dashed] (C)--(A)--(B)--(D)--(A)--(S)--(O)  (C)--(E)--(D)--(I)--(F)  (S)--(H)--(M)  (B)--(E)  (G)--(J);
+				\foreach \diem in {A,B,C,D,S,O,E,H,I,F,G,M,K} \fill[black](\diem)circle(1.5pt);
+		\end{tikzpicture}}
+	}
+\end{bt}

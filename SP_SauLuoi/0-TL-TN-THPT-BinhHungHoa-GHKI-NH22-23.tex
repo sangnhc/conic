@@ -1,0 +1,228 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{BÌNH HƯNG HÒA}
+\begin{center}
+	\textbf{PHẦN 2 - TỰ LUẬN}
+\end{center}
+
+%%==========Bài 1
+\begin{bt}%[ĐỀ GIỮA HỌC KÌ I- THPT Bình Hưng Hòa-HCM]%[Nguyễn Tài Tuệ]%Câu 1%[0D1H1-5]
+	Xét tính đúng sai và viết mệnh đề phủ định của mệnh đề $P\colon $  \lq\lq $\forall x \in \mathbb{R}$, $x^2+8>4 x$\rq\rq.
+	\loigiai{
+		Ta có $x^2+8>4x\Leftrightarrow x^2-4x+8>0\Leftrightarrow (x-2)^2+4>0$ luôn đúng $\forall x \in \mathbb{R}$.\\
+		Do đó mệnh đề $P$ là mệnh đề đúng.\\
+		Mệnh đề $\overline{P}\colon $\lq\lq $\exists x \in \mathbb{R}, x^2+8\le 4x$\rq\rq.
+	}
+\end{bt}
+
+%%==========Bài 2
+\begin{bt}%Câu 2%[ĐỀ GIỮA HỌC KÌ I- THPT Bình Hưng Hòa-HCM]%[Nguyễn Tài Tuệ] %[0D1H3-4]
+	Xác định các tập hợp sau
+	\begin{enumerate}
+		\item $\{0 ; 3 ; 6 ; 9\}\cup\{2 ; 4 ; 6 ; 8\}$.
+		\item $A \setminus B$ với $A=\{x \in \mathbb{Z}  \big| \mid x \mid \leq 2\}$ và $B=\{n \in \mathbb{N}\mid n<4\}$.
+		\item $C \cap D$ với $C=\{x \in \mathbb{R}\mid-3<x \leq 4\}$ và $D=\{x \in \mathbb{R}\mid-1<x<6\}$.
+		\item $C_{\mathbb{R}}E$ với $E=\{x \in \mathbb{R}\mid 5-3 x<0\}$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Ta có $\{0 ; 3 ; 6 ; 9\}\cup\{2 ; 4 ; 6 ; 8\} =\{0;2;3;4;6;8;9\}$.
+			\item Có $A=\{-2; -1 ;0 ;1 ;2\}$, $B=\{0; 1; 2; 3\}$ nên $A\setminus B=\{-2; -1\}$.
+			\item Có $C=(-3;4]$, $D=(-1;6)$. Do đó $C\cap D =(-1;4]$.
+			\item Có $5-3x<0\Leftrightarrow x>\dfrac{5}{3}$. Nên $E=\left(\dfrac{5}{3};+\infty\right) $.\\
+			Do đó   $C_{\mathbb{R}}E =\left(-\infty;\dfrac{5}{3}\right] $.
+		\end{enumerate}
+	}
+\end{bt}
+
+%%==========Bài 3
+\begin{bt}%Câu 3%[ĐỀ GIỮA HỌC KÌ I- THPT Bình Hưng Hòa-HCM]%[Nguyễn Tài Tuệ]%[0D2H1-2]
+	Biểu diễn miền nghiệm của bất phương trình $x+2 y-3 \leq 0$ trên mặt phẳng tọa độ $O x y$.
+	\loigiai{
+		\begin{itemize}
+			\item Vẽ đường thẳng $x+2y-3=0$.\\
+			Với $x=0\Rightarrow y=\dfrac{3}{2}$, với $y=0\Rightarrow x=3$.
+			\item Thay $O(0;0)$ vào bất phương trình đã cho ta thấy thõa mãn.\\
+			Do đó miền nghiệm của bất phương trình là nửa mặt chứa điểm $O$ có bờ là đường thẳng $x+2y-3=0$ (kể cả bờ).
+			\begin{center}
+				\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+					\tikzset{every node/.style={scale=0.9}}
+					\begin{scope}
+						\clip (-1,-1) rectangle (4,3);
+						\fill[pattern=north east lines] (-4,3.5)--(6,3.5)--(6,-1.5)--cycle;
+						\draw (-3,3)--(5,-1) node [pos=0.55, below, sloped] {$x+2y-3=0$};
+					\end{scope}
+					\draw[->] (-1,0)--(4,0) node[below]{$x$};
+					\draw[->] (0,-1)--(0,3) node[left]{$y$};
+					\draw (0,0) node[below left]{$O$};
+				\end{tikzpicture}
+			\end{center}
+		\end{itemize}
+	}
+\end{bt}
+%%==========Bài 4
+\begin{bt}%[0H4V3-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lê Văn Toàn]%[Bình Hưng Hòa]
+	Cho tam giác $ABC$ có $\widehat{A}=70^\circ$, $\widehat{B}=80^\circ$ và $AB=5$.
+	\begin{enumerate}
+		\item Giải tam giác $ABC$.
+		\item Tính bán kính đường tròn ngoại tiếp và diện tích của tam giác $ABC$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Ta có $\widehat{C}=180^\circ -\left(\widehat{A}+\widehat{B}\right)=180^\circ-\left(70^\circ+80^\circ\right)=30^\circ$.\\
+			Áp dụng định lý $\sin$ ta có $\dfrac{BC}{\sin A}=\dfrac{AC}{\sin B}=\dfrac{5}{\sin 30^\circ}$.\\
+			Suy ra $BC=\dfrac{5\sin 70^\circ}{\sin 30^\circ}\approx 9{,}3969$; $AC=\dfrac{5\sin 80^\circ}{\sin 30^\circ}\approx 9{,}8481$.\\
+			\item Theo công thức diện tích tam giác ta có $$S=AC \cdot AB \cdot \sin A\approx 9{,}8481 \cdot 5 \cdot \sin 30^\circ \approx 24{,}6202.$$
+			Ta có $S=\dfrac{abc}{4R} \Rightarrow \dfrac{abc}{4S}=\dfrac{9{,}3969 \cdot 9{,}8481 \cdot 5}{4\cdot 24{,}6202} \approx 4{,}6985$.
+		\end{enumerate}
+		
+	}
+\end{bt}
+
+%%==========Bài 5
+\begin{bt}%[0D1V3-5]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lê Văn Toàn]%[Bình Hưng Hòa]
+	Lớp $10C$ có $20$ bạn chơi bóng đá, $25$ bạn chơi cầu lông, $12$ bạn chơi cả hai môn và $7$ bạn không chơi môn nào trong hai môn thể thao này.
+	\begin{enumerate}
+		\item Lớp $10C$ có bao nhiêu học sinh chơi ít nhất một trong hai môn thể thao bóng đá và cầu lông?
+		\item Lớp $10C$ có bao nhiêu học sinh?
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Gọi $A$, $B$ lần lượt là tập hợp các bạn chơi bóng đá và cầu lông.\\
+			Khi đó, $n(A\cup B)=n(A)+n(B)-n(A \cap B)=20+25-12=33$.\\
+			Vậy có $33$ bạn chơi ít nhất một trong hai môn thể thao.
+			\item Số học sinh của lớp là bao gồm các bạn chơi ít nhất một trong hai môn thể thao và các bạn không chơi môn nào.\\
+			Vậy lớp $10C$ có $33+7=40$ học sinh.
+		\end{enumerate}
+	}
+\end{bt}
+%%==========Bài 6
+\begin{bt}%%[0D2C2-3]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Nguyễn Hoàng Việt]%[Bình Hưng Hòa][1.0 điểm] 
+	Một công ty cần thuê xe để chở $120$ thùng sơn và $6{,}5$ tấn bột bả. Nơi thuê xe có hai loại xe $A$ và $B$, trong đó loại xe $A$ có $9$ chiếc và loại xe $B$ có $8$ chiếc. Một chiếc xe loại $A$ cho thuê với giá 4 triệu đồng, một chiếc xe loại $B$ cho thuê với giá 3 triệu đồng. Biết rằng mỗi chiếc xe loại $A$ có thể chở tối đa $20$ thùng sơn và $0{,}5$ tấn bột bả; mỗi chiếc xe loại $B$ có thể chở tối đa $10$ thùng sơn và $2$ tấn bột bả. Hỏi phải thuê bao nhiêu xe mỗi loại để chi phí bỏ ra là thấp nhất?
+	\loigiai{Gọi $x$(xe), $y$(xe) lần lượt là số xe loại $A$ và loại $B$ cần phải thuê.\\
+		Số tiền cần bỏ ra để thuê xe là: $ f\left(x;y\right)=4x+3y$ (triệu đồng).
+		\immini{
+			
+			Ta có $x$ xe loại $A$ và $y$ xe loại $B$ sẽ chở được $20x+10y$ thùng sơn và $0{,}5x+2y$ tấn bột bả.\\
+			Theo đề bài, ta có hệ bất phương trình: 
+			$\heva{&0 \le x \le 9\\ &0 \le y \le 8\\ &20x+10y \ge 120\\ &0{,}5x+2y \ge 6.5}
+			\Leftrightarrow 
+			\heva{ &0\le x\le9\\ &0\le y\le8\\ &2x+y\ge12\\ &x+4y\ge13} $.\\
+			Miền nghiệm của hệ bất phương trình trên là tứ giác $ABCD$(kể cả biên) với $A\left(5;2\right)$, $B\left(9;1\right)$, $C\left(9;8\right)$, $D\left(2;8\right)$ như hình vẽ.\\		
+			Ta có: $ f\left(5;2\right)=26$; $ f\left(9;1\right)=39$; $ f\left(9;8\right)=60$; $ f\left(2;8\right)=32$.\\
+			Suy ra $ f\left(x;y\right)$ nhỏ nhất khi $\left(x;y\right)=\left(5;2\right)$\\
+			Vậy để chi phí thuê là thấp nhất thì cần thuê $5$ xe loại $A$ và $2$ xe loại $B$.	
+		}{
+			\begin{tikzpicture}[scale=0.45,thick,>=stealth']
+				% Tiến hành vẽ hai trục tọa độ
+				\draw[->,color=black, thick] (-2,0) -- (14.3,0)node[above]{$x$}; 
+				\foreach \x in {-2,2,4,6,8,10,12,14}
+				\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+				\draw[->,color=black] (0,-2) -- (0,14.3)node[right]{$y$};
+				\foreach \y in {-2,2,4,6,8,10,12,14}
+				\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+				\node[below left] at (0,0) {$O$};				
+				\clip(-2,-2) rectangle (14.3,14.3); 
+				\draw[line width=1.2pt,smooth,samples=100,domain=-2:14.3] plot(\x,{8+0*(\x)});
+				\fill[pattern=north west lines,smooth,opacity=0.5,pattern color=green] (-2,8)--(-2,14.3)--(14.3,14.3)--(14.3,8)-- cycle;
+				\draw[line width=1.2pt,smooth,samples=100,domain=-2:14.6] plot(\x,{0*(\x)});
+				\fill[pattern= north east lines,smooth,opacity=0.5,pattern color=yellow] (-2,-2)--(-2,0) --(14.3,0)--(14.3,-2)-- cycle;
+				\fill[pattern=north east lines,smooth,opacity=0.5,pattern color=orange] (9,16.3)--(14.3,14.3)--(14.3,-2)--(9,-2)-- cycle;
+				\draw[line width=1.2pt,smooth,samples=100](9,-2)--(9,14.3);
+				\draw[line width=1.2pt,smooth,samples=100](0,-2)--(0,14.3); 
+				\fill[pattern=north east lines,smooth,opacity=0.5,pattern color=blue] (-2,-2)--(-2,14.3)--(0,14.3)--(0,-2)-- cycle; 
+				\draw[line width=1.2pt,smooth,samples=100,domain=-2:14.3] plot(\x,{12-2*(\x)}); 
+				\fill[pattern=north east lines,smooth,opacity=0.5,pattern color=red] (-2,-2)--(-2,14.3)--(-1.15,14.3) -- (7,-2)-- cycle;	
+				\draw[line width=1.2pt,smooth,samples=100,domain=-2:14.3] plot(\x,{13/4-1/4*(\x)});
+				\fill[pattern=north west lines,smooth,opacity=0.5,pattern color=blue] (-2,-2)--(-2,15/4)--(14.3,-1.3/4)--(14.3,-2)-- cycle;
+				\node[above right] at (5,2) {$A$};
+				\node[below right] at (2,8) {$B$};
+				\node[below left] at (9,8) {$C$};
+				\node[above left] at (9,1) {$D$};
+			\end{tikzpicture}
+		}
+		
+	}
+\end{bt}
+
+
+
+
+%%==========Bài 7
+\begin{bt}%%[0H1V2-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Nguyễn Hoàng Việt]%[Bình Hưng Hòa][1.0 điểm] 
+	\immini{
+		Cho hình thang $ABCD$ có đáy cạnh đáy bé $AB=12$ và cạnh bên $BC=20$ 
+		(minh họa như hình vẽ bên dưới). Biết rằng $\cos\widehat{ABC}=\dfrac{4}{5}$ và $\dfrac{AC}{BD}=\dfrac{\sqrt{290}}{15}$. Tính chính xác
+		diện tích hình thang $ABCD$.		
+	}{\begin{tikzpicture}[>=stealth,line join=round, line cap=round, scale=0.7]
+			\coordinate (A) at (2,3);
+			\coordinate (B) at (5.5,3);
+			\coordinate (C) at (9,-1);
+			\coordinate (D) at (0,-1);
+			\coordinate (E) at (5.5,-1);
+			\draw (A) node[above]{$A$}--(B) node[above]{$B$}--(C) node[below right]{$C$}--(D) node[below]{$D$}--(A);
+			\node [blue, above] at (3.75,3) {$12$};
+			\draw (5.5,3)--(9,-1) node [blue, pos=0.5, above, sloped] {$20$};				
+			\draw 	pic["", draw=black, angle eccentricity=1.5, angle radius=0.7cm]{angle=A--B--C};			
+			\fill (2,3) circle (1.5pt);
+			\fill (5.5,3) circle (1.5pt);
+			\fill (9,-1) circle (1.5pt);
+		%	\fill (5.5,-1) circle (1.5pt);
+			\fill (0,-1) circle (1.5pt);
+		\end{tikzpicture}
+	}
+	\loigiai{
+		\immini{
+			\allowdisplaybreaks
+			Áp dụng định lí hàm số cô-sin ta có
+			\begin{eqnarray*}
+				{{AC}^2}&=&{{AB}^2}+{{BC}^2}-2\cdot AB\cdot BC\cdot cos\widehat{ABC}\\&=&928\\
+				\Rightarrow AC&=&4\sqrt{58}
+			\end{eqnarray*}		
+			Do 
+		\allowdisplaybreaks
+		$\begin{aligned}[t]
+			\dfrac{AC}{BD}&=\dfrac{\sqrt{290}}{15}\\
+			\Rightarrow BD&=\dfrac{15\cdot AC}{\sqrt{290}}
+			&=\dfrac{15\cdot 4\sqrt{58}}{\sqrt{290}}
+			&=12\sqrt{5}
+		\end{aligned}$\\
+		}{
+			\begin{tikzpicture}[>=stealth,line join=round, line cap=round, scale=0.8]
+				\coordinate (A) at (2,3); 
+				\coordinate (B) at (5.5,3);
+				\coordinate (C) at (9,-1);
+				\coordinate (D) at (0,-1);
+				\coordinate (E) at (5.5,-1);
+				\draw (A) node[above]{$A$}--(B) node[above]{$B$}--(C) node[below right]{$C$}--(D) node[below]{$D$}--(A)--(C) (B)--(D);
+				\draw[dashed] (E) node[below]{$E$}--(B); 
+				\node [blue, above] at (3.75,3) {$12$};
+				\draw (5.5,3)--(9,-1) node [blue, pos=0.5, above, sloped] {$20$}; \draw 	pic["", draw=black, angle eccentricity=1.5, angle radius=0.7cm]{angle=A--B--C};
+				
+				\draw pic[draw,angle radius=3mm]{right angle= B--E--D};
+				\fill (2,3) circle (1.5pt);
+				\fill (5.5,3) circle (1.5pt);
+				\fill (9,-1) circle (1.5pt);
+				\fill (5.5,-1) circle (1.5pt);
+				\fill (0,-1) circle (1.5pt);
+			\end{tikzpicture}
+		}
+	
+		Kẻ $BE\perp DC$ ta có: 
+		\allowdisplaybreaks	%\begin{eqnarray*}
+			$\begin{aligned}[t]	
+			{{S}_{ABC}}&=&{{S}_{ABE}} \\
+			\Leftrightarrow 
+			\dfrac{1}{2}\cdot AB\cdot BC\cdot \sin \widehat{ABC}&=&\dfrac{1}{2}\cdot AB\cdot BE \\
+			\Rightarrow BE&=&BC\cdot \sin\widehat{ABC}
+			&=&20\cdot \dfrac{3}{5}&=&12
+			\end{aligned}$\\
+		%\end{eqnarray*}	
+		Mặt khác
+		$DE=\sqrt{B{{D}^2}-B{{E}^2}}=24$ và $EC=\sqrt{B{{C}^2}-B{{E}^2}}=16$ \\
+		suy ra $DC=DE+EC=24+16=40$\\
+		Vậy ${{S}_{ABCD}}=\dfrac{\left(AB+DC\right).BE}{2}=\dfrac{\left(12+40\right)\cdot 12}{2}=312$
+	}
+\end{bt}
+
+
+

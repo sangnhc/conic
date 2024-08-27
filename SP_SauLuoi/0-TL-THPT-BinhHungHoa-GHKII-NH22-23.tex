@@ -1,0 +1,210 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Bình Hưng Hoà}
+
+
+
+\begin{bt}%[0T7Y1-1]%[Dự án đề kiểm tra GHKII NH22-23 - Quang Anh]%[Bình Hưng Hòa]
+ Xét dấu tam thức bậc hai $f(x)=2x^2-9x+4$.
+\loigiai{
+Xét $ f(x)=0\Leftrightarrow \hoac{&x=\dfrac{1}{2}\\&x=4}$. Khi đó ta có bảng xét dấu như sau:
+\begin{center}
+	\begin{tikzpicture}[>=stealth]
+		\tkzTabInit[nocadre=false,lgt=1,espcl=2,deltacl=0.5]{$x$/1 ,$y$/.7}
+		{$-\infty$ , $\dfrac{1}{2}$ , $4$ , $+\infty$}
+		\tkzTabLine{ , + , z , - , z , + , }
+	\end{tikzpicture}
+\end{center}
+Dựa vào bảng xét dấu suy ra $f(x)>0$ khi $x\in \left(-\infty;\dfrac{1}{2}\right) \cup (4;+\infty)$; $f(x)<0$ khi $x\in \left(\dfrac{1}{2}; 4\right)$.
+}
+\end{bt}
+\begin{bt}%[0T7B3-2]%[Dự án đề kiểm tra GHKII NH22-23 - Quang Anh]%[Bình Hưng Hòa]
+Giải phương trình $\sqrt{2x^2-10x+9}=x-2$.
+\loigiai{
+\begin{eqnarray*}
+	& & \sqrt{2x^2-10x+9}=x-2\\
+	&\Leftrightarrow & \heva{&x-2\ge0\\&2x^2-10x+9=(x-2)^2}\\
+	&\Leftrightarrow & \heva{&x\ge2\\&x^2-6x+5=0}\\
+	&\Leftrightarrow & \heva{&x\ge2\\&\hoac{&x=1\\&x=5}}\Leftrightarrow	x=5.
+\end{eqnarray*}
+Vậy $S=\{5\}$.
+}
+\end{bt}
+\begin{bt}%[0T7B2-1]%[Dự án đề kiểm tra GHKII NH22-23 - Quang Anh]%[Bình Hưng Hòa]
+Tìm tất cả các giá trị của tham số $m$ để $2x^2-2(m-3)x+m+1 \geq 0$ với mọi $x \in \mathbb{R}$.
+\loigiai{
+\allowdisplaybreaks\begin{eqnarray*}
+	& &2x^2-2(m-3)x+m+1 \geq 0, \forall x\in \mathbb{R}\\
+	&\Leftrightarrow & \heva{&a>0\\&\Delta'\leq 0}\\ 
+	&\Leftrightarrow &\heva{&2>0\\&(m-3)^2-2(m+1)\leq 0}\\
+	&\Leftrightarrow & m^2-8m+7\leq 0 \\
+	&\Leftrightarrow & 1\leq m\leq 7.
+\end{eqnarray*}
+Vậy $ 1\leq m\leq 7 $.
+}
+\end{bt}
+\begin{bt}%[0T8B2-1]%[Dự án đề kiểm tra GHKII NH22-23 - Quang Anh]%[Bình Hưng Hòa]
+Từ tám chữ số $0,1,2,3,4,5,6,7$, có thể lập được bao nhiêu số tự nhiên lẻ có bốn chữ số đôi một khác nhau?
+\loigiai{
+Gọi $\overline{abcd}$ là số cần lập.
+\begin{itemize}
+	\item Chọn $d$ có $4$ cách.
+	\item Chọn $a\ne 0$ và $a\ne d$ có $6$ cách.
+	\item Chọn $b,c$ có $\mathrm{A}_6^2$ cách.
+\end{itemize}
+Vậy có $4\cdot 6\cdot \mathrm{A}_6^2=720$ số.
+}
+\end{bt}
+
+%%=====Bài 5
+\begin{bt}%[0T9B2-2]%[Dự án đề kiểm tra HKII NH22-23-Thầy Hóa]%[THPT Bình Hưng Hòa]
+Trong mặt phẳng với hệ tọa độ $Oxy$, cho tam giác $ABC$ có $A(1;-2)$, $B(-2;1)$ và $C(3;4)$. Lập phương trình tham số và phương trình tổng quát của đường cao $AH$.
+\loigiai{
+\immini{
+	Vì $AH\perp BC$ nên $AH$ nhận $\vec{BC}=(5;3)$ làm véc-tơ pháp tuyến.\\
+	Suy ra véc-tơ chỉ phương của $AH$ là $\vec{u}=(3;-5)$.\\
+	Phương trình tham số của $AH\colon \heva{&x=1+3t\\&y=-2-5t}\ \left(t\in\mathbb{R}\right)$.\\
+	Phương trình tổng quát của $AH$:
+	\[5(x-1)+3(y+2)=0\Leftrightarrow 5x+3y+1=0. \]
+	Vậy $AH\colon 5x+3y+1=0$.
+}{
+	\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=1]
+		\path
+		(1,-2) coordinate (A)
+		(-2,1) coordinate (C)
+		(3,4) coordinate (B)
+		($(B)!(A)!(C)$) coordinate (H)
+		;
+		\draw
+		(A)--(C)--(B)--cycle (A)--(H)
+		;
+		\foreach \x/\g in {A/-90,C/180,B/90,H/130}\fill[black](\x) circle (1pt) +(\g:3mm) node {$\x$};
+		\foreach \x/\y/\z in {A/H/C}{\draw pic[draw,angle radius=2mm]{right angle=\x--\y--\z};}
+	\end{tikzpicture}
+}
+}
+\end{bt}
+
+%%=====Bài 6
+\begin{bt}%[0T9B3-2]%[Dự án đề kiểm tra HKII NH22-23-Thầy Hóa]%[THPT Bình Hưng Hòa]
+Trong mặt phẳng với hệ tọa độ $Oxy$, viết phương trình đường tròn $(C)$ có đường kính $MN$ với $M(5;2)$ và $N(1;-6)$.
+\loigiai{
+Gọi $I$ là tâm đường tròn $(C)$ đường kính $MN$.\\
+Suy ra $I$ là trung điểm của $MN$, suy ra $I(3;-2)$.\\
+Bán kính $R=IM=\sqrt{(5-3)^2+(2+2)^2}=2\sqrt{5}$.\\
+Phương trình đường tròn $(C)$ có tâm $I(3;-2)$, bán kính $R=2\sqrt{5}$ là
+\[(C)\colon (x-3)^2+(y+2)^2=20. \]
+}
+\end{bt}
+
+%%=====Bài 7
+\begin{bt}%[0T4K2-1]%[Dự án đề kiểm tra HKII NH22-23-Thầy Hóa]%[THPT Bình Hưng Hòa]
+\immini{
+Cho tam giác $ABC$ có $\widehat{BAC}=30^\circ$ và $AB=4\sqrt{3}$ cm. Điểm $D$ nằm trên cạnh $AC$ sao cho $\dfrac{AD}{CD}=\dfrac{4}{3}$. Đặt độ dài đoạn $AD=x$ cm. Tìm $x$ biết $BD$ dài hơn $CD$ $1$ cm và $\widehat{ADB}$ là góc tù.
+}{
+\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=0.7]
+	\def\a{7};
+	\pgfmathsetmacro\b{4*sqrt(3)};
+	\def\g{30};
+	\path
+	(0,0) coordinate (A)
+	(0:\a) coordinate (C)
+	(\g:\b) coordinate (B)
+	($(A)!4/7!(C)$) coordinate (D)
+	;
+	\draw
+	(A)--(D)node[midway,sloped,below]{\scriptsize $x$}--(C)--(B)--cycle (B)--(D)
+	;
+	\foreach \x/\g in {A/-135,C/-45,B/90,D/-90}\fill[black](\x) circle (1pt) +(\g:3mm) node {$\x$};
+	\node[rotate=15] at ($(A)+(15:0.9)$){\scriptsize $30^\circ$};
+\end{tikzpicture}
+}
+\loigiai{
+Ta có $\dfrac{BD}{CD}=\dfrac{4}{3}$ hay $\dfrac{x}{CD}=\dfrac{4}{3}\Rightarrow CD=\dfrac{3x}{4}$.\\
+Suy ra $BD=CD+1=\dfrac{3x}{4}+1=\dfrac{3x+4}{4}$.\\
+Áp dụng định lý Cô-sin, ta lại có
+\allowdisplaybreaks
+\begin{eqnarray*}
+&&BD^2=AB^2+AD^2-2\cdot AB\cdot AD\cdot \cos A\\
+&\Leftrightarrow &\left(\dfrac{3x+4}{4}\right)^2=\left(4\sqrt{3}\right)^2+x^2-2\cdot 4\sqrt{3}\cdot x\cdot \cos 30^\circ\\
+&\Leftrightarrow &\dfrac{9x^2+24x+16}{16}=48+x^2-12x\\
+&\Leftrightarrow &9x^2+24x+16=16x^2-192x+768\\
+&\Leftrightarrow &7x^2-216x+752=0\\
+&\Leftrightarrow &\hoac{&x=\dfrac{188}{7}\\&x=4.}
+\end{eqnarray*}
+\begin{itemize}
+	\item Với $x=4$ suy ra $AD=4$ cm, $CD=3$ cm và $BD=4$ cm.\\
+	Suy ra $AD=BD=4$ cm nên $\triangle ABD$ cân tại $D$, suy ra $\widehat{ADB}=180^\circ-2\cdot 30^\circ=120^\circ$ (thỏa mãn).
+	\item Với $x=\dfrac{188}{7}$ suy ra $AD=\dfrac{188}{7}$ cm, $CD=\dfrac{141}{7}$ cm và $BD=\dfrac{148}{7}$ cm.\\
+	Suy ra $\cos \widehat{ADB}=\dfrac{AD^2+BD^2-AB^2}{2\cdot AD\cdot BD}=\dfrac{73}{74}$.\\
+	Suy ra $\widehat{ADB}\approx 9^\circ$ (không thỏa mãn).
+\end{itemize}
+Vậy $x=4$cm thỏa mãn yêu cầu bài toán.
+}
+\end{bt}
+
+%%=====Bài 8
+\begin{bt}%[0T9G2-6]%[Dự án đề kiểm tra HKII NH22-23-Thầy Hóa]%[THPT Bình Hưng Hòa]
+Trong mặt phẳng với hệ tọa độ $Oxy$, cho hình chữ nhật $ABCD$ có diện tích bằng $30$ và hai điểm $M(1;4)$, $N(3;-2)$ lần lượt nằm trên hai đường thẳng $AB$, $BC$. Phương trình đường chéo $BD$ là $x-8y+11=0$. Tìm tọa độ đỉnh $B$ và $D$ của hình chữ nhật $ABCD$, biết $B$ và $D$ có hoành độ nguyên dương.
+\loigiai{
+\immini{
+$BD$ đi qua điểm $E(-3;1)$ và có véc-tơ pháp tuyến $\vec{n}=(1;-8)$, suy ra véc-tơ chỉ phương $\vec{u}=(8;1)$.\\
+Phương trình tham số của $BD\colon \heva{&x=-3+8t\\&y=1+t}\ \left(t\in\mathbb{R}\right)$.\\
+Điểm $B\in BD$ nên $B(-3+8t;1+t)$.\\
+Ta có $\vec{MB}=(8t-4;t-3)$; $\vec{NB}=(8t-6;t+3)$.\\
+Vì $ABCD$ là hình chữ nhật nên $AB\perp BC$ hay $MB\perp NB$, suy ra
+}{
+\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=1]
+	\def\a{5};%dài
+	\def\b{3};%rộng
+	\path
+	(0,0) coordinate (D)
+	(0:\a) coordinate (C)
+	(90:\b) coordinate (A)
+	($(A)+(C)-(D)$) coordinate (B)
+	($(A)!0.6!(B)$) coordinate (M)
+	($(B)!0.7!(C)$) coordinate (N)
+	;
+	\draw
+	(A)--(B)--(C)--(D)--cycle (B)--(D)
+	;
+	\foreach \x/\g in {A/135,B/45,C/-45,D/-135,M/90,N/0}\fill[black](\x) circle (1pt) +(\g:3mm) node {$\x$};
+	\foreach \x/\y/\z in {A/D/C,A/B/C,B/A/D,B/C/D}{\draw pic[draw,angle radius=2mm]{right angle=\x--\y--\z};}
+\end{tikzpicture}
+}
+\allowdisplaybreaks
+\begin{eqnarray*}
+	\vec{MB}\cdot\vec{NB}=0&\Leftrightarrow &(8t-4)(8t-6)+(t-3)(t+3)=0\\
+	&\Leftrightarrow &64t^2-80t+24+t^2-9=0\\
+	&\Leftrightarrow &65t^2-80t+15=0\\
+	&\Leftrightarrow &\hoac{&t=1\\&t=\dfrac{3}{13}.}
+\end{eqnarray*}
+\begin{itemize}
+	\item Với $t=1$ suy ra $B(5;2)$ (thỏa mãn $x_B$ nguyên dương).
+	\item Với $t=\dfrac{3}{13}$ suy ra $B\left(-\dfrac{15}{13};\dfrac{16}{13}\right)$ (không thỏa mãn $x_B$ nguyên dương).
+\end{itemize}
+Suy ra $B(5;2)$; $\vec{MB}=(4;-2)$ và $\vec{NB}=(2;4)$.\\
+Phương trình tổng quát của $AB$ đi qua $B(5;2)$, nhận $\vec{NB}=(2;4)$ làm véc-tơ pháp tuyến
+\[AB\colon 2(x-5)+4(y-2)=0\Leftrightarrow 2x+4y-18=0\Leftrightarrow x+2y-9=0. \]
+Phương trình tổng quát của $BC$ đi qua $B(5;2)$, nhận $\vec{MB}=(4;-2)$ làm véc-tơ pháp tuyến
+\[BC\colon 4(x-5)-2(y-2)=0\Leftrightarrow 4x-2y-16=0\Leftrightarrow 2x-y-8=0. \]
+Vì $D\in BD$ nên $D(-3+8a;1+a)\ (a\in\mathbb{R})$.\\
+Vì diện tích hình chữ nhật bằng $30$ nên
+\allowdisplaybreaks
+\begin{eqnarray*}
+DC\cdot AD=30&\Leftrightarrow &\mathrm{d}(D,BC)\cdot \mathrm{d}(D,AB)=30\\
+&\Leftrightarrow &\dfrac{\left|2(-3+8a)-(1+a)-8\right|}{\sqrt{1^2+2^2}}\cdot\dfrac{\left|-3+8a+2(1+a)-9\right|}{\sqrt{2^2+(-1)^2}}=30\\
+&\Leftrightarrow &\left|15a-15\right|\cdot\left|10a-10\right|=150\\
+&\Leftrightarrow &\left|(15a-15)(10a-10)\right|=150\\
+&\Leftrightarrow &\left|150\left(a-1\right)^2\right|=150\\
+&\Leftrightarrow &150(a-1)^2=150\\
+&\Leftrightarrow &(a-1)^2=1\\
+&\Leftrightarrow &\hoac{&a-1=1\\&a-1=-1}\Leftrightarrow\hoac{&a=2\\&a=0.}
+\end{eqnarray*}
+\begin{itemize}
+	\item Với $a=2$ suy ra $D(13;3)$ (thỏa mãn $x_D$ nguyên dương).
+	\item Với $a=0$ suy ra $D(-3;1)$ (không thỏa mãn $x_D$ nguyên dương).
+\end{itemize}
+Vậy $B(5;2)$ và $D(13;3)$.
+}
+\end{bt}
+

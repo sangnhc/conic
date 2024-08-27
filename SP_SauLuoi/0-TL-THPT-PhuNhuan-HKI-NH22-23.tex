@@ -1,0 +1,234 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Phú Nhuận}
+
+\begin{bt}%[0T6B3-1]%[Đề kiểm tra HK1 môn Toán 10 trường THPT Phú Nhuận - HCM]%[Nguyễn Vương Hiển]
+	Nhiệt độ của Hà Nội trong $10$ ngày liên tiếp được ghi lại trong bảng sau
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+			\hline 
+			33 & 34 & 36 & 34 & 34 & 30 & 33 & 34 & 35 & 34 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	Tính số trung bình, số trung vị, khoảng biến thiên và phương sai của bảng trên.
+	\loigiai{
+		Bảng phân bố tần số
+		\begin{center}
+			\begin{tabular}{|l|c|c|c|c|c|}
+				\hline 
+				Nhiệt độ & 30 & 33 & 34 & 35 & 36\\
+				\hline
+				Số ngày & 1 & 2 & 5 & 1 &1\\
+				\hline
+			\end{tabular}
+		\end{center}
+		Từ bảng tóm tắt, ta có các kết quả
+		\begin{itemize}
+			\item Số trung bình là $\overline{x}=\dfrac{30+33\cdot 2+34\cdot 5+35+36}{10}=33{,}7$.
+			\item Số trung vị là $Q_2=34$.
+			\item Khoảng biến thiên là $R=36-30=6$.
+			\item Phương sai là $$s^2=\dfrac{(30-33,7)^2+2\cdot (33-33,7)^2+5\cdot (34-33,7)^2+(35-33,7)^2+(36-33,7)^2}{10}=2{,}21.$$
+		\end{itemize}
+	}
+\end{bt}
+\begin{bt}%[0T2K2-2]%[Đề kiểm tra HK1 môn Toán 10 trường THPT Phú Nhuận - HCM]%[Nguyễn Vương Hiển]
+	Một bác nông dân cần trồng lúa và khoai trên diện tích đất gồm $6$ ha, với lượng phân bón dự trữ là $100$ kg. Để trồng $1$ ha lúa cần sử dụng $20$ kg phân bón với lợi nhuận là $30$ triệu đồng, để trồng $1$ ha khoai cần sử dụng $10$ kg phân bón với lợi nhuận là $20$ triệu đồng. Để đạt được lợi nhuận cao nhất, bác nông dân đã trồng $x$ ha lúa và $y$ ha khoai $(x, y \geq 0)$. Tìm giá trị của $x$.
+	\loigiai{
+		\begin{itemize}
+			\item Trồng $x$ ha lúa sẽ cần $20x$ kg phân bón, cho lợi nhuận là $30x$ triệu đồng.
+			\item Trồng $y$ ha khoai sẽ cần $10y$ kg phân bón, cho lợi nhuận là $20y$ triệu đồng.
+		\end{itemize}
+		Ta có hệ bất phương trình $\heva{&x \ge 0 \\&y \ge 0 \\&x+y \le 6 \\&20x+10y \le 100} \Leftrightarrow \heva{&x \ge 0 \\&y \ge 0 \\&x+y \le 6 \\&2x+y \le 10.}$
+		\begin{itemize}
+			\item Miền nghiệm của bất phương trình $x \ge 0$ là nửa mặt phẳng bờ $Oy$ và chứa điểm $A(2;4)$ (kể cả trục tung $Oy$).
+			\item Miền nghiệm của bất phương trình $y \ge 0$ là nửa mặt phẳng bờ $Ox$ chứa điểm $A(2;4)$ (kể cả trục hoành $Ox$).
+			\item Miền nghiệm của bất phương trình $x+y \le 6$ là nửa mặt phẳng bờ $d_1: x+y=6$ chứa gốc tọa độ $O(0;0)$ (kể cả đường thẳng $d_1$).
+			\item Miền nghiệm của bất phương trình $2x+y \le 10$ là nửa mặt phẳng bờ $d_2: 2x+y=10$ chứa gốc tọa độ $O(0;0)$ (kể cả đường thẳng $d_2$).
+		\end{itemize}
+		\begin{center}
+			\begin{tikzpicture}[font=\footnotesize,line join=round, line cap=round, >=stealth,scale=0.8] 
+				\def \xmin{-1}\def \xmax{8}\def \ymin{-1}\def \ymax{8} 
+				\draw[->] (\xmin,0)--(\xmax,0) node[shift=(-90:0.25)] {$x$};
+				\draw[->] (0,\ymin)--(0,\ymax) node[shift=(0:0.25)] {$y$};
+				\fill (0,0) circle(1pt) node[shift=(45:0.25)]{$O$}
+				(4,0) circle(1pt) node[shift=(-90:0.2)]{$4$}
+				(5,0) circle(1pt) node[shift=(-90:0.2)]{$5$}
+				(6,0) circle(1pt) node[shift=(-90:0.2)]{$6$}
+				(0,2) circle(1pt) node[shift=(180:0.2)]{$2$}
+				(0,6) circle(1pt) node[shift=(180:0.2)]{$6$}
+				(4,2) circle(1pt) node[shift=(-135:0.25)]{$A$}
+				(0,6) circle(1pt) node[shift=(30:0.25)]{$B$}
+				(5,0) circle(1pt) node[shift=(45:0.25)]{$C$};
+				\begin{scope}
+					\clip (\xmin,\ymin) rectangle (\xmax,\ymax); 
+					\draw[smooth,samples=100,domain=\xmin:\xmax] plot(\x,{6-\x});
+					\draw[smooth,samples=100,domain=\xmin:\xmax] plot(\x,{10-2*\x});
+					\fill[pattern=north east lines,opacity=.8] plot[domain=\xmin:\xmax] (\x,{6-\x})--(\xmax,\ymin)--(\xmax,\ymax)--(\xmin,\ymax)--cycle;
+					\fill[pattern=north west lines,opacity=.8] plot[domain=\xmin:\xmax] (\x,{10-2*\x})--(\xmax,\ymin)--(\xmax,\ymax)--cycle;
+					\fill[pattern=north west lines,opacity=.8] (\xmin,\ymax)--(0,\ymax)--(0,\ymin)--(\xmin,\ymin)--cycle;
+					\fill[pattern=north east lines,opacity=.8] (\xmin,\ymin)--(\xmin,0)--(\xmax,0)--(\xmax,\ymin)--cycle;
+				\end{scope}
+				\draw[dashed] (4,0)--(4,2)--(0,2);
+			\end{tikzpicture}
+		\end{center}
+		Ta có miền nghiệm của hệ bất phương trình là tứ giác $OBAC$ với $O(0;0)$, $A(4;2)$, $B(0;6)$ và $C(5;0)$.\\
+		Biểu thức lợi nhuận là $F(x;y)=30x+20y$, $(x,y \ge 0)$.\\
+		Do đó 
+		\begin{itemize}
+			\item $F(A)=F(4;2)=30\cdot 4+20\cdot 2=160$;
+			\item $F(B)=F(0;6)=20\cdot 6=120$;
+			\item $F(C)=F(5;0)=30\cdot 5=150$.
+		\end{itemize}
+		Vậy, để đạt được lợi nhuận cao nhất là $160$ triệu đồng, bác nông dân cần trồng $x=4$ ha lúa.
+	}
+\end{bt}
+\begin{bt}%[0T3B2-2]%[Đề kiểm tra HK1 môn Toán 10 trường THPT Phú Nhuận - HCM]%[Nguyễn Vương Hiển]
+	Tìm parabol $(P)\colon y=a x^2+b x+c$, biết rằng $(P)$ đi qua ba điểm $A(1 ;-1)$, $B(2 ; 3)$, $C(-1 ;-3)$.
+	\loigiai{Vì $(P)$ đi qua ba điểm $A(1 ;-1)$, $B(2 ; 3)$, $C(-1 ;-3)$ nên ta có hệ phương trình
+		$$ \heva{&a\cdot 1^2+b\cdot 1+c=-1 \\&a\cdot 2^2+b\cdot 2+c=3 \\&a\cdot (-1)^2+b\cdot (-1)+c=-3} \Leftrightarrow \heva{&a+b+c=-1 \\&4a+2b+c=3 \\&a-b+c=-3} \Leftrightarrow \heva{&a=1 \\&b=1 \\&c=-3.} $$
+		Vậy parabol $(P)\colon y=x^2+x-3$.
+	}
+\end{bt}
+\begin{bt}%[0T3B2-1]%[Đề kiểm tra HK1 môn Toán 10 trường THPT Phú Nhuận - HCM]%[Nguyễn Vương Hiển]
+	Cho parabol $(P) \colon y=x^2+6 x+8$.
+	\begin{listEX}[1]
+		\item Xác định tọa độ đỉnh, trục đối xứng của parabol $(P)$, tọa độ giao điểm của parabol $(P)$ với trục hoành.
+		\item Lập bảng biến thiên, vẽ đồ thị hàm số $y=x^2+6 x+8$.
+		\item Dựa vào đồ thị trên tìm giá trị nhỏ nhất và giá trị lớn nhất của hàm số $f(x)=x^2+6 x+8$ trên đoạn $[-4 ; 0]$.
+	\end{listEX}
+	\loigiai{
+		\begin{listEX}[1]
+			\item Tọa độ đỉnh $I(-3;-1)$, trục đối xứng $x=-3$, các giao điểm với trục hoành là $A(-2;0)$, $B(-4;0)$.
+			\item Bảng biến thiên
+			\begin{center}
+				\begin{tikzpicture}
+					\tkzTabInit[nocadre=false,lgt=1.2,espcl=2.2,deltacl=0.6] 
+					{$x$ /.6,$y$/2}
+					{$-\infty$, $-3$, $+\infty$} 
+					\tkzTabVar{+/$+\infty$, -/$-1$, +/$+\infty$} 
+				\end{tikzpicture}
+			\end{center}
+			Đồ thị của hàm số $y=x^2+6 x+8$
+			\begin{center}
+				\begin{tikzpicture}[font=\footnotesize,line join=round, line cap=round, >=stealth,scale=0.8] 
+					\def \xmin{-6}\def \xmax{1}\def \ymin{-2}\def \ymax{4} 
+					\draw[->] (\xmin,0)--(\xmax,0) node[shift=(-90:0.25)] {$x$};
+					\draw[->] (0,\ymin)--(0,\ymax) node[shift=(0:0.25)] {$y$};
+					\fill (0,0) circle(1pt) node[shift=(-45:0.25)]{$O$}
+					(-4,0) circle(1pt) node[shift=(-135:0.25)]{$-4$}
+					(-3,0) circle(1pt) node[shift=(90:0.2)]{$-3$}
+					(-2,0) circle(1pt) node[shift=(-45:0.25)]{$-2$}
+					(0,-1) circle(1pt) node[shift=(0:0.28)]{$-1$}
+					(-3,-1) circle(1pt) node[shift=(-90:0.2)]{$I$};
+					\draw[dashed](-3,0)|-(0,-1);
+					\begin{scope}
+						\clip (\xmin,\ymin) rectangle (\xmax,\ymax); 
+						\draw[smooth,samples=100,domain=\xmin:\xmax] plot(\x,{(\x)^2+6*\x+8}); 
+					\end{scope}
+				\end{tikzpicture}
+			\end{center}
+			\item Dựa vào đồ thị của hàm số, ta có
+			$$ \max\limits_{[-4;0]}f(x)=f(0)=8 \text{ và } \min\limits_{[-4;0]}f(x)=f(-3)=-1.$$
+		\end{listEX}
+	}
+\end{bt}
+
+%----Câu 5
+\begin{bt}%[0K3B6-1]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Phú Nhuận]
+	Cho $\triangle{ABC}$ có $AB=6$, $AC=10$ và $\widehat{A}=120^\circ$. Tính độ dài cạnh $BC$ và đường cao kẻ từ $A$ của $\triangle{ABC}$.
+	\dapso{$BC=14$; $h_{a}=\dfrac{15\sqrt{3}}{7}$.}
+	\loigiai{ 
+	Ta có 
+	\begin{eqnarray*}
+		BC^2&=&AB^2+AC^2-2\cdot AB\cdot AC\cdot \cos \widehat{A}\\
+		&=&6^2+10^2-2\cdot 6\cdot 10\cdot \cos 120^{\circ}\\
+		&=&196.\\
+		\Rightarrow BC&=&14.
+	\end{eqnarray*}
+		Lại có
+		\begin{eqnarray*}
+			S_{\triangle ABC}&=&\dfrac{1}{2}AB\cdot AC\cdot\sin\widehat{A}\\
+			&=&\dfrac{1}{2}\cdot 6\cdot 10\cdot \sin120^{\circ}\\
+			&=&15\sqrt{3}.
+		\end{eqnarray*}
+	Mà $S_{\triangle ABC}=\dfrac{1}{2}AH\cdot BC \Rightarrow AH=\dfrac{2S_{\triangle ABC}}{BC}=\dfrac{2\cdot 15\sqrt{3}}{14}=\dfrac{15\sqrt{3}}{7}$.}
+\end{bt}
+
+%----Câu 6
+\begin{bt}%[0K4B9-2]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Phú Nhuận]
+	Cho hình bình hành $ABCD$. Gọi $M$, $N$ lần lượt là trung điểm của $BC$ và $AD$. Chứng minh rằng $\overrightarrow{AM}+\overrightarrow{AN}=\overrightarrow{AB}+\overrightarrow{AD}$.
+	\loigiai{
+		\immini{Ta có $ABCD$ là hình bình hành nên $\vec{AB}+\vec{AD}=\vec{AC}$.\hfill$(1)$\\
+		Mặt khác, $AMCN$ cũng là hình bình hành (vì $MC\parallel AN$ và $MC=AN=\dfrac{1}{2}AD$) nên $\vec{AM}+\vec{AN}=\vec{AC}$.\hfill$(2)$\\
+		Từ $(1)$ và $(2)$ ta có $\overrightarrow{AM}+\overrightarrow{AN}=\overrightarrow{AB}+\overrightarrow{AD}$.}{\begin{tikzpicture}[scale=1, line join=round, line cap=round]
+			\coordinate (A) at (0,0);
+			\coordinate (B) at (1,2);
+			\coordinate (D) at (4,0);
+			\coordinate (C) at ($(B)+(D)-(A)$);
+			\coordinate (N) at ($(A)!1/2!(D)$);	
+			\coordinate (M) at ($(B)!1/2!(C)$);	
+			\draw (A)--(B)--(C)--(D)--cycle;
+			\draw [fill=pink](A)--(M)--(C)--(N)--cycle;
+			\draw (A)--(M) (C)--(N);
+			\foreach \x in{A,B,C,D,M,N} \draw[fill=black] (\x) circle (2pt);
+			\foreach \x in {A,N,D} \draw (\x) node[below]{$\x$};
+			\foreach \x in {B,M,C} \draw (\x) node[above]{$\x$};
+			%%%%%%%%%%%%%%%
+			
+	\end{tikzpicture}}
+	}
+\end{bt}
+
+%----Câu 7
+\begin{bt}%[0K4K9-4]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Phú Nhuận]
+	Cho $\triangle{ABC}$ đều cạnh $a$. Gọi $M$ là điểm trên cạnh $BC$ sao cho $BM=\dfrac{2}{3}BC$ và $N$ là điểm thỏa $5\overrightarrow{AN}=4\overrightarrow{AC}$. 
+	\begin{listEX}
+		\item Tính $\overrightarrow{AB}\cdot\overrightarrow{AC}$ theo $a$.
+		\item Phân tích $\overrightarrow{BN}$, $\overrightarrow{AM}$ theo các vecto $\overrightarrow{AB}$ và $\overrightarrow{AC}$.
+		\item Chứng minh $AM \bot BN$.
+	\end{listEX}
+\dapso{a) $\dfrac{1}{2}a^2$; b) $\overrightarrow{BN}=-\overrightarrow{AB}+\dfrac{4}{5}\overrightarrow{AC}$, $\overrightarrow{AM}=\dfrac{1}{3}\overrightarrow{AB}+\dfrac{2}{3}\overrightarrow{AC}$.}
+	\loigiai{ 
+		\begin{enumerate}
+			\item Ta có
+			\begin{eqnarray*}
+				\vec{AB}\cdot\vec{AC}&=&|\vec{AB}|\cdot|\vec{AC}|\cdot\cos\widehat{A}\\
+				&=&a\cdot a\cdot \cos60^{\circ}\\
+				&=&\dfrac{a^2}{2}.
+			\end{eqnarray*}
+		\item Ta có
+		\immini{\begin{eqnarray*}\allowdisplaybreaks
+			\vec{BN}&=&\vec{AN}-\vec{AB}\\
+			&=&\dfrac{4}{5}\vec{AC}-\vec{AB}\\
+			&=&-\vec{AB}+\dfrac{4}{5}\vec{AC}.\\
+			\vec{AM}&=&\vec{AB}+\vec{BM}\\
+			&=&\vec{AB}+\dfrac{2}{3}\vec{BC}\\
+			&=&\vec{AB}+\dfrac{2}{3}\left(\vec{AC}-\vec{AB}\right)\\
+			&=&\dfrac{1}{3}\vec{AB}+\dfrac{2}{3}\vec{AC}.
+		\end{eqnarray*}}{\begin{tikzpicture}[scale=1, line join=round, line cap=round]
+		\coordinate (A) at (1,2);
+		\coordinate (B) at (0,0);
+		\coordinate (C) at (4,0);
+		\coordinate (M) at ($(B)!2/3!(C)$);
+		\coordinate (N) at ($(A)!4/5!(C)$);	
+		\draw (A)--(B)--(C)--cycle;
+		\draw (A)--(M) (B)--(N);
+		\foreach \x in{A,B,C,M,N} \draw[fill=black] (\x) circle (2pt);
+		\foreach \x in {B,C,M} \draw (\x) node[below]{$\x$};
+		\foreach \x in {A,N} \draw (\x) node[above]{$\x$};
+		%%%%%%%%%%%%%%%
+		
+	\end{tikzpicture}}
+	\item Ta có
+	\begin{eqnarray*}
+		\vec{AM}\cdot\vec{BN}&=&\left(\dfrac{1}{3}\vec{AB}+\dfrac{2}{3}\vec{AC}\right)\cdot\left(-\vec{AB}+\dfrac{4}{5}\vec{AC}\right)\\
+		&=&-\dfrac{1}{3}\vec{AB}^2+\dfrac{8}{15}\vec{AC}^2-\dfrac{2}{5}\cdot\vec{AB}\cdot\vec{AC}\\
+		&=&-\dfrac{1}{3}a^2+\dfrac{8}{15}a^2-\dfrac{2}{5}\cdot\dfrac{a^2}{2}\\
+		&=&0.\\
+		\Rightarrow AM&\perp&BN.
+	\end{eqnarray*}
+		\end{enumerate}
+		
+		}
+\end{bt}
+

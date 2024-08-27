@@ -1,0 +1,120 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT Ten lơ man}
+
+
+
+\begin{bt}%[1D1B1-5]%ID%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- DinhTri]%[THPT Tenloman - Tp HCM]
+	\begin{enumerate}
+		\item Cho $\cos a=\dfrac{1}{3}$. Tính giá trị của biểu thức $A=2-2 \cdot \sin ^2 a$.
+		\item Cho $\sin a=\dfrac{4}{5}\left(\dfrac{\pi}{2}<a<\pi\right)$. Tính giá trị lượng giác: $\cos \left(\dfrac{\pi}{6}+a\right)$
+		\item Tìm tập giá trị của hàm số $y=4 \cdot \sin 2 x+1$ trên tập hợp các số thực $\mathbb{R}$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item  $  \sin ^2 a=1-\left(\dfrac{1}{3}\right)^2=\dfrac{8}{9} \\
+			 A=2 \cos ^2 a=2 \cdot\left(\dfrac{1}{3}\right)^2=\dfrac{2}{9}$
+			\item $	 \cos a=\dfrac{-3}{5} \\
+			 \cos \left(\dfrac{\pi}{6}+a\right)=\dfrac{-3}{5} \cdot \dfrac{\sqrt{3}}{2}-\dfrac{4}{5} \cdot \dfrac{1}{2}=-\dfrac{3 \sqrt{3}+4}{10}$
+			\item $	 -1 \leq \sin 2 x \leq 1 \\
+			 -3 \leq y \leq 5 \\
+			 T=\left[-3;5\right]$
+		\end{enumerate}
+	}
+\end{bt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Câu 2...........................
+\begin{bt}%[1D1K2-1]%ID%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- DinhTri]%[THPT Tenloman - Tp HCM]
+	Giải các phương trình lượng giác sau:
+	\begin{enumerate}
+		\item $\cos 2 x=\cos \dfrac{\pi}{5}$
+		\item $\sin x=\cos 2 x$
+	\end{enumerate}
+	\loigiai{
+		
+		\begin{enumerate}
+			\item $\cos 2x=\cos \dfrac{\pi}{5}\Leftrightarrow \hoac{&2x=\dfrac{\pi}{5}+k2\pi \\&2x=-\dfrac{\pi}{5}+k2\pi}\Leftrightarrow \hoac{&x=\dfrac{\pi}{10}+k\pi,k\in \mathbb{Z} \\&x=-\dfrac{\pi}{10}+k\pi,k\in \mathbb{Z}}$.
+			\item $\cos \left(\dfrac{\pi}{2}-x\right)=\cos 2x\Leftrightarrow \hoac{&-3x=\dfrac{-\pi}{2}+k2\pi \\&x=-\dfrac{\pi}{2}+k2\pi}\Leftrightarrow \hoac{&x=\dfrac{\pi}{6}-\dfrac{k2\pi}{3},k\in \mathbb{Z} \\&x=-\dfrac{\pi}{2}+k2\pi,k\in \mathbb{Z}}$.
+		\end{enumerate}
+	}
+\end{bt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Câu 3...........................
+\begin{bt}%[1D1G1-5]%ID%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- DinhTri]%[THPT Tenloman - Tp HCM]
+	Chứng minh đẳng thức sau: $\cos x\left(\dfrac{\sin x}{1+\cos x}+\dfrac{1+\cos x}{\sin x}\right)=2 \cot x$
+	\loigiai{
+		$VT=\cos x\left(\dfrac{\sin^2x+(1+\cos x)^2}{(1+\cos x)\sin}\right)=\dfrac{2\cos x(1+\cos x)}{\sin x(1+\cos x)}=2\cot x=VP$.	
+	}
+\end{bt}
+\begin{bt}%[1D1C4-8]
+\immini{
+	\begin{enumerate}
+	\item Nếu độ cao của mực nước thủy triều được tính theo công thức $$h(t)=4+2\cos (\dfrac{\pi t}{12}+\dfrac{3\pi}{2})$$ với t là thời gian trong ngày tính theo giờ và độ cao mực nước tính theo đơn vị m. Tính độ cao của mực nước vào lúc 6h sáng.\\
+	\item Tuabin gió chuyển đổi động lực di chuyển của gió thành năng lượng điện. Hình bên mô phỏng ba cánh quạt của tuabin gió, các điểm M, N và P là vị trí ban đầu của ba cánh quạt. Giả sử điểm O cách mặt đất 130m và mỗi cánh của tuabin gió dài 70m. Khi điểm N quay được 503 vòng thì khoảng cách từ M đến mặt đất là bao nhiêu biết quạt quay theo chiều kim đồng hồ.(Kết quả làm tròn đến chữ số thập phân thứ hai sau dấu phẩy).
+\end{enumerate}}{\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round,>=stealth]  
+\def\R{3}
+\path
+(0,0) coordinate (O)
+(20:\R) coordinate (M)
+(120:\R) coordinate (N)
+(-110:\R) coordinate (P)
+(-\R-.2,0) coordinate (E)
+(-\R-.2,-2*\R) coordinate (F)
+;
+\draw[dashed,thick,green] (O) circle (\R);
+\draw (N)--(O)--(M) (O)--(P)(E)--(F);
+
+\foreach \x/\g in {O/-45,M/45,N/120,P/-130}\draw[fill=black] (\x) circle (.05) +(\g:.3) node{$\x$};
+\draw[fill=black] (E) circle (.05) ;
+\draw[fill=black] (F) circle (.05) ;
+\node[right] at (-\R-.2,-\R) {$130$ m};
+\end{tikzpicture}}
+\loigiai{\begin{enumerate}
+		\item $\underline{\underline{h}(6)}=6 \mathrm{~m}$
+		\item Ta có góc $\widehat{A O M}=15^{\circ}$.Quay 503 vòng thì các điểm vẫn quay lại vị trí ban đầu do đó khoảng cách từ khoảng cách từ $\mathrm{M}$ đến mặt đất là:
+		$$
+		130+70 \sin \left(15^{\circ}\right)=148.12 m
+		$$
+	\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[1H4H1-3]%[1H4C1-4]
+	Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình bình hành. Gọi $M, N$ lần lượt là các điểm thuộc cạnh SA và SD sao cho $3SM=MA$, $SN=3ND$, G là trọng tâm tam giác ACD.\\
+	a) Tìm giao tuyến của hai mặt phẳng $(SAC)$ và $(SBD)$.\\
+	b) Tìm giao điểm H của đường thẳng BC và mặt phẳng $(GNM)$. Tính tỉ số $\dfrac{HB}{HC}$.
+	\loigiai{
+\immini{Ta có:\\
+	$S \in(S A C) \cap(S B D)$\\
+	$O=A C \cap B D$\\
+	$O \in(S A C) \cap(S B D)$\\
+	$\Rightarrow S O=(S A C) \cap(S B D)$\\
+	$(G M N) \cap(A B C D)=G J$\\
+	$G J \cap C B=H \Rightarrow(G M N) \cap B C=H$\\
+	Tính tỉ lệ ra cho 0.25.}{
+\begin{tikzpicture}
+	\def\a{4}
+	\path 	(0:0) coordinate (A)
+			++(0:\a) coordinate (D)
+			++(-130:\a/2) coordinate (C)
+			($(A)+(C)-(D)$) coordinate (B)
+			($(A)+(80:\a)$) coordinate (S)
+	(intersection of A--C and B--D) coordinate (O)
+	($(A)!3/4!(S)$) coordinate (M)
+	($(S)!3/4!(D)$) coordinate (N)
+	($(O)!1/3!(D)$) coordinate (G)
+	(intersection of M--N and A--D) coordinate (I)
+	(intersection of I--G and B--C) coordinate (H)
+	(intersection of M--H and B--S) coordinate (J)
+	(intersection of G--I and D--C) coordinate (I')
+	(intersection of G--I and A--B) coordinate (J')
+	 ;
+\tkzDrawSegments[dashed](A,C B,D S,O M,G G,N N,M I',J')
+\tkzDrawSegments(N,I I,I' J',H H,B)
+	\draw[dashed,thick] 	(B)--(A)--(D)	(A)--(S);
+	\draw[thick] 			(B)-- (C)--(D)
+					(B)--(S)	(C)--(S)	(D)--(S);
+	\foreach \x/\g in {A/135,B/-135,C/-45,D/45,S/90,M/180,N/0,O/0,G/0,I/0,H/180}
+			\fill[black] 	(\x) circle (1pt)
+			($(\g:4mm)+(\x)$) node {$\x$};	
+\end{tikzpicture}}
+}
+\end{bt}

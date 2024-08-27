@@ -1,0 +1,155 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2022-2023}{Phổ Thông Năng Khiếu}
+
+	\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyen Huynh]%[0C1Y1-3],%[0C1B1-5]
+	Tìm mệnh đề phủ định của các mệnh đề sau và cho biết thêm (kèm giải thích) tính đúng, sai của các mệnh đề này.
+	\begin{listEX}[2]
+		\item  $\exists x \in \mathbb{R}, x \geq x^2+1$.
+		\item $\forall n \in \mathbb{N}, n(n+1) \,\vdots\, 2$.
+	\end{listEX}
+	\loigiai{
+		\begin{enumerate}
+			\item Mệnh đề phủ định là  $\forall x \in \mathbb{R}, x < x^2+1$.\\
+			Ta có $x < x^2+1, \forall x \in \mathbb{R} \Leftrightarrow  (2x-1)^2+3>0,\forall x \in \mathbb{R}$ là mệnh đề đúng.\\
+			Do đó mệnh đề  $\forall x \in \mathbb{R}, x < x^2+1$ là mệnh đề đúng và  $\exists x \in \mathbb{R}, x \geq x^2+1$ là mệnh đề sai.
+			\item Mệnh đề phủ định là $\exists n \in \mathbb{N}, n(n+1) \not\vdots\,\, 2$.\\
+			Ta có tích của hai số tự nhiên liên tiếp luôn là số chẵn nên  $n(n+1) \,\vdots\, 2$ với mọi $n \in \mathbb{N}$.\\
+			Do đó  mệnh đề $\forall n \in \mathbb{N}, n(n+1) \,\vdots\, 2$ là mệnh đề đúng và  $\exists n \in \mathbb{N}, n(n+1) \not\vdots\,\,2$ là mệnh đề sai.
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyen Huynh]%[0C1B2-7],%[0C1B2-8] 
+	\begin{enumerate}
+		\item Cho $A=[0; 2]$, $B=(-\infty; -1) \cup(1; +\infty)$. Tìm các tập $A \cap B$, $ A \cup B$, $ A \backslash B$ và $B \backslash A$.
+		\item Cho $C=(-\infty; 5] \cup(10; +\infty)$ và $D=[m-4; m-1]$. Tìm $m$ sao cho tập hợp $C \cap D$ chứa đúng hai số nguyên.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item  
+			$A \cap B=(1; 2]$.\\
+			$A \cup B= (-\infty; -1) \cup [0; + \infty)$.\\
+			$ A \backslash B= [0; 1]$.\\
+			$B \backslash A=(-\infty; -1)  \cup (2; +\infty)$.
+			\item 
+			Do $m-1-(m-4)=3$ nên $D$ chứa ít nhất $3$ số nguyên. \quad $(1)$ \\
+			* Nếu $m-1 \geq 13 \Leftrightarrow m \geq 14$,  suy ra $m-4\geq 10$. \\
+			Khi đó kết hợp với $(1)$ ta có $C \cap D=D\backslash \left\lbrace 10\right\rbrace $ chứa ít nhất $3$ số nguyên: không thỏa mãn. Do đó  $m < 14$.\\
+			* Nếu $m-4 \leq 3 \Leftrightarrow m \leq 7$ suy ra $m-1\leq 6$, khi đó  $C \cap D$ chứa ít nhất $3$ số nguyên: không thỏa mãn. Suy ra $m>7$.\\
+			* Lập luận tương tự ta thấy $9>m-4>4$ không thỏa mãn, suy ra $m \leq 8$ hoặc $m \geq 13$.\\
+			* Với $7<m\leq 8$ thay vào ta được $C \cap D$ chứa đúng hai số nguyên.\\
+			* Với $13 \leq m < 14$ thay vào ta được $C \cap D$ chứa đúng hai số nguyên.\\
+			Vậy $m \in (7; 8] \cup [13; 14)$ thỏa yêu cầu bài toán.
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyen Huynh]%[0C2K2-3]
+	Một xí nghiệp gia công đồ mỹ nghệ sản xuất hai loại sản phẩm X và Y. Muốn sản xuất một sản phẩm loại X phải cần $30$ kg nguyên liệu và làm việc trong thời gian $ 2 $ giờ. Muốn sản xuất một sản phẩm loại Y phải cần $40$ kg nguyên liệu và làm việc trong thời gian $ 1 $ giờ. Trong một ngày xí nghiệp làm việc $ 11 $ giờ và chỉ mua được $240$ kg nguyên liệu. Hỏi trong một ngày phải sản xuất mỗi loại bao nhiêu sản phẩm để có lợi nhuận cao nhất? Biết mỗi sản phẩm loại X lời được $ 100 $ ngàn đồng, mỗi sản phẩm loại Y lời được $ 120 $ ngàn đồng?
+	\loigiai{
+		Gọi $ x $, $ y $ lần lượt là số sản phẩm loại X và Y cần sản xuất trong một ngày, khi đó ta có $ x $, $ y $ thỏa hệ bất phương trình
+		\[ \heva{&x \ge 0\\& y \ge 0\\ &3x+4y \le 24 \\& 2x+y \le 11.} \]
+		Biểu diễn miền nghiệm của hệ trên mặt phẳng tọa độ, ta được
+		\begin{center}
+			\begin{tikzpicture}[scale=0.6, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\def\xmin{-2} \def\xmax{10}
+				\def\ymin{-2} \def\ymax{13}
+				\clip(\xmin,\ymin) rectangle (\xmax,\ymax);
+				\coordinate (A1) at (\xmax,\ymax);
+				\coordinate (A2) at (\xmin,\ymax);
+				\coordinate (A3) at (\xmin,\ymin);
+				\coordinate (A4) at (\xmax,\ymin);
+				
+				\fill[pattern=north east lines,pattern color=black!60] (A1)--(A2)--(A3)--(A4)--cycle;
+				\coordinate (O) at (0,0);
+				\coordinate (A) at (0,6);
+				\coordinate (B) at (4,3);
+				\coordinate (C) at (5.5,0);
+				%\tkzDefPoints{0/0/O,0/6/A,4/3/B,5.5/0/C}
+				\fill[color=white] (O)--(A)--(B)--(C)--cycle;
+				\fill[black] (A) circle (3pt) 
+				(B)  circle (3pt) 
+				(C) circle (3pt) 
+				(O) circle (3pt); 
+				\draw[domain=-10:140] plot(\x,{6-(3/4)*(\x)}) plot(\x,{11-2*(\x)});
+				\begin{scriptsize}
+					\draw[->](\xmin,0)--(\xmax,0); \draw(\xmax-.5,0) node[below]{$x$};
+					\draw[->](0,\ymin)--(0,\ymax); \draw(0,\ymax-.5) node[right]{$y$};
+					\draw node [below left]{$O$}
+					(A) node [above right]{$A$}
+					(B) node [below left]{$B$}
+					(C) node [above right]{$C$};
+					\draw[dashed] (4,0)--(4,3)--(0,3);
+				\end{scriptsize}
+			\end{tikzpicture}
+		\end{center}
+		Vậy miền nghiệm là miền tứ giác $ OABC $, có đỉnh $ O(0;0) $, $ A(0;6) $, $ B(4;3) $, $ C(5{,}5;0) $.\\
+		Gọi $ F(x;y) $ là tổng số tiền thu được, ta có $ F(x;y)= 100x+120y$ (ngàn đồng). \\
+		Giá trị lớn nhất của biểu thức $ F(x;y)=100x+120y $ đạt được tại một trong các đỉnh của miền tứ giác $ OABC $.\\
+		Tính giá trị của $ F(x;y) $ tại các đỉnh, ta có
+		\begin{itemize}
+			\item Tại $ O(0;0) $, $ F(0;0)=0 $.
+			\item Tại $ A(0;6) $, $ F(0;6)=720 $.
+			\item Tại $ B(4;3) $, $ F(4;3)=760 $.
+			\item Tại $ C(5{,}5;0) $, $ F(5{,}5;0)=670 $.
+		\end{itemize}
+		Vậy giá trị lớn nhất của $ F $ là $ 760 $ khi $ x=4 $, $ y=3 $ hay xí nghiệp đạt lợi nhuận cao nhất khi trong một ngày sản xuất $ 4 $ sản phẩm $ X $ và $ 3 $ sản phẩm $ Y $.
+	}
+\end{bt}
+
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyen Huynh]%[0C4K1-4]
+	Cho tam giác $A B C$ có $\widehat{B A C}=60^{\circ}$, đường cao $C M=2 \sqrt{3}$ và bán kính đường tròn ngoại tiếp của tam giác $A B C$ là $R=6$.
+	\begin{listEX}[1]
+		\item Tính độ dài các cạnh của tam giác $A B C$.
+		\item  Tính diện tích và bán kính đường tròn nội tiếp tam giác $A B C$.
+		\item  Gọi $N$ là điểm nằm trên cạnh $BC$ sao cho $BC=3BN$. Tính độ dài đoạn $AN$.
+	\end{listEX}
+	
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+				\coordinate (B) at (0,0);
+				\coordinate (C) at ($(B)+(4,0)$);
+				\coordinate (A) at ($(B)!.85!70:(C)$);
+				\coordinate (I) at ($(B)!1/2!(C)$); 
+				\coordinate (J) at ($(A)!1/2!(B)$); 
+				\coordinate (C1) at ($(I)!2!90:(C)$); 
+				\coordinate (B1) at ($(J)!2!90:(B)$); 
+				\draw (A)--(B)--(C)--cycle;
+				\path[name path=tt1] (I)--(C1); 
+				\path[name path=tt2] (J)--(B1); 
+				\path[name intersections={of= tt1 and tt2,by=O}]; 
+				\draw let \p1=($(A)-(O)$) in (O) circle ({veclen(\x1,\y1)}); 
+				%\tkzDrawCircle[circum](A,B,C)	\tkzGetPoint{O}
+				\coordinate (M) at ($(A)!(C)!(B)$);
+				\coordinate (N) at ($(B)!1/3!(C)$); 
+				\draw[line width=0.4pt,black] (C)--(M); 
+				\draw[fill = gray!50] ($(M)!5pt!(C)$)--($(M)!5pt!(C)+(M)!5pt!(A)-(M)$)--($(M)!5pt!(A)$)--(M)--cycle; 
+				\fill[black] (A)node[above] {$A$} circle (1.5pt) (B) node[below left]{$ B $} circle (1.5pt) (C)node[below right] {$C$} circle (1.5pt) (N) node[below] {$N$} circle (1.5pt) (M) node[above left] {$M$} circle (1.5pt) (O) node[above] {$O$} circle (1.5pt); 
+				
+				%\tkzDrawPoints[fill=black](A,B,C,O,M,N)
+				%\tkzLabelPoints[below left](B)
+				%\tkzLabelPoints[below right](C)
+				%\tkzLabelPoints[below](N)
+				%\tkzLabelPoints[above left](M)
+				%\tkzLabelPoints[above](A,O)
+			\end{tikzpicture}
+		\end{center}
+		\begin{listEX}[1]
+			\item Xét tam giác $ ACM $ vuông tại $ M $, ta có
+			\[ AC= \dfrac{CM }{\sin \widehat{BAC}}=\dfrac{2\sqrt{3}}{\sin 60^\circ}=4. \]
+			Áp dụng định lý  sin  trong tam giác $ ABC $, ta có
+			\[ BC=2R\sin{\widehat{BAC}}=2R\sin 60^\circ=6\sqrt{3}. \]
+			Ta có 
+			\[ AB=AM+MB=\sqrt{AC^2-CM^2}+\sqrt{BC^2-CM^2}=2+4\sqrt{6}. \]
+			\item Diện tích tam giác $ ABC $ là 
+			$$ S=\dfrac{1}{2} CM \cdot AB = 2\sqrt{3}+12\sqrt{2} .$$
+			Bán kính đường tròn nội tiếp $ ABC $ là 
+			\[ r=\dfrac{S}{p}=\dfrac{S}{\dfrac{AB+BC+CA}{2}} \approx 1{,}56. \]
+			\item $ BN=\dfrac{1}{3}BC=\dfrac{1}{3}\cdot 6\sqrt{3}=2\sqrt{3}$.\\
+			$\cos \widehat{ABC} = \dfrac{AB^2 + BC^2 - AC^2}{2 AB \cdot BC} \approx 0,94 $\\
+			Áp dụng định lí Cô-sin trong tam giác $ANB$
+			\[ AN = \sqrt{AB^2 + BN^2 - 2AB\cdot BN\cdot\cos \widehat{ABN}} \approx 8,61. \]
+		\end{listEX}
+	}
+\end{bt}

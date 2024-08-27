@@ -1,0 +1,633 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{TH-THCS-THPT Á Châu}
+\begin{center}
+	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+\end{center}
+\Opensolutionfile{ans}[ans/ans-TH-THCS-THPT-AChau]
+%Câu 1...........................
+\begin{ex}%[1D2K2-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	\immini
+	{
+		Cho một tam giác, trên ba cạnh của nó lấy $9$ điểm như hình vẽ. Có tất cả bao nhiêu tam giác có ba đỉnh thuộc $9$ điểm đã cho?
+		\choice
+		{$48$}
+		{$24$}
+		{$55$}
+		{\True $79$}
+	}
+	{
+		\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+			\path
+			(0,0) coordinate (A)
+			(5,0) coordinate (B)
+			(4,2) coordinate (C)
+			;
+			\draw
+			(A)--(B)--(C)--cycle
+			;
+			\foreach \x in {1,2,3,4} {\path ($(A)+(\x,0)$) coordinate (A\x)
+				;}
+			\foreach \x/\g in {1/3,2/6,3/9} {\path ($(A)!.\g!(C)$) coordinate (C\x)
+				;}
+			\foreach \x/\g in {1/4,2/8} {\path ($(C)!.\g!(B)$) coordinate (B\x)
+				;}
+			\foreach \x/\g in {A1/-90,A2/-90,A3/-90,A4/-90,C1/150,C2/150,C3/150,B1/0,B2/0} \fill (\x) circle (1.5pt) ($(\x)+(\g:3mm)$) node{$\x$};
+		\end{tikzpicture}
+	}
+\loigiai{
+	\begin{itemize}
+		\item Chọn $1$ đỉnh từ tổ hợp điểm $A$ và $B$, chọn $2$ đỉnh từ tổ hợp điểm $C$, ta có $6\cdot\mathrm{C}_3^2$ cách.
+		\item Chọn $1$ đỉnh từ tổ hợp điểm $A$ và $C$, chọn $2$ đỉnh từ tổ hợp điểm $B$, ta có $7\cdot\mathrm{C}_2^2$ cách.
+		\item Chọn $1$ đỉnh từ tổ hợp điểm $B$ và $C$, chọn $2$ đỉnh từ tổ hợp điểm $A$, ta có $5\cdot\mathrm{C}_4^2$ cách.
+		\item Chọn từ mỗi tổ hợp $1$ điểm, ta có $2\cdot3\cdot4$ cách.
+	\end{itemize}
+	Vậy  $6\cdot\mathrm{C}_3^2+7\cdot\mathrm{C}_2^2+5\cdot\mathrm{C}_4^2+2\cdot3\cdot4=79$ cách.
+}
+\end{ex}
+
+%Câu 2
+\begin{ex}%[0H3B2-2]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Đường tròn $(C)$ đi qua hai điểm $A(1;1)$, $B(5;3)$ và có tâm $I$ thuộc trục hoành có phương trình là
+	\choice
+	{$(x+4)^2+y^2=\sqrt{10}$}
+	{\True $(x-4)^2+y^2=10$}
+	{$(x+4)^2+y^2=10$}
+	{$(x-4)^2+y^2=\sqrt{10}$}
+	\loigiai{
+		Điểm $I$ thuộc trục hoành $Ox$ nên $I(a;0)$.\\
+		Ta có $\begin{aligned}[t]
+			IA=IB=R&\Leftrightarrow R^2=(a-1)^2+1^2=(a-5)^2+3^2\\
+			&\Leftrightarrow a^2-2 a+1+1=a^2-10 a+25+9\\
+			&\Leftrightarrow 8 a=32 \Leftrightarrow a=4.
+		\end{aligned}$\\
+	Suy ra $I(4;0)$ và $R=IA=\sqrt{(1-4)^2+(1-0)^2}=\sqrt{10}$.\\
+	Vậy $(C)\colon (x-4)^2+y^2=10$.
+	}
+\end{ex}
+
+%Câu 3
+\begin{ex}%[1D2Y2-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Có bao nhiêu cách chọn $2$ học sinh từ một nhóm gồm $10$ học sinh?
+	\choice
+	{\True $\mathrm{C}_{10}^2$}
+	{$\mathrm{A}_{10}^2$}
+	{$10^2$}
+	{$2^{10}$}
+	\loigiai{
+	Mỗi cách chọn hai học sinh từ một nhóm gồm 10 học sinh tương ứng với một tổ hợp chập 2 của tập có 10 phần tử. Vậy có $\mathrm{C}_{10}^2$ cách chọn $2$ học sinh từ một nhóm gồm $10$ học sinh.
+	}
+\end{ex}
+
+%Câu 4
+\begin{ex}%[0D4Y5-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Biểu thức $f(x)$ nào sau đây là tam thức bậc hai.
+	\choice
+	{$f(x)=2x^3 - 4x + 1$}
+	{$f(x)=x^4 - 2x^2 + 2$}
+	{$f(x)=x - 2x^3 + 4$}
+	{\True $f(x)=3x^2 + 2x + 1$}
+	\loigiai{
+		Biểu thức $f(x)=3x^2 + 2x + 1$ là tam thức bậc hai.
+	}
+\end{ex}
+
+%Câu 5
+\begin{ex}%[0H3B2-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Trong mặt phẳng $Oxy$, phương trình nào sau đây là phương trình của đường tròn?
+	\choice
+	{\True $x^2 + y^2 - 4x + 6y - 12=0$}
+	{$4x^2 + y^2 - 10x - 6y - 2=0$}
+	{$x^2 + 2y^2 - 4x - 8y + 1=0$}
+	{$x^2 + y^2 - 2x - 8y + 20=0$}
+	\loigiai{
+		\begin{itemize}
+			\item $x^2 + y^2 - 4x + 6y - 12=0$ có $2^2+(-3)^2-(-12)=25>0$ nên đây là phương trình đường tròn.
+			\item $x^2 + y^2 - 2x - 8y + 20=0$ có $1^2+4^2-20=-3<0$ nên đây không là phương trình đường tròn.
+		\end{itemize}
+	}
+\end{ex}
+
+%Câu 6
+\begin{ex}%[0H3B2-5]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Trên hệ trục tọa độ $Oxy$, cho đường tròn $(C)$ có tâm $I(-3;2)$ và một tiếp tuyến của nó có phương trình là $3x+4y-9=0$. Viết phương trình của đường tròn $(C)$.
+	\choice
+	{$(x + 3)^2 + (y - 2)^2=2$}
+	{$(x - 3)^2 + (y + 2)^2=2$}
+	{$(x - 3)^2 + (y - 2)^2=4$}
+	{\True $(x + 3)^2 + (y - 2)^2=4$}
+	\loigiai{
+		Ta có $R=\mathrm{d} (I;d)=\dfrac{|3\cdot(-3)+4\cdot2-9|}{\sqrt{3^2+4^2}}=2$.\\
+		Vậy $(C)\colon (x + 3)^2 + (y - 2)^2=4$.
+	}
+\end{ex}
+
+%Câu 7
+\begin{ex}%[0H3Y1-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Cho đường thẳng $d\colon 2x+3y-4=0$. Véc-tơ nào sau đây là véc-tơ pháp tuyến của đường thẳng $d$?
+	\choice
+	{$\vec{n}=(-2;3)$}
+	{$\vec{n}=(-3;2)$}
+	{$\vec{n}=(3;2)$}
+	{\True $\vec{n}=(2;3)$}
+	\loigiai{
+		$d\colon 2x+3y-4=0\Leftrightarrow d\colon 2x+3y=4$ nên có véc-tơ pháp tuyến là $\vec{n}=(2;3)$.
+	}
+\end{ex}
+
+%Câu 8
+\begin{ex}%[0H3Y1-6]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Trong mặt phẳng tọa độ $Oxy$, cho ba điểm $A(2;3)$, $B(3;5)$, $C(1;4)$. Tọa độ trọng tâm $G$ của $\triangle ABC$ là
+	\choice
+	{$G(4;2)$}
+	{$G(6;12)$}
+	{$G(3;6)$}
+	{\True $G(2;4)$}
+	\loigiai{
+		Ta có $G$ là trọng tâm của $\triangle ABC$ nên
+		\[
+		\heva{& x_G=\dfrac{x_A+x_B+x_C}{3}=\dfrac{2+3+1}{3}=2 \\ & y_G=\dfrac{y_A+y_B+y_C}{3}=\dfrac{3+5+4}{3}=4.}
+		\]
+	}
+\end{ex}
+
+%Câu 9
+\begin{ex}%[0H3K1-3]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Trong mặt phẳng với hệ tọa độ $Oxy$, cho tam giác $BAC$ có $M(2;0)$ là trung điểm cạnh $AB$. Đường trung tuyến và đường cao qua đỉnh $A$ lần lượt có phương trình là $7x-2y-3=0$ và $6x-y-4=0$. Phương trình đường thẳng $AC$ là
+	\choice
+	{$3x+4y-5=0$}
+	{$3x+4y+5=0$}
+	{\True $3x-4y+5=0$}
+	{$3x-4y-5=0$}
+	\loigiai{
+		\immini
+		{
+			Tọa độ $A$ là nghiệm của hệ phương trình $\heva{& 7x-2y-3=0 \\ & 6x-y-4=0}\Leftrightarrow\heva{& 7x-2y=3 \\ & 6x-y=4}\Leftrightarrow\heva{& x=1 \\ & y=2.}$\\
+			Vậy $A(1;2)$.
+			$M$ là trung điểm $AB$ nên
+			\[
+			\heva{& x_M=\dfrac{x_A+x_B}{2} \\ & y_M=\dfrac{y_A+y_B}{2}}\Rightarrow\heva{& x_B=2x_M-x_A \\ & y_B=2y_M-y_A}\Leftrightarrow\heva{& x_B=2\cdot2-1=3 \\ & y_B=2\cdot0-2=-2.}
+			\]
+			Vậy $B(3;-2)$.\\
+			Gọi $AH$ là đường cao xuất phát từ đỉnh $A$.\\
+			Do $BC\perp AH\colon 6x-y-4=0\Rightarrow BC\colon x+6y+c=0$.\\
+			Vì $B(3;-2)\in BC\Rightarrow 3+6\cdot(-2)+c=0\Rightarrow c=9$.\\
+			Vậy $BC\colon x+6y+9=0$.\\
+			Gọi $N$ là trung điểm của $BC$.\\
+			$N$ là giao điểm của trung tuyến từ đỉnh $A$ và $BC$, suy ra tọa độ $N$ là nghiệm của hệ phương trình
+			\[
+			\heva{& 7x-2y-3=0 \\ & x+6y+9=0}\Leftrightarrow\heva{& x=0 \\ & y=\dfrac{-3}{2}.}
+			\]
+			$\vec{AC}=2\vec{MN}=(-4;-3)$.\\
+			Đường thẳng $AC$ đi qua $A(1;2)$ và có véc-tơ pháp tuyến là $\vec{n_{AC}}=(3;-4)$, ta có $$AC\colon 3(x-1)-4(y-2)=0\Leftrightarrow AC\colon 3x-4y+5=0.$$
+		}
+		{
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=.65,transform shape,|| mark/.style={postaction=decorate,decoration={markings,
+						mark=at position #1 with {\draw[line cap=round,mark segment] (-1pt,-2pt) -- (-1pt,2pt);
+							\draw[line cap=round,mark segment] (1pt,-2pt) -- (1pt,2pt);
+				}}},mark segment/.style={thick}]
+				\draw[xstep = 1, ystep = 1, lightgray, very thin] (-3.5,-3) grid (4,2.5);
+				\draw[->] (-3.5,0)--(0,0) node[below left]{$O$}--(4,0) node[below]{$x$};
+				\draw[->] (0,-3)--(0,2.5) node[right]{$y$};
+				\path
+				(1,2) coordinate (A)
+				(3,-2) coordinate (B)
+				(2,0) coordinate (M)
+				(0,-3/2) coordinate (N)
+				($(B)!2!(N)$) coordinate (C)
+				($(B)!(A)!(C)$) coordinate (H)
+				;
+				\draw[samples=100,domain=1:-.35,smooth] plot (\x, {7/2*(\x)-3/2}) node[right]{$7x-2y-3=0$};
+				\draw[samples=100,domain=1:0.3,smooth] plot (\x, {6*(\x)-4}) node[right]{$6x-y-4=0$};
+				\path[|| mark=0.5] (N) -- (C);
+				\path[|| mark=0.5] (N) -- (B);
+				\draw
+				(A)--(B)--(C)--cycle (A)--(N)
+				pic[draw,angle radius=.25cm]{right angle=B--H--A}
+				;
+				\foreach \x/\g in {A/90,B/0,M/60,N/-150,C/180} \fill (\x) circle (1.5pt) ($(\x)+(\g:3mm)$) node{$\x$};
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+
+%Câu 10
+\begin{ex}%[0H1Y3-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Cho $\vec{a}=(2;1)$, $\vec{b}=(-3;4)$, $\vec{c}=(-4;9)$. Hai số thực $m$, $n$ thỏa mãn $m\vec{a}+n\vec{b}=\vec{c}$. Tính $m^2+n^2$.
+	\choice
+	{$4$}
+	{$3$}
+	{\True $5$}
+	{$1$}
+	\loigiai{
+		Ta có $m\vec{a}+n\vec{b}=\vec{c}\Rightarrow m(2;1) + n(-3;4)=(-4;9)\Rightarrow\heva{& 2m-3n=-4 \\ & m+9n=9}\Leftrightarrow\heva{& m=1 \\ & n=2.}$\\
+		Vậy $m^2+n^2=1^2+2^2=5$.
+	}
+\end{ex}
+
+%Câu 11
+\begin{ex}%[1D2Y3-2]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Hệ số $x^3$ trong khai triển $(x+1)^4$ là
+	\choice
+	{$5$}
+	{\True $4$}
+	{$-2$}
+	{$3$}
+	\loigiai{
+		Theo công thức Nhị thức Newton, ta có
+		\begin{align*}
+			(x+1)^4&= 1\cdot x^4+4\cdot x^3\cdot1+6\cdot x^2\cdot1^2+4\cdot x\cdot 1^3+1\cdot1^4\\
+			&=x^4+4x^3+6x^2+4x+1.
+		\end{align*}
+		Vậy hệ số của $x^3$ là $4$.
+	}
+\end{ex}
+
+%Câu 12
+\begin{ex}%[0H1Y1-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Trong mặt phẳng tọa độ $Oxy$, cho hai điểm $M(2;3)$, $N(3;5)$. Tọa độ của véc-tơ $\vec{MN}$ là
+	\choice
+	{$\vec{MN}=(1;-2)$}
+	{\True $\vec{MN}=(1;2)$}
+	{$\vec{MN}=(-1;12)$}
+	{$\vec{MN}=(-1;2)$}
+	\loigiai{
+		 Tọa độ của véc-tơ $\vec{MN}$ là $(x_N-x_M;y_N-y_M)=(3-2;5-3)=(1;2)$.
+	}
+\end{ex}
+
+%Câu 13
+\begin{ex}%[0D4Y5-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	Bất phương trình $-5x^2+4x+12>0$ có tập nghiệm là
+	\choice
+	{$\left( - \infty ; - \dfrac{6}{5}\right)\cup(2 ; + \infty)$}
+	{$\left( - 2 ;\dfrac{6}{5}\right)$}
+	{$( - \infty ; - 2)\cup\left(\dfrac{6}{5}; + \infty\right)$}
+	{\True $\left( - \dfrac{6}{5}; 2\right)$}
+	\loigiai{
+		Ta có $-5x^2+4x+12=0\Leftrightarrow \hoac{& x=2 \\ & x=\dfrac{-6}{5}}$.
+		Bảng xét dấu
+		\begin{center}
+			\begin{tikzpicture}[yscale=.8,xscale=1.2]
+				\def\a{6} % số cột nhãn
+				\def\b{2} % số hàng nhãn
+				%\pagecolor{yellow!30}
+				\draw[shift={(-.5,.5)}]
+				%	(-1.5,0.25) rectangle (\a,-\b-.25)
+				(-1.5,-1)--+(0:\a+1.5)
+				%	(-1,-2)--+(0:\a+1)
+				%	(-1,-3)--+(0:\a+1)
+				(1,0)--+(-90:\b)
+				;
+				\path
+				(-.75,0) node {$x$}
+				(-.85,-1) node {$- 5x^2 + 4x +12$}
+				(1.25,-1) node {$-$}
+				%(1,-2) node {$+$}
+				%(1,-3) node {$-$}
+				(2,0.1) node {$\dfrac{-6}{5}$}
+				(2,-1) node {$0$}
+				%(2,-3) node {$0$}
+				(3,-1) node {$+$}
+				%(3,-2) node {$+$}
+				%(3,-3) node {$+$}
+				(4,0) node {$2$}
+				(4,-1) node {$0$}
+				%(4,-3) node {$0$}
+				(5,-1) node {$-$}
+				%(5,-2) node {$-$}
+				%(5,-3) node {$-$}
+				;
+			\end{tikzpicture}
+		\end{center}
+		Bất phương trình $-5x^2+4x+12>0$ có tập nghiệm là $\left( - \dfrac{6}{5}; 2\right)$.
+	}
+\end{ex}
+
+%Câu 14
+\begin{ex}%[1D2Y1-2]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Á Châu]
+	An muốn qua nhà Bình để cùng Bình đến chơi nhà Cường. Từ nhà An đến nhà Bình có $4$ con đường đi, từ nhà Bình đến nhà Cường có $6$ con đường đi. Hỏi An có bao nhiêu cách chọn đường đi đến nhà Cường cùng Bình (không có con đường nào khác)?
+	\choice
+	{$16$}
+	{$36$}
+	{$10$}
+	{\True $24$}
+	\loigiai{
+		Áp dụng quy tắc nhân, ta có số cách chọn đường đi từ nhà An đến nhà Cường cùng Bình là
+		\[
+		4\cdot6=24 \mbox{ (cách)}.
+		\]
+	}
+\end{ex}
+
+%Câu 15...........................
+\begin{ex}%[0T7B1-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Cho tam thức bậc hai có bảng xét dấu như hình bên dưới
+\begin{center}
+\begin{tikzpicture}
+	\tkzTabInit[lgt=3,espcl=2] {$x$ /1, $f(x)$ /1} {$-\infty$, $1$, $2$, $+\infty$} 
+	\tkzTabLine{ ,+,z,-,z,+, }
+\end{tikzpicture}
+\end{center}
+Mệnh đề nào sau đây sai?
+\choice
+{\True $ f(x) > 0, \, \forall x \in \mathbb{R} $}
+{$ f(x) < 0, \, \forall x \in (1;2) $}
+{$ f(x) \le 0, \, \forall x \in (1;2) $}
+{$ f(x) > 0, \, \forall x > 1 $}
+\loigiai{
+Dựa vào bảng biến thiên ta thấy $ f(x) $ đổi dấu khi qua $ x=1 $ và $ x=2 $ nên mệnh đề $ f(x) > 0, \, \forall x \in \mathbb{R} $ là sai.
+}
+\end{ex}
+
+%Câu 16...........................
+\begin{ex}%[0T9B2-2]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Phương trình đường thẳng đi qua hai điểm $ A(0;4) $ và $ B(-6;0) $ là
+\choice
+{$ \dfrac{x}{6}+\dfrac{y}{4}=1 $}
+{$ \dfrac{x}{4}+\dfrac{y}{-6}=1 $}
+{\True $ \dfrac{x}{-6}+\dfrac{y}{4}=1 $}
+{$ \dfrac{-x}{6}+\dfrac{y}{-6}=1 $}
+\loigiai{
+Phương trình đường thẳng đi qua hai điểm $ A(0;4) $ và $ B(-6;0) $ là $ \dfrac{x}{-6}+\dfrac{y}{4}=1 $.
+}
+\end{ex}
+
+%Câu 17...........................
+\begin{ex}%[0T8B2-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Thầy giáo chủ nhiệm có $ 10 $ quyển sách khác nhau và $ 8 $ quyển vở khác nhau. Thầy chọn ra một quyển sách hoặc một quyển vở để tặng cho học sinh giỏi. Hỏi có bao nhiêu cách chọn khác nhau?
+\choice
+{\True $ 18 $}
+{$ 80 $}
+{$ 8 $}
+{$ 10 $}
+\loigiai{
+Chọn $ 1 $ quyển sách hoặc vở trong $ 10  $ quyển sách và $ 8 $ quyển vở có $ \mathrm{C}_{18}^{1} = 18 $ cách.
+}
+\end{ex}
+
+%Câu 18...........................
+\begin{ex}%[0T7B2-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Gọi $ S $ là tập hợp nghiệm của bất phương trình $ x^{2}-x-6 \le 0 $. Chọn đáp án đúng.
+\choice
+{\True $ S \subset (-3;4) $}
+{$ S \subset (-2;3) $}
+{$ S = (-2;3) $}
+{$ S = (-3;4] $}
+\loigiai{
+Xét
+$$
+	x^{2}-x-6 = 0
+	\Leftrightarrow
+	\hoac{&x=-2\\&x=3}
+$$
+Ta lập được bảng biến thiên
+\begin{center}
+\begin{tikzpicture}
+	\tkzTabInit[lgt=3,espcl=2] {$x$ /1, $x^{2}-x-6$ /1} {$-\infty$, $-2$, $3$, $+\infty$} 
+	\tkzTabLine{ ,+,z,-,z,+, }
+\end{tikzpicture}
+\end{center}
+Từ bảng trên, ta thấy
+$$
+	x^{2}-x-6 \le 0 \Leftrightarrow -2 \le x \le 3
+$$
+nên $ S = \left[-2;3\right] $. Do vậy $ S \subset (-3;4) $.
+}
+\end{ex}
+
+%Câu 19...........................
+\begin{ex}%[0T7K3-2]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Tổng các nghiệm của phương trình $ \sqrt{x^{2}-x-12} = 2 $ bằng
+\choice
+{$ 0 $}
+{$ \dfrac{\sqrt{65}}{2} $}
+{\True $ 1 $}
+{$ 2 $}
+\loigiai{
+Hai vế của phương trình đã cho không âm nên
+\begin{align*}
+	\sqrt{x^{2}-x-12} = 2 &\Leftrightarrow x^{2}-x-12 = 4 
+	\\
+	&\Leftrightarrow x^{2}-x-16 = 0
+\end{align*}
+Theo định lý Vi-et, tổng hai nghiệm của phương trình là $ \dfrac{-(-1)}{1} = 1 $.
+}
+\end{ex}
+
+%Câu 20...........................
+\begin{ex}%[0T8Y2-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Với $ k $ và $ n $ là hai số nguyên dương tùy ý thỏa mãn $ k \le n $. Mệnh đề nào sau đây đúng?
+\choice
+{$ \mathrm{A}_{n}^{k} = \dfrac{n!}{k! (n-k)!} $}
+{$ \mathrm{A}_{n}^{k} = \dfrac{n!}{k!} $}
+{\True $ \mathrm{A}_{n}^{k} = \dfrac{n!}{(n-k)!} $}
+{$ \mathrm{A}_{n}^{k} = \dfrac{k! (n-k)!}{n!} $}
+\loigiai{
+Ta có $ \mathrm{A}_{n}^{k} = \dfrac{n!}{(n-k)!} $.
+}
+\end{ex}
+
+%Câu 21...........................
+\begin{ex}%[0T9Y3-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Trong mặt phẳng $ Oxy $, cho đường tròn $ (C) \colon (x-2)^{2}+(y+3)^{2}=9 $. Đường tròn có tâm và kính là
+\choice
+{$ I(2;3) $ và $ R = 9 $}
+{\True $ I(2;-3) $ và $ R = 3 $}
+{$ I(-3;2) $ và $ R = 3 $}
+{$ I(-2;3) $ và $ R = 3 $}
+\loigiai{
+Đường tròn $ (C) \colon (x-2)^{2}+(y+3)^{2}=9 $ có tâm và kính là $ I(2;-3) $ và $ R = 3 $.
+}
+\end{ex}
+
+%Câu 22...........................
+\begin{ex}%[0T8B2-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Có bao nhiêu cách xếp $ 5 $ học sinh thành một hàng dọc?
+\choice
+{\True $ 120 $}
+{$ 10 $}
+{$ 15 $}
+{$ 25 $}
+\loigiai{
+Mỗi các xếp $ 5 $ học sinh thành một hàng dọc là một hoản vị của $ 5 $ phần tử. Nên số cách xếp là $ 5! = 120 $.
+}
+\end{ex}
+
+%Câu 23...........................
+\begin{ex}%[0T9B1-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Trong mặt phẳng tọa độ $ Oxy $, cho hai vec-tơ $ \vv{a} = (4;3) $ và $ \vv{b} = (1;7) $. Tính góc $ \alpha $ tạo bởi hai vec-tơ $ \vv a $ và $ \vv b $.
+\choice
+{\True $ \alpha = 45^{\circ} $}
+{$ \alpha = 90^{\circ} $}
+{$ \alpha = 30^{\circ} $}
+{$ \alpha = 60^{\circ} $}
+\loigiai{
+Ta có
+$$
+	\cos\alpha = \dfrac{\vv a \cdot \vv b}{|\vv a| \cdot |\vv b|}
+	= \dfrac{(4) \cdot (1) + (3) \cdot (7)}{\sqrt{(4)^{2}+(3)^{2}} \cdot \sqrt{(1)^{2}+(7)^{2}}}
+	= \dfrac{1}{\sqrt{2}}
+$$
+Do đó $ \alpha = 45^{\circ} $.
+}
+\end{ex}
+
+%Câu 24...........................
+\begin{ex}%[0T9B2-2]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Phương trình tham số của đường thẳng qua $ M(1;-2) $ nhận $ \vv u = (3;5) $ làm vec-tơ chỉ phương là
+\choice
+{$ \heva{&x=1+5t \\ &y=-2-3t} $}
+{$ \heva{&x=3+t \\ &y=5-2t} $}
+{\True $ \heva{&x=1+3t \\ &y=-2+5t} $}
+{$ \heva{&x=-1+3t \\ &y=2+5t} $}
+\loigiai{
+Phương trình tham số của đường thẳng qua $ M(1;-2) $ nhận $ \vv u = (3;5) $ làm vec-tơ chỉ phương là $ \heva{&x=1+3t \\ &y=-2+5t} $.
+}
+\end{ex}
+
+%Câu 25...........................
+\begin{ex}%[0T7B3-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Tập nghiệm của phương trình $ \sqrt{3-x} = \sqrt{x+2} $ là
+\choice
+{$ S = \left\{-2;\dfrac{1}{2} \right\} $}
+{\True $ S = \left\{ \dfrac{1}{2} \right\} $}
+{$ S = \emptyset $}
+{$ S = \left\{ -\dfrac{1}{2} \right\} $}
+\loigiai{
+Bình phương hai vế của phương trình đã cho, ta được
+$$
+	3-x=x+2 \Leftrightarrow x=\dfrac{1}{2}
+$$
+Thử lại ta thấy $ x=\dfrac{1}{2} $ thỏa mãn phương trình đã cho. Nên tập nghiệm cần tìm là $ S = \left\{ \dfrac{1}{2} \right\} $.
+}
+\end{ex}
+
+%Câu 26...........................
+\begin{ex}%[0T8B2-1]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Ban chấp hành chi đoàn lớp 11D có bạn An, Bình, Công và Dũng. Hỏi có bao nhiêu cách chọn ba từ bốn bạn trên để phân công các bạn này vào các chức vụ Bí thư, phó Bí thư và Ủy viên mà không bạn nào kiêm nhiệm?
+\choice
+{$ 2 $}
+{$ 9 $}
+{\True $ 24 $}
+{$ 6 $}
+\loigiai{
+Chọn $ 3 $ trong $ 4 $ bạn An, Bình, Công và Dũng rồi xếp vào $ 3 $ chức vụ Bí thư, phó Bí thư và Ủy viên là một chỉnh hợp chập $ 3 $ của $ 4 $ phần tử. Do đó số cách chọn là $ \mathrm{A}_{4}^{3} =  24 $ cách.
+}
+\end{ex}
+
+%Câu 27...........................
+\begin{ex}%[0T8K3-2]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Tìm số hạng chứa $ x^{3}y^{3} $ trong khai triển $ (x+2y)^{6} $ thành đa thức.
+\choice
+{$ 20x^{3}y^{3} $}
+{\True $ 160x^{3}y^{3} $}
+{$ 120x^{3}y^{3} $}
+{$ 8x^{3}y^{3} $}
+\loigiai{
+Khai triển $ (x+2y)^{6} $ thành đa thức, ta được
+\begin{align*}
+	(x+2y)^{6} &= 
+	\foreach \n in {0,1,...,3}{
+		\mathrm{C}_{6}^{\n} (x)^{6-\n}  (2y)^{\n} +
+	}
+	\\
+	&\qquad \foreach \n in {3,4,5}{
+		\mathrm{C}_{6}^{\n} (x)^{6-\n}  (2y)^{\n} + 
+	} \mathrm{C}_{6}^{6} (x)^{6-6}  (2y)^{6}
+\end{align*}
+Từ đó ta thấy số hạng chứa $ x^{3}y^{3} $ là $ \mathrm{C}_{6}^{3}(x)^{3}(2y)^{3} = 160x^{3}y^{3} $.
+}
+\end{ex}
+
+%Câu 28...........................
+\begin{ex}%[0T9K2-2]%[Dự án đề kiểm tra HKII NH22-23-Hiếu Mai]%[Á Châu]
+Cho đường thẳng $ d $ có phương trình tham số $ \heva{&x=5+t \\ &y=-9-2t} $. Phương trình tổng quát của đường thẳng $ d $ là
+\choice
+{$ -2x+y-1=0 $}
+{\True $ 2x+y-1=0 $}
+{$ x+2y+1=0 $}
+{$ 2x+3y-1=0 $}
+\loigiai{
+\begin{itemize}
+\item[\textbf{C1.}] Ta có
+$$
+	\heva{&x=5+t \\ &y=-9-2t}
+	\Rightarrow
+	\heva{&t=x-5 \\ &t=\dfrac{-y-9}{2}}
+	\Rightarrow 
+	x-5 = \dfrac{-y-9}{2}
+	\Rightarrow
+	2x+y-1=0
+$$
+Do đó phương trình tổng quát của đường thẳng $ d $ là $ 2x+y-1=0 $.
+
+\item[\textbf{C2.}] Từ phương trình tham số $ \heva{&x=5+t \\ &y=-9-2t} $, ta thấy đường thẳng $ d $ đi qua điểm $ A(5;-9) $, có vec-tơ chỉ phương $ \vv u_{d} = (1;-2) $ và vec-tơ pháp tuyến $ \vv n_{d} = (2;1) $. Do đó, phương trình tổng quát của $ d $ là
+$$
+	2 \cdot (x-5) + 1 \cdot (y+9) = 0
+	\Leftrightarrow
+	2x+y-1=0
+$$
+\end{itemize}
+}
+\end{ex}
+
+
+\Closesolutionfile{ans}
+%\begin{center}
+%	\textbf{ĐÁP ÁN}
+%	\inputansbox{10}{ans/ans}	
+%\end{center}
+
+
+\begin{center}
+	\textbf{PHẦN 2 - TỰ LUẬN}
+\end{center}
+
+\begin{bt}%[0T8Y2-1]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[TH-THCS-THPT Á CHÂU]
+	Cho tập hợp $A=\{1;2;3;4;5;6;7\}$. Có bao nhiêu số tự nhiên chẵn có $5$ chữ số đôi một khác nhau được lập từ các số của tập hợp $A$?
+\loigiai{
+\begin{itemize}
+	\item Cách $1$: Dùng phép đếm.\\
+	Gọi $\overline{abcde}$ là số tự nhiên có $5$ chữ số khác nhau đôi một được lập từ $A$.
+	\begin{itemize}
+		\item $a\in A$ suy ra $a$ có $7$ cách chọn.
+		\item $b\in A\setminus \{a\}$ suy ra $b$ có $6$ cách chọn.
+		\item $c\in A\setminus \{a,b\}$  suy ra $c$ có $5$ cách chọn.
+		\item $d\in A\setminus \{a,b,c\}$ suy ra $d$ có $4$ cách chọn.
+		\item $e\in A\setminus \{a,b,c,d\}$ suy ra $d$ có $3$ cách chọn.
+	\end{itemize}
+	Theo quy tắc nhân, ta được $7\cdot6\cdot5\cdot4\cdot3=2520$ số.
+	\item Cách $2$: Dùng chỉnh hợp.\\
+	Số tự nhiên có $5$ chữ số khác nhau đôi một được lập từ $A$ là một chỉnh hợp chập $5$ của $7$ phần tử.\\
+	Vậy có $\mathrm{A}_7^5=7\cdot6\cdot5\cdot4\cdot3=2520$ số.
+\end{itemize}
+}
+\end{bt}
+\begin{bt}%[0T7B3-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[TH-THCS-THPT Á CHÂU]
+	Giải phương trình $x^2+5x+2+2\sqrt{x^2+5x+10}=0$. 
+	\loigiai{
+		Đặt $t=\sqrt{x^2+5x+10}$, $t\geq 0. \qquad(*)$\\
+		Suy ra $x^2+5x=t^2-10$, phương trình đã cho trở thành
+		$$t^2+2t-8=0\Leftrightarrow\hoac{& t=-4&\text{ (loại)} \\ &t=2&\text{ (nhận).}}$$
+		Với $t=2$, thay vào $(*)$ ta được 
+		$$ x^2+5x+6=0\Leftrightarrow \hoac{& x=-3 \\ & x=-2.}$$
+		Vậy tập nghiệm của phương trình là $S=\{-3;-2\}$.
+	}
+\end{bt}
+\begin{bt}%[0T9B3-3]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Văn Sang]%[TH-THCS-THPT Á CHÂU]
+	Trong mặt phẳng $Oxy$, cho đường tròn $(C)\colon (x-1)^2+(y-4)^2=4$. Viết phương trình tiếp tuyến với đường tròn $(C)$, biết tiếp tuyến đó song song với đường thẳng $\Delta\colon 4x-3y+2=0$.
+	\loigiai{
+	Đường tròn $(C)\colon (x-1)^2+(y-4)^2=4$ có tâm $I(1;4)$ và bán kính $R=2$.\\
+	Gọi $d$ là tiếp tuyến cần tìm, vì $d\parallel \Delta\colon 4x-3y+2=0$ suy ra $d\colon 4x-3y+m=0$ với $m\neq 2$.\\
+	Do $d$ tiếp xúc $(C)$ nên 
+	\begin{eqnarray*}
+		\mathrm{d}(I,d)=R&\Leftrightarrow& \dfrac{|4\cdot1-3\cdot4+m|}{\sqrt{4^2+(-3)^2}}=2\\
+		&\Leftrightarrow&|m-8|=10\\
+		&\Leftrightarrow&\hoac{& m-8=10 \\ &m-8=-10}\\
+			&\Leftrightarrow&\hoac{& m=18 &\text{(nhận)} \\ &m=-2 &\text{(nhận).}}
+	\end{eqnarray*}
+Vậy có hai tiếp tuyến cần tìm là $d_1\colon 4x-3y+18=0$ và $d_2\colon 4x-3y-2=0$.
+	}
+\end{bt}
+
+
+

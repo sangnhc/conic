@@ -1,0 +1,472 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Bà Điểm}
+
+
+%---Bổ sung gói lệnh trucso.sty
+%%%%%%%%%%%=============Câu 1
+\begin{bt}%[0T1B3-1]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Bà Điểm]
+	Cho hai tập hợp $A=[-3 ; 8)$ và $\mathrm{B}=(-\infty ; 5]$. Tìm $A \cap B,\, A \cup B,\, A\setminus B,\, B\setminus A$.\\
+	\dapso{$A \cap B=[-3;5],\, A \cup B=(-\infty;8),\, A\setminus B=(5;8),\, B\setminus A=(-\infty;-3)$}.
+	\loigiai{
+		\begin{itemize}
+			\item Tìm $A\cap B$, $A\cup B$: Biểu diễn trên trục tọa độ ta được
+			\begin{center}
+				\begin{tikzpicture}
+					\trucso{-3/6}
+					\draw (-3,0) node[below]{$-\infty$};
+					\draw (6,0) node[below]{$+\infty$};
+					\daungoac{-1/-3}{[}
+					\daungoac{2/5}{]}
+					\daungoac{4/8}{)}
+					\cheophai{-3/-1, 2/6}
+					\cheotrai{4/6}
+				\end{tikzpicture}
+				
+			\end{center}
+			$A \cap B=[-3;5]$, $A \cup B=(-\infty;8)$.
+			\item Tìm $A\setminus B$:
+			\begin{center}
+				\begin{tikzpicture}
+					\trucso{-3/6}
+					\draw (-3,0) node[below]{$-\infty$};
+					\draw (6,0) node[below]{$+\infty$};
+					\daungoac{-1/-3}{[}
+					\daungoac{2/5}{]}
+					\daungoac{4/8}{)}
+					\cheophai{-3/-1, 4/6}
+					\cheotrai{-3/2}
+				\end{tikzpicture}
+			\end{center}	
+		Ta có $A\setminus B=(5;8)$.
+		\item Tìm $B\setminus A$:
+		\begin{center}
+			\begin{tikzpicture}
+				\trucso{-3/6}
+				\draw (-3,0) node[below]{$-\infty$};
+				\draw (6,0) node[below]{$+\infty$};
+				\daungoac{-1/-3}{[}
+				\daungoac{2/5}{]}
+				\daungoac{4/8}{)}
+				\cheophai{-1/6}
+				\cheotrai{2/6}
+			\end{tikzpicture}
+		\end{center}
+	Ta có $B\setminus A=(-\infty;-3)$.
+		\end{itemize}	
+	}
+\end{bt} 
+%%%%%%%%%%%=============Câu 2
+\begin{bt}%[0T1K3-3]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Bà Điểm]
+	Trong năm học 2022- 2023, trường THPT Bà Điểm mở lớp luyện thi IELTS và tiếng Trung. Lớp $10$A có $20$ bạn đăng ký học tiếng Trung, $15$ bạn đăng ký học IELTS, $3$ bạn đăng ký học cả $2$ môn này, và $18$ bạn không đăng ký học môn nào trong $2$ môn trên.
+	\begin{enumerate}
+		\item Lớp $10$A có bao nhiêu học sinh đăng ký ít nhất một trong hai môn nêu trên?
+		\item Tính sĩ số lớp $10$A. 
+	\end{enumerate}
+	\dapso{ a) $32$ học sinh; b) $50$ học sinh}
+	\loigiai{
+	Gọi $A$ là tập các học sinh đăng kí học tiếng Trung, $B$ là tập các học sinh đăng kí học IELTS.\\
+	Ta có số học sinh đăng kí học tiếng Trung là $n(A)=20$; số học sinh đăng kí học IELTS $n(B)=15$; số học sinh đăng kí học cả hai môn là $n(A\cap B)=3$.
+	\begin{enumerate}
+		\item Số học sinh đăng kí học ít nhất một môn là 
+		\[
+		n(A\cup B)=n(A)+n(B)-n(A\cap B)=20+15-3=32.
+		\]
+		\item Sĩ số học sinh của lớp chính là tổng học sinh đăng kí ít nhất một môn học với số học sinh không đăng kí môn nào.\\
+		Do đó số học sinh của lớp $10$A bằng $32+18=50$.
+	\end{enumerate}	
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 3
+\begin{bt}%[0T2K2-2]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Bà Điểm]
+	Một xưởng có máy cắt và máy tiện dùng để sản xuất trục sắt và đinh ốc. Sản xuất $1$ tấn trục sắt thì lần lượt máy cắt chạy trong $3$ giờ và máy tiện chạy trong $1$ giờ, tiền lãi là $2$ triệu. Sản xuất $1$ tấn đinh ốc thì lần lượt máy cắt và máy tiện chạy trong $1$ giờ tiền lãi là $1$ triệu. Một máy không thể sản xuất cả $2$ loại. Máy cắt làm không quá $6$ giờ/ngày, máy tiện làm không quá $4$ giờ/ngày. Một ngày xưởng nên sản xuất bao nhiêu tấn mỗi loại để tiền lãi cao nhất.
+	\dapso{Một ngày xưởng sản xuất $1$ tấn trục sắt và $3$ tấn đinh ốc thì thu được tiền lãi cao nhất là $5$ triệu}
+	\loigiai{
+		Gọi $x$, $y$ $(x,y\geq 0)$ lần lượt là khối lượng (đơn vị là tấn) của trục sắt và đinh ốc cần sản xuất trong một ngày.\\
+		Số tiền lãi thu được là $F(x;y)=2x+y$ (triệu đồng).\\
+		Ta cần tìm $x$, $y$ để $F(x;y)$ lớn nhất.\\
+		Thời gian chạy máy cắt trong một ngày là $3x+y\leq 6$.\\
+		Thời gian chạy máy tiện trong một ngày là $x+y\leq 4$.\\
+		Ta có hệ bất phương trình
+		\[
+		\heva{&x,y\geq 0\\&3x+y\leq 6\\&x+y\leq 4.}
+		\]
+		Biểu diễn miền nghiệm của hệ bất phương trình lên mặt phẳng tọa độ $Oxy$ ta được
+		\begin{center}
+			\begin{tikzpicture}[font=\footnotesize,line join=round, line cap=round, >=stealth,scale=0.8] 
+				\def \xmin{-1}\def \xmax{5}\def \ymin{-1}\def \ymax{7} 
+				\draw[->] (\xmin,0)--(\xmax,0) node[shift=(-90:0.25)] {$x$};
+				\draw[->] (0,\ymin)--(0,\ymax) node[shift=(0:0.25)] {$y$};
+				\fill (0,0) circle(1pt) node[shift=(45:0.25)]{$O$}
+				(1,0) circle(1pt) node[shift=(-90:0.2)]{$1$}
+				(2,0) circle(1pt) node[shift=(-100:0.2)]{$2$}
+				(4,0) circle(1pt) node[shift=(-90:0.2)]{$4$}
+				(0,3) circle(1pt) node[shift=(180:0.2)]{$3$}
+				(0,6) circle(1pt) node[shift=(180:0.2)]{$6$}
+				(0,4) circle(1pt) node[shift=(180:0.2)]{$4$}
+				(2,0) circle(1pt) node[shift=(135:0.25)]{$A$}
+				(1,3) circle(1pt) node[shift=(-120:0.25)]{$B$}
+				(0,4) circle(1pt) node[shift=(-70:0.4)]{$C$};
+				\begin{scope}
+					\clip (\xmin,\ymin) rectangle (\xmax,\ymax); 
+					\draw[smooth,samples=100,domain=\xmin:\xmax] plot(\x,{6-3*\x});
+					\draw[smooth,samples=100,domain=\xmin:\xmax] plot(\x,{4-\x});
+					\fill[pattern=north east lines,opacity=.8] plot[domain=\xmin:\xmax] (\x,{6-3*\x})--(\xmax,\ymin)--(\xmax,\ymax)--(\xmin,\ymax)--cycle;
+					\fill[pattern=north west lines,opacity=.8] plot[domain=\xmin:\xmax] (\x,{4-\x})--(\xmax,\ymin)--(\xmax,\ymax)--(\xmin,\ymax)--cycle;
+					\fill[pattern=north west lines,opacity=.8] (\xmin,\ymax)--(0,\ymax)--(0,\ymin)--(\xmin,\ymin)--cycle;
+					\fill[pattern=north east lines,opacity=.8] (\xmin,\ymin)--(\xmin,0)--(\xmax,0)--(\xmax,\ymin)--cycle;
+				\end{scope}
+				\draw[dashed] (1,0)--(1,3)--(0,3);
+			\end{tikzpicture}
+		\end{center}
+	\noindent Miền nghiệm của hệ bất phương trình là đa giác $OABC$ với $O(0;0)$, $A(2;0)$, $B(1;3)$, $C(0;4)$.\\
+	Ta có $F(0;0)=0$, $F(2;0)=4$, $F(1;3)=5$, $F(0;4)=4$.\\
+	Ta có $\max F(x;y)=5\Leftrightarrow \heva{&x=1\\&y=3.}$\\
+	Vậy một ngày xưởng cần sản xuất $1$ tấn trục sắt và $3$ tấn đinh ốc để thu được tiền lãi cao nhất là $5$ triệu đồng.
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 4
+\begin{bt}%[0T3B1-2]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Bà Điểm]
+	Tìm tập xác định của hàm số sau: $y=\sqrt{2 x-4}-\dfrac{3 x+1}{\sqrt{15-3 x}}$.
+	\dapso{$\mathscr{D}=[2;5)$}
+	\loigiai{
+		Hàm số xác định khi và chỉ khi $\heva{&2x-4\geq 0\\&15-3x>0}\Leftrightarrow\heva{&x\geq 2\\&x<5}\Leftrightarrow 2\leq x<5$.\\
+		Vậy tập xác định là $\mathscr{D}=[2;5)$.
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 5
+\begin{bt}%[0T3B2-2]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[THPT Bà Điểm]
+	Tìm hàm số $y=ax^2+bx+c$ $(a \neq 0)$, biết rằng đồ thị $(P)$ của hàm số đi qua điểm $M(3; 1)$ và $(P)$ có đỉnh $I(2;-1)$.
+	\dapso{$(P)\colon y=2x^2-8x+7$.}
+	\loigiai{
+	Điểm $M(3;1)\in(P)\Leftrightarrow 1=a\cdot 3^2+b\cdot 3+c\Leftrightarrow 9a+3b+c=1$.\hfill$(1)$\\
+	Điểm $I(2;-1)\in(P)\Leftrightarrow -1=a\cdot 2^2+b\cdot 2+c\Leftrightarrow 4a+2b+c=-1$.\hfill$(2)$\\
+	Hoành độ đỉnh $x_I=2\Leftrightarrow -\dfrac{b}{2a}=2\Leftrightarrow 4a+b=0$.\hfill$(3)$\\
+	Từ $(1)$, $(2)$, $(3)$ ta có hệ phương trình
+	\[
+	\heva{
+	&9a+3b+c=1\\
+	&4a+2b+c=-1\\
+	&4a+b=0}
+\Leftrightarrow
+	\heva{&a=2\\&b=-8\\&c=7.}
+	\]
+	Vậy hàm số cần tìm là $(P)\colon y=2x^2-8x+7$.
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 6
+
+%%%%%%%%%%%=============Câu 6
+\begin{bt}%[0T3K2-5]%[Dự án đề kiểm tra HKI NH22-23- Thầy Hóa]%[THPT Bà Điểm]
+	Một doanh nghiệp tư nhân A chuyên kinh doanh xe gắn máy các loại. Hiện nay doanh nghiệp đang tập trung chiến lược vào kinh doanh xe hon đa Future Fi với chi phí mua vào một chiếc là $27$ triệu đồng và bán ra với giá là $31$ triệu đồng. Với giá bán này thì số lượng xe mà khách hàng sẽ mua trong một năm là $600$ chiếc. Nhằm mục tiêu đẩy mạnh hơn nữa lượng tiêu thụ dòng xe đang ăn khách này, doanh nghiệp dự định giảm giá bán và ước tính rằng nếu giảm $1$ triệu đồng mỗi chiếc xe thì số lượng xe bán ra trong một năm là sẽ tăng thêm $200$ chiếc. Vậy doanh nghiệp phải định giá bán mới là bao nhiêu để sau khi đã thực hiện giảm giá, lợi nhuận thu được sẽ là cao nhất.
+	\dapso{$30{,}5$ triệu đồng.}
+	\loigiai{
+		Gọi $x$ (triệu đồng) là số tiền mà doanh nghiệp $A$ dự định giảm giá ($0\leq x\leq 4$).\\
+		Khi đó
+		\begin{itemize}
+			\item Lợi nhuận thu được khi bán một chiếc xe là
+			\[31-x-27=4-x\ (\text{triệu đồng}). \]
+			\item Số xe mà doanh nghiệp sẽ bán được trong một năm là
+			\[600+200x\ (\text{chiếc}). \]
+			\item Lợi nhuận mà doanh nghiệp thu được trong một năm là
+			\[(4-x)(600+200x)=-200x^2+200x+2400 \]
+		\end{itemize}
+	Ta có $\begin{aligned}[t]
+		-200x^2+200x+2400&=-200\left(x^2-x-12\right)\\
+		&=-200\left(x^2-x+\dfrac{1}{4}-\dfrac{49}{4}\right)\\
+		&=-200\left[\left(x-\dfrac{1}{2}\right)^2-\dfrac{49}{4}\right]\\
+		&=-200\left(x-\dfrac{1}{2}\right)^2+2450\leq 2450.
+	\end{aligned}$\\
+	Dấu ``$=$'' xảy ra khi và chỉ khi $x=\dfrac{1}{2}$.\\
+	Suy ra giá trị lớn nhất của biểu thức $-200x^2+200x+2400$ là $2450$, đạt được tại $x=\dfrac{1}{2}$.\\
+	Vậy giá mới của chiếc xe là $30{,}5$ triệu đồng thì lợi nhuận thu được sẽ là cao nhất.
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 7
+\begin{bt}%[0T4B2-1]%[Dự án đề kiểm tra HKI NH22-23- Thầy Hóa]%[THPT Bà Điểm]
+	Cho tam giác $A B C$ có $A B=8, \,A C=10,\, \cos A=-\dfrac{1}{5}$. Tính $B C,\, S, h_c,\, R$.\\
+	\dapso{$B C=14,\,S=16\sqrt{6}, h_c=4\sqrt{6},\, R=\dfrac{35\sqrt{6}}{12}$}.
+	\loigiai{
+	\begin{enumerate}
+		\item Áp dụng định lý cô-sin, ta có
+		\allowdisplaybreaks
+		\begin{eqnarray*}
+			BC^2&=&AB^2+AC^2-2\cdot AB\cdot AC\cdot \cos A\\
+			&=&8^2+10^2-2\cdot 8\cdot 10\cdot \dfrac{-1}{5}\\
+			&=&196\\
+			\Rightarrow BC&=&\sqrt{196}=14.
+		\end{eqnarray*}
+		\item Ta có $p=\dfrac{AB+AC+BC}{2}=\dfrac{8+10+14}{2}=16$.\\
+		Áp dụng công thức Hê-rông, ta được
+		\[S=\sqrt{16\cdot (16-8)\cdot (16-10)\cdot (16-14)}=16\sqrt{6}. \]
+		\item Ta có $S=\dfrac{1}{2}ch_c\Rightarrow 16\sqrt{6}=\dfrac{1}{2}\cdot 8\cdot h_c\Rightarrow h_c=4\sqrt{6}$.
+		\item Ta có $S=\dfrac{abc}{4R}\Rightarrow R=\dfrac{abc}{4S}=\dfrac{8\cdot 10\cdot 14}{2\cdot 16\sqrt{6}}=\dfrac{35\sqrt{6}}{12}$.
+	\end{enumerate}
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 8
+\begin{bt}%[0T4K3-1]%[Dự án đề kiểm tra HKI NH22-23- Thầy Hóa]%[THPT Bà Điểm]
+	Tính khoảng cách từ điểm $A$ trên bờ đến điểm $C$ là gốc cây giữa đầm lầy. Biết\break $AB=40 \mathrm{~m},\,\widehat{CAB}=\alpha=45^{\circ};\,\widehat{CBA}=\beta=70^{\circ}$ (làm tròn kết quả đến 2 chữ số thập phân).
+	\begin{center}
+		\begin{tikzpicture}[line join=round, line cap=round,scale=2,transform shape]
+			\tikzset{
+				ex_markstyle/.style={},
+				ex_mark/.style  n args={1}{decoration={ markings, %
+						mark= at position 0.5 with
+						with{
+							\ifnum#1=1
+							\draw[ex_markstyle] (0pt,-2pt) -- (0pt,2pt);
+							\fi
+							\ifnum#1=2
+							\draw[ex_markstyle] (-1pt,-2pt) -- (-1pt,2pt);
+							\draw[ex_markstyle] (1pt,-2pt) -- (1pt,2pt);
+							\fi
+							\ifnum#1=3
+							\draw[ex_markstyle] (-2pt,-2pt) -- (-2pt,2pt);
+							\draw[ex_markstyle] (0pt,-2pt) -- (0pt,2pt);
+							\draw[ex_markstyle] (2pt,-2pt) -- (2pt,2pt);
+							\fi
+							\ifnum#1=4
+							\draw[ex_markstyle] (-1pt,-1pt) -- (1pt,1pt);
+							\draw[ex_markstyle] (-1pt,1pt) -- (1pt,-1pt);
+							\fi
+					}},
+					pic actions/.append code=\tikzset{postaction=decorate}},
+			}
+			\definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13}	
+			\definecolor{lightcornflowerblue}{rgb}{0.6, 0.81, 0.93}
+			\definecolor{forestgreen(web)}{rgb}{0.13, 0.55, 0.13}
+			\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+			\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+			\definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+			\clip (-4,-2.5) rectangle (4,2.5);
+			
+			\tikzset{gon_song/.pic={
+					\def\S{ %sóng
+						(-1.35,-2.15)
+						..controls +(160:.5) and +(-40:.5) ..(-2.5,-2.15)
+						(3.5,-2.2)
+						..controls +(160:.2) and +(-40:.5) ..(2,-2.2)
+						%----
+						(3,-2.5)
+						..controls +(160:.5) and +(-40:.5) ..(1.4,-2.5)
+						..controls +(160:.5) and +(-40:.5) ..(.3,-2.5)
+						..controls +(160:.5) and +(-40:.5) ..(-.75,-2.55)
+						;}
+					\draw[color=deepskyblue] \S;
+			}}
+			\tikzset{nuoc/.pic={
+					\def\N{ %nước sông
+						(-4,.3)
+						%..controls +(160:.2) and +(-80:.3)..(1.5,.1)
+						..controls +(120:.5) and +(-100:0.2)..(4,.8)--(4,-1.1)
+						..controls +(-150:.3) and +(60:.3) ..(2,-1.2)
+						..controls +(-100:.5) and +(120:1) ..(-4,-1.9)
+						--cycle
+						;}
+					%\draw \N;
+					\fill[lightcornflowerblue] \N;
+			}}
+			
+			\tikzset{dat/.pic={
+					\def\T{ %Đất
+						(0,0)%trái
+						..controls +(170:.2) and +(40:.3) ..  (-.7,-.1)
+						..controls +(-120:.15) and +(40:.15) ..  (-1.1,-.25)
+						..controls +(-150:.4) and +(170:.4) ..  (-.7,-.55)
+						..controls +(-35:.4) and +(-150:.2) ..  (.2,-.7)
+						..controls +(50:.4) and +(-120:.35) ..  (.8,-.5)
+						..controls +(60:.3) and +(-120:.2) ..  (1.3,-.3)
+						..controls +(60:.2) and +(-50:.1) ..  (.7,-.1)
+						..controls +(60:.2) and +(-40:.1) ..  (0,0)
+						
+						;}
+					\draw \T;
+					\fill[darkbrown] \T;
+			}}
+			\tikzset{cay/.pic={
+					\def\T{ %Thân
+						(-.33,0)%trái
+						..controls +(-50:.25) and +(40:.45) ..  (-.57,-1.45)
+						..controls +(20:.1) and +(-160:.15) ..  (-.1,-1.3)
+						..controls +(-120:.1) and +(60:.15) ..  (-.2,-1.6)
+						..controls +(-30:.1) and +(-140:.15) ..  (.15,-1.3)
+						..controls +(-20:.1) and +(-160:.15) ..  (.57,-1.4)
+						..controls +(170:.4) and +(-160:.1) ..  (.35,0)
+						..controls +(110:.5) and +(80:.5) ..  (-.33,0)
+						;}
+					%\draw \T;
+					\fill[bronze] \T;
+					\def\C{ 
+						(0,.3)
+						..controls +(-100:.25) and +(-60:.2) ..  (-.3,.1)
+						..controls +(-100:.25) and +(-60:.2) ..  (-.6,0)
+						..controls +(-120:.45) and +(-110:.35) ..  (-1,.2)
+						..controls +(-150:.5) and +(-140:.35) ..  (-1.15,.7)%nút giao
+						..controls +(-170:.4) and +(-170:.35) ..  (-1,1.15)
+						..controls +(140:.35) and +(110:.4) ..  (-.37,1.35)
+						..controls +(110:.25) and +(80:.3) ..  (-.15,1.35)
+						..controls +(80:.3) and +(95:.8) ..  (.55,1.1)
+						..controls +(80:.2) and +(95:.2) ..  (.8,1.1)
+						..controls +(20:.1) and +(95:.1) ..  (.95,1)
+						..controls +(-20:.4) and +(35:.25) ..  (1,.47)
+						..controls +(-30:.3) and +(-20:.3) ..  (.75,0.05)%nút giao
+						..controls +(-120:.3) and +(-60:.2) ..  (.35,0)
+						..controls +(175:.2) and +(-160:.1) ..  (.2,0.2)
+						..controls +(-160:.1) and +(-70:.1) ..  (0,.3)
+						;}
+					\draw \C;
+					\fill[forestgreen(web)] \C;
+					\def\C1{ 
+						(-1.15,.7)%nút giao
+						..controls +(-170:.4) and +(-170:.35) ..  (-1,1.15)
+						..controls +(140:.35) and +(110:.4) ..  (-.37,1.35)
+						..controls +(110:.25) and +(80:.3) ..  (-.15,1.35)
+						..controls +(80:.3) and +(95:.8) ..  (.55,1.1)
+						..controls +(80:.2) and +(95:.2) ..  (.8,1.1)
+						..controls +(20:.1) and +(95:.1) ..  (.95,1)
+						..controls +(-20:.4) and +(35:.25) ..  (1,.47)
+						..controls +(-50:.5) and +(-85:.6) ..  (.65,.55)% gần nút giao
+						..controls +(-160:.4) and +(-120:.4) ..  (0,.7)
+						..controls +(-150:.2) and +(-80:.4) ..  (-.63,.6)
+						..controls +(-140:.5) and +(-130:.4) ..  (-1.15,.7)
+						;}
+					%\draw \C1;
+					\fill[darkpastelgreen] \C1;
+					\def\G{ %Gân
+						(-.8,.2)
+						..controls +(-35:.1) and +(130:.35) ..  
+						(-.32,0)%nút giao
+						..controls +(-40:.1) and +(45:.35) ..  (-.42,-1.25)
+						(-.32,0)%nút giao
+						..controls +(120:.1) and +(-45:.35) ..  (-.58,.45)
+						(-.32,0)%nút giao
+						..controls +(80:.1) and +(-170:.35) ..  (-.05,.45)
+						(-.28,.3)
+						..controls +(80:.1) and +(-60:.05) ..  (-.35,.55)
+						%Gân phải
+						(.45,-1.3)
+						..controls +(130:.6) and +(-160:.3) ..  (.6,0.35)
+						(.37,0)
+						..controls +(35:.2) and +(-150:.1) ..  (.66,0.15)
+						(.37,0)
+						..controls +(80:.2) and +(-40:.1) ..  (.18,0.4)
+						(.31,0.25)
+						..controls +(80:.1) and +(-150:.1) ..  (.38,0.5)
+						(.25,-0.15)
+						..controls +(-110:.05) and +(110:.05) ..  (.2,-0.5)%gân dọc
+						(.2,-0.25)
+						..controls +(-110:.05) and +(110:.05) ..  (.17,-0.45)
+						(-.2,-0.15)
+						..controls +(-70:.1) and +(110:.05) ..  (-.18,-0.5)
+						(-.15,-0.15)
+						..controls +(-70:.1) and +(110:.05) ..  (-.15,-0.7)
+						(-.05,-0.8)
+						..controls +(-80:.15) and +(-10:.15) ..  (-.3,-1.28)
+						(-.1,-0.9)
+						..controls +(-110:.1) and +(20:.05) ..  (-.2,-1.1)
+						(.1,-1)
+						..controls +(-50:.05) and +(120:.05) ..  (.15,-1.2)
+						(.1,-1.15)
+						..controls +(-50:.05) and +(120:.05) ..  (.12,-1.2)
+						(.15,-.75)
+						..controls +(-120:.1) and +(-140:.1) ..  (.22,-.9)
+						..controls +(70:.12) and +(120:.05) ..  (.18,-.9)
+						;}	
+					\draw \G;	
+			}}
+			\path
+			(0,0)pic[scale=1]{nuoc}
+			(0,0)pic[scale=1]{dat}
+			(0,.5)pic[scale=.6]{cay}
+			(0,.5)pic[scale=.6]{gon_song}
+			(2,1.5)pic[scale=.6]{gon_song}
+			(-2.5,1.3)pic[scale=.5]{gon_song}
+			;
+			\path 	(2,-1.6) coordinate (A)
+			(-1,-1.8) coordinate (B)
+			(0,-.3) coordinate (C)
+			;
+			\node at (B) [left]{\tiny $B$};
+			\node at (A) [right]{\tiny $A$};
+			\node[white] at (C) [above]{\tiny $C$};
+			\node at (0,-1.35) [below]{\tiny $40$};
+			\draw (B)--(C)--(A)--cycle;
+			\draw    pic["\tiny $\alpha$", draw=black, angle eccentricity=1.6,angle radius=.4cm, color=blue]
+			{angle=C--A--B};
+			\draw    pic["\tiny $\beta$", draw=black, angle eccentricity=1.6, ex_mark=1,angle radius=.4cm, color=blue]
+			{angle=A--B--C};
+		\end{tikzpicture}
+	\end{center}
+	\dapso{$AC=41{,}47$ m.}
+	\loigiai{
+	Ta có $\widehat{C}=180^\circ-\left(\widehat{A}+\widehat{B}\right)=180^\circ-\left(45^\circ+70^\circ\right)=65^\circ$.\\
+	Áp dụng định lý sin, lại có
+	\[\dfrac{AB}{\sin C}=\dfrac{AC}{\sin \beta}\Rightarrow\dfrac{40}{\sin 65^\circ}=\dfrac{AC}{\sin 70^\circ}\Rightarrow AC=\dfrac{40\cdot\sin 70^\circ}{\sin 65^\circ}\approx 41{,}47\ (\mathrm{m}). \]
+	Vậy khoảng cách từ điểm $A$ trên bờ đến điểm $C$ là gốc cây giữa đầm lầy khoảng $41{,}47$ mét.
+	}
+\end{bt}
+%%%%%%%%%%%=============Câu 9
+\begin{bt}%[0T5B2-2]%[Dự án đề kiểm tra HKI NH22-23- Thầy Hóa]%[THPT Bà Điểm]
+	Cho hình bình hành $ABCD$ và $M$ là một điểm tùy ý.
+	Chứng minh rằng: $$\overrightarrow{M A}-\overrightarrow{M B}+\overrightarrow{M C}-\overrightarrow{M D}=\overrightarrow{0}.$$
+	%\dapso{}
+	\loigiai{	
+\immini{
+Ta có $\begin{aligned}[t]
+	&\vec{MA}-\vec{MB}+\vec{MC}-\vec{MD}\\
+	=&\vec{BA}+\vec{DC}\\
+	=&\vec{BA}+\vec{AB}\\
+	=&\vec{BB}\\
+	=&\vec{0}\ (\text{điều phải chứng minh}).
+\end{aligned}$
+}{
+\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=1]
+	\def\a{4};
+	\def\b{1.5};
+	\def\g{50};
+	\path
+	(0,0) coordinate (D)
+	(0:\a) coordinate (C)
+	(\g:\b) coordinate (A)
+	($(A)+(C)-(D)$) coordinate (B)
+	;
+	\draw
+	(A)--(B)--(C)--(D)--cycle
+	;
+	\foreach \x/\g in {A/135,B/45,C/-45,D/-135}\fill[black](\x) circle (1pt) +(\g:3mm) node {$\x$};
+\end{tikzpicture}
+}
+	}
+\end{bt}
+
+
+%%%%%%%%%%%=============Câu 10
+\begin{bt}%[0T5K4-1]%[Dự án đề kiểm tra HKI NH22-23- Thầy Hóa]%[THPT Bà Điểm]
+	Tam giác $A B C$ có $A B=3 ; \,B C=4 ;\, \widehat{B}=45^{\circ}$. Tính $\overrightarrow{A B} \cdot \overrightarrow{B C}$.\\
+	\dapso{$\overrightarrow{A B} \cdot \overrightarrow{B C}=-6\sqrt{2}$}.
+	\loigiai{	
+	\immini{
+Ta có $\begin{aligned}[t]
+	\vec{AB}\cdot\vec{BC}&=\left|\vec{AB}\right|\cdot\left|\vec{BC}\right|\cdot\cos\left(\vec{AB},\vec{BC}\right)\\
+	&=AB\cdot BC\cdot \cos\left(180^\circ-\widehat{B}\right)\\
+	&=3\cdot 4\cdot\cos 135^\circ\\
+	&=-6\sqrt{2}.
+\end{aligned}$	
+}{
+\begin{tikzpicture}[>=stealth,line join=round,line cap=round,font=\footnotesize,scale=1]
+	\path
+	(0,0) coordinate (A)
+	($(A)+(0:3)$) coordinate (B)
+	($(B)+(-135:4)$) coordinate (C)
+	;
+	\draw
+	(A)--(B)--(C)--cycle
+	;
+	\foreach \x/\g in {A/180,C/-130,B/0}\fill[black](\x) circle (1pt) +(\g:3mm) node {$\x$};
+	\pic[draw,angle radius=7mm,"\scriptsize $45^\circ$"]{angle=A--B--C};
+\end{tikzpicture}
+}
+	}
+\end{bt}
+
+

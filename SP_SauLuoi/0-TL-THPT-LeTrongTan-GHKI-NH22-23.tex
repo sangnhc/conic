@@ -1,0 +1,221 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2022-2023}{THPT Lê Trọng Tấn}
+
+%==Bài 1==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T1B1-5]
+	Lập mệnh đề phủ định của mỗi mệnh đề sau và xét tính đúng sai của mỗi mệnh đề phủ định đó.
+	\begin{enumerate}
+		\item $ P\colon$ \lq\lq $\forall x\in\mathbb{N}, 3x^2-2x\neq 1$\rq\rq. 
+		\item $ Q\colon$ \lq\lq $\exists x\in\mathbb{R}, x^2+3\leq 2x$\rq\rq.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item $ \overline{P}\colon$ \lq\lq $\exists x\in\mathbb{N}, 3x^2-2x=1$\rq\rq. \\
+	Mệnh đề $ \overline{P} $ đúng vì với $ x=1 $ ta có $ 3\cdot 1^2-2\cdot 1=1 $.
+	\item $ \overline{Q}\colon$ \lq\lq $\forall x\in\mathbb{R}, x^2+3> 2x$\rq\rq.\\
+	Mệnh đề $ \overline{Q} $ đúng vì $  x^2+3> 2x\Leftrightarrow x^2-2x+1+2>0\Leftrightarrow (x-1)^2+2>0 $ đúng với mọi $ x $.
+\end{enumerate}
+}
+\end{bt}
+%==Bài 2==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T1B3-2]
+Cho $ A=[-3;1] $, $ B=(-1;+\infty) $, $ E=\{x\in\mathbb{R}\,|\,x+4<0\} $.\\
+Xác định các tập hợp
+$ A\cap B $, $ A\cup B $, $ A\backslash B $, $ (A\cap B)\cup  (A\backslash B) $, $ \mathrm{C}_{\mathbb{R}}E $.
+\loigiai{
+Cho $ A=[-3;1] $, $ B=(-1;+\infty) $, $ E=\{x\in\mathbb{R}\,|\,x+4<0\}=(-\infty;-4) $.\\
+Ta có\\
+$ A\cap B=(-1;1] $;\\
+$ A\cup B=[-3;+\infty) $;\\
+$ A\backslash B=[-3;-1] $;\\
+$ (A\cap B)\cup  (A\backslash B) =(-1;1]\cup [-3;-1]=[-3;1] $;\\
+$ \mathrm{C}_{\mathbb{R}}E=\mathbb{R}\backslash E=[-4;+\infty) $.
+}
+\end{bt}
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T1B2-1]
+  	Viết các tập hợp sau dưới dạng liệt kê các phần tử $ A=\{n\in\mathbb{N}\,|\,n\,\text{là số nguyên tố},7\leq n<20\} $;
+		 $ B=\{x\in\mathbb{Z}\,|\,(x-2)(2x^2+7x+3)=0\} $.
+ 
+	\loigiai{
+   $ A=\{7;11;13;17;19\}$;\\
+		$ (x-2)(2x^2+7x+3)=0\Leftrightarrow\hoac{&x-2=0\\&2x^2+7x+3=0}\Leftrightarrow\hoac{&x=2\\&x=-3\\&x=-\dfrac{1}{2}.} $\\
+		Suy ra $ B=\{-3;2\}$.
+ 
+	}
+\end{bt}
+%==Bài 3==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T3B1-2]
+Tìm tập xác định của mỗi hàm số sau	
+	\begin{listEX}[2]
+		\item $ f(x)=\dfrac{3x+2}{x^2-5x+4} $.
+		\item $ f(x)=\sqrt{3x-2} $.
+	\end{listEX}
+	\loigiai{
+	\begin{enumerate}
+		\item Điều kiện $ x^2-5x+4\neq 0\Leftrightarrow \heva{&x\neq 1\\&x\neq 4.} $\\
+		Tập xác định $ \mathscr{D}=\mathbb{R}\backslash\{1;4\}$.
+		\item Điều kiện $ 3x-2\geq 0\Leftrightarrow x\geq \dfrac{2}{3}$.\\
+		Tập xác định $ \mathscr{D}=\left[\dfrac{2}{3};+\infty\right)$.
+	\end{enumerate}	
+	}
+\end{bt}
+%==Bài 4==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T2B1-2]
+Biểu diễn miền nghiệm của bất phương trình $ x-2y+3<0 $	 trên mặt phẳng tọa độ $ Oxy $.
+	\loigiai{
+	Vẽ đường thẳng $ \Delta \colon x-2y+3=0 $.
+		\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			$x$ & $0$ & $-3$  \\ \hline
+			$y$ & $1.5$ & $0$  \\ \hline
+		\end{tabular}
+	\end{center}
+	\begin{center}
+		\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+			\tikzset{every node/.style={scale=0.9}}
+			\begin{scope}
+				\clip (-4,-1.5) rectangle (3,2);
+				\fill[pattern=north east lines] (-7,-2)--(4,-2)--(4,3.5)--cycle;
+				\draw (1,2)--(-6,-1.5) node [pos=0.45, above, sloped] {$x + -2y + 3 = 0$};
+			\end{scope}
+			\draw[->] (-4,0)--(3,0) node[below]{$x$};
+			\draw[->] (0,-1.5)--(0,2) node[left]{$y$};
+			\draw (0,0) node[below left]{$O$};
+			\foreach \x in {-3}
+			\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+			\draw[thin] (1pt,1.5)--(-1pt,1.5) node [left ] {$1{,}5$};
+		\end{tikzpicture}
+		\end{center}
+	Lấy điểm $ O(0;0)\notin \Delta $ thế vào bất phương trình $ x-2y+3<0 $ ta được $ 0-2\cdot 0+3<0 $ sai, nên nửa mặt phẳng không chứa điểm $ O $ là miền nghiệm của bất phương trình, không kể bờ $ \Delta $.
+	}
+\end{bt}
+%==Bài 5==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T1T2-1]
+Lớp $ 10B $	 có $ 45$ học sinh, trong đó có $ 25 $ bạn thích học môn Toán, $ 14 $ bạn thích học môn Hóa và có $ 15 $ bạn không thích cả hai môn này. Hỏi lớp $ 10B $ có bao nhiêu bạn thích cả hai môn này?
+	\loigiai{
+	Số học sinh thích ít nhất một môn là $ 45-15=30 $ học sinh.\\
+	Số học sinh thích cả hai môn là $ 25+14-30=9 $ học sinh.
+	}
+\end{bt}
+%==Bài 6==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T2K2-2]
+	Một xưởng sản xuất hai loại sản phẩm
+	\begin{itemize}
+		\item Để sản xuất mỗi kg sản phẩm loại $ I $ cần $ 2 $ kg nguyên liệu và $ 30 $ giờ.
+		\item Để sản xuất mỗi kg sản phẩm loại $ II $ cần $ 4 $ kg nguyên liệu và $ 15 $ giờ.
+	\end{itemize}
+Xưởng sản xuất này có $ 200 $ kg nguyên liệu và có thể hoạt động trong $ 50 $ ngày liên tục. Biết rằng mỗi kg sản phẩm loại $ I $ thu lợi nhuận $ 40 $ nghìn đồng, mỗi kg sản phẩm loại $ II $ thu lợi nhuận $ 30 $ nghìn đồng. Hỏi nên sản xuất mỗi loại bao nhiêu sản phẩm để lợi nhuận thu được là lớn nhất?
+	\loigiai{
+	Gọi $ x $, $ y $ lần lượt là số sản phẩm loại $I $, loại $ II $ mà xưởng sản xuất  $ (x, y\geq 0) $.\\
+	Ta có $ 50~\text{ngày}\,=1200$ giờ.\\
+	Lợi nhuận thu được là $ f(x,y)=40x+30y $ (nghìn đồng).\\
+	Từ giả thiết ta có hệ bất phương trình
+	$ \heva{&2x+4y\leq 200\\&30x+15y\leq 1200\\&x\geq 0\\&y\geq 0}\Leftrightarrow \heva{&x+2y\leq 100\\&2x+y\leq 80\\&x\geq 0\\&y\geq 0.}\qquad(*)$\\
+	Miền nghiện của $ (*) $ là miền tứ giác $ OABC $ kể cả biên với $ O(0;0) $, $ A(40;0) $, $B(20;40)$, $ C(0;50) $.
+	\begin{center}
+		\begin{tikzpicture}[scale=0.2, x=5mm, y=5mm, font=\footnotesize, line join=round, line cap=round,>=stealth]
+			\def \xmin{-4.5};
+			\def \xmax{80};
+			\def \ymin{-3.5};
+			\def \ymax{87};
+			\draw[->] (\xmin, 0.) -- (\xmax,0.) node[anchor=north] {$x$};
+			\draw[->] (0.,\ymin) -- (0.,\ymax) node[anchor=west] {$y$};
+			\clip(\xmin-0.1,\ymin-0.1) rectangle (\xmax+0.1,\ymax+0.1);
+			\fill[pattern=north east lines,opacity=0.4] (-2/3,17) plot[smooth,domain=-30:112] (\x,{-1*(\x)+50})--(112,-2)--(112,87)--cycle;
+			\draw[smooth] plot[domain=\xmin:\xmax] (\x,{-1*(\x)+50});
+			\fill[pattern=north west lines, opacity=0.4] (-2,7.5) plot[smooth,domain=-2:52] (\x,{(80-2*(\x))})--(40,-2)--(120,-2)--(120,90)--(-2,90)--(-2,7.5);
+			\draw[smooth] plot[domain=\xmin:\xmax] (\x,{(80-2*(\x))});
+			\fill[pattern=vertical lines,opacity=0.4] (-2,0)--(120,0)--(120,-2)--(-2,-2)--cycle;
+			\fill[pattern= horizontal lines,opacity=0.4] (-2,-2)--(0,-2)--(0,90)--(-2,90)--cycle;
+			\draw[fill=black] (0,0) circle (1pt) node[below right] {$O$} (40,0) circle(1pt)node[below left]{$ 40 $}  (50,0) circle(1pt) node[above]{$100$} (30,20) circle(1pt) node[right]{$(20;40)$} (0,50) node[left]{$50$} (0,80) node[left]{$80$} ;
+			\draw (0,50) node[right]{$ C $} (30,20) node[left]{$B $} (40,0) node[above right]{$ A $}
+			;
+			\begin{scope}[on background layer]\path[white]node{MDD-230};\end{scope}
+		\end{tikzpicture}
+		\end{center}
+	Ta có 
+	\begin{itemize}
+		\item $ f(0,0)=0 $.
+		\item $ f(40,0)=1600 $.
+		\item $ f(0,50)=1500 $.
+		\item $ f(20,40)=2000 $.
+	\end{itemize}
+Suy ra $ f(x,y) $ đạt giá trị lớn nhất trên miền nghiệm của $ (*) $ khi $ x=20 $, $ y=40 $.\\
+Vậy xưởng cần phải sản xuất $ 20 $ sản phẩm loại $ I $ và $ 40 $ sản phẩm loại $ II $ để lợi nhuận thu được là lớn nhất.
+		}
+\end{bt}
+%==Bài 7==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Nguyễn Tài Tuệ]%[0T4B2-1]
+Cho tam giác $ ABC $	có $ AB=5 $, $ AC=8 $, $ \widehat{A}=60^\circ $. Tính độ dài $ BC $, góc $ B $, đường cao kẻ từ đỉnh $ A $ và bán kính đường tròn ngoại tiếp tam giác $ ABC $.
+	\loigiai{
+	Áp dụng định lí cosin, ta có \\
+	$ BC^2=AB^2+AC^2-2\cdot AB\cdot AC\cos A=5^2+8^2-2\cdot 5\cdot 8\cdot \cos 60^\circ=49 $.\\
+	Suy ra $ BC=7 $.\\
+	Theo hệ quả định lí cosin, ta có $ \cos B=\dfrac{AB^2+BC^2-AC^2}{2\cdot AB\cdot BC}= \dfrac{5^2+7^2-8^2}{2\cdot 5\cdot 7}=\dfrac{1}{7}$.\\
+	Suy ra $ \widehat{B}\approx 81^\circ47' $.\\
+	$ S=\dfrac{1}{2}\cdot AB\cdot AC\cdot \sin A= \dfrac{1}{2}\cdot 5\cdot 8\cdot \sin 60^\circ=10\sqrt{3}$.\\
+	$ h_a=\dfrac{2S}{a}=\dfrac{2\cdot 10\sqrt{3}}{7}=\dfrac{20\sqrt{3}}{7} $.\\
+	Bán kính đường tròn ngoại tiếp là $ R=\dfrac{a}{2\sin A}=\dfrac{7}{\sqrt{3}} $.	
+	}
+\end{bt}
+%==Bài 8==
+\begin{bt}%[0T4T2-1]
+	\immini{
+Hai chiếc tàu thủy cùng xuất phát từ vị trí $ A $, đi thẳng theo hai hướng tạo với nhau một góc $ 60^\circ $. Tàu thứ nhất chạy với tốc độ $ 35 $ km/h, tàu thứ hai chạy với tốc độ $ 50 $ km/h. Hỏi sau $ 90 $ phút hai tàu cách nhau bao nhiêu km?}
+{
+	\begin{tikzpicture}[declare function={r=3;},font=\scriptsize,>=stealth,line join=round,line cap=round,font=\footnotesize,scale=.6]
+	\path (0,0) coordinate (O)
+	(180:r) coordinate (A)
+	(0:r) coordinate (B)
+	(120:r) coordinate (C)
+	(160:r) coordinate (A')
+	(20:r) coordinate (B')
+	(150:r)  coordinate (A'')
+	(30:r)  coordinate (B'')
+	($ (O)!.7!90:(B) $)  coordinate (I)
+	($ (I)+(1,0) $) coordinate (K)
+	;
+	%%Ký hiệu hình vẽ
+	\path 
+	(A) pic[draw,angle radius = 9] {angle = B--A--C} node[shift={(15:19pt)}]{$ 60^\circ $};
+
+		\tikzset{
+		thuyenkhach/.pic={
+			\draw[rounded corners,ball color=white] 
+			(0,0)coordinate (A1)--++(0:4)coordinate (B1)--++(60:1)coordinate (C1)--++(185:5)coordinate (D1)--cycle				;
+			\draw[ball color=white]
+			($(C1)!.15!(D1)$)coordinate (A2) --($(D1)!.15!(C1)$){[rounded corners]--++(60:.8)coordinate (E1)--++(5:3)coordinate (F1)}--cycle
+			($(E1)!.26!(F1)$)coordinate (G1)--($(F1)!.3!(E1)$)coordinate (H1){[rounded corners]--++(100:1)coordinate (I1)--++(185:1)coordinate (K1)}--cycle
+			($(I1)!.5!(K1)$)
+			;
+			\foreach \i in {.2,.3,.4,...,.8}{
+				\fill[ball color=brown]
+				($(D1)!\i!(C1)$){[rounded corners=1pt,ball color=white]--++(90:.2)--++(5:.1)}--($(D1)!\i+0.02!(C1)$)--cycle;
+			}
+			\draw[->,thick](C1)--++(0:1);
+			\fill ($(G1)!.2!(H1)$){[rounded corners=2pt]--++(80:.4)--++(5:.6)}--($(H1)!.2!(G1)$)--cycle;
+		}
+	}
+	\draw [dashed]
+	(A')--(B') (A'')--(B'') (I)--(K)
+;
+	\path(C)pic[scale=.15,rotate=50]{thuyenkhach};	
+	\path(B)pic[scale=.15,rotate=-5]{thuyenkhach};	
+	\draw (A)--(B) (A)--(C);
+	\foreach \d/\g in {A/-90, B/-90, C/180}
+	\path[draw=black,fill=white] (\d) circle(1pt) node[shift={(\g:7pt)}] {$\d$};	
+\end{tikzpicture}
+}
+	\loigiai{
+		Ta có $90 $ phút $ =1{,}5 $ h.\\
+		$ AC=35\cdot 1{,}5=52{,}5 $.\\
+		$ AB=50\cdot  1{,}5=75$.\\
+		Áp dụng định lí cosin, ta có \\
+		$ BC^2=AB^2+AC^2-2\cdot AB\cdot AC\cos A=75^2+52{,}5^2-2\cdot 75\cdot 52{,}5\cdot \cos 60^\circ=\dfrac{17775}{4} $.\\
+		Suy ra $ BC=\dfrac{15\sqrt{79}}{2}\approx 66{,}66 $ km.\\
+		Vậy sau $ 90 $ phút hai tàu cách nhau khoảng $ 66{,}66 $ km.
+	}
+\end{bt}
+
+

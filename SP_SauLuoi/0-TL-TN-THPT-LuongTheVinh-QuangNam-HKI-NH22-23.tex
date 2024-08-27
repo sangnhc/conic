@@ -1,0 +1,318 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{Trường THPT Lương Thế Vinh - Quảng Nam}
+\begin{center}
+	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+\end{center}
+\Opensolutionfile{ans}[ans/ans]
+%Câu 1...........................
+\begin{ex}%[0D1Y1-2]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Phát biểu nào sau đây là một mệnh đề?
+\choice
+{ Mùa thu Hà Nội đẹp quá!}
+{Bạn có đi học không?}
+{Đề thi môn Toán khó quá!}
+{\True Hà Nội là thủ đô của Việt Nam}	
+\loigiai{Hà Nội là thủ đô của Việt Nam là câu khẳng định nên là mệnh đề.
+
+}
+\end{ex}
+
+\begin{ex}%[0D2Y1-2]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+	Trong các cặp số sau đây, cặp nào không là nghiệm của bất phương trình $2x+y<1$?
+	\choice
+	{ $(-2 ; 1)$}
+	{$(3 ;-7)$}
+	{\True $(0 ; 1)$}
+	{$(0 ; 0)$}	
+	\loigiai{
+	Thay $x=0$ và $y=1$ vào $2x+y<1$ ta được $2\cdot 0+1<1$ (sai).\\
+	 Vậy $(0 ; 1)$ không thuộc miền nghiệm của bất phương trình $2x+y<1$.
+	}
+\end{ex}
+
+\begin{ex}%[0D2Y2-2] %[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Miền nghiệm của hệ bất phương trình $\heva{&
+x-y>0\\ &x-3y+3<0\\ &x+y-5>0}$ là phần mặt phẳng chứa điểm
+	\choice
+	{\True $(5 ; 3)$}
+	{$(0 ; 0)$}
+	{$(1 ;-1)$}
+	{$(-2 ; 2)$}	
+	\loigiai{
+	Ta thấy $x=5$ và $y=3$ thỏa $\heva{&
+		x-y>0\\ &x-3y+3<0\\ &x+y-5>0}$ vì $\heva{&
+		5-3>0\\ &5-3\cdot 3+3<0\\ &5+3-5>0}$. Do đó $(5 ; 3)$ thuộc miền nghiệm.
+	}
+\end{ex}
+
+\begin{ex}%[0H1Y1-1]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Khẳng định nào sau đây là khẳng định \textbf{đúng}?
+	\choice
+	{\True $\cos \alpha=-\cos \left(180^{\circ}-\alpha\right)$}
+	{$\cot \alpha=\cot \left(180^{\circ}-\alpha\right)$}
+	{$\tan \alpha=\tan \left(180^{\circ}-\alpha\right)$}
+	{$\sin \alpha=-\sin \left(180^{\circ}-\alpha\right)$}	
+	\loigiai{
+		Ta có $\cos \left(180^{\circ}-\alpha\right)=-\cos \alpha\Rightarrow \cos \alpha=-\cos \left(180^{\circ}-\alpha\right).$
+	}
+\end{ex}
+
+\begin{ex}%[0H1Y2-1]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Trong tam giác $A B C$ có
+	\choice
+	{$a^2=b^2+c^2-b c \cos A$}
+	{$a^2=b^2+c^2+b c \cos A$}
+	{\True $a^2=b^2+c^2-2 b c \cos A$}
+	{$a^2=b^2+c^2+2 b c \cos A$}	
+	\loigiai{
+	Theo định lý hàm số cosin thì trong tam giác $A B C$ có  $a^2=b^2+c^2-2 b c \cos A$.
+	}
+\end{ex}
+
+\begin{ex}%[0H2Y2-1] %[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Cho hình bình hành $ABCD$ với $I$ là giao điểm của hai đường chéo. Khẳng định nào sau đây là khẳng định \textbf{sai}?
+	\choice
+	{$\overrightarrow{IA}+\overrightarrow{IC}=\overrightarrow{0}$}
+	{$\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}$}
+	{$\overrightarrow{AB}=\overrightarrow{DC}$}
+	{\True $\overrightarrow{AC}=\overrightarrow{BD}$}	
+	\loigiai{\immini{Do $ABCD$ là hình bình hành nên $\overrightarrow{AC}=\overrightarrow{BD}$ là sai.
+		}{\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\def\a{3}
+				\def\b{2.5}
+				\def\h{3.5}
+				\def\g{35}
+				\path
+				(0,0) coordinate (A)
+				(0:\a) coordinate (B)
+				--++(\g:\b) coordinate (C)
+				--++(180:\a)coordinate (D)
+				;
+				\coordinate (I) at ($(A)!1/2!(C)$); 
+				%\coordinate (S) at ($(O)+(0,\h)$); 			
+				
+				\draw (A)--(B)--(C)--(D)--(A)--(C) (B)--(D);		
+				\foreach \x/\g in {A/-90,B/-90,C/0,D/180,I/-90}  \fill (\x) circle (1pt)+(\g:.25)node {$\x$};
+				%			
+				%			\draw pic[angle radius=3mm,draw=blue,fill=green!50,opacity=.5,angle eccentricity=2] {right angle = A--D--C};
+		\end{tikzpicture}}
+		
+	}
+\end{ex}
+
+\begin{ex}%[0H2B2-1] %[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+	Véc-tơ tổng $\overrightarrow{MN}+\overrightarrow{PQ}+\overrightarrow{NP}+\overrightarrow{QR}$ bằng
+	\choice
+	{\True $\overrightarrow{MR}$}
+	{$\overrightarrow{MN}$}
+	{$\overrightarrow{P R}$}
+	{$\overrightarrow{M P}$}	
+	\loigiai{	Ta có $\overrightarrow{MN}+\overrightarrow{PQ}+\overrightarrow{NP}+\overrightarrow{QR}=\overrightarrow{MN}+\overrightarrow{NP}+\overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{MP}+\overrightarrow{PR}=\overrightarrow{MR}$.	
+	}
+\end{ex}
+
+\begin{ex}%[0H2B2-4]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Cho tam giác $ABC$. Điểm $M$ thỏa mãn $\overrightarrow{AB}+\overrightarrow{AC}=2 \overrightarrow{AM}$. Chọn khẳng định \textbf{đúng}.
+	\choice
+	{$M$ là trọng tâm tam giác $ABC$}
+	{\True $M$ là trung điểm của $BC$}
+	{$M$ trùng với $B$ hoặc $C$}
+	{$M$ trùng với $A$}	
+	\loigiai{Ta có $\overrightarrow{AB}+\overrightarrow{AC}=2 \overrightarrow{AM}\Leftrightarrow \overrightarrow{AB}-\overrightarrow{AM}+\overrightarrow{AC}-\overrightarrow{AM}=\overrightarrow{0}\Leftrightarrow \overrightarrow{MB}+\overrightarrow{MC}=\overrightarrow{0}$.\\
+		Do đó $M$ là trung điểm của $BC$.	
+	}
+\end{ex}
+
+\begin{ex}%[0H2B2-5]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+ Cho hình vuông $ABCD$ có cạnh bằng $a$. Độ dài $\left|\overrightarrow{AD}+\overrightarrow{AB}\right|$ bằng
+	\choice
+	{$2 a$}
+	{$\dfrac{a \sqrt{2}}{2}$}
+	{$\dfrac{a \sqrt{3}}{2}$}
+	{\True $a \sqrt{2}$}	
+	\loigiai{\immini{Ta có $\left|\overrightarrow{AD}+\overrightarrow{AB}\right|=\left|\overrightarrow{AC}\right|=a\sqrt{2}$.
+		}{\begin{tikzpicture}[scale=.75, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\def\a{2}
+				\def\b{2}
+				\def\h{3.5}
+				\def\g{90}
+				\path
+				(0,0) coordinate (A)
+				(0:\a) coordinate (B)
+				--++(\g:\b) coordinate (C)
+				--++(180:\a)coordinate (D)
+				;
+				\coordinate (I) at ($(A)!1/2!(C)$); 
+				%\coordinate (S) at ($(O)+(0,\h)$); 			
+				
+				\draw (A)--(B)--(C)--(D)--(A)--(C) (B)--(D);		
+				\foreach \x/\g in {A/-90,B/-90,C/0,D/180,I/-90}  \fill (\x) circle (1pt)+(\g:.25)node {$\x$};
+				%			
+				%			\draw pic[angle radius=3mm,draw=blue,fill=green!50,opacity=.5,angle eccentricity=2] {right angle = A--D--C};
+		\end{tikzpicture}}
+		
+		
+	 	
+	}
+\end{ex}
+
+\begin{ex}%[0H3Y1-2]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Trong mặt phẳng tọa độ $O x y$, cho hai điểm $A(-2 ; 3), B(1 ;-6)$. Tọa độ của véc-tơ $\overrightarrow{A B}$ bằng
+	\choice
+	{$\overrightarrow{A B}=(-3 ; 9)$}
+	{$\overrightarrow{A B}=(-1 ;-3)$}
+	{\True $\overrightarrow{A B}=(3 ;-9)$}
+	{$\overrightarrow{A B}=(-1 ;-9)$}	
+	\loigiai{Ta có $\overrightarrow{A B}=(3 ;-9)$.
+		
+	}
+\end{ex}
+
+\begin{ex}%[0H3Y1-3] %[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Trong mặt phẳng tọa độ $O x y$, cho $A\left(x_1 ; y_1\right)$ và $B\left(x_2 ; y_2\right)$. Tọa độ trung điểm $I$ của đoạn thẳng $A B$ là
+	\choice
+	{$I\left(\dfrac{x_1+y_1}{2}; \dfrac{x_2+y_2}{2}\right)$}
+	{$I\left(\dfrac{x_1+x_2}{3}; \dfrac{y_1+y_2}{3}\right)$}
+	{$I\left(\dfrac{x_2-x_1}{2}; \dfrac{y_2-y_1}{2}\right)$}
+	{\True $I\left(\dfrac{x_1+x_2}{2}; \dfrac{y_1+y_2}{2}\right)$}	
+	\loigiai{	Ta có tọa độ trung điểm của đoạn thẳng $AB$ là 	$I\left(\dfrac{x_1+x_2}{2}; \dfrac{y_1+y_2}{2}\right)$.
+	}
+\end{ex}
+
+\begin{ex}%[0H3Y2-2]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Cho hai véc-tơ $\overrightarrow{a}$ và $\overrightarrow{b}$ đều khác $\overrightarrow{0}$. Khẳng định nào sau đây \textbf{đúng}?
+	\choice
+	{$\overrightarrow{a} \cdot \overrightarrow{b}=|\overrightarrow{a}| \cdot|\overrightarrow{b}|$}
+	{\True $\overrightarrow{a} \cdot \overrightarrow{b}=|\overrightarrow{a}| \cdot|\overrightarrow{b}| \cdot \cos (\overrightarrow{a}, \overrightarrow{b})$}
+	{$\overrightarrow{a} \cdot \overrightarrow{b}=|\vec{a} \cdot \overrightarrow{b}| \cdot \cos (\overrightarrow{a}, \overrightarrow{b})$}
+	{$\overrightarrow{a} \cdot \overrightarrow{b}=|\overrightarrow{a}| \cdot|\overrightarrow{b}| \cdot \sin (\overrightarrow{a}, \overrightarrow{b})$}	
+	\loigiai{
+	Công thức tính tích vô hướng của hai véc-tơ là 	$\overrightarrow{a} \cdot \overrightarrow{b}=|\overrightarrow{a}| \cdot|\overrightarrow{b}| \cdot \cos (\overrightarrow{a}, \overrightarrow{b})$.
+	}
+\end{ex}
+
+\begin{ex}%[0H3B2-2]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Trong mặt phẳng tọa độ $Oxy$, cho hai véc-tơ $\overrightarrow{a}=(-1; 1); \overrightarrow{b}=(2; 0)$. Góc giữa hai véc-tơ $\overrightarrow{a}, \overrightarrow{b}$ là
+	\choice
+	{$45^{\circ}$}
+	{$60^{\circ}$}
+	{$90^{\circ}$}
+	{\True $135^{\circ}$}	
+	\loigiai{
+	Ta có 	$\cos (\overrightarrow{a}, \overrightarrow{b})=\dfrac{\overrightarrow{a} \cdot \overrightarrow{b}}{|\overrightarrow{a}|\cdot|\overrightarrow{b}|}=\dfrac{-1\cdot 2+1\cdot 0}{\sqrt{(-1)^2+1^2}\cdot \sqrt{2^2+0^2}}=-\dfrac{\sqrt{2}}{2}\Rightarrow (\overrightarrow{a}, \overrightarrow{b})=135^\circ$.
+	}
+\end{ex}
+
+
+
+
+\begin{ex}%[0X1Y1-4]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+Cho số gần đúng $a=367\,653\,964$ với độ chính xác $d=213$. Hãy viết số quy tròn của số $a$.
+	\choice
+	{$367\,653\,960$}
+	{$367\,653\,000$}
+	{\True $367\,654\,000$}
+	{$367\,653\,970$}	
+	\loigiai{	Vì độ chính xác đến hàng trăm $d=213$ nên số quy tròn của số gần đúng $367\,653\,964$ là $367\,654\,000$.
+	}
+\end{ex}
+
+\begin{ex}%[0X1Y1-4]%[HKI-K10,Thehung Nguyen ]%[THPT LƯƠNG THẾ VÌNH-QUẢNG NAM]
+ Đo độ cao một ngọn cây là $\bar{h}=17{,}14$ m $\pm 0{,}3 $ m. Hãy viết số quy tròn của số $17{,}14$? 
+	\choice
+	{$17{,}1$}
+	{$17{,}15$}
+	{$17{,}2$}
+	{\True $17$}	
+	\loigiai{
+		Vì độ chính xác đến hàng phần chục nên ta quy tròn số $17{,}14$ đến hàng đơn vị.\\
+		Vậy số quy tròn là $17$ m.
+	}
+\end{ex}
+
+
+
+\Closesolutionfile{ans}
+%\begin{center}
+%	\textbf{ĐÁP ÁN}
+%	\inputansbox{10}{ans/ans}	
+%\end{center}
+\begin{center}
+	\textbf{PHẦN 2 - TỰ LUẬN}
+\end{center}
+
+\begin{bt}%[0D1B3-5]%[Dự án đề kiểm tra HKII NH22-23-BC Tuan]%[THPT Lương Thế Vinh Quảng Nam]
+	Cho các tập hợp $A=\{x \in \mathbb{Z} \mid-3<x<2\}$; $B=\left\{x \in \mathbb{N}^* \mid 4-x \geq 0\right\}$. Tìm $A \cap B$; $B\backslash A$.
+	\loigiai{
+		Liệt kê các phần tử của tập $A$, $B$
+		$$
+		A=\{-2 ;-1 ; 0 ; 1\} ; \quad B=\{1 ; 2 ; 3 ; 4\}.$$
+		Khi đó	$A \cap B=\{1\}$; $B\backslash A=\{2;3;4\}$.
+	}
+\end{bt}
+
+\begin{bt}%[0H1K3-1]%[Dự án đề kiểm tra HKII NH22-23-BC Tuan]%[THPT Lương Thế Vinh Quảng Nam]
+	\immini{
+		Một mảnh đất hình chữ nhật bị xén đi một góc (hình vẽ), phần còn lại có dạng hình tứ giác $ABCD$ với độ dài các cạnh là $AB=15$ m, $BC=19$ m, $CD=10$ m, $DA=20$ m. Diện tích mảnh đất $ABCD$ bằng bao nhiêu mét vuông (làm tròn kết quả đến hàng đơn vị)?
+	}{
+		\begin{tikzpicture}[scale=0.8, line join = round, line cap = round,font=\footnotesize,>=stealth]
+			\coordinate [label= below: $A$](A) at (0,0) ; 
+			\coordinate [label= below: $D$](D) at (4,0) ; 
+			\coordinate [label= above: $B$](B) at (0,3) ;     
+			\coordinate [](E) at ($(B)+(D)-(A)$) ;
+			\def \r {19/3} ;
+			\path[name path=cb] (B)circle(19/5);
+			\path[name path=cd] (D)circle(10/5);
+			\path[name intersections={of=cd and cb,by={C,F}}];
+			\pgfresetboundingbox
+			\draw[] (A)--(B)--(E)--(D)--(A) (B)--(C)--(D)--(B);
+			\draw[pattern=north east lines,opacity=.3] (A)--(B)--(C)--(D);
+			\coordinate [label= above: $C$](C) at (C); 
+			\foreach \i in {A,B,C,D,E} \draw[fill=black] (\i) circle(1.2pt)  ;
+		\end{tikzpicture}
+	}
+	\loigiai{
+		Xét tam giác $ABD$ vuông tại $A$, ta có diện tích tam giác $ABD$ là
+		\[S_{\triangle ABD}=\dfrac{1}{2}AB\cdot AD=\dfrac{1}{2}\cdot 15\cdot 20=150\,(\mathrm{m}^2).\]
+		Áp dụng định lí Py-ta-go ta có $BD=\sqrt{AB^2+AD^2}=\sqrt{15^2+20^2}=25$ (m).\\
+		Xét tam giác $BCD$, ta có $p=\dfrac{BC+CD+DB}{2}=\dfrac{19+10+25}{2}=27$ (m).\\
+		Áp dụng công thức Hê-rông, ta có diện tích tam giác $BCD$ là
+		\begin{center}
+			{\centering{$S_{\triangle BCD}=\sqrt{27\cdot (27-19)\cdot (27-10)\cdot (27-25)}=12\sqrt{51}\approx 86$ (m$^2$).}}	
+		\end{center}
+		Vậy diện tích mảnh đất $ABCD$ là $S=S_{\triangle ABD}+S_{\triangle BCD}\approx 150+86=236$ (m$^2$).	
+	}
+\end{bt}
+
+\begin{bt}%[0H3B2-4]%[Dự án đề kiểm tra HKII NH22-23-BC Tuan]%[THPT Lương Thế Vinh Quảng Nam]
+	Trong mặt phẳng với hệ trục tọa độ $O x y$, cho tam giác $A B C$ có $A(-1 ; 2)$, $B(1 ; 3)$ và trọng tâm là $G(-2 ; 1)$. Tìm tọa độ đỉnh $C$ còn lại của tam giác $A B C$ và tọa độ điểm $M$ trên tia $O y$ (khác gốc tọa độ) sao cho tam giác $M B C$ vuông tại $M$.	
+	\loigiai{
+		Từ công thức trọng tâm ta suy ra tọa độ điểm $C$ là
+		\[\heva{&x_C=3x_G-\left(x_A+x_B\right)=-6\\&y_C=3y_G-\left(y_A+y_B\right)=-2}\Rightarrow C(-6;-2).\]	
+		$M$ thuộc tia $O y \Rightarrow M(0 ; m)$ $(m>0)$, $\overrightarrow{B M}=(-1 ; m-3)$; $\overrightarrow{C M}=(6 ; m+2)$.\\
+		$\triangle MBC$ vuông tại $M$ $\Leftrightarrow B M \perp CM \Leftrightarrow \overrightarrow{B M} \cdot \overrightarrow{CM}=0 $	
+		\[\Leftrightarrow-1\cdot 6+(m-3)(m+2)=0\Leftrightarrow m^2-m-12=0\Leftrightarrow\hoac{&m=4\ \text{(nhận)}\\&m=-3\ \text{(loại).}}\]
+		Vậy $M(0;4)$.
+	}
+\end{bt}
+
+\begin{bt}%[0H2B2-2]%[Dự án đề kiểm tra HKII NH22-23-BC Tuan]%[THPT Lương Thế Vinh Quảng Nam] 
+	Cho 4 điểm $A$, $B$, $C$, $D$ tùy ý. Chứng minh $\overrightarrow{AD}+\overrightarrow{BC}=\overrightarrow{AC}+\overrightarrow{BD}$.
+	\loigiai{
+		Ta có 
+		$$\begin{aligned} & \overrightarrow{AD}+\overrightarrow{BC}=\overrightarrow{AC}+\overrightarrow{B D}\\
+			\Leftrightarrow& \overrightarrow{AD}+\overrightarrow{BC}-\overrightarrow{AC}-\overrightarrow{BD}=\overrightarrow{0} \\ \Leftrightarrow& \overrightarrow{A D}+\overrightarrow{BC}-\overrightarrow{AC}-\overrightarrow{BD}=\overrightarrow{0} \\ \Leftrightarrow&\overrightarrow{A D}+\overrightarrow{DB}+\overrightarrow{BC}+\overrightarrow{CA}=\overrightarrow{AA}=\overrightarrow{0}\,\,(\text{đúng}).\end{aligned}$$
+		Vậy $\overrightarrow{A D}+\overrightarrow{B C}=\overrightarrow{AC}+\overrightarrow{B D}$ đúng. 	
+	}
+\end{bt}
+
+\begin{bt}%[0H2K4-4]%[Dự án đề kiểm tra HKII NH22-23-BC Tuan]%[THPT Lương Thế Vinh Quảng Nam] 
+	Cho tam giác đều $ABC$ cạnh $a$, trên các cạnh $BC$, $CA$, $AB$ lấy các điểm $M$, $N$, $P$ sao cho
+	$\overrightarrow{BM}=\dfrac{1}{3} \overrightarrow{BC}$, $\overrightarrow{AN}=-\dfrac{1}{2} \overrightarrow{CN}$, $\overrightarrow{AP}=m \overrightarrow{AB}$ $(0<m<a)$. Hãy phân tích véc-tơ $\overrightarrow{AM}$ theo $\overrightarrow{AB}$, $\overrightarrow{AC}$ và tìm $m$ biết $A M$ vuông góc với $P N$.
+	\loigiai{
+		Ta có $\overrightarrow{A M}=\overrightarrow{AB}+\overrightarrow{BM}=\overrightarrow{AB}+\dfrac{1}{3} \overrightarrow{BC}=\overrightarrow{AB}+\dfrac{1}{3}\left(\overrightarrow{AC}-\overrightarrow{AB}\right)=\dfrac{2}{3}\overrightarrow{AB}+\dfrac{1}{3}\overrightarrow{AC}$.\\
+		$A M$ vuông góc với $P N$ khi và chỉ khi
+		$$\begin{aligned} & \overrightarrow{A M} \cdot \overrightarrow{P N}=0 \\ & \Leftrightarrow\left(\dfrac{2}{3} \overrightarrow{AB}+\dfrac{1}{3} \overrightarrow{AC}\right) \cdot \left(\overrightarrow{P A}+\overrightarrow{A N}\right)=0 \\ & \Leftrightarrow\left(\dfrac{2}{3} \overrightarrow{AB}+\dfrac{1}{3} \overrightarrow{AC}\right)\left(-m \overrightarrow{AB}+\dfrac{1}{3} \overrightarrow{AC}\right)=0 \\ & \Leftrightarrow-\dfrac{2}{3} m \overrightarrow{AB}^2+\dfrac{1}{9} \overrightarrow{AC}^2-\dfrac{1}{3} m \overrightarrow{AB} \cdot \overrightarrow{AC}+\dfrac{2}{9} \overrightarrow{AB} \cdot \overrightarrow{AC}=0 \\ & \Leftrightarrow-\dfrac{2}{3} m \cdot a^2+\dfrac{1}{9} a^2-\dfrac{1}{3} m \cdot a^2 \cdot \cos 60^\circ+\dfrac{2}{9} \cdot a^2 \cdot \cos 60^\circ=0 \\ & \Leftrightarrow m=\dfrac{4}{15}.\end{aligned}$$
+		Vậy $m=\dfrac{4}{15}$.
+	}
+\end{bt}

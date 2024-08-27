@@ -1,0 +1,176 @@
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT Bà Điểm}
+%Câu 1...........................
+\begin{bt}%[0D1H3-4]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Sơn Nguyễn]%[THPT BÀ ĐIỂM - Tp HCM]
+	Cho $A=(-3 ; 4]$, $B=(0 ;+\infty)$, $E=(-\infty ;-1] \cup[3 ;+\infty)$. Tìm $A\cap E$, $A\cup B$, $A\backslash B$, $C_{\mathbb{R}}{E}$.
+	\loigiai{
+		Ta có
+		\begin{itemize}
+			\item $A\cap E=(-3;-1] \cup [3;4]$;
+			\item $A\cup B=(-3;+\infty)$;
+			\item $A\backslash B=(-3;0]$;
+			\item $C_{\mathbb{R}}{E}=(-1;3)$.
+		\end{itemize}
+	}
+\end{bt}
+%Câu 2...........................
+\begin{bt}%[0D2H1-2]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Sơn Nguyễn]%[THPT BÀ ĐIỂM - Tp HCM]
+	Biểu diễn miền nghiệm của bất phương trình $2x+y-2<0$.
+	\loigiai{
+		Xét đường thẳng $(d)\colon 2x+y-2=0$.\\
+		Chọn điểm $O(0;0)\notin (d)$, thế vào bất phương trình ta được $-2<0$ (luôn đúng).\\
+		Vậy miền nghiệm của bất phương trình là nửa mặt phẳng bờ là đường thẳng $(d)$ và chứa điểm $O$ không kể bờ $(d)$.\\
+		Biểu diễn miền nghiệm.
+		
+		\begin{center}
+			\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+				\tikzset{every node/.style={scale=0.9}}
+				\begin{scope}
+					\clip (-2,-2) rectangle (4,4);
+					\fill[pattern=north east lines] (-3,8)--(6,8)--(6,-10)--cycle;
+					\draw (-1.5,5)--(2,-2) node [pos=0.9, right] {$(d)$};
+				\end{scope}
+				\draw[->] (-2,0)--(4,0) node[below]{$x$};
+				\draw[->] (0,-2)--(0,4) node[left]{$y$};
+				\draw (0,0) node[below left]{$O$};
+				\foreach \x in {-1,1,2}
+				\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+				\foreach \y in {-2,-1,1,2}
+				\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\y$};
+				\draw[dashed,thin] (0,0)--(0,2)--(0,2);
+				\draw[dashed,thin] (1,0)--(1,0)--(0,0);
+			\end{tikzpicture}
+		\end{center}
+		
+		
+	}
+\end{bt}
+%Câu 3...........................
+\begin{bt}%[0D2V2-3]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Sơn Nguyễn]%[THPT BÀ ĐIỂM - Tp HCM]
+	Một người dùng ba loại nguyên liệu $A$, $B$, $C$ để sản xuất ra hai loại sản phẩm $P$ và $Q$. Để sản xuất $1$ kg mỗi loại sản phẩm $P$ hoặc $Q$ phải dùng một số kilôgam nguyên liệu khác nhau. Tổng số kilôgam nguyên liệu mỗi loại mà người đó có và số kilôgam từng loại nguyên liệu cần thiết để sản xuất ra $1$ kg sản phẩm mỗi loại được cho trong bảng sau
+	\begin{center}
+		\begin{tabular}{|c|c|cc|}
+			\hline
+			\multirow{2}{*}{Loại nguyên liệu} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Số kilôgam\\ nguyên liệu đang có\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Số kilôgam từng loại nguyên liệu\\ cần để sản xuất $1$ kg sản phẩm\end{tabular}} \\ \cline{3-4} 
+			&                                                                                           & \multicolumn{1}{c|}{P}                                                    & Q                                                   \\ \hline
+			A                                 & $10$                                                                                      & \multicolumn{1}{c|}{$2$}                                                  & $2$                                                 \\ \hline
+			B                                 & $4$                                                                                       & \multicolumn{1}{c|}{$0$}                                                  & $2$                                                 \\ \hline
+			C                                 & $12$                                                                                      & \multicolumn{1}{c|}{$2$}                                                  & $4$                                                 \\ \hline
+		\end{tabular}
+	\end{center}
+	Biết $1$ kg sản phẩm $P$ có lợi nhuận $3$ triệu đồng và $1$ kg sản phẩm $Q$ có lợi nhuận $5$ triệu đồng. Hãy lập phương án sản xuất hai loại sản phầm trên sao cho có lãi cao nhất.	
+	\loigiai{
+		Gọi $x$, $y$ lần lượt là số kilôgam sản phẩm $P$ và $Q$ (đơn vị: kg, $x\ge 0$, $y\ge 0$).\\
+		Từ giả thiết đề bài ta có hệ bất phương trình $\heva{
+			&x\ge 0, y\ge 0\\
+			&2x+2y\le 10\\
+			&2y\le 4\\
+			&2x+4y\le 12.
+		}$\hfill{(1)}\\
+		Miền nghiệm của hệ bất phương trình $(1)$ là
+		\begin{center}
+			\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+				\tikzset{every node/.style={scale=0.9}}
+				\begin{scope}
+					\clip (-2,-2) rectangle (7,6);
+					\fill[pattern=dots] (0,-2)--(-2,-2)--(-2,6)--(0,6)--cycle;
+					\fill[pattern=north east lines] (-2,0)--(-2,-2)--(7,-2)--(7,0)--cycle;
+					\fill[pattern=vertical lines] (-3,8)--(8,8)--(8,-3)--cycle;
+					\fill[pattern=grid] (-2,2)--(-2,6)--(7,6)--(7,2)--cycle;
+					\fill[pattern=dots] (-7,6.5)--(11,6.5)--(11,-2.5)--cycle;
+					\draw (-1,6)--(7,-2) node [pos=0.25, above, sloped] {$2x+2y-10=0$};
+					\draw (-2,2)--(7,2) node [pos=0.9, above, sloped] {$2y-4=0$};
+					\draw (-6,6)--(10,-2) node [pos=0.45, above, sloped] {$2x+4y-12=0$};
+				\end{scope}
+				\draw[->] (-2,0)--(7,0) node[below]{$x$};
+				\draw[->] (0,-2)--(0,6) node[left]{$y$};
+				\draw (0,0) node[below left]{$O$};
+				\foreach \x in {-1,1,2,3,4,5,6}
+				\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+				\foreach \y in {-1,1,2,3,4,5}
+				\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\y$};
+				\draw[dashed,thin] (4,0)--(4,1)--(0,1);
+				\draw[dashed,thin] (2,0)--(2,2);
+			\end{tikzpicture}
+		\end{center}
+		Lợi nhuận khi bán $2$ loại sản phẩm $P=3x+5y$ (triệu đồng).\\
+		Thay $(0,2)$; $(2,2)$, $(4,1)$; $(5,0)$ vào $P$ ta được 
+		\begin{itemize}
+			\item $P_1=10$ (triệu đồng);
+			\item $P_2=16$ (triệu đồng);
+			\item $P_3=17$ (triệu đồng);
+			\item $P_4=15$ (triệu đồng).
+		\end{itemize}
+		Vậy để lợi nhuận lớn nhất ($17$ triệu đồng) cần sản xuất $4$ sản phẩm loại $P$ và $1$ sản phẩm loại $Q$.
+	}
+\end{bt}
+%Câu 4...........................
+\begin{bt}%[0H4H3-1]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Nguyễn Sĩ Đạt]%[THPT Bà Điểm- Tp HCM]
+Cho tam giác $ABC$ có $BC=6$, $AC=7$, $AB=9$. Tìm số đo góc $A$, diện tích $S$, bán kính đường tròn ngoại tiếp $R$, bán kính đường tròn nội tiếp $r$ của tam giác $ABC$.
+\loigiai{
+\immini{Ta có $\cos{A}=\dfrac{AB^2+AC^2-BC^2}{2\cdot AB\cdot AC}=\dfrac{47}{63}\Rightarrow \widehat{A}\approx 41^\circ 45\rq$.\\
+Nửa chu vi tam giác $ABC$ là $p=\dfrac{AB+AC+BC}{2}=11$.\\
+$S_{ABC}=\sqrt{p(p-AB)(p-AC)(p-BC)}=2\sqrt{110}$.\\
+Ta có $S_{ABC}=\dfrac{AB\cdot AC\cdot BC}{4R}\Rightarrow R\approx 4{,}5$.\\
+$S_{ABC}=p\cdot r\Rightarrow r=\dfrac{S}{p}=\dfrac{2\sqrt{110}}{11}$.}
+{\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+\coordinate[label=below:$A$] (A) at (0,0);
+\coordinate[label=below:$B$] (B) at (4.5,0);
+\coordinate[label=above:$C$] (C) at ($(A)+(42:3.5cm)$);
+\draw (A)--(B)node[below,pos=0.5]{$9$}--(C)node[above right,pos=0.5]{$6$}--(A)node[above left,pos=0.5]{$7$};
+\end{tikzpicture}}
+}
+\end{bt}
+
+%Câu 5...........................
+\begin{bt}%[0H4V3-2]%[Dự án đề kiểm tra Toán 11 GHKI NH23-24- Nguyễn Sĩ Đạt]%[THPT Bà Điểm- Tp HCM]
+\immini[thm]{
+Hai chiếc tàu thủy cùng xuất phát từ vị trí $ A $, đi thẳng theo hai hướng tạo với nhau một góc $ 60^\circ $. Tàu $B$ chạy với tốc độ $ 20 $ hải lí một giờ, tàu C chạy với tốc độ $ 15 $ hải lí một giờ. Sau hai giờ, hai tàu cách nhau bao nhiêu hải lí?}
+{
+\begin{tikzpicture}[declare function={r=3;},font=\scriptsize,>=stealth,line join=round,line cap=round,font=\footnotesize,scale=.6]
+\path (0,0) coordinate (O)
+(180:r) coordinate (A)
+(0:r) coordinate (B)
+(120:r) coordinate (C)
+(160:r) coordinate (A')
+(20:r) coordinate (B')
+(150:r) coordinate (A'')
+(30:r) coordinate (B'')
+($ (O)!.7!90:(B) $) coordinate (I)
+($ (I)+(1,0) $) coordinate (K)
+;
+%%Ký hiệu hình vẽ
+\path 
+(A) pic[draw,angle radius = 9] {angle = B--A--C} node[shift={(15:19pt)}]{$ 60^\circ $};
+\tikzset{
+thuyenkhach/.pic={
+\draw[rounded corners,ball color=white] 
+(0,0)coordinate (A1)--++(0:4)coordinate (B1)--++(60:1)coordinate (C1)--++(185:5)coordinate (D1)--cycle;
+\draw[ball color=white]
+($(C1)!.15!(D1)$)coordinate (A2) --($(D1)!.15!(C1)$){[rounded corners]--++(60:.8)coordinate (E1)--++(5:3)coordinate (F1)}--cycle
+($(E1)!.26!(F1)$)coordinate (G1)--($(F1)!.3!(E1)$)coordinate (H1){[rounded corners]--++(100:1)coordinate (I1)--++(185:1)coordinate (K1)}--cycle
+($(I1)!.5!(K1)$)
+;
+\foreach \i in {.2,.3,.4,...,.8}{
+\fill[ball color=brown]
+($(D1)!\i!(C1)$){[rounded corners=1pt,ball color=white]--++(90:.2)--++(5:.1)}--($(D1)!\i+0.02!(C1)$)--cycle;
+}
+\draw[->,thick](C1)--++(0:1);
+\fill ($(G1)!.2!(H1)$){[rounded corners=2pt]--++(80:.4)--++(5:.6)}--($(H1)!.2!(G1)$)--cycle;
+}
+}
+\path(C)pic[scale=.15,rotate=50]{thuyenkhach};
+\path(B)pic[scale=.15,rotate=-5]{thuyenkhach};
+\draw (A)--(B) (A)--(C);
+\foreach \d/\g in {A/-90, B/-90, C/180}
+\path[draw=black,fill=white] (\d) circle(1pt) node[shift={(\g:7pt)}] {$\d$};
+\end{tikzpicture}
+}
+\loigiai{
+Ta có $ AC = 15 \cdot 2 = 30 $ (hải lí) và
+$ AB = 20 \cdot 2 = 40$ (hải lí).\\
+Áp dụng định lí côsin, ta có 
+$$ BC^2=AB^2+AC^2-2 \cdot AB \cdot AC \cdot \cos A=40^2+30^2-2 \cdot 40 \cdot320 \cdot \cos 60^\circ=1300 .$$
+Suy ra $ BC= 10 \sqrt{13}\approx36{,}1$ (hải lí).\\
+Vậy sau $2$ giờ hai tàu cách nhau $36{,}1$ (hải lí).
+}
+\end{bt}

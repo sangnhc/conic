@@ -1,0 +1,139 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Trần Hưng Đạo}
+
+
+
+\begin{bt}%[0T7Y2-1] %[Dự án đề kiểm tra HKII NH22-23- Nguyen Huynh]%[Tran Hung Dao]
+	Giải bất phương trình sau (bằng cách lập bảng xét dấu của tam thức bậc hai tương ứng):
+	\[ -2x^{2} + 3x - 1 \leq 0 \]
+	\loigiai{
+		Ta có $-2x^{2} + 3x - 1=0 \Leftrightarrow \hoac{&x = 1 \\&x = \dfrac{1}{2}}$.\\
+		Bảng xét dấu :
+		\begin{center}
+			\begin{tikzpicture}[>=stealth]
+				\tkzTabInit[nocadre=false,lgt=1.5,espcl=2.5,deltacl=0.5]{$x$/1.0 ,$VT$/.7}
+				{$-\infty$ , $\dfrac{1}{2}$ , $1$ , $+\infty$}
+				\tkzTabLine{ , - , $0$ , + , $0$ , - , }
+				%\tkzTabVar{+/$+\infty$ , -/$-6+m$ , +/$2+m$ , -/$-\infty$}
+			\end{tikzpicture}
+		\end{center}
+		Vậy tập nghiệm của bất phương trình đã cho là $S = \left( -\infty; \dfrac{1}{2} \right] \cup \left[ 1; +\infty \right)$.
+	}
+\end{bt}
+
+\begin{bt}%[0T7B3-1]%[Dự án đề kiểm tra HKII NH22-23- Nguyen Huynh]%[Tran Hung Dao]
+	Giải phương trình : $\sqrt{x^{2} - 2x - 3 } = \sqrt{-x^{2}+4x+5}$.
+	\loigiai{
+		Bình phương 2 vế của phương trình đã cho ta thu được:
+		\[  x^{2}-2x-3=-x^{2}+4x+5 \Leftrightarrow x^{2}-3x-4=0 \Leftrightarrow \hoac{&x = -1 \\& x=4.} \]
+		Thử lại, thay trực tiếp $x=-1$ và $x=4$ vào phương trình đã cho, ta thấy cả hai giá trị đều thỏa mãn.\\
+		Vậy tập nghiệm của phương trình là $S = \{ -1; 4 \}$. 
+	}
+\end{bt}
+
+\begin{bt}%[0T9B1-5]%[Dự án đề kiểm tra HKII NH22-23- Nguyen Huynh]%[Tran Hung Dao]
+	Trong mặt phẳng tọa độ $Oxy$, cho tam giác $ABC$ với $A(2;5),\, B(-2;1),\, C(5;2)$.
+	\begin{enumerate}[a)]
+		\item Tìm tọa của vectơ $\vec{u} = 3\overrightarrow{AB} - 2\overrightarrow{AC} + \overrightarrow{BC}$.
+		\item Tìm tọa độ điểm $D$ sao cho tứ giác $ABCD$ là hình bình hành.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}[a)]
+			\item Ta có $\overrightarrow{AB}=(-4;-4),\, \overrightarrow{AC}=(3;-3),\, \overrightarrow{BC}=(7;1)$.\\
+			Suy ra $\vec{u}=(-11; -5)$.
+			\item Ta có $\overrightarrow{AB}=(-4;-4)$ và $\overrightarrow{DC}=(5-x_{D}; 2-y_{D})$.\\
+			Do tứ giác $ABCD$ là hình bình hành nên $\overrightarrow{AB} = \overrightarrow{DC} \Leftrightarrow \heva{& x_{D}=9 \\ & y_{D} = 6.}$
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[0T9B3-2] %[Dự án đề kiểm tra HKII NH22-23- Nguyen Huynh]%[Tran Hung Dao]
+	Trong mặt phẳng tọa độ $Oxy$, viết phương trình đường tròn $(C)$ biết đường tròn $(C)$ có đường kính $MN$ với $M(4;6)$ và $N(-2;0)$.
+	\loigiai{
+		Gọi $I$ là trung điểm của $MN$ thì $I(1;3)$.\\
+		Ta có $MN=\sqrt{(-2-4)^2+(0-6)^2}=6\sqrt2$.\\
+		Đường tròn $(C)$ nhận $I$ làm tâm và có bán kính $R_{(C)} = \dfrac{1}{2}MN = 3\sqrt{2}$.\\
+		Vậy $(C): (x-1)^{2} + (y-3)^{2} = 18$.
+		
+	}
+\end{bt}
+
+\begin{bt}%[0T9Y2-2]%[Dự án để kiểm tra GHKII NH 22-23 - Tin Dat Tran]%[THPT Trần Hưng Đạo]
+Trong mặt phẳng với hệ trục tọa độ $Oxy$, hai điểm $A(-2 ;3)$, $B(3;-1)$. Viết phương trình tham số và phương trình tổng quát của đường thẳng $d$ đi qua điểm $A$ và vuông góc với đường thẳng $AB$.
+\loigiai{
+Ta có $\overrightarrow{AB}=(5;-4)$.\\
+Đường thẳng $d$ vuông góc với $AB$ nên $d$ có véc-tơ
+pháp tuyến $\vec{n}=\overrightarrow{AB}=(5;-4)$ và véc-tơ chỉ phương $\vec{u}=(4;5)$.\\
+Phương trình tổng quát của đường thẳng $d$ đi qua $A(-2;3)$ và có véc-tơ pháp tuyến\\ $\vec{n}=(5;-4)$ là 
+\[d\colon5\cdot(x+2)-4(y-3)=0\Leftrightarrow d\colon 5x-4y+22=0.\]
+Phương trình tham số của đường thẳng $d$ đi qua $A(-2;3)$ và có véc-tơ chỉ phương $\vec{u}=(4;5)$ là
+\[d\colon\heva{&x=-2+4t\\&y=3+5t}~(t\in\mathbb{R}).\]
+}
+\end{bt}
+\begin{bt}%[0T7B1-2]%[Dự án để kiểm tra GHKII NH 22-23 - Tin Dat Tran]%[THPT Trần Hưng Đạo]
+Cho $f(x)=(m-1) x^2-2(m-2) x+2 m-4$. Tìm tất cả các giá trị của tham số $m$ để $f(x)<0, \forall x \in \mathbb{R}$.
+\loigiai{
+Ta có hai trường hợp
+\begin{itemize}
+\item \textbf{Trường hợp 1:} $m-1=0\Leftrightarrow m=1$.\\
+Khi đó $f(x)=2x-2$, không thỏa yêu cầu bài toán.
+\item \textbf{Trường hợp 2:} $m-1\neq0\Leftrightarrow m\neq 1$.\\
+Ta có
+\begin{eqnarray*}
+	f(x)<0,\forall x\in \mathbb{R}&\Leftrightarrow& \heva{&m-1<0\\&4(m-2)^2-4(m-1)(2m-4) \leq 0}\\
+	&\Leftrightarrow&\heva{&m<1\\&-4m^2+8m\leq 0}\\
+	&\Leftrightarrow&\heva{&m<1\\&\hoac{&m\geq 2\\&m\leq 0}}\\
+	&\Leftrightarrow&m\leq 0.
+\end{eqnarray*}
+\end{itemize}
+Vậy $m\in\left(-\infty;0\right]$.
+}
+\end{bt}
+\begin{bt}%[0T7K2-2]%[Dự án để kiểm tra GHKII NH 22-23 - Tin Dat Tran]%[THPT Trần Hưng Đạo]
+Bộ phận nghiên cứu thị trường của hãng ô tô $A$ năm 2023 xác định tổng chi phí để sản xuất $Q$ chiếc ô tô là biểu thức $T=Q^2-30 Q+400$ ($T$ có đơn vị là nghìn USD). Giả sử mỗi chiếc ô tô có giá bán ra thị trường là $20$ nghìn USD.
+\begin{enumerate}
+\item Xác định lợi nhuận hãng ô tô thu được sau khi bán hết $Q$ chiếc biết rằng lợi nhuận là hiệu của doanh thu trừ đi tổng chi phí để sản xuất.
+\item Hỏi hãng cần sản xuất bao nhiêu chiếc ô tô để có lãi (giả sử ô tô sản xuất ra đều được bán hết).
+\end{enumerate}
+\loigiai{
+\begin{enumerate}
+\item Gọi $L$ là lợi nhuận hãng ô tô thu được sau khi bán hết $Q$ chiếc (đơn vị: nghìn USD).\\
+Ta có
+\[L=20Q-T=20Q-\left(Q^2-30Q+400\right)=-Q^2+50Q-400.\]
+\item Để hãng ô tô có lãi thì
+\[L>0\Leftrightarrow -Q^2+50Q-400>0\Leftrightarrow 10<Q<40.\]
+Vậy hãng ô tô cần sản xuất nhiều hơn $10$ chiếc và ít hơn $40$ chiếc ô tô để có lãi.
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T9G2-6]%[Dự án để kiểm tra GHKII NH 22-23 - Tin Dat Tran]%[THPT Trần Hưng Đạo]
+Trong mặt phẳng với hệ tọa độ $Oxy$, cho tam giác $ABC$ nội tiếp đường tròn tâm $I(2;1)$, trọng tâm $G\left(\dfrac{7}{3};\dfrac{4}{3}\right)$. Biết phương trình tổng quát của đường thẳng $AB$ là $x-y+1=0$. Tìm tọa độ điểm $C$.
+\loigiai{
+\immini{
+Đường thằng $AB$ có véc-tơ pháp tuyến $\vec{n}=(1;-1)$.\\
+$\Rightarrow$ véc-tơ chỉ phương $\vec{n}_{AB}=(1;1)$.\\
+Gọi $M(x;x+1)$ là trung điểm của $AB$, khi đó $IM\perp AB$.\\
+Ta có $\overrightarrow{IM}=(x-2;x)$.
+\[IM\perp AB\Leftrightarrow IM\perp \vec{u}_{AB}\Leftrightarrow 1\cdot(x-2)+1\cdot x=0\Leftrightarrow x=1.\]
+Suy ra $M(1;2)$.\\
+Gọi $C(x;y)$. Ta có $\overrightarrow{CG}=\left(\dfrac{7}{3}-x;\dfrac{4}{3}-y\right)$, $\overrightarrow{GM}=\left(\dfrac{-4}{3};\dfrac{2}{3}\right)$.
+}
+{\begin{tikzpicture}
+	\def\r{2.5}
+	\path (0,0) coordinate (I)
+	(100:\r) coordinate (A)
+	(-170:\r) coordinate (B)
+	(-10:\r) coordinate (C)
+	($(A)!.5!(B)$) coordinate (M)
+	($(C)!2/3!(M)$) coordinate (G)
+	;
+	\draw (I) circle (\r) (A)--(B)--(C)--cycle (C)--(M) (I)--(M);
+	\pic[draw,angle radius=8pt]{right angle=I--M--A};
+	\foreach \t/\g in {A/90,B/-135,C/-45,I/0,G/30,M/170}{
+		\draw[fill=white] (\t) circle (1pt) node[shift={(\g:7pt)},font=\scriptsize]{$ \t $};
+	}
+\end{tikzpicture}}
+\noindent Vì $G$ là trọng tâm tam giác $ABC$ nên \[\overrightarrow{CG}=2\overrightarrow{GM}\Leftrightarrow \heva{&\dfrac{7}{3}-x=2\cdot \dfrac{-4}{3}\\&\dfrac{4}{3}-y=2\cdot\dfrac{2}{3}}\Leftrightarrow\heva{&x=5\\&y=0.}\]
+Vậy $C\left(5;0\right)$.
+}
+\end{bt}

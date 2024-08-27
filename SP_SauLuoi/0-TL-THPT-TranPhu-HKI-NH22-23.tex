@@ -1,0 +1,224 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Trần Phú}
+
+
+%1
+\begin{bt}%[Dự án đề kiểm tra HKII-22-23-Nguyễn Tài Tuệ]%[0T2Y1-1]
+	Biểu diễn miền nghiệm của bất phương trình $2x-5y-10<0$.
+	\loigiai{	
+		Đường thẳng $d\colon 2x-5y-10=0 $ có đồ thị như hình bên dưới. \\
+		Lấy điểm $O(0;0)\notin d$,ta có
+$2\cdot 0+5\cdot 0-10 <0$.  Do đó, miền nghiệm bất phương trình là vùng không gạch chéo trên hình, không kể cả bờ là đường thẳng $d$.
+\begin{center}
+	\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\def\xmin{-2.5}\def\xmax{6.0}\def\ymin{-1}\def\ymax{3.0}
+		\draw[->] (\xmin-0.2,0)--(\xmax+0.2,0) node[below] {\footnotesize $x$};
+		\draw[->] (0,\ymin-0.2)--(0,\ymax+0.2) node[right] {$y$};
+		\draw (0,0) node [below left] {$O$};
+		\foreach \x in {-1,1,2,3,4,5,6}\draw (\x,0.1)--(\x,-0.1) node [below] {\footnotesize $\x$};
+		\foreach \y in {-1,1,2,3}\draw (0.1,\y)--(-0.1,\y) node [left] {\footnotesize $\y$};
+		\clip (\xmin,\ymin) rectangle (\xmax,\ymax);
+		\draw[smooth,samples=200,domain=\xmin:\xmax] plot (\x,{-0.4*(\x)+2});
+		\fill[pattern=north east lines,pattern color=blue!30] (-2.5,3)--(6,3)--(6,-.4)-- cycle;
+	\end{tikzpicture}
+\end{center}
+	}
+\end{bt}
+
+%2
+\begin{bt}%[Dự án đề kiểm tra HKII-22-23-Nguyễn Tài Tuệ]%[0T3B1-2]
+	Tìm tập xác định của hàm số sau $y=\dfrac{x}{\sqrt{12 x^2+3}}-\dfrac{1}{x^2-3x-18}$.
+	\loigiai{Điều kiện xác định $\heva{&12x^2+3>0~\text{(luôn đúng)}\\&x^2-3x-12\ne0}\Leftrightarrow \heva{&x\ne 6\\&x\ne 3.}$\\
+		Tập xác định $\mathscr{D}=\mathbb{R}\backslash\{-3;6\}.$		
+	}
+\end{bt}
+
+%3
+\begin{bt}%[Dự án đề kiểm tra HKII-22-23-Nguyễn Tài Tuệ]%[0T3B1-4]
+	Xét tính đồng biến, nghịch biến cùa hàm số $f(x)=\dfrac{-3}{2 x-10}$ trên khoảng $(5 ;+\infty)$.
+	\loigiai{$\forall x_1 ; x_2\in(5 ;+\infty)$, giả sử $x_1<x_2\Leftrightarrow x_1-x_2<0$.\\
+	Ta có 	$f\left(x_1\right)-f\left(x_2\right)=\dfrac{-3}{2x_1-10}+\dfrac 3{2x_2-10}=\dfrac{6\left(x_1-x_2\right)}{\left(2x_1-10\right)\cdot\left(2x_2-10\right)}$.\\
+	Vì $x_1 ; x_2\in(5 ;+\infty)$ nên $\heva{&2x_1-10>0\\ &2x_2-10>0}$ và $x_1-x_2<0$.\\
+	Do đó $f(x)_1-f\left(x_2\right)<0$.\\
+	Vậy hàm số đã cho đồng biến trên khoảng $(5 ;+\infty)$.
+	}
+\end{bt}
+
+%4
+\begin{bt}%[Dự án đề kiểm tra HKII-22-23-Nguyễn Tài Tuệ]%[0T3B2-3]
+	Khảo sát sự biến thiên và vẽ đồ thị hàm số $(P)\colon y=x^2+6x+8$.
+	\loigiai{
+		\begin{enumerate}[$ \star $]
+			\item Tập xác định $\mathscr{D}=\mathbb{R}$.
+			\item Tọa độ đỉnh $I(-3;-1)$.
+			\item Trục đối xứng $x=-3$.				
+%			\item Hàm số đồng biến trên $\left(-3;+\infty\right)$, nghịch biến trên $\left(-\infty;-3\right)$.
+%			\item Hàm số đạt cực tiểu tại $x=-3$, $y_{\textrm{CT}}=-1$.
+			\item Bảng biến thiên
+			\begin{center}
+				\begin{tikzpicture}
+					\tkzTabInit[nocadre,lgt=1.2,espcl=2.5,deltacl=0.6]
+					{$x$/0.6,$y$/2}{$-\infty$,$-3$,$+\infty$}					
+					\tkzTabVar{+/$+\infty$,-/$-1$,+/$+\infty$}
+				\end{tikzpicture}
+			\end{center}
+		\item Bảng giá trị
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				$x$& $-5$ & $-4$ & $-3$ & $-2$ & $-1$ \\ 
+				\hline
+			$y$	& $3$ & $0$ & $-1$ & $0$ & $3$ \\ 
+				\hline
+			\end{tabular}
+		\end{center}	
+			\item Đồ thị
+			\begin{center}
+				\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+					\def\xmin{-6}\def\xmax{1}\def\ymin{-2}\def\ymax{3}
+					\draw[->] (\xmin-0.2,0)--(\xmax+0.2,0) node[below] {\footnotesize $x$};
+					\draw[->] (0,\ymin-0.2)--(0,\ymax+0.2) node[right] {\footnotesize $y$};
+					\draw (0,0) node [below left] {\footnotesize $O$};
+					\foreach \x in {-6,-5,-4,-3,-2,-1,1}\draw (\x,0.1)--(\x,-0.1) node [below] {\footnotesize $\x$};
+					\foreach \y in {-2,-1,1,2,3}\draw (0.1,\y)--(-0.1,\y) node [left] {\footnotesize $\y$};
+					\clip (\xmin,\ymin) rectangle (\xmax,\ymax);
+					\draw[smooth,samples=200,domain=\xmin:\xmax] plot (\x,{1*((\x)^2)+6*\x+8});
+					\draw[dashed] (-3.0,0)--(-3.0,-1.0)--(0,-1.0);\fill (-3.0,-1.0) circle (1pt);
+				\end{tikzpicture}
+			\end{center}
+		\end{enumerate}
+		
+	}
+\end{bt}
+%5
+
+\begin{bt}%[Dự án đề kiểm tra HKII-22-23-Nguyễn Tài Tuệ]%[0T3K2-5]
+	Cầu \textit{Ponte Luis} ở Porto (Bồ Đào Nha) có hình dạng đường cong parabol có bề lõm quay xuống dưới để giúp giảm lực mà cây cầu phải gánh. Giả sử ta lập một hệ trục tọa độ $Oxy$ sao cho một chân cầu đi qua gốc tọa độ $O$ như hình vẽ $(x, y$ tính bằng mét), chân kia của cầu ở vị trí $(6 ; 0)$. Biết một điểm $A$ trên cầu có tọa độ là $(2; 4)$. Tìm hàm số bậc hai có đồ thị chứa cung parabol nói trên.
+	\begin{center}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+			\def\xmin{-1}\def\xmax{6.5}\def\ymin{-1}\def\ymax{5}
+			\draw[->] (\xmin-0.2,0)--(\xmax+0.2,0) node[below] {\footnotesize $x$};
+			\draw[->] (0,\ymin-0.2)--(0,\ymax+0.2) node[right] {\footnotesize $y$};
+			\draw (0,0) node [below left] {\footnotesize $O$};
+			\foreach \x in {-1,1,2,3,4,5,6}\draw (\x,0.1)--(\x,-0.1) node [below] {\footnotesize $\x$};
+			\foreach \y in {-1,1,2,3,4,5}\draw (0.1,\y)--(-0.1,\y) node [left] {\footnotesize $\y$};
+			\clip (\xmin,\ymin) rectangle (\xmax,\ymax);
+			\draw[smooth,samples=200,domain=0:6] plot (\x,{-0.5*((\x)^2)+3*\x+0});
+			\draw[dashed] (2,0)--(2,4)node [above left] {\footnotesize $A$}--(0,4);	\fill (2,4) circle (1pt);	
+		\end{tikzpicture}
+	\end{center}
+	
+\loigiai{
+	Gọi hàm số bậc hai $y=ax^2+bx+c$ có đồ thị chứa cung parabol nói trên.\\
+	Dựa vào đồ thị ta thấy hàm số đi qua các điểm $O(0;0)$, $A(2;4)$ và $(6;0)$ nên ta có\\
+	$$\heva{&0=a\cdot 0^2+b\cdot 0+c\\& 4=a\cdot 2^2+2\cdot b+c\\&0=a\cdot 6^2+b\cdot6+c}\Leftrightarrow \heva{&c=0\\&b=3\\&a=-\dfrac{1}{2}.}$$\\
+	Vậy $y=-\dfrac{1}{2}x^2+3x$ là hàm số bậc hai có đồ thị chứa cung parabol nói trên.
+	}
+\end{bt}
+
+
+
+
+
+\begin{bt}%[0T6B4-3] %[Dự Án Đề Thi HK1-K10-2022-2023]%[TheHung Nguyen]
+Để biết hai loại hoa hồng đỏ (HĐ) và hoa hồng trắng (HT) phát triển như thế nào sau khi gieo hạt, bạn Mai gieo $6$ hạt hoa hồng đỏ và $6$ hạt hoa hồng trắng vào $12$ chậu riêng biệt và cung cấp cho chúng lượng nước, ánh sáng như nhau. Sau $1$ tuần, $12$ hạt đã nảy mầm và phát triển thành $12$ cây con. Bạn Mai đo chiều cao từ rễ đến ngọn của mỗi cây (đơn vị mm) và ghi kết quả là mẫu số liệu sau:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		Cây& HĐ1 & HĐ2 & HĐ3 & HĐ4 & HĐ5 & HĐ6 \\ 
+		\hline
+	Chiều cao	& $110$  & $101$  & $93$ & $103$ & $104$ & $97$ \\ 
+		\hline
+	Cây	& HT1 & HT2 & HT3 & HT4 & HT5 & HT6 \\ 
+		\hline
+	Chiều cao	& $85$ & $90$ & $87$ & $92$ &$100$  & $105$ \\ 
+		\hline
+	\end{tabular}
+\end{center}
+	\begin{enumerate}
+		\item Hãy tính phương sai của hai mẫu số liệu lấy từ hoa hồng đỏ và hoa hồng trắng? (làm tròn đến hàng phần chục)
+		\item Theo em, cây hoa hồng loại nào phát triển đồng đều hơn? Vì sao?
+	\end{enumerate}
+	\loigiai{	\begin{enumerate}
+			\item Chiều cao trung bình của hoa hồng đỏ là $$\overline{x}_\text{Đ}=\dfrac{110+101+93+103+104+97}{6}=\dfrac{304}{3}.$$
+			Phương sai của HĐ là
+			\begin{eqnarray*}
+				& & S^2_\text{Đ}=\dfrac{(110-\overline{x}_\text{Đ})^2+(101-\overline{x}_\text{Đ})^2+(93-\overline{x}_\text{Đ})^2+(103-\overline{x}_\text{Đ})^2}{6}\\
+				&& \,\,\,\,\,\,\,\,\,+\dfrac{(104-\overline{x}_\text{Đ})^2+(97-\overline{x}_\text{Đ})^2}{6}\\
+				&\Leftrightarrow & S^2_\text{Đ}=\approx 28{,}9.
+			\end{eqnarray*}			
+			Chiều cao trung bình của hoa hồng trắng là 
+			$$\overline{x}_T=\dfrac{85+90+87+92+100+105}{6}=\dfrac{559}{6}.$$
+			Phương sai của HT là
+			\begin{eqnarray*}
+				& & S^2_T=\dfrac{(85-\overline{x}_T)^2+(90-\overline{x}_T)^2+(87-\overline{x}_T)^2+(92-\overline{x}_T)^2}{6}\\
+				& &\,\,\,\,\,\,\,\,\,+ \dfrac{(100-\overline{x}_T)^2+(105-\overline{x}_T)^2}{6}\\
+				&\Leftrightarrow & S^2_T\approx50{,}5.
+			\end{eqnarray*}		
+			\item Hoa hồng đỏ phát triển đồng đều hơn hoa hồng trắng.\\
+			Vì phương sai của hoa hồng đỏ bé hơn phương sai hoa hồng trắng.
+		\end{enumerate}
+		
+	}
+\end{bt}
+
+\begin{bt}%[0T4B2-1]%[Dự Án Đề Thi HK1-K10-2022-2023]%[TheHung Nguyen]
+Cho tam giác $ABC$ có $A$ là góc nhọn và $AB=7; AC=8$ và diện tích $S=14 \sqrt{3}$. Tính số đo góc $A$ và độ dài cạnh $BC$.
+	\loigiai{
+\begin{enumerate}[•]
+		\item	Ta có $S=\dfrac 12A B\cdot A C\cdot\sin A\Rightarrow \sin A=\dfrac{2S}{A B\cdot A C}=\dfrac{\sqrt 3}2\Rightarrow\hat{A}=60^{\circ}$.
+		\item Ta có $BC^2=AB^2+AC^2-2\cdot AB\cdot AC\cdot\cos A\Rightarrow BC=\sqrt{57}$.
+	\end{enumerate}		
+	}
+\end{bt}
+
+
+\begin{bt}%[0T5B3-5]%[Dự Án Đề Thi HK1-K10-2022-2023]%[TheHung Nguyen]
+	Cho hình thang $ABCD$ vuông tại $A$ và $B$ có $AD=2AB=2a$. Gọi $M$ là trung điểm của cạnh $AC$, $N$ là trung điểm của cạnh $AD$. Chứng minh $\overrightarrow{CN}=\dfrac{1}{2} \overrightarrow{AD}-\overrightarrow{AC}$ và tính $\left|2\overrightarrow{MN}+\overrightarrow{BC}\right|$ theo $a$.
+	\loigiai{
+\immini{Ta có 
+		\begin{enumerate}[•]
+		\item$\overrightarrow{CN}=\overrightarrow{CA}+\overrightarrow{AN}=-\overrightarrow{AC}+\dfrac 12\overrightarrow{AD}$.
+		\item $|2\overrightarrow{MN}+\overrightarrow{BC}|=|\overrightarrow{CD}+\overrightarrow{BC}|=|\overrightarrow{BD}|=BD =\sqrt{A B^2+A D^2}=a\sqrt 5$.	
+	\end{enumerate}
+}{\begin{tikzpicture}[scale=.8, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\draw (0,0)coordinate (C) node[above] {$C$}--(180:1.5)coordinate (B) node[above] {$B$}--++(-90:2)coordinate (A) node[below] {$A$}--++(0:4)coordinate (D) node[below] {$D$}--(0,0) (C)--(A);
+		\coordinate [label=above left:$M$] (M) at ($(A)!.5!(C)$);
+		\coordinate [label=below:$N$](N) at ($(A)!.5!(D)$);	
+		\draw (M)--(N)--(C) (B)--(D);
+		\foreach \x in {A,B,C,D,M,N}
+		\fill (\x) circle (1.5pt);
+		\pic[draw, angle radius=2mm] {right angle=D--A--B};
+		\pic[draw, angle radius=2mm] {right angle=A--B--C};
+\end{tikzpicture}}
+	}
+\end{bt}
+
+\begin{bt}%[0T5K4-3] %[Dự Án Đề Thi HK1-K10-2022-2023]%[TheHung Nguyen]
+	Cho tam giác $MNP$ có $MP=6, NP=8$, góc $\widehat{P}=150^{\circ}$. Gọi $E$ là trung điểm của cạnh $MN$ và $F$ là một điểm trên cạnh $NP$ sao cho $NP=4NF$. Tính $\overrightarrow{MF} \cdot \overrightarrow{PE}$?
+	\loigiai{\begin{center}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\path (0,0)coordinate (N) node[above] {$N$}
+				--(180:5)coordinate (P) node[below] {$P$}--++(150:4)coordinate (M) node[above] {$M$}--(N);
+				\coordinate [label=above:$E$] (E) at ($(M)!.5!(N)$);
+				\coordinate [label=below:$F$] (F) at ($(N)!.25!(P)$);			
+				\draw (M)--node[midway,below,sloped]{$6$}(P)
+				(P)--node[midway,below,sloped]{$8$}(N)
+				(P)--(E) (M)--(F) (M)--(N);
+				\foreach \x in {P,M,N,E,F}
+				\fill (\x) circle (1.5pt);
+			\end{tikzpicture}
+		\end{center}
+Ta có
+	\begin{enumerate}[•]
+	\item	 $\overrightarrow{PN}\cdot\overrightarrow{PM}=PN\cdot PM\cdot\cos(\overrightarrow{PN},\overrightarrow{PM})=-24\sqrt 3$.
+	\item $\overrightarrow{MF}=\overrightarrow{PF}-\overrightarrow{PM}=\dfrac{3}{4}\overrightarrow{PN}-\overrightarrow{PM}$.
+	\item $\overrightarrow{M F}\cdot\overrightarrow{P E}=\left(\dfrac 34\overrightarrow{P N}-\overrightarrow{P M}\right)\left(\dfrac 12\overrightarrow{P N}+\dfrac 12\overrightarrow{P M}\right)=\dfrac 12\left(\dfrac 34P N^2-P M^2-\dfrac 14\overrightarrow{PN}\cdot\overrightarrow{PM}\right)=6+3\sqrt 3$.
+\end{enumerate}
+	}
+\end{bt}
+
+
+
+
+

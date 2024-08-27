@@ -1,0 +1,168 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{TH-THCS-THPT Nam Việt}
+
+
+\begin{bt}%[0T7B2-1]%[Dự án đề kiểm tra HKII NH22-23- Hieu Phan]%[TH-THCS-THPT Nam Việt]
+    Giải bất phương trình $2x^2-5x+3<0$.
+    \loigiai
+    {
+        Tam thức bậc hai $ f(x)=2x^2-5x+3 $ có 2 nghiệm $ x_1=1 $ và $ x_2=\dfrac{3}{2} $, hệ số $ a=2>0 $.\\
+        Bảng xét dấu
+       % Cần khai báo \usepackage{tkz-tab}
+     \begin{center}
+           \begin{tikzpicture}[>=stealth]
+           \tkzTabInit[nocadre=false,lgt=1,espcl=2,deltacl=0.5]{$x$/1 ,$y$/.7}
+           {$-\infty$ , $1$ , $\dfrac{3}{2}$ , $+\infty$}
+           \tkzTabLine{ , + , z , - , z , + , }
+       \end{tikzpicture}
+     \end{center}
+        Dựa vào bxd suy ra tập nghiệm của bất phương trình là $ S= \left(1;\dfrac{3}{2}\right)$.
+    }
+\end{bt}
+\begin{bt}%[0T8B2-1]%[Dự án đề kiểm tra HKII NH22-23- Hieu Phan]%[TH-THCS-THPT Nam Việt]
+    Từ tập hợp $A=\{1 ; 2 ; 3 ; 4 ; 5 ; 6\}$ có thể lập được bao nhiêu số tự nhiên có bốn chữ số đôi một khác nhau ?
+    \loigiai
+    {
+        Gọi số tự nhiên cần tìm có dạng $ \overline{abcd} $.\\
+        Mỗi cách chọn $ 4 $ chữ số từ tập A xếp có thứ tự vào $ a,b,c,d $ là một chỉnh hợp chập $ 4 $ của $ 7 $ phần tử.\\
+        Vậy có thể lập được $ \mathrm{A}_7^4=840 $ số tự nhiên có bốn chứ số đôi một khác nhau.
+    }
+\end{bt}
+
+\begin{bt}%[0T0K2-2]%[Dự án đề kiểm tra HKII NH22-23- Hieu Phan]%[TH-THCS-THPT Nam Việt]
+    Lớp 10A có $ 20 $ nam và $ 16 $ nữ. Giáo viên muốn chọn ngẫu nhiên $ 4 $ bạn lên bảng làm bài tập. Hỏi giáo viên có bao nhiêu cách để chọn $ 4 $ ra bốn học sinh lên bảng sao cho trong bốn bạn lên bảng có ít nhất một học sinh nữ.
+    \loigiai
+    {
+        Chọn $ 4 $ học sinh từ $ 36 $ học sinh lớp 10A nên $ n(\Omega)=\mathrm{C}_{36}^4 $.\\
+        Gọi $ A $ là biến cố \lq\lq Bốn học sinh được chọn lên bảng có ít nhất một học sinh nữ\rq\rq.\\
+        Khi đó $ \overline{A} $ là biến cố \lq\lq Bốn học sinh được chọn lên bảng không học sinh nữ\rq\rq.\\
+        Suy ra $ n(\overline{A} ) =\mathrm{C}_{20}^4$.\\
+        Vậy $ P(A)=1-P(\overline{A})=1-\dfrac{\mathrm{C}_{20}^4}{\mathrm{C}_{36}^4 }=\dfrac{212}{231} $.
+    }
+\end{bt}
+\begin{bt}%[0T8B3-1]%[Dự án đề kiểm tra HKII NH22-23- Hieu Phan]%[TH-THCS-THPT Nam Việt]
+    Khai triển nhị thức $(x-3)^4$.
+    \loigiai
+    {
+        \begin{eqnarray*}
+            (x-3)^4&=&\mathrm{C}_4^0\cdot x^4-\mathrm{C}_4^1\cdot x^3\cdot 3+\mathrm{C}_4^2\cdot x^2\cdot (-3)^2-\mathrm{C}_4^3\cdot x\cdot 3^3+\mathrm{C}_4^4\cdot 3^4\\
+            &= &x^4-12 x^3+54x^2-108x+81.
+        \end{eqnarray*}
+    }
+\end{bt}
+\begin{bt}%[0T8B3-2]%[Dự án đề kiểm tra HKII NH22-23- Hieu Phan]%[TH-THCS-THPT Nam Việt]
+    Tìm số hạng đứng giữa trong khai triển $(2x-3)^9$.
+    \loigiai
+    {
+        $(2x-3)^9=\sum\limits_{k=0}^{9}\mathrm{C}_9^k (2x)^{9-k}(-3)^k$.\\
+        Vì $ n=9 $ nên suy ra số hạng đứng giữa ứng với $ k=4 $ và $ k=5 $.\\
+        Suy ra số hạng đứng giữa trong khai triển là $ \mathrm{C}_9^4 (2x)^5(-3)^4= 326592x^5$ và  $\mathrm{C}_9^5 (2x)^4(-3)^5= -489888x^4$ .
+    }
+\end{bt}
+
+
+\begin{bt}%[0K9KP-3]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[TH-THCS-THPT Nam Việt]
+	Gọi $S$ là tập hợp các số tự nhiên có ba chữ số đôi một khác nhau được lập thành từ các chữ số $1$, $2$, $3$, $4$, $5$, $6$. Chọn ngẫu nhiên một số từ $S$, tính xác suất để số được chọn là một số chia hết cho $2$.
+	\loigiai{
+		Số phần tử của không gian mẫu là $n(\Omega)=\mathrm{A}_{6}^{3}$.\\
+		Gọi $A$ là biến cố: ``Số được chọn chia hết cho $2$''.\\
+		Ta có $n(A)=3\cdot \mathrm{A}_{5}^{2}$.\\
+		Xác suất của biến cố $A$ là
+		\[
+		P(A)=\dfrac{n(A)}{n(\Omega)}=\dfrac{3\cdot \mathrm{A}_{5}^{2}}{\mathrm{A}_{6}^{3}}=\dfrac{1}{2}.
+		\]
+	}
+\end{bt}
+
+\begin{bt}%[0K7BL-1]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[TH-THCS-THPT Nam Việt]
+	Tìm độ dài trục lớn, trục bé và tiêu cự của elip  $(E)\colon \dfrac{x^2}{25}+\dfrac{y^2}{16}=1$.
+	\loigiai{
+		Phương trình chính tắc của elip có dạng $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$ ($a>b>0$).\\
+		Theo đề ta có
+		\begin{itemize}
+			\item $a^2=25\Rightarrow a=5$.
+			\item $b^2=16\Rightarrow b=4$.
+			\item $c=\sqrt{a^2-b^2}=\sqrt{25-16}=3$.
+		\end{itemize}
+	Từ đó suy ra
+	\begin{itemize}
+		\item Độ dài trục lớn là $2a=10$.
+		\item Độ dài trục bé là $2b=8$.
+		\item Tiêu cự là $2c=6$.
+	\end{itemize}
+	}
+\end{bt}
+
+\begin{bt}%[0K7KI-2]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[TH-THCS-THPT Nam Việt]
+	Cho tam giác $ABC$ biết $A(1;1)$, $B(-3;2)$, $C(-1;-2)$.
+	\begin{enumerate}
+		\item Viết phương trình đường thẳng $BC$.
+		\item Viết phương trình đường thẳng $d$ đi qua $A$ và cách đều $B$ và $C$.
+	\end{enumerate}
+\loigiai{
+	\begin{enumerate}
+		\item Phương trình đường thẳng $BC$ là
+		\begin{eqnarray*}
+			&&\dfrac{x-x_B}{x_C-x_B}=\dfrac{y-y_B}{y_C-y_B}\\
+			&\Leftrightarrow&\dfrac{x+3}{-1+3}=\dfrac{y-2}{-2-2}\\
+			&\Leftrightarrow&\dfrac{x+3}{2}=\dfrac{y-2}{-4}\\
+			&\Leftrightarrow&2x+y+4=0.
+		\end{eqnarray*}
+	\item Gọi $\vec{n}=(a;b)$ là véc-tơ pháp tuyến của $d$.\\
+	Phương trình đường thẳng $d$ qua $A(1;1)$ là
+	\[
+	a(x-1)+b(y-1)=0\Leftrightarrow ax+by-a-b=0.
+	\]
+	Ta có $d$ cách đều hai điểm $B$ và $C$ nên
+	\begin{eqnarray*}
+		&&\mathrm{d}(B,d)=\mathrm{d}(C,d)\\
+		&\Leftrightarrow&\dfrac{|-3a+2b-a-b|}{\sqrt{a^2+b^2}}=\dfrac{|-a-2b-a-b|}{\sqrt{a^2+b^2}}\\
+		&\Leftrightarrow&|-4a+b|=|-2a-3b|\\
+		&\Leftrightarrow&\hoac{&-4a+b=-2a-3b\\&-4a+b=2a+3b}\\
+		&\Leftrightarrow&\hoac{&-2a=-4b\\&-6a=2b}\\
+		&\Leftrightarrow&\hoac{&a=2b\\&-3a=b.}
+	\end{eqnarray*}
+\begin{itemize}
+	\item Với $a=2b$, cho $b=1$, suy ra $a=2$. \\
+	Phương trình đường thẳng $d$ là $2x+y-3=0$.
+	\item Với $b=-3a$, chọn $a=1$, suy ra $b=-3$. \\
+	Phương trình $d$ là $x-3y+2=0$.
+\end{itemize}
+Nhận xét: Ta có thể giải bài này bằng cách chia ra hai trường hợp:
+\begin{itemize}
+	\item TH1. $d$ đi qua $A$ và trung điểm $I$ của $BC$.
+	\item TH2. $d$ đi qua $A$ và song song với $BC$.
+\end{itemize}
+	\end{enumerate}
+}
+\end{bt}
+
+\begin{bt}%[0K7BK-2]%[Dự án đề kiểm tra NH22-23 - Huỳnh Quy]%[TH-THCS-THPT Nam Việt]
+	Viết phương trình đường tròn $(C)$ trong các trường hợp sau:
+	\begin{enumerate}
+		\item $(C)$ có tâm $M(1;3)$ và bán kính $R=4$.
+		\item $(C)$ có tâm $N(-1;2)$ và đi qua điểm $E(2;6)$.
+		\item $(C)$ có tâm $I(1;1)$ và tiếp xúc với đường thẳng $\Delta\colon x-3y-5=0$.
+	\end{enumerate}
+\loigiai{
+	\begin{enumerate}
+		\item Phương trình đường tròn $(C)$ là 
+		\[
+		(x-1)^2+(y-3)^2=4^2\Leftrightarrow (x-1)^2+(y-3)^2=16.
+		\]
+		\item Bán kính đường tròn là $R=NE=\sqrt{(2+1)^2+(6-2)^2}=5$.\\
+		Phương trình đường tròn $(C)$ là 
+		\[
+		(x+1)^2+(y-2)^2=5^2	\Leftrightarrow (x+1)^2+(y-2)^2=25.
+		\]
+	\item Bán kính đường tròn là 
+	\[
+	R=\mathrm{d}(I,\Delta)=\dfrac{|1-3\cdot 1-5|}{\sqrt{1^2+(-3)^2}}=\dfrac{7}{\sqrt{10}}.
+	\]
+	Vậy phương trình đường tròn $(C)$ là
+	\[
+	(x-1)^2+(y-1)^2=\left(\dfrac{7}{\sqrt{10}}\right)^2\Leftrightarrow (x-1)^2+(y-1)^2=\dfrac{49}{10}.
+	\]
+	\end{enumerate}
+}
+\end{bt}
+

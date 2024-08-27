@@ -1,0 +1,172 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Trưng Vương}
+
+% Bài 1
+\begin{bt}%[0T7B2-1][0T7B3-2]%[Dự án đề kiểm tra GKII NH22-23 - Quan Ón]%[Trường Chinh - Đề 3]
+	
+	Giải các phương trình và bất phương trình sau
+	\begin{listEX}[2]
+		\item $x^2 - 4 > 0$
+		\item $\sqrt{2x^2 - 8x + 4} = x - 2$.
+	\end{listEX}
+	\loigiai{
+	\begin{enumerate}
+		\item Xét $f(x) = x^2 - 4$.\\
+		Ta có $f(x) = 0 \Rightarrow x^2 - 4 = 0 \Rightarrow \hoac{&x = -2\\&x = 2.}$\\
+		Bảng xét dấu
+		\begin{center}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				\tkzTabInit[nocadre=false,lgt=2.5,espcl=2.5,deltacl=0.6]
+				{$x$ /0.6,$f(x) = x^2 - 4$ /0.6}
+				{$-\infty$, $-2$, $2$, $+\infty$}
+				\tkzTabLine{,+,0,-,0,+,}
+			\end{tikzpicture}
+		\end{center}
+	    Dựa vào bảng xét dấu, ta có $f(x) > 0$ khi $x \in (-\infty;-2)\cup (2;+\infty)$.\\
+	    Vậy tập nghiệm của bất phương trình đã cho là $S = (-\infty;-2)\cup (2;+\infty)$.
+		\item Điều kiện $x - 2 \geq 0 \Rightarrow x \geq 2$.\\
+		Ta có
+		$$\sqrt{2x^2 - 8x + 4} = x - 2 \Rightarrow 2x^2 - 8x + 4 = (x - 2)^2 \Rightarrow x^2 -4x = 0 \Rightarrow \hoac{&x = 0 \quad \textrm{ (loại)}\\&x = 4 \quad \textrm{ (nhận)}.}$$
+		Vậy phương trình đã cho có nghiệm là $x = 4$.
+	\end{enumerate}
+}
+\end{bt}
+
+% Bài 2
+\begin{bt}%[0T7B2-1]%[Dự án đề kiểm tra GKII NH22-23 - Quan Ón]%[Trường Chinh - Đề 3]
+	Tìm giá trị của tham số $m$ để $x^2 - 2mx - 2m + 3 \geq 0$ với mọi $x \in \mathbb{R}$.
+	\loigiai{
+	Ta có $\Delta = (-2m)^2 - 4\cdot 1\cdot (-2m+3) = 4m^2 + 8m - 12$.\\
+	Để $x^2 - 2mx - 2m + 3 \geq 0$ với mọi $x \in \mathbb{R}$ thì
+	$$ \heva{&a > 0\\&\Delta \leq 0} \Rightarrow \heva{&1 > 0 \quad \textrm{ (luôn đúng)}\\&4m^2 + 8m - 12 \leq 0} \Rightarrow -3 \leq m \leq 1. $$
+	Vậy $-3 \leq m \leq 1$ thỏa mãn yêu cầu bài toán.
+}
+\end{bt}
+
+% Bài 3
+\begin{bt}%[0T3B2-5]%[Dự án đề kiểm tra GKII NH22-23 - Quan Ón]%[Trường Chinh - Đề 3]
+	Một quả bóng được bắn thẳng lên từ độ cao $1{,}8$ m với vận tốc ban đầu là $30$ m/s. Khoảng cách của bóng so với mặt đất sau $t$ giây được cho bởi hàm số $h(t) = -4{,}9t^2 + 30t + 1{,}8$ (với $h(t)$ tính bằng đơn vị mét). Hỏi bóng nằm ở độ cao trên $40$ m trong thời gian bao lâu? \textit{(Làm tròn kết quả đến hàng phần chục)}.
+	\loigiai{
+	Theo giả thiết, khoảng thời gian bóng nằm ở độ cao trên $40$ m là nghiệm của bất phương sau
+	$$ h(t) > 40 \Rightarrow -4{,}9t^2 + 30t + 1{,}8 > 40 \Rightarrow -4{,}9t^2 + 30t - 38{,}2 > 0. $$
+	Xét $f(t) = -4{,}9t^2 + 30t - 38{,}2$ với $t \geq 0$.\\
+	Ta có $f(t) = 0 \Rightarrow -4{,}9t^2 + 30t - 38{,}2 = 0 \Rightarrow \heva{&t \approx 1{,}8\\&t \approx 4{,}3.}$\\
+	Với $a = -4{,}9 < 0$, ta có bảng xét dấu của $f(t)$
+	\begin{center}
+		\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+			\tkzTabInit[nocadre=false,lgt=5.2,espcl=2.5,deltacl=0.6]
+			{$t$ /0.6,$f(t) = -4{,}9t^2 + 30t - 38{,}2$ /0.6}
+			{$0$, $1{,}8$, $4{,}3$, $+\infty$}
+			\tkzTabLine{,-,0,+,0,-,}
+		\end{tikzpicture}
+	\end{center}
+    Từ bảng xét dấu, ta thấy $f(t) > 0$ khi $1{,}8 < t < 4{,}3$.\\
+    Vậy quá bóng nằm ở độ cao trên $40$ m trong khoảng thời gian $4{,}3 - 1{,}8 = 2{,}5$ giây.
+}
+\end{bt}
+
+
+\begin{bt}%[0T3T2-5]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THPT Trưng Vương]
+\immini
+{
+	Trong một chuyến picnic, một nhóm sinh viên tham gia trò chơi vận động được chia làm hai đội. Các thành viên trong mỗi đội đi từ vị trí $A$ đến bờ sông để lấy nước rồi mang về vị trí $B$, biết hai vị trí $A$, $B$ cách nhau $615$ m, cùng nằm về một phía bờ sông như hình vẽ. Khoảng cách từ $A$ và từ $B$ đến bờ sông lần lượt là $118$m và $487$m. Giả sử bạn sinh viên lấy nước tại vị trí $M$ trên bờ sông. Tính khoảng cách từ $A$ đến $M$ để $BM=2AM$. (Làm tròn kết quả đến hàng phần chục).
+}
+{
+	\begin{tikzpicture}[join = round, cap = round, >=stealth, font =\footnotesize, scale = .75]
+	\path
+	(0,0)coordinate(O)++(0:1)coordinate(H)++(90:2)coordinate(A)
+	(O)++(0:2)coordinate(M)
+	(O)++(0:5)coordinate(K)++(90:3)coordinate(B)
+	(6,-1)coordinate(C)
+	($(O)!.5!(C)$)coordinate(I)node{$\text{Sông}$}
+	;
+	\draw (O)rectangle(C)
+	(H)--(A)node[midway,left]{$118$ m}--(B)node[midway,above]{$615$ m}--(K)node[midway,right]{$487$ m}
+	(A)--(M)--(B)
+	;
+	\foreach \x/\g in {A/90,B/90,M/-90}
+	\fill (\x) circle (1.2pt)+(\g:3mm) node {$\x$};
+\end{tikzpicture}
+}
+\loigiai
+{
+	\immini{
+Gọi $H$, $K$ lần lượt là hình chiếu vuông góc của $A$ và $B$ lên bờ sông.\\
+Đặt $HM=x$ với $x>0$, suy ra $$AM=\sqrt{AH^2+HM^2}=\sqrt{118^2+x^2}=\sqrt{13924+x^2}.$$
+Ta lại có $HK=\sqrt{615^2-(487-118)^2}=492$ (m).\\
+Khi đó, $MK=492-x$ và $$BM=\sqrt{BK^2+MK^2}=\sqrt{487^2+(492-x)^2}=\sqrt{479233-984x+x^2}.$$
+}
+{
+	\begin{tikzpicture}[join = round, cap = round, >=stealth, font =\footnotesize, scale = .75]
+		\path
+		(0,0)coordinate(O)++(0:1)coordinate(H)++(90:2)coordinate(A)
+		(O)++(0:2)coordinate(M)
+		(O)++(0:5)coordinate(K)++(90:3)coordinate(B)
+		(6,-1)coordinate(C)
+		($(O)!.5!(C)$)coordinate(I)node{$\text{Sông}$}
+		;
+		\draw (O)rectangle(C)
+		(H)--(A)node[midway,left]{$118$ m}--(B)node[midway,above]{$615$ m}--(K)node[midway,right]{$487$ m}
+		(A)--(M)--(B)
+		;
+		\foreach \x/\g in {A/90,B/90,M/-90,H/-90,K/-90}
+		\fill (\x) circle (1.2pt)+(\g:3mm) node {$\x$};
+	\end{tikzpicture}
+}
+\noindent
+Do $BM=2AM$ nên $\sqrt{479233-984x+x^2}=2\sqrt{13924+x^2}$.\\
+Giải phương trình trên ta có
+\allowdisplaybreaks
+\begin{eqnarray*}
+	\sqrt{479233-984x+x^2}=2\sqrt{13924+x^2}&\Leftrightarrow&479233-984x+x^2=4(13924+x^2)\\
+	&\Leftrightarrow&3x^2+984x-423537=0\\
+	&\Leftrightarrow&\hoac{&x\approx 246\text{ (Nhận)}\\&x\approx -574\text{ (Loại).}}
+\end{eqnarray*}
+Vậy $AM\approx 272{,}8$ (m).
+}
+\end{bt}
+\begin{bt}%[0T8B2-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THPT Trưng Vương]
+	Từ các chữ số $0$; $1$; $2$; $3$; $4$; $5$ có thể lập được bao nhiêu số tự nhiên gồm $5$ chữ số đôi một khác nhau?
+	\loigiai
+	{
+		Gọi $\overline{abcde}$ là số cần lập.
+		\begin{itemize}
+			\item Chọn chữ số $a$ có $5$ cách chọn vì $a\ne 0$.
+			\item Với mỗi cách chọn chữ số $a$ có $\mathrm{A}_5^4$ cách chọn các chữ số sắp xếp vào các vị trí của $b$, $c$, $d$, $e$.
+		\end{itemize}
+		Vậy có $5\cdot \mathrm{A}_5^4=600$ số được lập.
+	}
+\end{bt}
+\begin{bt}%[0T9B2-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THPT Trưng Vương]
+	Trong mặt phẳng tọa độ $Oxy$, cho tam giác $ABC$ với $A(6;3)$, $B(-3;6)$ và $C(1;-2)$.
+	\begin{enumerate}
+		\item Xác định tọa độ điểm $E$ trên cạnh $BC$ sao cho $BE=2CE$.
+		\item Viết phương trình tổng quát của đường thẳng chứa trung tuyến $AM$ của tam giác $ABC$.
+		\item Xác định tọa độ điểm $D$ trên trục hoành sao cho ba điểm $A$, $B$, $D$ thẳng hàng.
+	\end{enumerate}
+	\loigiai
+	{
+	\begin{enumerate}
+	\item Xác định tọa độ điểm $E$ trên cạnh $BC$ sao cho $BE=2CE$.\\
+	Gọi $E(x;y)$ là tọa độ cần tìm. Ta có $\overrightarrow{BE}=(x+3;y-6)$ và $\overrightarrow{EC}=(1-x;-2-y)$.\\
+	$\overrightarrow{BE}=\overrightarrow{EC}\Leftrightarrow\heva{&x+3=2(1-x)\\&y-6=2(-2-y)}\Leftrightarrow\heva{&3x=-1\\&3y=2}\Leftrightarrow\heva{&x=-\dfrac{1}{3}\\&y=\dfrac{2}{3}.}$\\
+	Vậy tọa độ điểm $E\left(-\dfrac{1}{3};\dfrac{2}{3}\right)$.
+	\item Viết phương trình tổng quát của đường thẳng chứa trung tuyến $AM$ của tam giác $ABC$.\\
+	Trung điểm của $BC$ là $M(-1;2)$.\\
+	Ta có $\overrightarrow{AM}=(-7;-1)$, suy ra $AM$ nhận véc-tơ $\overrightarrow{n}=(1;-7)$ làm véc-tơ pháp tuyến.\\
+	Khi đó, phương trình tổng quát của $AM$ là $$1(x-6)-7(y-3)=0\Leftrightarrow x-7y+15=0.$$
+	\item Xác định tọa độ điểm $D$ trên trục hoành sao cho ba điểm $A$, $B$, $D$ thẳng hàng.\\
+	Điểm $D(d;0)$ thuộc trục hoành.\\
+	Ta có $\overrightarrow{AB}=(-9;3)$ và $\overrightarrow{AD}=(d-6;-3)$.\\
+	$A$, $B$, $D$ thẳng hàng khi và chỉ khỉ $\overrightarrow{AB}$ cùng phương $\overrightarrow{AD}$.\\
+	Do đó, 
+	\allowdisplaybreaks
+	\begin{eqnarray*}
+		\dfrac{d-6}{-9}=\dfrac{-3}{3}&\Leftrightarrow& d-6=9\\
+		&\Leftrightarrow& d=15.
+	\end{eqnarray*}
+	Vậy tọa độ điểm $D(15;0)$.
+\end{enumerate}
+	}
+\end{bt}
+

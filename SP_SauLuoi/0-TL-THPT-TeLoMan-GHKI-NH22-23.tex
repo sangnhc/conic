@@ -1,0 +1,126 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2022-2023}{THPT Ten Lơ Man}
+
+\begin{bt}%[0T1B3-1-1]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+ Cho $A=\left\{x \in \mathbb{N}\,|\left(x^2-1\right)(2-x)=0\right\}, B=\{x \in \mathbb{Z}|-2 \leq x<3\}$. Tìm $ A \cap B$.
+  \loigiai{
+ 	Xét phương trình $(x^2-1)(2-x)=0$
+ $	\Leftrightarrow$
+ $\hoac{& x^2 -1=0 \\& 2-x=0 } \Leftrightarrow \hoac{&x=1\\&x=-1\\&x=2}$ $\Rightarrow A=\{1;2\}$.\\
+ Và $B=\{x \in \mathbb{Z}|-2 \leq x<3\}$ $\Rightarrow B=\{-2;-1;0;1;2\}$.\\
+ Vậy $ A \cap B = \{1;2\}$.
+  }
+\end{bt}
+
+\begin{bt}%[0T1B2-2]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+	Cho tập hợp $A=\left\{x \in \mathbb{N}^* | 6\right.$ chia hết cho $\left.x\right\}$. Tìm hai tập con của $A$ có chứa hai phần tử.
+	 \loigiai{
+	Tập hợp $A=\left\{x \in \mathbb{N}^* | 6\right.$ chia hết cho $\left.x\right\}$ $\Rightarrow A=\{1;2;3;6\}$.\\
+	Hai tập con của $A$ có chứa 2 phần tử là $\{1;2\}$; $\{1;3\}$.
+		}
+\end{bt}
+
+\begin{bt}%[0T1B3-1]%[0T1B3-2]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+Cho $A=[-3 ; 5], B=(1 ;+\infty)$. Tìm $A \cup B ; B  \setminus A$.
+ \loigiai{
+ Ta có	$A \cup B = [-3; + \infty)$.\\
+$B\setminus A=(5;+\infty)$.	
+}
+\end{bt}
+
+\begin{bt}%[0T1K3-3]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+ Lớp $10A$ có $22$ bạn thích môn Toán, $25$ bạn thích môn Văn và $15$ bạn thích cả hai môn Toán và Văn. Hỏi lớp $10A$ có bao nhiêu học sinh thích ít nhất một trong hai môn Văn và Toán.
+  \loigiai{
+\immini{ 	Gọi $A$ là tập hợp các bạn thích môn Toán, $B$ là tập hợp các bạn thích môn Văn.\\
+ 	Khi đó, $A \cup B$ là tập hợp các bạn thích ít nhất một trong 2 môn Toán và Văn, $A \cap B$ là tập hợp các bạn thích cả hai môn Toán và Văn.\\
+ 	Ta có $n(A)=22$, $n(B)=25$, $n(A \cap B)=15$.\\
+Vậy số học sinh thích ít nhất một trong 2 môn Toán và Văn là $n(A \cup B)=n(A)+n(B)-n(A \cap B)=22+25-15=32$ (học sinh). }{ \begin{tikzpicture}[scale=0.54]
+	\def\firstven{(0,0) ellipse (3cm and 2cm)}
+	\def\secondven{(2.5,1) ellipse (2.8cm and 2cm)}
+	\begin{scope}
+		\clip \firstven;
+		\fill[pattern=north east lines,opacity=0.95] \secondven;
+	\end{scope}
+	\draw \firstven \secondven;
+	\node at (-2.2,2) {$A$};
+	\node at (5.6,2.2){$B$};
+	\node at (1.3,0.5){$A \cap B$};
+	\node at (3.5,-1.7){$A \cup B$};
+\end{tikzpicture}}
+ }
+\end{bt}
+
+\begin{bt}%[0T4B3-1]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+ Cho tam giác $ABC$ có $a=13 ; b=14 ; c=15$. Tính diện tích tam giác $ABC$.
+ \loigiai{
+ 	Ta có $p=\dfrac{13+14+15}{2}=21$.\\
+ 	Áp dụng công thức Hê-rông ta có diện tích tam giác $ABC$ là $$S_{\triangle ABC} = \sqrt{p(p-a)(p-b)(p-c) }= \sqrt{21\cdot (21-13)\cdot(421-14)\cdot(21-15)} = 84.$$
+}
+\end{bt}
+\newpage
+\begin{bt}%[0T4B3-1]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+ Người ta muốn nối một sợi dây trực tiếp từ $A$ đến $C$ nhưng không thể vì phải qua một hố sâu nên người ta làm như sau: Nối sợi dây từ $A$ đến $B$ rồi từ $B$ đến $C$ biết khoảng cách $AB=120$ m, $BC=50 $ m và đo được góc $\widehat{ACB}=37^{\circ}$. Hỏi nếu nối dây từ $A$ đến $C$ thì tiết kiệm bao nhiêu dây so với đi đường vòng (đi từ $A$ đến $B$ rồi từ $B$ đến $C$),
+(làm tròn kết quả đến chữ số thâp phân thứ nhất).
+\loigiai{
+	\begin{center}
+	\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line 
+		cap=round, >=stealth]
+		\path 
+		(1,3) coordinate (B)
+		(0,0) coordinate (C)
+		(6,0) coordinate (A)
+		;
+		
+		\draw (A)--(B)--(C)--cycle;
+		\draw[line width=25pt,color=blue] ($(C)!0.3!(A)$)--($(A)!0.3!(C)$);
+		\foreach \p/\r in {B/90,C/-120,A/-60}
+		\fill (\p) circle (1.5pt) node[shift={(\r:3mm)}]{$\p$};
+	\end{tikzpicture}
+\end{center}
+Theo định lý cô-sin ta có 
+$$\begin{aligned}
+&	\cos C = \dfrac{BC^2 +AC^2-AB^2}{2BC\cdot AC}\\
+	\Leftrightarrow &	\cos 37^\circ = \dfrac{50^2 +AC^2-120^2}{2\cdot50\cdot AC}\\
+	\Leftrightarrow & AC \approx 156{,1} \,\text{m}.
+\end{aligned}$$
+Vậy khoảng cách $AC$ là $156{,}1$ m.
+}
+\end{bt}
+
+\begin{bt}%[0T2K1-2]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+ Phần không gạch chéo (không kể bờ $d$) trong hình vẽ sau biễu diễn miền nghiệm một bất phương trình. Hãy tìm bất phương trình đó.
+\loigiai{
+	\begin{center}
+	\begin{tikzpicture}[>=stealth,line join=round, line cap=round, scale=0.7]
+		\draw[->] (-1.5,0)--(6.5,0) node[above left]{$x$};
+		\draw[->] (0,-1.5)--(0,3.5) node[below right]{$y$};
+		\fill[pattern=north east 
+		lines]plot[domain=-1.5:6.5](\x,{(2*\x)/5})--plot[domain=6.5:-1.5](\x,{-1.5})--cycle;
+		\draw[samples=200,smooth,red,line width=1] plot[domain=-1.5:6.5] 
+		(\x,{(2*\x)/5}) node[above]{$d$};
+		\foreach \x in {-1,1,2,3,4,5,6} \draw[fill] (\x,0) circle (1.5pt) 
+		node[below]{$\x$};
+		\foreach \y in {-1,1,2,3} \draw[fill] (0,\y) circle (1.5pt) 
+		node[left]{$\y$};
+		\draw[dashed] (5,0)--(5,2)--(0,2);
+		\fill (0,0) circle (1.5pt) node[above left]{$O$};
+		\fill (5,2) circle (1.5pt) node[above right]{$M$};
+	\end{tikzpicture}
+\end{center}
+Đường thẳng $d$ có phương trình $y=ax+b$ đi qua 2 điểm $O(0;0); M(5;2)$ nên ta có hệ phương trình 
+$\begin{aligned}
+\heva{&b=0\\&5a+b=2} \Leftrightarrow  \heva{&b=0\\&a=\dfrac{5}{2} . } 
+\end{aligned}$\\
+$\Rightarrow y=\dfrac{5}{2} x \Rightarrow 5x -2y=0$.\\
+Vậy bất phương trình là $5x -2y  \leq 0$.
+}
+\end{bt}
+\begin{bt}%[0T1K2-2]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Ten-Lo-Man]
+ Cho ba tập hợp $A=\{2 ; 5\}, B=\{5 ; x+1\}, C=\{2 ; y-3\}$. Cho $A=B=C$, hãy tìm tổng các bình phương của $x$ và $y$.
+  \loigiai{
+ $$\begin{aligned}
+ 	A=B=C  \Leftrightarrow  \heva{&x+1=2\\&y-3=5} \Leftrightarrow \heva{&x=1\\&y=8} \Rightarrow x^2 + y^2 = 65.
+ \end{aligned} $$ 
+ 	
+ }
+\end{bt}

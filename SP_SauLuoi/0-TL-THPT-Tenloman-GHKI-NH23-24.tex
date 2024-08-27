@@ -1,0 +1,91 @@
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{TRƯỜNG THPT Ten Lơ Man}
+\setcounter{bt}{0}
+
+
+
+\begin{bt}%[0D1H1-2]
+	Cho mệnh đề $P$ :"2023 là số lẻ". Hãy xét tính đúng sai của mệnh đề $\mathrm{P}$ và viết mệnh đề phủ định của $P$.
+	\loigiai{
+		$P$ đúng\\
+		$\bar{P}: " 2023$ là số chẵn"
+	}
+\end{bt}	
+
+\begin{bt}%[0D1H3-3]
+	Cho hai tập hợp $A, B$. Hãy tìm các tập hợp $A \backslash B ; A \cup B$ biết:
+	$$
+	A=[-2 ; 5], B=[3,10).
+	$$
+	\loigiai{
+		$A=[-2 ; 5], B=[3,10)$ \\
+		$A \backslash B=[-2 ; 3)$ \\
+		$A \cup B=[-2 ; 10)$ 
+	}
+\end{bt}	
+\begin{bt}	%[0H4H2-2]
+	Cho $\triangle A B C$ có $a=7, b=10, c=13$. Tính diện tích $\triangle A B C$.
+	\loigiai{
+		$p=15$ \\
+		$S=\sqrt{15(15-7)(15-10)(15-13)}=20 \sqrt{3}$
+		
+	}
+\end{bt}	
+\begin{bt}%[0D2H1-1]
+	Cho bất phương trình bậc nhất hai ẩn $2x-3y+1<0$ $(1)$. Hãy cho biết cặp số $(0;0)$ có phải là một nghiệm của bất phương trình $(1)$ hay không? Giải thích? Chỉ ra ba cặp số $(x;y)$ là nghiệm của bất phương trình $(1)$.
+	\loigiai{
+		$(0;0)$ không là nghiệm vì $2.0-3.0+1<0$ (vô lý).\\
+		Ba cặp nghiệm (0;1), (0;2), (0;3).}
+\end{bt}
+\begin{bt}%[0H4V3-2]
+	Một ô tô đi từ địa điểm H đến địa điểm G, nhưng giữa H và G có một ngọn núi cao nên ô tô không thể đi thẳng mà phải đi đường vòng từ H lên K (ôtô leo dốc lên núi) và từ K đến G (ô tô xuống núi). Các đoạn đường tạo thành tam giác HKG với $HK=15,3km$, $KG=20km$ và $\widehat{HKG}=118^\circ$. Giả sử cứ chạy $1 km$ ô tô tiêu thụ hết $0,3$lít xăng. Giá thành xăng là 23500 đồng một lít xăng. Hỏi ô tô đi đường thẳng từ H đến G thì tốn ít hơn đi đường vòng bao nhiêu tiền xăng? (đối với số gần đúng yêu cầu làm tròn đến chữ số thập phân thứ nhất).
+	\loigiai{
+\immini{
+		$\begin{aligned}
+			& HG=\sqrt{15,3^2+20^2-2.15,3.20.\cos{118^\circ}} \\
+			& \approx 30,4 km \\
+		\end{aligned}$\\
+		Tiền xăng mà ôtô trả khi đi đường thẳng $30,4.0,3.23500=214320$(đồng)\\
+		Tiền xăng mà ôtô trả khi đi đường vòng
+		$(15,3+20).0,3.23500=248865$ (đồng)\\
+		Số tiền ít hơn là
+		(248865-214320)=34545 (đồng).}{\begin{tikzpicture}[scale=0.8, font=\footnotesize,line join=round, line cap=round, >=stealth]
+			\coordinate (H) at (0,0);
+			\coordinate (K) at (2,4);
+	        \coordinate (G) at (5,0);
+	        \coordinate (A) at (1,0);
+	        \coordinate (B') at (1.5,2);
+	        \coordinate (B) at (2.5,2);
+	        \coordinate (C) at (4,0);
+			\draw(H)--(K)--(G)--cycle;
+			\draw[fill=black] (A) -- (B) -- (C) -- cycle;
+			\draw[fill=black] (A) -- (B') -- (C) -- cycle;
+			\foreach \i/\g in {H/180,K/90,G/0}{\draw[fill=black](\i) circle (1.5pt) ($(\i)+(\g:3mm)$) node[scale=1]{$\i$};}
+	\end{tikzpicture}}}
+\end{bt}
+
+
+\begin{bt}%[Dự án đề kiểm tra Toán 10 GHK1 NH 23-24]%[0D1V3-5]
+	Trong một lớp học có $100$ học sinh, có $35$ học sinh chơi bóng đá và $45$ học sinh chơi bóng chuyền và $10$ học sinh chơi cả hai môn thể thao. Hỏi có bao nhiêu học sinh không chơi môn thể thao nào? (Biết rằng chỉ có hai môn thể thao bóng đá và bóng chuyền)
+	\loigiai{
+Gọi $B$, $C$ lần lượt là tập hợp các học sinh chơi bóng đá và chơi bóng chuyền.\\
+Ta có $n(B)=35$, $n(C)=45$, $n(B\cap C)=10$.\\
+Số học sinh không chơi môn thể thao nào là 
+\[100-[n(A)+n(B)-n(A\cap B)]=100-(35+45-10)=30.\]
+	}
+\end{bt}
+
+\begin{bt}%[Dự án đề kiểm tra Toán 10 GHK1 NH 23-24]%[0H4V2-4]
+	Cho tam giác $ABC$ có $S=2R^2 \cdot \sin A \cdot \sin B$. Đặt $AB=c$, $AC=b$, $BC=a$. Chứng minh rằng tam giác $ABC$ là một tam giác vuông tại $C$.
+	\loigiai{
+		Ta có diện tích tam giác $ ABC $ là $ S=\dfrac{abc}{4R} $.\\
+Theo định lý $ \sin $ ta có
+\[\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}=2R\]
+suy ra $ a=2R\sin A $, $ b=2R\sin B $, $ c=2R\sin C $.\\
+Do đó $ S=\dfrac{(2R\sin A)(2R\sin B)(2R\sin C)}{4R}=2R^2\sin A\sin B\sin C $.\\
+Mặt khác, theo giả thiết $ S=2R^2\sin A\sin B $.\\
+Suy ra $ \sin C=1 \Rightarrow C=90^\circ$.\\
+Vậy tam giác $ ABC $ vuông tại $ C $.
+	}
+\end{bt}
+
+

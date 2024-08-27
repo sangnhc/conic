@@ -1,0 +1,137 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2022-2023}{THPT Lương Văn Can}
+
+%==Bài 1==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Mui Doan]%[0T1K3-2]
+	Cho các tập hợp $E=\left\{x\in \mathbb{Z}|-1\le x<8\right\}$, $A=\left\{0;1;2;3;4\right\}$, $B=\left\{3;4;5\right\}$
+	\begin{enumerate}
+		\item Xác định tập hợp $E$ bằng phương pháp liệt kê các phần tử.
+		\item Xác định $A\cap B$, $A\cap B$, $A\setminus B$, $C_{E}B$.
+		\item Xác định $\left(A\setminus B\right)\cup (B\setminus A)$, $C_E\left(A\cup B\right)$.
+	\end{enumerate}
+\loigiai{
+	\begin{enumerate}
+		\item Xét tập hợp $E$ ta có $x\in \mathbb{Z}$ và $-1\le x<8$.\\
+		Suy ra $x\in \left\{-1;0;1;2;3;4;5;6;7\right\}$.\\
+		Vậy $E=\left\{-1;0;1;2;3;4;5;6;7\right\}$.
+		\item Ta có $A\cap B=\left\{3;4\right\}$, $A\cup B=\left\{0;1;2;3;4;5\right\}$, $A\setminus B=\left\{0;1;2\right\}$, $C_{E}B=\left\{-1;0;1;2;6;7\right\}$.
+		\item Ta có $A\setminus B=\left\{0;1;2\right\}$, $B\setminus A=\left\{5\right\}$.\\
+		Từ đó suy ra $\left(A\setminus B\right)\cup (B\setminus A)=\left\{0;1;2;5\right\}$.\\
+		Ta có $A\cup B=\left\{0;1;2;3;4;5\right\}$.\\
+		Từ đó suy ra $C_E\left(A\cup B\right)=\left\{-1;6;7\right\}$.
+	\end{enumerate}
+	
+}
+\end{bt}
+%Bài 2==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Mui Doan]%[0T1K3-5]
+	Cho $A=(-3;5]$, $B=(-\infty;2]$. Tìm $A\cap B$, $A\cup B$, $A\setminus B$, $C_{\mathbb{R}}A$.
+\loigiai{
+	Ta có $A\cap B=(-3;2]$, $A\cup B=(-\infty;5]$, $A\setminus B=(2;5]$, $C_{\mathbb{R}}A=(-\infty;3]\cup (5;+\infty)$
+}
+\end{bt}
+%==Bài 3==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Mui Doan]%[0T2B2-3]
+	Biểu diễn miền nghiệm của bất phương trình $x+y+2\ge 0$.
+\loigiai{
+	Ta vẽ đường thẳng $x+y+2=0 \Leftrightarrow y=-x-2$.\\
+	Bảng giá trị 
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			$x$ & $0$ & $-2$ \\
+			\hline
+			$y$ & $-2$ & $0$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	Ta có đồ thị như sau 
+	\begin{center}
+		\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round,>=stealth]%<DTools>
+		%Định nghĩa số liệu.
+		\def\xmin{-4};\def\ymin{-4};\def\xmax{4};\def\ymax{4};
+		%Định nghĩa điểm.
+		\coordinate (O) at (0,0);
+		%Trục Oxy.
+		\draw[->] (\xmin,0)--(\xmax,0) node[below]{$x$};
+		\draw[->] (0,\ymin)--(0,\ymax) node[left]{$y$};
+		\fill (O) node[below left]{$O$} circle(1pt);
+		%Giới hạn đồ thị.
+		\clip ({\xmin-0.1},{\ymin-0.1}) rectangle ({\xmax+0.1},{\ymax+0.1});
+		\foreach \x in {-3,-2,-1,1,2,3}{
+			\fill (\x,0) node[below]{$\x$} circle(1pt);
+		}
+		\foreach \y in {-3,-2,-1,1,2,3}{
+			\fill (0,\y) node[left]{$\y$} circle(1pt);
+		}
+		%Vẽ đồ thị.
+		\draw[thick,samples=100] plot[domain=-4:2](\x,{-\x-2});
+		\fill[pattern=north east lines, smooth,opacity=0.5,pattern color=blue] (-4,2)--(-4,-4)--(2,-4);	
+		\end{tikzpicture}
+	\end{center}
+	Chọn điểm $O(0;0)$ thay vào bất phương trình $x+y+2\ge 0$ ta được 
+	$$0+0+2\ge 0 \Leftrightarrow 2\ge 0\; (\text{đúng}).$$
+	Suy ra điểm $O(0;0)$ thuộc miền nghiệm của bất phương trình $x+y+2\ge 0$.\\
+	Vậy miền nghiệm của bất phương trình $x+y+2\ge 0$ là những phần không bị gạch.
+}
+\end{bt}
+%==Bài 4==
+\begin{bt}%[Dự án đề kiểm tra GHKI NH22-23- Mui Doan]%[0T4K3-1]
+	Cho tam giác $ABC$ có $BC=8$, $AC=6$, $\widehat{C}=60^\circ$.
+	\begin{enumerate}
+		\item Tính độ dài cạnh $AB$.
+		\item Tính diện tích tam giác $ABC$.
+		\item Tính các góc chưa biết của tam giác $ABC$.
+		\item Tính độ dài $CK$ là đường phân giác trong của tam giác $ABC$.
+	\end{enumerate}
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[scale=0.6, font=\footnotesize,>=stealth]
+			\def\canhAB{7.21};\def\canhBC{8};\def\gocABC{46.1};
+			%Định nghĩa điểm.
+			\coordinate (B) at (0,0);
+			\coordinate (A) at ($(B)+(\gocABC:\canhAB)$);
+			\coordinate (C) at ($(B)+(0:\canhBC)$);
+			%Vẽ tam giác ABC.
+			\draw (A)--(B)--(C)--cycle;
+			%Vẽ Phân giác trong CK
+			\path[name path=cc] (C)--($(C)!6cm!($($(C)!5pt!(A)$)!.5!($(C)!5pt!(B)$)$)$);
+			\draw[name path=ab] (A)--(B);
+			\path[name intersections={of= cc and ab,by=K}];
+			\draw (C)--(K);
+			%Kí hiệu góc
+			\draw[thin] pic[draw,angle radius=5mm] {angle = K--C--B} pic[draw,angle radius=6mm] {angle = A--C--K};
+			%Hiển thị các điểm.
+			\foreach \x/\y in {A/90, B/180, C/0, K/145}{\fill (\x) circle(1pt) ($(\x)+(\y:0.3cm)$) node{$\x$};}
+			\end{tikzpicture}
+		\end{center}
+		\begin{enumerate}
+			\item %cau a
+			Áp dụng định lí Côsin, ta có\\
+			$\begin{aligned}
+			&AB^2=AC^2  + BC^2- 2AC\cdot BC \cdot \cos \widehat{C}\\
+			\Rightarrow &AB = 6^2 + 8^2- 2\cdot 6\cdot 8\cdot \cos 60^\circ=52\\
+			\Rightarrow &AB=2\sqrt{13}.
+			\end{aligned}$
+			\item %cau b
+			Diện tích tam giác $ABC$ là\\
+			$S_{ABC}=\dfrac{1}{2}\cdot BC\cdot AC \cdot \sin \widehat{C}=\dfrac{1}{2}\cdot 8\cdot 6 \cdot \sin 60^\circ = 12\sqrt{3}$ (đvdt).
+			\item %cau c
+			Theo hệ quả định lí Côsin, ta có\\
+			$$
+			\cos \widehat{A} =\dfrac{AB^2 + AC^2 - BC^2}{2AC\cdot AB}
+			=\dfrac{(2\sqrt{13})^2+6^2-8^2}{2\cdot 2\sqrt{13}\cdot 6}=\dfrac{\sqrt{13}}{13}\\
+			\Rightarrow \widehat{A} \approx 73^\circ 54'.
+			$$
+			Xét tam giác $ABC$, ta có\\
+			$$\widehat{B}=180^\circ - \widehat{A} - \widehat{C} \approx 180^\circ - 73^\circ 54' - 60^\circ = 46^\circ 6'.$$
+			\item %cau d
+			Vì $CK$ là đường phân giác trong của tam giác $ABC$ nên $\widehat{ACK}=\widehat{BCK}=\dfrac{\widehat{C}}{2}=\dfrac{60^\circ}{2}=30^\circ$.\\
+			Xét tam giác $ACK$ có\\
+			$\widehat{AKC}=180^\circ - \widehat{A}-\widehat{ACK} \approx 180^\circ - 73^\circ 54'-30^\circ=76^\circ 6'$.\\
+			Áp dụng định lí Sin trong tam giác $ACK$, ta được\\
+			$\dfrac{CK}{\sin \widehat{A}}=\dfrac{AC}{\sin \widehat{AKC}} \Rightarrow CK \approx \sin 73^\circ 54'\cdot \dfrac{6}{\sin 76^\circ 6'} \approx 5,939$.
+		\end{enumerate}
+	}
+\end{bt}	  
+

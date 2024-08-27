@@ -1,0 +1,269 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{THPT Thực hành sài gòn}
+
+\begin{bt}%[0T7B2-1]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+\immini
+{
+	\begin{enumerate}
+		\item 	Dựa vào đồ thị của hàm số bậc hai $y=f(x)$ như hình bên. Hãy tìm tập nghiệm của bất phương trình $f(x) \ge 0$.
+		\item Cho bất phương trình $2x^2+2(m-3) x+3(m^2-3) \ge 0$ ($m$ là tham số thực). Tìm tham số $m$ để tập nghiệm của bất phương trình là $\mathbb{R}$.
+	\end{enumerate}
+	
+}
+{
+\begin{tikzpicture}[line join=round, line cap=round,>=stealth,font=\footnotesize]
+	\tikzset{every node/.style={scale=0.9}}
+	\draw[->] (-3.1,0)--(3.1,0) node[below left] {$x$};
+	\draw[->] (0,-1)--(0,4.1) node[below left] {$y$};
+	\draw (0,0) node [below left] {$O$};
+	\foreach \x in {-2}
+	\draw[thin] (\x,1pt)--(\x,-1pt) node [above left=-3pt] {$\x$};
+	\foreach \y in {3}
+	\draw[thin] (1pt,\y)--(-1pt,\y) node [above left] {$\y$};
+	\draw (1.5,0) node[below left=-2pt]{$\tfrac{3}{2}$};
+	\begin{scope}
+		\clip (-3,-2) rectangle (3,4);
+		\draw[samples=200,domain=-2.25:1.75,smooth,variable=\x] plot (\x,{-1*(\x)^2-0.5*(\x)+3});
+	\end{scope}
+\end{tikzpicture}
+}
+\loigiai{
+\begin{enumerate}
+	\item Dựa vào đồ thị hàm số ta có $f(x)\ge 0\Leftrightarrow -2\le x\le \dfrac{3}{2}$.\\
+	Vậy tập nghiệm của bất phương trình là $S=\left[-2;\dfrac{3}{2}\right]$.
+	\item Để tập nghiệm của bất phương trình $2x^2+2(m-3) x+3(m^2-3) \ge 0$ là $\mathbb{R}$ thì
+	$$\heva{& a>0 \\ & \Delta'\le 0}\Leftrightarrow \heva{& 2>0 \\ & (m-3)^2-6(m^2-3)\le 0}\Leftrightarrow -5m^2-6m+27\le 0\Leftrightarrow \hoac{& m\le -3 \\ & m\ge \dfrac{9}{5}.}$$
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T8B2-2]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	\begin{enumerate}
+		\item Có ba cái hộp, hộp thứ nhất chứa $2$ quả cầu dán nhãn $A$, $B$; hộp thứ hai chứa $3$ quả cầu dán nhãn $a$, $b$, $c$; hộp thứ ba có $2$ quả cầu dán nhãn $1$, $2$. Lấy ngẫu nhiên một quả cầu trong mỗi hộp trên. Hãy vẽ sơ đồ hình cây để thể hiện tất cả các kết quả có thể xảy ra.
+		\item Từ các chữ số $1; 2; 3; 4; 5; 6$ có thể lập được bao nhiêu số tự nhiên có bốn chữ số khác nhau và lớn hơn $4500$?
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Sơ đồ hình cây
+		\begin{center}
+		\begin{tikzpicture}[->,>=stealth]
+			\tikzstyle{hollow node}=[circle,draw,inner sep=1.5]
+			\tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black]
+			\tikzset{
+				red node/.style={circle,draw=blue,inner sep=2.5},
+				blue node/.style={circle,draw=blue,inner sep=2.5}
+			}
+			\tikzstyle{level 1}=[sibling distance=80mm]
+			\tikzstyle{level 2}=[sibling distance=25mm]
+			\tikzstyle{level 3}=[sibling distance=10mm]
+			\node[hollow node]{Gốc}
+			child{node[blue node]{A}
+				child{node[red node]{a}child{node[blue node]{1}}child{node[blue node]{2}}}
+				child{node[red node]{b}child{node[blue node]{1}}child{node[blue node]{2}}}
+				child{node[red node]{c}child{node[blue node]{1}}child{node[blue node]{2}}}
+			}
+			child{node[blue node]{B}
+				child{node[red node]{a}child{node[blue node]{1}}child{node[blue node]{2}}}
+				child{node[red node]{b}child{node[blue node]{1}}child{node[blue node]{2}}}
+				child{node[red node]{c}child{node[blue node]{1}}child{node[blue node]{2}}}
+			}
+			;
+			\path (-8.5,-1.5) node{Hộp I}
+			(-8.5,-2.8) node{Hộp II}
+			(-8.5,-4.5) node{Hộp III};
+		\end{tikzpicture}
+	\end{center}
+\item Giả sử số cần tìm có dạng $\overline{abcd}$ ($a\ne 0$).\\
+Vì số lớn hơn $4500$ nên có các trường hợp sau:\\
+{\bf TH1:} $a>4$, khi đó số cách chọn chữ số $a$ là $2$ cách.\\
+Số cách chọn $\overline{bcd}$: $\mathrm{A}_5^3$ cách.\\
+Vậy trường hợp này có $2\cdot \mathrm{A}_5^3=120$ (cách).\\
+{\bf TH2:} $a=4$, khi đó chữ số $b$ có 2 cách chọn ($5$ hoặc $6$).\\
+Số cách chọn $\overline{cd}$ là $\mathrm{A}_4^2$ cách.\\
+Vậy trường hợp này có $2\cdot \mathrm{A}_4^2=24$ (cách).\\
+Theo quy tắc cộng, có $120+24=144$ (số).
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T8B2-3]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	\immini
+	{
+		Cho $6$ điểm cùng nằm trên một đường tròn như hình bên.
+		\begin{enumerate}
+			\item Có bao nhiêu véc-tơ có điểm đầu và điểm cuối thuộc các điểm đã cho?
+			\item Có bao nhiêu tam giác có đỉnh thuộc các điểm đã cho?
+		\end{enumerate}
+	}
+	{
+	\begin{tikzpicture}[line join=round, line cap=round,>=stealth,font=\footnotesize,scale=0.5]
+\def\r{4}
+\coordinate (O) at (0,0);
+\draw (O) circle (\r);
+\foreach \i/\j/\k in {0/E/0,1/F/90,2/A/90,3/B/180,4/C/-90,5/D/-90}
+\draw ($(O)+(60*\i:4)$) circle (1pt) +(\k:0.5cm) node {$\j$};
+\end{tikzpicture}
+	}
+\loigiai{
+\begin{enumerate}
+	\item Số véc-tơ có điểm đầu và điểm cuối thuộc các điểm đã cho là $\mathrm{A}_6^2=30$.
+	\item Số tam giác có các đỉnh thuộc các điểm đã cho là $\mathrm{C}_6^3=20$.
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T8B3-1]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	Khai triển và rút gọn biểu thức:
+	$$A=(x+2y)^5+(x-2y)^5
+	$$
+	\loigiai{
+Ta có 
+\begin{eqnarray*}
+	\left(x+2y\right)^5&=&\mathrm{C}_5^0x^5+\mathrm{C}_5^1x^4\left(2y\right)^1+\mathrm{C}_5^2x^3\left(2y\right)^2+\mathrm{C}_5^3x^2\left(2y\right)^3+\mathrm{C}_5^4x^1{\left(2y\right)^4}+\mathrm{C}_5^5\left(2y\right)^5\\
+	&=&x^5+10x^4y+40x^3y^2+80x^2y^3+80x{y^4}+32y^5.
+\end{eqnarray*}
+và
+	\begin{eqnarray*}
+		\left(x-2y\right)^5&=&\mathrm{C}_5^0x^5+\mathrm{C}_5^1x^4\left(-2y\right)^1+\mathrm{C}_5^2x^3\left(-2y\right)^2+\mathrm{C}_5^3x^2\left(-2y\right)^3+\mathrm{C}_5^4x^1{\left(-2y\right)^4}+\mathrm{C}_5^5\left(-2y\right)^5\\
+		&=&x^5-10x^4y+40x^3y^2-80x^2y^3+80xy^4-32y^5.
+	\end{eqnarray*}
+Vậy $A=2x^5+80x^3y^2+160xy^4$.
+}
+\end{bt}
+\begin{bt}%[0T0B2-2]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+ Hộp thứ nhất chứa $4$ viên bi xanh, $3$ viên bi đỏ. Hộp thứ hai chứa $5$ viên bi xanh, $2$ viên bi đỏ. Các viên bi có kích thước và khối lượng như nhau. Lấy ngẫu nhiên từ mỗi hộp 2 viên bi. Tính xác suất của mỗi biến cố sau:
+ \begin{enumerate}
+ 	\item $4$ viên bi lấy ra có cùng màu.
+ 	\item Trong $4$ viên bi lấy ra có đủ cả bi xanh và bi đỏ.
+ \end{enumerate}
+\loigiai{
+Số phần tử của không gian mẫu $n(\Omega)=\mathrm{C}_7^2\cdot \mathrm{C}_7^2=441$.
+\begin{enumerate}
+	\item Gọi $A$ là biến cố \lq\lq $4$ viên bi lấy ra có cùng màu\rq\rq.\\
+	{\bf Trường hợp 1:} $4$ viên bi lấy ra đều màu xanh, khi đó số cách là $\mathrm{C}_4^2\cdot \mathrm{C}_5^2=60$.\\
+	{\bf Trường hợp 2:} $4$ viên bi lấy ra đều màu đỏ, khi đó số cách là $\mathrm{C}_3^2\cdot \mathrm{C}_2^2=3$.\\
+	Vậy $n(A)=60+3=63$.\\
+	Suy ra $\mathrm{P}(A)=\dfrac{63}{441}=\dfrac{1}{7}$.
+	\item Ta có $\overline{A}$ là biến cố \lq\lq Trong $4$ viên bi lấy ra có đủ cả bi xanh và bi đỏ\rq\rq.\\
+	Vậy $\mathrm{P}(\overline{A})=1-\mathrm{P}(A)=\dfrac{6}{7}$.
+\end{enumerate}
+}
+\end{bt}
+
+\begin{bt}%[0T9B2-2]%[0T9B2-6]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	Trong mặt phẳng $Oxy$, cho $A(1;6)$, $B(3;2)$ và đường thẳng $\Delta\colon \heva{&x=3-t\\&y=t}\,(t \in \mathbb{R})$.
+	\begin{enumerate}
+		\item Viết phương trình tổng quát của đường thẳng $d$ đi qua hai điểm $A$ và $B$.
+		\item Tìm tọa độ điểm $C$ trên đường thẳng $\Delta$ để tam giác $ABC$ vuông tại $C$.
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item $d$ có véc-tơ chỉ phương là $\vec{AB}=\left(3-1;2-6\right)=\left(2;-4\right)$. Do đó $d$ có một véc-tơ pháp tuyến là $\vec{n}=\left(4;2\right)$. Khi đó $d$ có phương trình tổng quát dạng
+		\allowdisplaybreaks\begin{eqnarray*}
+			& &4\left(x-1\right) +2\left(y-6\right)=0\\
+			&\Leftrightarrow &4x-4+2y-12=0  \\
+			&\Leftrightarrow & 4x+2y-16=0 \Leftrightarrow2x+y-8=0.
+		\end{eqnarray*}
+		\item Gọi $C\left(3-t;t\right) \in \Delta$.
+		Khi đó $\heva{&\vec{AC}=\left(2-t;t-6\right)\\&\vec{BC}=\left(-t;t-2\right).}$\\
+		Để tam giác $ABC$ vuông tại $C$ thì
+		\allowdisplaybreaks\begin{eqnarray*}
+			& &\vec{AC}\cdot \vec{BC}=0\\
+			&\Leftrightarrow & \left(2-t\right)\left(-t\right)+(t-6)(t-2)=0 \\
+			&\Leftrightarrow & -2t+t^2+t^2-6t-2t+12=0\\
+			&\Leftrightarrow & 2t^2-10t+12=0 \Leftrightarrow \hoac{&t=3\\&t=2.}
+		\end{eqnarray*}
+	\begin{itemize}
+		\item Với $t=3 \Rightarrow C(0;3)$.
+		\item Với $t=2 \Rightarrow C(1;2)$.
+	\end{itemize}
+	\end{enumerate}
+	}
+\end{bt}
+\begin{bt}%[0T9K3-3]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	Trong mặt phẳng $Oxy$, cho đường tròn $(C)\colon x^2+y^2-6x-2y-15=0$. Viết phương trình tiếp tuyến của $(C)$ biết tiếp tuyến song song với đường thẳng $8x+6y+2023=0$.
+	\loigiai{
+	$(C)$ có phương trình $x^2+y^2-6x-2y-15=0$ nên $(C)$ có tâm $I(3;1)$ và bán kính là $R=\sqrt{3^2+1^2-(-15)}=5$.\\
+	Vì tiếp tuyến $\Delta$ của $(C)$ song song với đường thẳng $8x+6y+2023=0$ nên tiếp tuyến $\Delta$ có phương trình dạng $8x+6y+c=0$ $(c \neq 2023)$.\\
+	Theo điều kiện tiếp xúc ta có
+	\allowdisplaybreaks\begin{eqnarray*}
+		\mathrm{d}\left(I,\Delta\right)&= & \dfrac{\left|8\cdot 3+6\cdot 1+c\right|}{\sqrt{8^2+6^2}}=5\\
+		&\Leftrightarrow & \left|30+c\right|=50
+		\Leftrightarrow  \hoac{&c=20~\text{(thoả mãn)}\\&c=-80~\text{(thoả mãn).}}
+	\end{eqnarray*}
+Vậy tiếp tuyến cần tìm là $\hoac{&8x+6y+20=0\\&8x+6y-80=0} \Leftrightarrow \hoac{&4x+3y+10=0\\&4x+3y-40=0.}$
+	}
+\end{bt}
+\begin{bt}%[0T9B4-4]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	Trong mặt phẳng $Oxy$, cho hyperbol $(H)\colon 9x^2-16y^2=144$. Tìm tọa độ các đỉnh, các tiêu điểm; độ dài trục thực và trục ảo của $(H)$.
+\loigiai{
+	$$(H)\colon 9x^2-16y^2=144 \Leftrightarrow \dfrac{x^2}{16}-\dfrac{y^2}{9}=1.$$
+	Từ đó ta có $\heva{&a^2=16\\&b^2=9} \Rightarrow \heva{&a=4\\&b=3}$ và $c=\sqrt{a^2+b^2}=\sqrt{16+9}=5$.
+	\begin{itemize}
+		\item Các đỉnh của $(H)$ là $A_1=\left(-a;0\right)=\left(-4;0\right)$, $A_2=\left(a;0\right)=\left(4;0\right)$.
+		\item Các tiêu điểm của $(H)$ là $F_1=\left(-c;0\right)=\left(-5;0\right)$, $F_2=\left(c;0\right)=\left(5;0\right)$.
+		\item Độ dài trục thực và trục ảo của $(H)$ lần lượt là $A_1A_2=2a=8$, $B_1B_2=2b=6$.
+	\end{itemize}
+}
+\end{bt}
+\begin{bt}%[0T9B4-8]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	Trong mặt phẳng $Oxy$, viết phương trình chính tắc của parabol $(P)$, biết $(P)$ đi qua điểm $A(1;4)$.
+	\loigiai{
+	Gọi phương trình chính tắc của parabol $(P)$ là $y^2=2px$. Vì $(P)$ đi qua điểm $A(1;4)$ nên
+	$$4^2=2p\cdot 1 \Leftrightarrow p=8.$$
+	Vậy phương trình chính tắc của parabol $(P)$ là $y^2=16x$.
+	}
+\end{bt}
+\begin{bt}%[0T9T4-2]%[Dự án đề kiểm tra HKII NH22-23-BCTuan]%[THPT Thực Hành Sài Gòn]
+	Xét một điểm trên quỹ đạo elip của vật thể bay xung quanh Mặt Trăng, điểm gần Mặt Trăng nhất gọi là điểm cận nguyệt, điểm xa Mặt Trăng nhất gọi là điểm viễn nguyệt. Tàu du hành vũ trụ Apollo 11 chuyển động quanh Mặt Trăng theo quỹ đạo elip với độ cao của điểm cận nguyệt là $110$ km (khoảng cách từ điểm cận nguyệt đến bề mặt Mặt Trăng) và độ cao của điểm viễn nguyệt là $314$ km (khoảng cách từ điểm viễn nguyệt đến bề mặt Mặt Trăng) (hình 10.3). Trong mặt phẳng $Oxy$ (như hình 10.3), viết phương trình chính tắc của elip, biết bán kính của Mặt Trăng là $1737$ km và tâm của Mặt Trăng là một tiêu điểm của elip.
+	\begin{flushright}
+		(Nguồn: https://vi.wikipedia.org/wiki/M\%E1\%BA\%B7t Tr\%C4\%83ng)
+	\end{flushright}
+\begin{center}
+	\begin{tikzpicture}[scale=1,>=stealth, font=\footnotesize, line join=round, line cap=round]
+	\def\xmin{-6} \def\xmax{6}
+	\def\ymin{-3} \def\ymax{3}
+	\def\x{4} \def\y{2.5}
+	%\draw[color=gray!50,dashed] (\xmin,\ymin) grid (\xmax,\ymax);
+	\draw[->] (\xmin,0)--(\xmax,0) node [above]{$x$};
+	\draw[->] (0,\ymin)--(0,\ymax) node [left]{$y$};
+	\fill (0,0) circle (1pt) node[shift={(-45:3mm)}]{$O$};
+	\draw (\x,0) arc (0:360:\x cm and \y cm);
+	\coordinate (M) at (60:\x cm and \y cm);
+	\fill (M) circle (2pt) node[shift={(45:6mm)}]{Tàu Apollo 11};
+	\node at (M)[rotate=160]{\faSpaceShuttle};
+	\fill (\x,0) circle (2pt) node[below right]{Điểm viễn nguyệt};
+	\fill (-\x,0) circle (2pt) node[below left]{Điểm cận nguyệt};
+	\fill({-sqrt(\x*\x-\y*\y)},0) circle (2pt) node[above right]{Mặt trăng};
+	\shade[ball color=blue!60] ({-sqrt(\x*\x-\y*\y)},0) circle (.3cm);
+\end{tikzpicture}
+\end{center}
+	\loigiai{
+\begin{center}
+	\begin{tikzpicture}[scale=1,>=stealth, font=\footnotesize, line join=round, line cap=round]
+		\def\xmin{-6} \def\xmax{6}
+		\def\ymin{-3} \def\ymax{3}
+		\def\x{4} \def\y{2.5}
+		%\draw[color=gray!50,dashed] (\xmin,\ymin) grid (\xmax,\ymax);
+		\draw[->] (\xmin,0)--(\xmax,0) node [above]{$x$};
+		\draw[->] (0,\ymin)--(0,\ymax) node [left]{$y$};
+		\fill (0,0) circle (1pt) node[shift={(-45:3mm)}]{$O$};
+		\draw (\x,0) arc (0:360:\x cm and \y cm);
+		\coordinate (M) at (60:\x cm and \y cm);
+		\fill (M) circle (2pt) node[shift={(45:6mm)}]{Tàu Apollo 11};
+		\node at (M)[rotate=160]{\faSpaceShuttle};
+		\fill (\x,0) circle (2pt) node[below right]{Điểm viễn nguyệt};
+		\fill (\x,0) circle (2pt) node[above right]{$A_2$};
+		\fill (-\x,0) circle (2pt) node[below left]{Điểm cận nguyệt};
+		\fill (-\x,0) circle (2pt) node[above left]{$A_1$};
+		\fill({-sqrt(\x*\x-\y*\y)},0) circle (1pt) node[above right]{Mặt trăng};
+		\fill({-sqrt(\x*\x-\y*\y)},0) circle (1pt);
+		\draw[dashed,red,->]({-sqrt(\x*\x-\y*\y)},0)--($({-sqrt(\x*\x-\y*\y)},0)+(0,-0.5)$) node[below]{$F_1$};
+		\fill ($({-sqrt(\x*\x-\y*\y)},0)+(-0.3,0)$)circle (1pt) node[shift={(-135:3mm)}]{$C$};
+		\fill ($({-sqrt(\x*\x-\y*\y)},0)+(0.3,0)$)circle (1pt) node[shift={(-45:3mm)}]{$D$};
+		\draw ({-sqrt(\x*\x-\y*\y)},0) circle (.3cm);
+	\end{tikzpicture}
+\end{center}
+Từ giải thiết đề bài ta có $A_1C=110$ km, $CD=2\cdot 1737=3474$ km, $DA_2=314$ km.\\
+$2a=A_1A_2=A_1C+CD+DA_2=110+1737\cdot 2+314=3798 \Rightarrow a=\dfrac{3798}{2}=1949$.\\
+Có $c=OF_1=OA_1-A_1F_1=1949-(110+1737)=102$.\\
+Suy ra $b^2=a^2-c^2=1949^2-102^2=3788197$.
+Vậy phương trình chính tắc của elip có dạng $$\dfrac{x^2}{3798601}+\dfrac{y^2}{3788197}=1.$$
+}
+\end{bt}

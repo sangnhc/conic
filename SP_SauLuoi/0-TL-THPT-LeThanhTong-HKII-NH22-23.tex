@@ -1,0 +1,154 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{THPT Lê Thánh Tông}
+
+%%%% Câu 1
+\begin{bt}%[0T7B3-2]%[0T7B2-1]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+Giải phương trình và bất phương trình sau
+\begin{enumerate}
+\item[a)] $\sqrt{-x^2+3x+2}=x+1$.
+\item[b)] $4x(x^2-1)-x^2(4x-1)+3\le0$.
+\end{enumerate}
+\loigiai
+{
+\begin{enumerate}
+\item Ta có
+\[\begin{aligned}
+& \ \sqrt{-x^2+3x+2}=x+1\Leftrightarrow\heva{&-x^2+3x+2=(x+1)^2\\&x+1\ge0} \\
+\Leftrightarrow & \ \heva{&2x^2-x-1=0\\&x\ge-1}\Leftrightarrow\heva{&\hoac{&x=1\\&x=-\dfrac{1}{2}}\\&x\ge-1} \Leftrightarrow \hoac{&x=1\\&x=-\dfrac{1}{2}.}
+\end{aligned}\]
+Vậy tập nghiệm của phương trình đã cho là $S=\left\{-\dfrac{1}{2};1\right\}$.
+\item Ta có
+\[4x(x^2-1)-x^2(4x-1)+3\le0\Leftrightarrow x^2-4x+3\le0\Leftrightarrow 1\le x\le3.\]
+Vậy tập nghiệm của bất phương trình đã cho là $S=[1;3]$.
+\end{enumerate}
+}
+\end{bt}
+
+%%%% Câu 2
+\begin{bt}%[0T8B2-1]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+Một tổ học sinh có 5 nam và 5 nữ được xếp thành một hàng dọc.
+\begin{enumerate}
+\item Có bao nhiêu cách xếp khác nhau?
+\item Có bao nhiêu cách xếp sao cho học sinh nam và nữ không đứng kề nhau?
+\end{enumerate}
+\loigiai
+{
+\begin{enumerate}
+\item Số cách xếp 5 học sinh nam và 5 học sinh nữ thành một hàng dọc là $10!=3628800$ (cách).
+\item Để xếp 5 học sinh nam và 5 học sinh nữ sao cho nam và nữ không đứng kề nhau ta phải xếp nam, nữ xen kẽ.\\
+\textbf{Trường hợp 1:} Nam, nữ xen kẽ và nam đứng đầu hàng có $5!\cdot5!=14400$ (cách).\\
+\textbf{Trường hợp 2:} Nam, nữ xen kẽ và nữ đứng đầu hàng có $5!\cdot5!=14400$ (cách).\\
+Theo quy tắc cộng, số cách xếp thỏa mãn yêu cầu bài toán là $14400+14400=28800$ cách.
+\end{enumerate}
+}
+\end{bt}
+
+%%%% Câu 3
+\begin{bt}%[0T8B3-2]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+\begin{enumerate}
+\item Khai triển và rút gọn biểu thức $(2+x)^4+(2-x)^4$.
+\item Tìm hệ số của $x^3$ trong khai triển biểu thức $(x-2)(2x+1)^4$.
+\end{enumerate}
+\loigiai
+{
+\begin{enumerate}
+\item Ta có
+\begin{align*}
+(2+x)^4+(2-x)^4
+&=\left(\mathrm{C}_4^02^4+\mathrm{C}_4^12^3x+\mathrm{C}_4^22^2x^2+\mathrm{C}_4^32^1x^3+\mathrm{C}_4^4x^4\right) \\
+&\quad+\left(\mathrm{C}_4^02^4-\mathrm{C}_4^12^3x+\mathrm{C}_4^22^2x^2-\mathrm{C}_4^32^1x^3+\mathrm{C}_4^4x^4\right) \\
+&=2\mathrm{C}_4^02^4+2\mathrm{C}_4^22^2x^2+2\mathrm{C}_4^4x^4 \\
+&=32+48x^2+2x^4 \\
+&=2x^4+48x^2+32.
+\end{align*}
+\item Ta có $(x-2)(2x+1)^4=x(2x+1)^4-2(2x+1)^4$.\\
+Suy ra $x \displaystyle\sum\limits_{k=0}^{4}\mathrm{C}_4^k(2x)^{4-k}1^k-2\displaystyle\sum\limits_{p=0}^{4}\mathrm{C}_4^p(2x)^{4-p}1^p= \displaystyle\sum\limits_{k=0}^{4}\mathrm{C}_4^k2^{4-k}x^{5-k}-\displaystyle\sum\limits_{p=0}^{4}\mathrm{C}_4^p2^{5-p}x^{4-p}$.\\ Hệ số của $x^3$ tương ứng với $5-k=3\Leftrightarrow k =2$ và $4-p=3 \Leftrightarrow p=1$.\\
+Vậy hệ số của $x^3$ trong khai triển trên là $\mathrm{C}_4^22^2-\mathrm{C}_4^12^4=-40.$
+\end{enumerate}
+}
+\end{bt}
+
+%%%% Câu 4
+\begin{bt}%[0T9B3-3]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+\begin{enumerate}
+\item Viết phương trình đường tròn $(C)$ có tâm $I(-2;0)$ và tiếp xúc với đường thẳng $\Delta \colon 3x-4y-4=0$.
+\item Viết phương trình tiếp tuyến $\Delta$ với đường tròn $(C)\colon x^2+y^2-6x-2y-15=0$ song song với đường thẳng $4x+3y-7=0$.
+\end{enumerate}
+\loigiai
+{
+\begin{enumerate}
+\item Vì đường tròn $(C)$ tiếp xúc với đường thẳng $\Delta$ nên
+$$R=\mathrm{d}(I,\Delta)=\dfrac{|-2\cdot3+0\cdot(-4)-4|}{\sqrt{3^2+(-4)^2}}=2.$$
+Vậy phương trình đường tròn $(C)$ là $(C)\colon (x+2)^2+y^2=4$.
+\item Đường tròn $(C)$ có tâm $I(3;1)$, bán kính $R=\sqrt{3^2+1^2+15}=5$.\\
+Vì $\Delta$ song song với đường thẳng $4x+3y-7=0$ nên phương trình $\Delta$ có dạng $\Delta\colon 4x+3y+m=0$ với $m\ne -7$.\\
+Vì $\Delta$ là tiếp tuyến của $(C)$ nên
+$$\mathrm{d}(I,\Delta)=R\Leftrightarrow \dfrac{|3\cdot 4+1\cdot 3+m|}{\sqrt{4^2+3^2}}=5\Leftrightarrow\hoac{&m=10 & & (thỏa mãn)\\&m=-40  & & (thỏa mãn).}$$
+Vậy phương trình đường thẳng $\Delta$ là $\Delta\colon 4x+3y+10=0$ hoặc $\Delta\colon 4x+3y-40=0$.
+\end{enumerate}
+}
+\end{bt}
+
+%%%% Câu 5
+\begin{bt}%[0T9Y4-1]%[0T9Y4-4]%[0T9Y4-7]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+Viết phương trình chính tắc của các đường cô-níc dưới đây. Gọi tên các đường đó và tìm tiêu điểm của chúng.
+\begin{enumerate}
+\item $\left(C_1\right)\colon 6x^2 + 15y^2 = 90$.
+\item $\left(C_2\right)\colon 16x^2 - 9y^2 = 144$.
+\item $\left(C_3\right)\colon x = \dfrac{1}{4}y^2$.
+\end{enumerate}
+\loigiai
+{
+\begin{enumerate}
+\item $\left(C_1\right)\colon 6x^2 + 15y^2 = 90 \Leftrightarrow \dfrac{x^2}{15} + \dfrac{y^2}{6} = 1$.\\
+Xét $a^2=15$, $b^2=6$, ta có $c^2=a^2-b^2=9 \Rightarrow c=9$ (xét $a$; $b$; $c>0$). \\
+Đây là phương trình chính tắc của elip, với hai tiêu điểm là $F_1\left(-3;0\right)$ và $F_2\left(3;0\right)$.
+\item $\left(C_2\right)\colon 16x^2 - 9y^2 = 144 \Leftrightarrow \dfrac{x^2}{9} - \dfrac{y^2}{16} = 1$.\\
+Xét $a^2=9$, $b^2=16$, ta có $c^2=a^2+b^2=25 \Rightarrow c=5$ (xét $a$; $b$; $c>0$). \\
+Đây là phương trình chính tắc của hypebol, với hai tiêu điểm là $F_1\left(-5;0\right)$ và $F_2\left(5;0\right)$.
+\item $\left(C_3\right)\colon x = \dfrac{1}{4}y^2 \Leftrightarrow y^2 = 4x$.\\
+Xét $2p=4 \Leftrightarrow p=2$. \\
+Đây là phương trình chính tắc của parabol, với tiêu điểm $F\left(1;0\right)$.
+\end{enumerate}
+}
+\end{bt}
+
+%%%% Câu 6
+\begin{bt}%[0T0K2-3]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+Có $40$ tấm thẻ được đánh số lần lượt từ $1$ đến $40$. Chọn ngẫu nhiên ra $10$ tấm thẻ. Tính xác suất để trong $10$ tấm thẻ được chọn ra có $5$ tấm thẻ mang số lẻ, $5$ tấm thẻ mang số chẵn trong đó chỉ có đúng một tấm thẻ mang số chia hết cho $10$ (tính chính xác đến hàng phần trăm).
+\loigiai
+{
+Xét phép thử $T\colon$\lq\lq Chọn ngẫu nhiên $10$ tấm thẻ từ $40$ tấm thẻ\rq\rq. \\
+Gọi $\Omega$ là không gian mẫu của phép thử $T$. \\
+Số cách chọn $10$ tấm thẻ từ $40$ tấm thẻ là $\mathrm{C}_{40}^{10}$, suy ra $n\left(\Omega\right) = \mathrm{C}_{40}^{10}$.\\
+Gọi $A$ là biến cố \lq\lq Trong $10$ tấm thẻ được chọn ra, có $5$ tấm thẻ mang số lẻ, $5$ tấm thẻ mang số chẵn trong đó chỉ có đúng một tấm thẻ mang số chia hết cho $10$\rq\rq.\\
+Ta chia $40$ số nguyên dương đầu tiên thành $3$ nhóm sau
+\begin{itemize}
+\item Nhóm (I) gồm các thẻ mang số lẻ $\left\{1,3,5,\dots,39\right\}$. Nhóm này gồm $20$ thẻ.
+\item Nhóm (II) gồm các thẻ mang số chẵn nhưng không gồm các số chia hết cho $10$
+$$\left\{2,3,4,\dots,38\right\}\setminus\left\{10,20,30,40\right\}.$$
+Nhóm này gồm $16$ thẻ.
+\item Nhóm (III) gồm các số chia hết cho $10$: $\left\{10,20,30,40\right\}$. Nhóm này gồm $4$ thẻ.
+\end{itemize}
+Để thỏa mãn yêu cầu đề bài, ta sẽ chọn ra $5$ tấm thẻ từ nhóm (I), $4$ tấm thẻ từ nhóm (II) và $1$ tấm thẻ từ nhóm (III). Suy ra $n(A) = \mathrm{C}_{20}^{5}\cdot\mathrm{C}_{16}^{4}\cdot\mathrm{C}_{4}^{1}$.\\
+Do đó, $\mathrm{P}\left(A\right) = \dfrac{n\left(A\right)}{n\left( \Omega\right)} = \dfrac{\mathrm{C}_{20}^{5}\cdot\mathrm{C}_{16}^{4}\cdot\mathrm{C}_{4}^{1}}{\mathrm{C}_{40}^{10}} = \dfrac{1680}{12617} \approx 0{,}133$.
+}
+\end{bt}
+
+%%%% Câu 7
+\begin{bt}%[0T9K4-3]%THPT Lê Thánh Tông - Hồ Chí Minh%-Thành Đức Trung
+Cho $M$, $N$ là hai điểm trên elip $\left(E\right)\colon 4x^2 + 9y^2 = 36$ và không trùng với các đỉnh. Biết $I\left(1;1\right)$ là trung điểm của $MN$. Viết phương trình tổng quát của đường thẳng $MN$.
+\loigiai
+{
+Gọi tọa độ điểm $M$ thuộc elip $\left(E\right)$ là $M\left(x_0;y_0\right)$. Suy ra $4x_0^2 + 9y_0^2 = 36$. \\
+Vì $I\left(1;1\right)$ là trung điểm của $MN$ nên suy ra $N\left(2-x_0;2-y_0\right)$.\\
+Lại có $N\in\left(E\right)$ nên ta có phương trình
+$$\begin{aligned}
+& \ 4\left(2-x_0\right)^2 + 9\left(2-y_0\right)^2 = 36 \\
+\Leftrightarrow & \ 52 - \left(16x_0 + 36y_0\right) +\left(4x_0^2 + 9y_0^2\right) = 36 \\
+\Leftrightarrow & \ 4x_0 + 9y_0 = 13.
+\end{aligned}$$
+Vậy $M$ thuộc đường thẳng $\Delta\colon 4x+9y=13$. \\
+Dễ thấy $I(1;1)$ cũng thuộc $\Delta$ nên đây chính là phương trình đường thẳng $MN$ cần tìm.\\
+Vậy đường thẳng $MN$ có phương trình $4x + 9y - 13 = 0$.
+}
+\end{bt}

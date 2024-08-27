@@ -1,0 +1,272 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT Giồng Ông Tố}
+\begin{center}
+	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+\end{center}
+\Opensolutionfile{ans}[ans/ans]
+
+%%%============EX_1==============%%%
+\begin{ex}%[0H1B2-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Tam giác $ABC$ có $AB=2$, $AC=1$ và góc $A=60^{\circ}$. Tính độ dài cạnh $BC$.
+	\choice
+	{\True $BC=\sqrt{3}$}
+	{$BC=2$}
+	{$BC=\sqrt{2}$}
+	{$BC=1$}
+	\loigiai{
+	Áp dụng định lí côsin trong tam giác $ABC$ ta có\\
+	$$\begin{aligned}
+		BC^2&=AB^2+AC^2-2AB\cdot AC\cdot \cos A \\
+		&=2^2+1^2-2\cdot 2\cdot 1\cdot \cos 60^\circ \\
+		&=3.\\
+		\Rightarrow BC&=\sqrt{3}.
+	\end{aligned}$$
+	}
+\end{ex}
+%%%============EX_2==============%%%
+\begin{ex}%[0H1B3-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	\immini{
+	Hai máy bay rời một sân bay cùng một lúc. Một chiếc bay với vận tốc $800$ km/h theo hướng lệch so với phương Bắc $15^{\circ}$ về phía Tây, chiếc còn lại bay theo hướng lệch so với hướng Nam $45^{\circ}$ về phía Tây với vận tốc $600$ km/h (Hình 1). Hỏi sau $3$ giờ hai máy bay cách nhau xấp xỉ bao nhiêu km?}
+	{\begin{tikzpicture}
+		\clip (-2,-3.5) rectangle (1.5,1.5);
+		
+		\begin{pgfinterruptboundingbox}
+			
+			%---------------Véc-tơ
+			\draw[->,color=black,thick] (.75,-.88)coordinate [label=right:\tiny $O$] (O)--(.75,1)coordinate  (N);
+			\draw[color=black,thick] (O)--(.75,-2.3);
+			\draw[black,thick] (-.6,-2)coordinate [label=below right:\tiny $B$] (A)--(.75,-.88)  (.75,-.88)--(0,.75)coordinate [label=above right:\tiny $A$] (B);
+			\node at (1.1,.9)[above]{\tiny Bắc};
+			\node at (1.5,-2)[left]{\tiny Nam};
+			\node at (-.3,-1.5)[left]{\tiny $600$ km/h};
+			\node at (-.2,.9)[left]{\tiny $800$ km/h};
+			\draw[black](O)++(100:0.7)node{\tiny $15^\circ$};
+			\draw[black](O)++(-110:0.6)node{\tiny $45^\circ$};
+			
+			%=================================================
+			%------------máy bay
+			\tikzset{maybay/.pic={
+					%Đuôi máy bay
+					\def\D{  (-2,-.45)--(-2.36,.24)--(-2.2,.3)--(-1.35,-.25)--cycle
+						;}
+					\draw \D;
+					\fill[brown!40!] \D;
+					
+					%Quạt máy bay
+					\def\Q{  (.15,-.1)
+						..controls +(-140:0.1) and +(140:0.1) .. (.2,-.35)--(.8,-.17)--(.7,.07)--cycle
+						
+						;}
+					\draw \Q;
+					\draw[xshift=.5cm] \Q;
+					\fill[brown!40!,xshift=.5cm] \Q;
+					%---------elip2
+					\draw[rotate=-70,xshift=-.23cm,yshift=1.27cm] (.7,-.1) ellipse (.12cm and .07cm);
+					
+					%Thân máy bay
+					\def\T{  (-2.1,-.5)
+						..controls +(40:0) and +(-170:0.7) .. (2,.74)
+						..controls +(-40:0) and +(170:0.3) .. (2.55,.7)
+						..controls +(-150:0) and +(30:.65) .. (2.1,.3)
+						..controls +(-150:0) and +(-18:1.25) .. (-2.1,-.6)
+						..controls +(90:0) and +(-90:0) .. (-2.1,-.51)
+						-- (-2.5,-.52)--cycle;
+					}
+					\draw \T;
+					\fill[brown!70!] \T;
+					%Cánh máy bay
+					\def\C{  (.5,.05)
+						..controls +(170:0) and +(-10:0) .. (-1.48,.12)
+						..controls +(-80:0) and +(170:0.02) .. (-1.65,.3)
+						..controls +(180:0) and +(0:0) .. (-1.77,.3)
+						..controls +(-80:0) and +(110:0) .. (-1.64,.12)
+						..controls +(-35:0) and +(145:0) .. (-.2,-.17)
+						--cycle
+						;}
+					\draw \C;
+					\fill[brown!40!] \C;
+					%Quạt sau
+					\fill[brown!40!] \Q;
+					%----elip 1
+					\draw[rotate=-70,xshift=-.4cm,yshift=.8cm] (.7,-.1) ellipse (.12cm and .07cm);
+					%Ô cửa
+					\draw (2.18,0.73)--(2.5,0.7)--(2.14,0.58)--cycle;
+					\fill[brown!40!](2.18,0.73)--(2.51,0.71)--(2.14,0.57)--cycle;
+			}}
+			%=================================
+			\path(A)pic[scale=.15,rotate=-120,yscale=-1]{maybay};
+			\path(B)pic[scale=.15,rotate=130,yscale=-1]{maybay};
+		\end{pgfinterruptboundingbox}
+		\node at (1,-3)[left]{\tiny Hình 1};
+		\end{tikzpicture}}
+	\choice
+	{\True $3650$ km}
+	{$2440$ km}
+	{$5360$ km}
+	{$3560$ km}
+	\loigiai{
+	Ta có sau $3$ giờ máy bay thứ nhất (theo hướng lệch so với phương Bắc) đi được một quãng đường là $OA=800\cdot 3=2400$ km và máy bay thứ hai (theo hướng lệch so với hướng Nam) đi được một quãng đường là $OB=600\cdot 3=1800$ km.\\
+	Mà $\widehat{AOB}=180^\circ-15^\circ-45^\circ=120^\circ$.\\
+	Vậy sau $3$ giờ hai máy bay cách nhau là 
+	$AB=\sqrt{OA^2+OB^2-2OA\cdot OB\cdot \cos 120^\circ}\approx 3649{,}65$ km.
+	}
+\end{ex}
+\begin{ex}%[0D2N1-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Miền nghiệm của bất phương trình $3x+2y-6>0$ là phần không gạch chéo trong hình vẽ nào dưới đây?
+		\choice
+	{\begin{tikzpicture}[scale=0.5,>=stealth, font=\footnotesize, line join=round, line cap=round]
+			\def\a{-3} %%Nhập hệ số a,b,c của ax+by+c=0
+			\def\b{-2} 
+			\def\c{-6}
+			\def\xmin{-4}
+			\def\xmax{1}
+			\def\ymin{-\a*\xmin/\b-\c/\b}
+			\def\ymax{-\a*\xmax/\b-\c/\b}
+			\draw[samples=100,smooth,domain=\xmin:\xmax,red] plot(\x,{-(\a*(\x)+\c)/\b});
+			\draw[->](\xmin-0.2,0)--(\xmax+0.2,0) node[below] {$x$};
+			\draw[->](0,\ymax-0.2)--(0,\ymin+0.2) node[left] {$y$};
+			\node (0,0) [below left]{$O$};
+			\foreach \x in {-4,...,1}
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+			\foreach \y in {-4,...,3}
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+			\fill [pattern=north east lines,pattern color=gray] (\xmin,\ymax)--(\xmin,\ymin)--(\xmax,\ymax)--cycle;
+			\draw[fill=black] (-\c/\a,0) circle(1pt) node[above]{$-2$};
+			\draw[fill=black] (0,-\c/\b)circle(1pt) node[right]{$-3$};
+	\end{tikzpicture}}
+	{\begin{tikzpicture}[scale=0.5,>=stealth, font=\footnotesize, line join=round, line cap=round]
+			\def\a{3} %%Nhập hệ số a,b,c của ax+by+c=0
+			\def\b{-2} 
+			\def\c{6}
+			\def\xmin{-4}
+			\def\xmax{1}
+			\def\ymin{-\a*\xmin/\b-\c/\b}
+			\def\ymax{-\a*\xmax/\b-\c/\b}
+			\draw[samples=100,smooth,domain=\xmin:\xmax,red] plot(\x,{-(\a*(\x)+\c)/\b});
+			\draw[->](\xmin-0.2,0)--(\xmax+0.2,0) node[below] {$x$};
+			\draw[->](0,\ymin-0.2)--(0,\ymax+0.2) node[left] {$y$};
+			\node (0,0) [below left]{$O$};
+			\foreach \x in {-4,...,1}
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+			\foreach \y in{-3,...,4}
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+			\fill [pattern=north east lines,pattern color=gray] (\xmin,\ymin)--(\xmin,\ymax)--(\xmax,\ymax)--cycle;
+			\draw[fill=black] (-\c/\a,0) circle(1pt) node[below]{$-2$};
+			\draw[fill=black] (0,-\c/\b)circle(1pt) node[right]{$3$};
+	\end{tikzpicture}}
+	{\begin{tikzpicture}[scale=0.5,>=stealth, font=\footnotesize, line join=round, line cap=round]
+			\def\a{3} %%Nhập hệ số a,b,c của ax+by+c=0
+			\def\b{-2} 
+			\def\c{6}
+			\def\xmin{-4}
+			\def\xmax{1}
+			\def\ymin{-\a*\xmin/\b-\c/\b}
+			\def\ymax{-\a*\xmax/\b-\c/\b}
+			\draw[samples=100,smooth,domain=\xmin:\xmax,red] plot(\x,{-(\a*(\x)+\c)/\b});
+			\draw[->](\xmin-0.2,0)--(\xmax+0.2,0) node[below] {$x$};
+			\draw[->](0,\ymin-0.2)--(0,\ymax+0.2) node[left] {$y$};
+			\node (0,0) [below left]{$O$};
+			\foreach \x in {-4,...,1}
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+			\foreach \y in {-3,...,4}
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+			\fill [pattern=north east lines,pattern color=gray] (\xmin,\ymin)--(\xmax,\ymin)--(\xmax,\ymax)--cycle;
+			\draw[fill=black] (-\c/\a,0) circle(1pt) node[above left]{$-2$};
+			\draw[fill=black] (0,-\c/\b)circle(1pt) node[left]{$3$};
+	\end{tikzpicture}}
+	{\True \begin{tikzpicture}[scale=0.5,>=stealth, font=\footnotesize, line join=round, line cap=round]
+			\def\a{3} %%Nhập hệ số a,b,c của ax+by+c=0
+			\def\b{2} 
+			\def\c{-6}
+			\def\xmin{-1}
+			\def\xmax{4}
+			\def\ymin{-\a*\xmin/\b-\c/\b}
+			\def\ymax{-\a*\xmax/\b-\c/\b}
+			\draw[samples=100,smooth,domain=\xmin:\xmax,red] plot(\x,{-(\a*(\x)+\c)/\b});
+			\draw[->](\xmin-0.2,0)--(\xmax+0.2,0) node[below] {$x$};
+			\draw[->](0,\ymax-0.2)--(0,\ymin+0.2) node[left] {$y$};
+			\node (0,0) [below left]{$O$};
+			\foreach \x in {-1,...,4}
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+			\foreach \y in {-3,...,4}
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+			\fill [pattern=north east lines,pattern color=gray] (\xmin,\ymax)--(\xmin,\ymin)--(\xmax,\ymax)--cycle;
+			\draw[fill=black] (-\c/\a,0) circle(1pt) node[above]{$2$};
+			\draw[fill=black] (0,-\c/\b)circle(1pt) node[right]{$3$};
+			%			\node[below] at (1,-1.4) {Hình ..};
+	\end{tikzpicture}}
+	\loigiai{
+		Đường thẳng $3x+2y-6=0$ đi qua hai điểm $(0;3),(2;0)$ nên chọn đáp án D.\\
+		Mặt khác $(0;0)$ không là nghiệm của bất phương trình $3x+2y-6>0$.
+	}
+\end{ex}
+%%%============EX_1==============%%%
+\begin{ex}%[0D1Y3-4]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Cho hai tập hợp $A=[-2; 7)$ và $B=(1; 9]$ Khi đó $A\cup B$ bằng
+	\choice
+	{$[-2; 1)$}
+	{\True $[-2; 9]$}
+	{$(7; 9]$}
+	{$(1; 7)$}
+	\loigiai{
+		$A\cup B=[-2; 9]$ 
+	}
+\end{ex}
+	
+%%%============EX_1==============%%%
+\begin{ex}%[0H2Y2-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Cho tứ giác $ABCD$, gọi $M$ là điểm thỏa $\overrightarrow{AM}=\overrightarrow{DC}+\overrightarrow{AB}+\overrightarrow{BD}$. Mệnh đề nào sau đây đúng?
+	\choice
+	{$M$ trùng $A$}
+	{\True $M$ trùng $C$}
+	{$M$ trùng $D$}
+	{$M$ trùng $B$}
+	\loigiai{
+		Ta có $\overrightarrow{AM}=\overrightarrow{DC}+\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AB}+\overrightarrow{BD}+\overrightarrow{DC}=\overrightarrow{AC}$.\\
+		Suy ra $M$ trùng $C$.
+	}
+\end{ex}
+	
+%%%============EX_2==============%%%
+\begin{ex}%[0D2N1-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Câu nào sau đây \textbf{sai}?\\
+	Miền nghiệm của bất phương trình $-x+2+2(y-2) < 2(1-x)$ là nửa mặt phẳng chứa điểm?
+	\choice
+	{$(1;-1)$}
+	{$(0; 0)$}
+	{$(1; 1)$}
+	{\True $(4; 2)$}
+	\loigiai{
+		Ta có $-x+2+2(y-2) < 2(1-x)\Leftrightarrow x+2y-4<0$.\\
+		Do $(4; 2)$ không thỏa bất phương trình nên $(4; 2)$ không thuộc miền nghiệm của bất phương trình $-x+2+2(y-2) < 2(1-x)$.
+	}
+\end{ex}
+	
+%%%============EX_3==============%%%
+\begin{ex}%[0D1Y2-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Kí hiệu nào sau đây dùng để viết mệnh đề \lq\lq$3$ là số tự nhiên\rq\rq?
+	\choice
+	{$3 \subset \mathbb{N}$}
+	{$3 < \mathbb{N}$}
+	{$3 \leq \mathbb{N}$}
+	{\True $3 \in \mathbb{N}$}
+	\loigiai{
+		Mệnh đề \lq\lq$3$ là số tự nhiên\rq\rq\, được kí hiệu là $3 \in \mathbb{N}$.
+	}
+\end{ex}
+	
+%%%============EX_4==============%%%
+\begin{ex}%[0D2B1-3]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Lâm Chính]%[THPT Giồng Ông Tố]
+	Một cửa hàng bán lẻ bán hai loại hạt cà phê. Loại thứ nhất giá $140$ nghìn đồng/kg và loại thứ hai giá $180$/nghìn đồng/kg. Cửa hàng trộn $x$ kg loại thứ nhất và $y$ kg loại thứ hai sao cho hạt cà phê đã trộn có giá không quá $170$ nghìn đồng/kg. Bất phương trình bậc nhất hai ẩn $x$, $y$ thỏa mãn điều kiện bài toán là
+	\choice
+	{\True $-3 x+y \le 0$}
+	{$-3 x+y > 0$}
+	{$-3 x+y < 0$}
+	{$-3 x+y \ge 0$}
+	\loigiai{
+		Từ giả thiết bài toán ta có $140x+180y\le 170\cdot(x+y) \Leftrightarrow -30x+10y\le0\Leftrightarrow -3x+y\le0$.
+	}
+\end{ex}
+	
+\Closesolutionfile{ans}
+

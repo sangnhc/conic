@@ -1,0 +1,176 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2022-2023}{THPT Trần Phú}
+
+%Cân 1 ( 1,5 (liểm): 
+\begin{bt}%[0T1B3-4]%[Dự án đề kiểm tra GHKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Cho các tập hợp
+$$
+\begin{aligned}
+	&A=\{x \in \mathbb{Z} \ \mid \ -4<x<4\} ;~ B=\left\{x \in \mathbb{R} \ \mid \ x^2+x-6=0\right\} \\
+	&C=\{x \in \mathbb{R}\ \mid \-2 \leq x<3\} ;~ D=\{x \in \mathbb{R}\ \mid \ x>3\}
+\end{aligned}
+$$
+\begin{enumerate}
+	\item Trong hai tập $A$ và $B$, tập hợp nào là con tập hợp còn lại?
+	\item Tìm  $C \cap D$; $C \cup D$ và $\mathbb{R} \setminus C$.
+\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Ta có $A=\{-3;-2;-1;0;1;2;3\}$.\\
+	Phương trình $x^2+x-6=0\Leftrightarrow \left[\begin{aligned}&x=2\\&x=-3.\end{aligned}\right.$\\
+	Suy ra $B=\{2;-3\}$.\\
+	Vì $2$, $-3$ thuộc $A$ nên $A\subset B$.
+	\item Ta có $C=[2;3)$, $D=(3;+\infty)$.\\
+	Suy ra $C\cap D=\varnothing$, $C\cup D=[2;+\infty)\setminus\{3\}$, $\mathbb{R}\setminus C=(-\infty;2)\cup [3;+\infty)$.
+\end{enumerate}
+}
+\end{bt}
+%Câu 2 (0,5điểm): 
+\begin{bt}% [0T1K3-3]%[Dự án đề kiểm tra GHKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Lớp 10C có $35$ học sinh. Trong đó có $15$ học sinh tham gia lớp năng khiếu âm nhạc chuyên đề Ghita, $17$ học sinh tham gia lớp năng khiếu âm nhạc chuyên đề Organ, $9$ học sinh thi không tham gia lớp năng khiếu âm nhạc. Hỏi có bao nhiêu học sinh tham gia đồng thời hai lớp chuyên đề Ghita và Organ?
+	\loigiai{
+	\immini{ 	Gọi $A$ là tập hợp các học sinh tham gia lớp Ghita, $B$ là tập hợp các học sinh lớp Organ.\\
+		Khi đó, $A \cup B$ là tập hợp các học sinh tham gia ít nhất một trong 2 môn Ghita và Organ, $A \cap B$ là tập hợp các học sinh tham gia cả 2 môn Ghita và Organ.\\
+		Ta có $n(A)=15$, $n(B)=17$, $n(A \cup B)=35-9=24$.\\
+		$n(A \cup B)=n(A)+n(B)-n(A \cap B)$\\$\Rightarrow n(A\cap B)=n(A)+n(B)-n(A \cup B)=15+17-24=9$.\\
+		Vậy số   học sinh tham gia đồng thời hai lớp chuyên đề Ghita và Organ là 9 (học sinh). }{ \begin{tikzpicture}[scale=0.54]
+			\def\firstven{(0,0) ellipse (3cm and 2cm)}
+			\def\secondven{(2.5,1) ellipse (2.8cm and 2cm)}
+			\begin{scope}
+				\clip \firstven;
+				\fill[pattern=north east lines,opacity=0.95] \secondven;
+			\end{scope}
+			\draw \firstven \secondven;
+			\node at (-2.2,2) {$A$};
+			\node at (5.6,2.2){$B$};
+			\node at (1.3,0.5){$A \cap B$};
+			\node at (3.5,-1.7){$A \cup B$};
+	\end{tikzpicture}}
+}
+\end{bt}
+%Câu 3 ( 2 điểm): 
+\begin{bt}%[0T2B1-2]%[Dự án đề kiểm tra GHKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Biểu diễn miền nghiệm của bất phương trình $x-2 y \leq 2 x-y-2$.
+	\loigiai{
+		\immini{Ta có $x-2 y \leq 2 x-y-2\Leftrightarrow x+y-2\ge 0$.\quad(*)\\
+		Trong mặt phẳng $Oxy$, vẽ đường thẳng $\Delta \colon x+y-2=0$. Đường thẳng $\Delta$ qua hai điểm $A(0;2)$, $B(2;0)$.\\
+		Toạ độ điểm $O(0;0)$ không thoả mãn bất phương trình (*) nên miền nghiệm của bất phương trình đã cho là nửa mặt phẳng kể cả bờ $\Delta$ không chứa $O$.}{\begin{tikzpicture}[>=stealth,line join=round, line cap=round, scale=0.7]
+				\draw[->] (-2,0)--(3,0) node[above]{$x$};
+				\draw[->] (0,-2)--(0,3) node[left]{$y$};
+				\fill[pattern=north east 
+				lines]plot[domain=-1:3](\x,{-1*(\x)+2})--(3,-2)--(-2,-2)--(-2,3)--cycle;
+				\draw[samples=200,smooth,line width=1] plot[domain=-1:3] 
+				(\x,{(-1*(\x)+2}) node[above]{$\Delta$};
+				\foreach \x in {2} \draw[fill] (\x,0) circle (1pt) 
+				node[above]{$\x$};
+				\foreach \y in {2} \draw[fill] (0,\y) circle (1pt) 
+				node[right]{$\y$};
+				\fill (0,0) circle (1.5pt) node[above left]{$O$};
+			\end{tikzpicture}}
+	}
+\end{bt}
+%Câu 4 (2 điểm): 
+\begin{bt}%[0T3B1-2]%[Dự án đề kiểm tra GHKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Tìm tập xác định hàm số
+	\begin{enumerate}
+		\item $y=\sqrt{2-3 x}$.
+		\item $y=\sqrt{x-2}+\dfrac{x-1}{x^2-9}$.
+	\end{enumerate}
+\loigiai{
+	\begin{enumerate}
+		\item Điều hàm số có nghĩa là $2-3x\ge0\Leftrightarrow x\le \dfrac{2}{3}$.\\
+		Vậy TXĐ là $\mathscr{D}=\left(-\infty;\dfrac{2}{3}\right]$.
+		\item Điều kiện $\left\{\begin{aligned}&x-2\ge 0\\&x^2-9\ne 0\end{aligned}\right. \Leftrightarrow \left\{\begin{aligned}&x\ge 2\\&x\ne \pm3\end{aligned}\right. \Rightarrow x\in[2;+\infty)\setminus\{3\}$.\\
+		Vậy TXĐ là $\mathscr{D}=[2;+\infty)\setminus\{3\}$.
+	\end{enumerate}
+}
+\end{bt}
+%Câu 5(2 điểm): 
+\begin{bt}% [0T4B2-2]%[Dự án đề kiểm tra GHKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Cho tam giác $ABC$ có $AB=2\sqrt{6}$, $BC=9 \sqrt{2}$,  $\widehat{B}=150^{\circ}$. Tính độ dài cạnh $AC$, $S_{\triangle A B C}$, số đo $\widehat{A}$ và độ dài đường cao $AH$?
+	\loigiai{
+	Theo định lí côsin ta có $\begin{aligned}[t]AC^2&=AB^2+BC^2-2\cdot AB\cdot BC\cdot \cos B\\
+		&=\left(2\sqrt{6}\right)^2+\left(9\sqrt{2}\right)^2-2\cdot2\sqrt{6}\cdot 9\sqrt{2}\cdot\cos150^\circ\\
+		&=294\\
+		\Rightarrow AC&=\sqrt{294}=7\sqrt{6}.
+	\end{aligned}$\\
+	Diện tích $\triangle ABC$ là $S=\dfrac{1}{2}\cdot AB\cdot BC\cdot \sin B=\dfrac{1}{2}\cdot 2\sqrt{6}\cdot 9\sqrt{2}\cdot \sin 150^\circ=9\sqrt{3}$ (đvdt).\\
+	Mặt khác $S_{\triangle ABC}=\dfrac{1}{2}AH\cdot BC\Rightarrow AH=\dfrac{2S}{BC}=\dfrac{2\cdot 9\sqrt{3}}{9\sqrt{2}}=\sqrt{6}$.
+}
+\end{bt}
+%Câu 6 (1 điểm): 
+\begin{bt}%[0T4B3-2]%[Dự án đề kiểm tra GHKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Tòa nhà Bitexco Financial Tower tọa lạc tại số 02 Hải Triều, Quận 1  được thiết kế bằng bê tông cốt thép và kính. Tòa nhà được xem là biểu tượng cho sự năng động của Thành phố Hồ Chí Minh trong thời kỳ hội nhập kinh tế. Hai bạn học sinh lớp 10 của trường THPT Lương Thế Vinh là An và Bình muốn tự mình đo chiều cao của tòa nhà này. Các bạn tiến hành như đo đạc và đã thu được chính xác chiều cao của tòa nhà Bitexco. Dựa vào các các số liệu mà An và Bình đã thu thập được ở hình bên $\widehat{BCA}=30^{\circ}$, $\widehat{BDA}=25^{\circ}$, $CD=111$ m. Em hãy tính chiều cao của tòa nhà Bitexco (đơn vị mét, làm tròn đến hàng đơn vị).
+	\begin{center}
+	\begin{tikzpicture}[scale=.7]
+		\draw[blue,fill=blue](-0.85,-3.2)..controls +(95:.5) and +(-98:3)..(-0.68,3)..controls +(60:.3) and +(80:.3)..(-0.6,2.9)..controls +(-35:.3) and +(105:1)..(-0.2,1.8)..controls +(0:.7) and +(45:.2)..(.05,1.5)
+		..controls +(-100:.7) and +(75:.2)..(.-0.1,0.9)
+		..controls +(-85:2) and +(90:3)..(0,-2.6)
+		..controls +(20:.3) and +(160:.5)..(.95,-2.7)--(.94,-3.2)--cycle;
+		\path
+			(-0.6,3.2) coordinate (A)
+			(-0.6,-3.2) coordinate (B)
+			(9,-3.2) coordinate (C)
+			(12,-3.2) coordinate (D);
+		\draw (A)--(B)--(C)--(A)--(D)
+		(C)--(D)node[midway,below]{111 m}
+		pic[draw,black,angle eccentricity=1.5,"\scriptsize{$30^\circ$}",angle radius=.5cm] {angle=A--C--B}
+		pic[draw,black,angle eccentricity=1.5,"\scriptsize{$25^\circ$}",angle radius=.5cm] {angle=A--D--B}
+		;
+		\foreach \p/\g in {A/90, B/-90, C/-90, D/0}
+		\draw[fill=black] (\p) circle (1.5pt) node[shift=(\g:3mm)] {$\p$};
+	\end{tikzpicture}
+	\end{center}
+	\loigiai{
+	Ta có $\widehat{ACD}=180^\circ-30^\circ=150^\circ$, $\widehat{CAD}=180^\circ-150^\circ-25^\circ=5^\circ$.\\
+	Áp dụng định lí Sin vào tam giác $ACD$ ta có
+	$$\dfrac{CD}{\sin A}=\dfrac{AC}{\sin D}\Rightarrow AC=\dfrac{CD\cdot \sin D}{\sin A}=\dfrac{111\cdot \sin 25^\circ}{\sin 5^\circ}\approx 538.$$
+		Tam giác $ABC$ vuông tại $B$ nên $\sin C=\dfrac{AB}{AC}\Rightarrow AB=AC\sin C=538\cdot \sin 30^\circ\approx 269$ (m).\\
+		Vậy chiều cao toà nhà Bitexco là $269$ m.
+}
+\end{bt}
+%Câu 7 (1 điểm):
+\begin{bt}% [0T2G2-3]%[Dự án đề kiểm tra HKI NH22-23-Phạm văn Long]%[THPT Trần Phú]
+	Một phân xưởng sản xuất có 12 tấn nguyên liệu I và 8 tấn nguyên liệu II để sản xuất hai loại sản phầm A, B. Để sản xuất một tấn sản phẩm A cần dùng 6 tấn nguyên liệu I và 2 tấn nguyên liệu II, khi bán lãi được 10 triệu đồng. Để sản xuất một tấn sản phẩm B cần dùng 2 tấn nguyên liệu I và 2 tấn nguyên liệu II, khi bán lãi được 8 triệu đồng. Hãy lập kế hoạch sản xuất cho xưởng nói trên sao cho có tồng số tiền lãi cao nhất.
+	\loigiai{
+	Gọi $x$, $y$ lần lượt là số tấn sản phẩm loại A và B cần sản xuất. Điều kiện $x\ge 0$, $y\ge 0$.\\
+	Khi đó, số nguyên liệu loại I cần dùng là $6x+2y$, số nguyên liệu loại II cần dùng là $2x+2y$.\\
+	Tổng số tiền lãi là $10x+8y$ (triệu đồng).\\
+	Theo đề bài ta có hệ bất phương trình $
+	\left\{\begin{aligned}&6x+2y\le 12\\&2x+2y\le 8\\&x\ge0\\&y\ge0\end{aligned}\right.$\quad(*)\\
+	Bài toán trở thành tìm cặp số $(x;y)$ thỏa mãn hệ (*) sao cho biểu thức $F=10x+8y$ đạt giá trị lớn nhất.\\
+	Vẽ các đường thẳng $d_1\colon 6x+2y=12$, $d_2\colon 2x+2y=8$, $d_3\colon x=0$ (trục $Oy$), $d_3\colon y=0$ (trục $Ox$).
+	\begin{center}
+	\begin{tikzpicture}[>=stealth,line join=round, line cap=round, scale=0.7]
+		\draw[->] (-2,0)--(6,0) node[above]{$x$};
+		\draw[->] (0,-2)--(0,7) node[left]{$y$};
+		\fill[pattern=north east 
+		lines] (0,0)--(2,0)--(1,3)--(0,4)--cycle;
+		\draw[samples=200,smooth,thick] plot[domain=-0.3:2.6] 
+		(\x,{(-3*(\x)+6}) node[left]{$d_1$};
+		\draw[samples=200,smooth,thick] plot[domain=-3:6] 
+		(\x,{-1*(\x)+4}) node[above]{$d_2$};
+		\foreach \x in {1,2} \draw[fill] (\x,0) circle (1pt) 
+		node[below]{$\x$};
+		\foreach \x in {4} \draw[fill] (\x,0) circle (1pt) 
+		node[above]{$\x$};		
+		\foreach \y in {3} \draw[fill] (0,\y) circle (1pt) 
+		node[left]{$\y$};
+		\foreach \y in {4,6} \draw[fill] (0,\y) circle (1pt) 
+		node[right]{$\y$};
+		\fill (0,0) circle (1.5pt) node[above left]{$O$};
+		\fill (0,4) circle (1.5pt) node[left]{$A$};
+		\fill (1,3) circle (1.5pt) node[above right]{$B$};
+		\fill (2,0) circle (1.5pt) node[above right]{$C$};
+		\draw[dashed] (1,0)--(1,3)--(0,3);
+	\end{tikzpicture}
+\end{center}
+	Miền nghiệm của hệ bất phương trình (*) là là miền tứ giác $OABC$ với $A(0;4)$, $B(1;3)$, $C(2;0)$.\\
+	Tại điểm $O(0;0)$ thì $F=10\cdot0+8\cdot0=0$.\\
+	Tại điểm $A(0;4)$ thì $F=10\cdot0+8\cdot4=32$.\\
+	Tại điểm $B(1;3)$ thì $F=10\cdot1+8\cdot3=34$.\\
+	Tại điểm $C(2;0)$ thì $F=10\cdot2+8\cdot0=20$.\\
+	Suy ra $F$ đạt giá trị lớn nhất khi $x=1$, $y=3$.\\
+	Vậy cần sản xuất $1$ tấn sản phẩm loại I và $3$ tấn sản phẩm loại II thì tổng số tiền lãi sẽ cao nhất.
+}
+\end{bt}

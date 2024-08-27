@@ -1,0 +1,399 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ I NĂM HỌC 2023-2024}{THPT Quốc Tế Á Châu}
+\begin{center}
+	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+\end{center}
+\Opensolutionfile{ans}[ans/ans]
+\setcounter{ex}{0}
+\begin{ex}%[0D1N1-3] 
+	Cho mệnh đề $P\colon$ \lq\lq $\forall x \in \mathbb{R}, x^2-2 x>0$ \rq\rq. Mệnh đề $\overline{P}$ là
+	\choice{$\overline{P} \colon$ \lq\lq $\forall x \in \mathbb{R}, x^2-2 x \leq 0 $ \rq\rq }
+	{$\overline{P}\colon $ \lq\lq $\forall x \in \mathbb{R}, x^2-2 x<0$ \rq\rq}
+	{$\overline{P}\colon $ \lq\lq $\exists x \in \mathbb{R}, x^2-2 x<0$ \rq\rq}
+	{\True$\overline{P}\colon $ \lq\lq $\exists x \in \mathbb{R}, x^2-2 x \leq 0$ \rq\rq}
+	\loigiai{Ta có $\overline{P}\colon $ \lq\lq $\exists x \in \mathbb{R}, x^2-2 x \leq 0$ \rq\rq.}
+\end{ex}
+\begin{ex}%[0D1N1-1] 
+	Trong các câu sau, câu nào không phải là một mệnh đề?
+	\choice{$4+2=0$}{Nha Trang là thành phố của tỉnh Khánh Hòa}{\True Đề kiểm tra Toán quá dễ!}{Số $20$ chia hết cho $6$}
+	\loigiai{Câu \lq\lq Đề kiểm tra Toán quá dễ!\rq\rq không là mệnh đề vì đó là câu cảm thán.}
+\end{ex}
+\begin{ex}%[0D1N2-3]
+	Hình vẽ sau đây (phần không bị gạch) biểu diễn tập hợp nào?
+	\begin{center}
+		\begin{tikzpicture}[scale=0.8,>=stealth, font=\footnotesize, line join=round, line cap=round]  
+			\def\a{1}
+			\def\b{4}
+			\draw[-stealth] (\a-2,0)--(\b+2,0);
+			\fill[pattern=north east lines]	(\a-2,-0.1) rectangle (\a,0.1) 
+			;
+			\path 	(\a,0) node{$\big($} 
+			%(\b,0) node{$\big]$}
+			(\a,-0.6) node{$-3$};
+			%(\b,-0.6) node{$b$};
+		\end{tikzpicture}	
+	\end{center}
+	\choice{$(-\infty ;-3]$}{\True$(-3 ;+\infty)$}{$(-\infty ;-3)$}{$[-3 ;+\infty)$}
+	\loigiai{Hình vẽ biểu diễn cho tập hợp $(-3 ;+\infty)$. }
+\end{ex}
+\begin{ex}%[0D1H3-5] 
+	Lớp 10A có $25$ học sinh giỏi, trong đó có $15$ học sinh giơi môn Toán, $16$ học sinh giỏi môn Ngữ văn. Hỏi lớp 10A có tất cả bao nhiêu học sinh giỏi cả hai môn Toán và Ngữ văn?
+	\choice{\True$6$}{$9$}{$31$}{$10$}
+	\loigiai{Số học sinh giỏi cả hai môn Toán và Ngữ Văn là $16+15-25=6$ học sinh.}
+\end{ex}
+\begin{ex}%[0D2N1-2]
+	Cặp số nào là một nghiệm của bất phương trình $-3 x+y-4 \geq 0$?
+	\choice{$(2 ; 1)$}{$(-2;-4)$}{\True$(-1;1)$}{$(1;3)$}
+	\loigiai{Thay từng phương án, ta có 
+		\begin{itemize}
+			\item Với $(2;1)$, ta có $-3x+y-4=-9<0$.
+			\item Với $(-2;4)$, ta có $-3x+y-4=-2< 0$.
+			\item Với $(-1;1)$, ta có $-3x+y-4=0$.
+			\item Với $(1;3)$, ta có $-3x+y-4=-4<0$. 
+		\end{itemize}
+		Vậy $(-1;1)$ là một nghiệm của bất phương trình $-3 x+y-4 \geq 0$.
+	}
+\end{ex}
+\begin{ex}%[0D2H2-2]
+	Phần không gạch chéo ở hình sau đây là biểu diễn miền nghiệm của hệ bất phương trình nào?
+	\choice{$\heva{&x>0\\&x+2y>2}$}{$\heva{&x>0\\&2x+y<2}$}
+	{\True$\heva{&y>0\\&x+2y<2}$}{$\heva{&y>0\\&2x+y<2}$}
+	\begin{center}
+		\begin{tikzpicture}[scale=0.8,>=stealth, font=\footnotesize, line join=round, line cap=round]
+			\draw[->](-2,0)--(3,0) node[below right] {$x$};
+			\draw[->](0,-1)--(0,5) node[above] {$y$};
+			\node (0,0) [below left]{$ O $};
+			\foreach \x in {-1,...,2}
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+			\foreach \y in {1,...,5}
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+			\draw[samples=100,smooth,domain=-1.5:1.5] plot(\x,{-2*(\x)+2});
+			%\draw[samples=100,smooth,domain=-1:3] plot(\x,{-(\x)+4});
+			\fill[pattern=north west lines,pattern color=orange] (-1.5,5)--(3,5)--(3,-1)--(1.5,-1)--cycle;
+			\fill[pattern=crosshatch dots,pattern color=blue] (-2,0)--(-2,-1)--(3,-1)--(3,0)--cycle;
+			\draw (1,0) node [above left] {$1$};
+			\draw (0,2) node [left] {$2$};
+		\end{tikzpicture}
+	\end{center}
+	\loigiai{Ta có $\heva{&y>0\\&x+2y<2}$ biểu diễn miền nghiệm như hình bên trên.}
+\end{ex}
+\begin{ex}%[0H4N1-3] 
+	Cho ${\alpha}$ và $\beta$ là hai góc bù nhau. Khẳng định nào sau đây \textbf{sai}?
+	\choice{$\tan \alpha=-\tan \beta$}{\True$\cot \alpha=\cot \beta$}{$\sin \alpha=\sin \beta$}{$\cos \alpha=-\cos \beta$}
+	\loigiai{Với ${\alpha}$ và $\beta$ là hai góc bù nhau thì $\sin \alpha=\sin \beta$; $\cos \alpha=-\cos \beta$; $\tan \alpha=-\tan \beta$; $\cot \alpha=-\cot \beta$.
+		\\Vậy khẳng định sai là $\cot \alpha=\cot \beta$.
+	}
+\end{ex}
+\begin{ex}%[0H4N2-2]
+	Cho tam giác $ABC$ có $a=8,c=12,\widehat B=60^\circ$. Diện tích tam giác $ABC$ là 
+	\choice{$12\sqrt3$}{\True$24\sqrt3$}{$24$}{$12$}
+	\loigiai{Ta có $S_{ABC}=\dfrac{1}{2}ac\sin \widehat B=24\sqrt3$. }
+\end{ex}
+\begin{ex}%[0H4N2-1]
+	Cho tam giác $ABC$ có $a=10$, $b=14$, $c=17$. Số đo của góc $B$ là 
+	\choice{$\widehat B\approx 92^\circ$}{$\widehat B\approx 89^\circ$}{\True$\widehat B\approx 55^\circ$}{$\widehat B\approx 36^\circ$}
+	\loigiai{Ta có $\cos B=\dfrac{a^2+c^2-b^2}{2ac}=\dfrac{193}{340}$, suy ra $\widehat B\approx 55^\circ$.}
+\end{ex}
+\begin{ex}%[0H4N2-2]
+	Có hai trạm quan sát $A$ và $B$ ven hồ và một trạm quan sát ${C}$ ở giữa hồ. Để tính khoảng cách từ ${A}$ và ${B}$ đến ${C}$, người ta làm như sau
+	\begin{itemize}
+		\item Đo góc $B A C=60^{\circ}$, đo góc $A B C=45^{\circ}$.
+		\item Đo khoảng cách $A B=1200$ m.
+	\end{itemize}
+	Khoảng cách từ trạm ${C}$ đến trạm ${A}$ bằng bao nhiêu mét?
+	\begin{center}
+		\begin{tikzpicture}[line join=round, line cap=round,scale=1.5,transform shape]
+			\definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13}	
+			\definecolor{lightcornflowerblue}{rgb}{0.6, 0.81, 0.93}
+			\definecolor{forestgreen(web)}{rgb}{0.13, 0.55, 0.13}
+			\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+			\definecolor{bronze}{rgb}{0.8, 0.5, 0.2}
+			\definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+			
+			\clip (-1.8,-2.5) rectangle (2.3,1.5);
+			\tikzset{gon_song/.pic={
+					\def\S{ %sóng
+						(-1.35,-2.15)
+						..controls +(160:.5) and +(-40:.5) ..(-2.5,-2.15)
+						(3.5,-2.2)
+						..controls +(160:.2) and +(-40:.5) ..(2,-2.2)
+						%----
+						(3,-2.5)
+						..controls +(160:.5) and +(-40:.5) ..(1.4,-2.5)
+						..controls +(160:.5) and +(-40:.5) ..(.3,-2.5)
+						..controls +(160:.5) and +(-40:.5) ..(-.75,-2.55)
+						;}
+					\draw[color=deepskyblue] \S;
+			}}
+			\tikzset{nuoc/.pic={
+					\def\N{ %nước sông
+						(-4,.3)
+						%..controls +(160:.2) and +(-80:.3)..(1.5,.1)
+						..controls +(120:.5) and +(-100:0.2)..(4,.8)--(4,-1.1)
+						..controls +(-150:.3) and +(60:.3) ..(2,-1.2)
+						..controls +(-100:.5) and +(120:1) ..(-4,-1.9)
+						--cycle
+						;}
+					%\draw \N;
+					\fill[lightcornflowerblue] \N;
+			}}
+			
+			\tikzset{dat/.pic={
+					\def\T{ %Đất
+						(0,0)%trái
+						..controls +(170:.2) and +(40:.3) ..  (-.7,-.1)
+						..controls +(-120:.15) and +(40:.15) ..  (-1.1,-.25)
+						..controls +(-150:.4) and +(170:.4) ..  (-.7,-.55)
+						..controls +(-35:.4) and +(-150:.2) ..  (.2,-.7)
+						..controls +(50:.4) and +(-120:.35) ..  (.8,-.5)
+						..controls +(60:.3) and +(-120:.2) ..  (1.3,-.3)
+						..controls +(60:.2) and +(-50:.1) ..  (.7,-.1)
+						..controls +(60:.2) and +(-40:.1) ..  (0,0)
+						
+						;}
+					\draw \T;
+					\fill[darkbrown] \T;
+			}}
+			\tikzset{cay/.pic={
+					\def\T{ %Thân
+						(-.33,0)%trái
+						..controls +(-50:.25) and +(40:.45) ..  (-.57,-1.45)
+						..controls +(20:.1) and +(-160:.15) ..  (-.1,-1.3)
+						..controls +(-120:.1) and +(60:.15) ..  (-.2,-1.6)
+						..controls +(-30:.1) and +(-140:.15) ..  (.15,-1.3)
+						..controls +(-20:.1) and +(-160:.15) ..  (.57,-1.4)
+						..controls +(170:.4) and +(-160:.1) ..  (.35,0)
+						..controls +(110:.5) and +(80:.5) ..  (-.33,0)
+						;}
+					%\draw \T;
+					\fill[bronze] \T;
+					\def\C{ 
+						(0,.3)
+						..controls +(-100:.25) and +(-60:.2) ..  (-.3,.1)
+						..controls +(-100:.25) and +(-60:.2) ..  (-.6,0)
+						..controls +(-120:.45) and +(-110:.35) ..  (-1,.2)
+						..controls +(-150:.5) and +(-140:.35) ..  (-1.15,.7)%nút giao
+						..controls +(-170:.4) and +(-170:.35) ..  (-1,1.15)
+						..controls +(140:.35) and +(110:.4) ..  (-.37,1.35)
+						..controls +(110:.25) and +(80:.3) ..  (-.15,1.35)
+						..controls +(80:.3) and +(95:.8) ..  (.55,1.1)
+						..controls +(80:.2) and +(95:.2) ..  (.8,1.1)
+						..controls +(20:.1) and +(95:.1) ..  (.95,1)
+						..controls +(-20:.4) and +(35:.25) ..  (1,.47)
+						..controls +(-30:.3) and +(-20:.3) ..  (.75,0.05)%nút giao
+						..controls +(-120:.3) and +(-60:.2) ..  (.35,0)
+						..controls +(175:.2) and +(-160:.1) ..  (.2,0.2)
+						..controls +(-160:.1) and +(-70:.1) ..  (0,.3)
+						;}
+					\draw \C;
+					\fill[forestgreen(web)] \C;
+					\def\C1{ 
+						(-1.15,.7)%nút giao
+						..controls +(-170:.4) and +(-170:.35) ..  (-1,1.15)
+						..controls +(140:.35) and +(110:.4) ..  (-.37,1.35)
+						..controls +(110:.25) and +(80:.3) ..  (-.15,1.35)
+						..controls +(80:.3) and +(95:.8) ..  (.55,1.1)
+						..controls +(80:.2) and +(95:.2) ..  (.8,1.1)
+						..controls +(20:.1) and +(95:.1) ..  (.95,1)
+						..controls +(-20:.4) and +(35:.25) ..  (1,.47)
+						..controls +(-50:.5) and +(-85:.6) ..  (.65,.55)% gần nút giao
+						..controls +(-160:.4) and +(-120:.4) ..  (0,.7)
+						..controls +(-150:.2) and +(-80:.4) ..  (-.63,.6)
+						..controls +(-140:.5) and +(-130:.4) ..  (-1.15,.7)
+						;}
+					%\draw \C1;
+					\fill[darkpastelgreen] \C1;
+					\def\G{ %Gân
+						(-.8,.2)
+						..controls +(-35:.1) and +(130:.35) ..  
+						(-.32,0)%nút giao
+						..controls +(-40:.1) and +(45:.35) ..  (-.42,-1.25)
+						(-.32,0)%nút giao
+						..controls +(120:.1) and +(-45:.35) ..  (-.58,.45)
+						(-.32,0)%nút giao
+						..controls +(80:.1) and +(-170:.35) ..  (-.05,.45)
+						(-.28,.3)
+						..controls +(80:.1) and +(-60:.05) ..  (-.35,.55)
+						%Gân phải
+						(.45,-1.3)
+						..controls +(130:.6) and +(-160:.3) ..  (.6,0.35)
+						(.37,0)
+						..controls +(35:.2) and +(-150:.1) ..  (.66,0.15)
+						(.37,0)
+						..controls +(80:.2) and +(-40:.1) ..  (.18,0.4)
+						(.31,0.25)
+						..controls +(80:.1) and +(-150:.1) ..  (.38,0.5)
+						(.25,-0.15)
+						..controls +(-110:.05) and +(110:.05) ..  (.2,-0.5)%gân dọc
+						(.2,-0.25)
+						..controls +(-110:.05) and +(110:.05) ..  (.17,-0.45)
+						(-.2,-0.15)
+						..controls +(-70:.1) and +(110:.05) ..  (-.18,-0.5)
+						(-.15,-0.15)
+						..controls +(-70:.1) and +(110:.05) ..  (-.15,-0.7)
+						(-.05,-0.8)
+						..controls +(-80:.15) and +(-10:.15) ..  (-.3,-1.28)
+						(-.1,-0.9)
+						..controls +(-110:.1) and +(20:.05) ..  (-.2,-1.1)
+						(.1,-1)
+						..controls +(-50:.05) and +(120:.05) ..  (.15,-1.2)
+						(.1,-1.15)
+						..controls +(-50:.05) and +(120:.05) ..  (.12,-1.2)
+						(.15,-.75)
+						..controls +(-120:.1) and +(-140:.1) ..  (.22,-.9)
+						..controls +(70:.12) and +(120:.05) ..  (.18,-.9)
+						;}
+					
+					\draw \G;
+					
+			}}
+			\path
+			(0,0)pic[scale=1]{nuoc}
+			(0,.45)pic[scale=1]{dat}
+			%	(0,.5)pic[scale=.6]{cay}
+			(0,.5)pic[scale=.6]{gon_song}
+			(2,1.5)pic[scale=.6]{gon_song}
+			(-2.5,1.3)pic[scale=.5]{gon_song}
+			;
+			\path 	(2,-1.5) coordinate (A)
+			(-1,-1.5) coordinate (B)
+			(0,-.3) coordinate (C)
+			;
+			\node at (B) [left]{\tiny $B$};
+			\node at (A) [right]{\tiny $A$};
+			\node[white] at (C) [above]{\tiny $C$};
+			\node at (0.5,-1.4) [below]{\tiny $1200$ m};
+			\draw (B)--(C)--(A)--cycle;
+			\draw    pic["\tiny $60^\circ$", draw=black, angle eccentricity=1.6,angle radius=.4cm, color=blue]
+			{angle=C--A--B};
+			\draw    pic["\tiny $45^\circ$", draw=black, angle eccentricity=1.6, angle radius=.4cm, color=blue]
+			{angle=A--B--C};
+			\draw pic[draw, double, cap = butt, angle radius = 12pt]{angle = A--B--C};
+		\end{tikzpicture}
+	\end{center}
+	
+	\choice{$\approx 878$}{$\approx 780$}{$\approx 800$}{$\approx 900$}
+	\loigiai{Ta có $\widehat{C}=180^\circ-60^\circ-45^\circ=75^\circ$. Theo định lý sin, ta có $\dfrac{AC}{\sin B}=\dfrac{AB}{\sin C}\Rightarrow AC=\dfrac{AB\cdot \sin B}{\sin C}\approx 878$.}
+\end{ex}
+
+%Câu 11
+\begin{ex}%[0H2N1-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Mui Doan]%[THPT QuocTeAChau ]
+Vectơ có điểm đầu là $D$, điểm cuối là $E$  được ký hiệu là 
+	\choice
+	{$DE$}
+	{$|\overrightarrow{DE}|$}
+	{\True $\overrightarrow{DE}$}
+	{$\overrightarrow{ED}$}
+	\loigiai{
+	Vectơ có điểm đầu là $D$, điểm cuối là $E$  được ký hiệu là $\overrightarrow{DE}$.
+	}
+\end{ex}
+%Câu 12
+\begin{ex}%[0H2N2-3]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Mui Doan]%[THPT QuocTeAChau ]
+	Cho ba điểm $O$, $M$, $N$. Đẳng thức nào sau đây đúng?
+	\choice
+	{$\overrightarrow{OM}+\overrightarrow{ON}=\overrightarrow{MN}$}
+	{$\overrightarrow{OM}+\overrightarrow{ON}=\overrightarrow{OO}$}
+	{\True $\overrightarrow{OM}-\overrightarrow{ON}=\overrightarrow{NM}$}
+	{$\overrightarrow{OM}-\overrightarrow{ON}=\overrightarrow{MN}$}
+	\loigiai{
+	Ta có $\overrightarrow{OM}-\overrightarrow{ON}=\overrightarrow{NM}$.
+	}
+\end{ex}
+
+
+\Closesolutionfile{ans}
+%\begin{center}
+%	\textbf{ĐÁP ÁN}
+%	\inputansbox{10}{ans/ans}	
+%\end{center}
+\begin{center}
+	\textbf{PHẦN 2 - TỰ LUẬN}
+\end{center}
+%Câu 1...........................
+\begin{bt}%[0D1H3-1]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Mui Doan]%[THPT QuocTeAChau ]
+Cho tập hợp $A=\{-2;-1;0;3;4\} $ và $B=\{0;1;2;3\}$. Xác định $A\cup B$, $A\cap B$, $B\setminus A$.
+	\loigiai{
+	Ta có
+	\begin{itemize}
+		\item $A\cup B=\{-2;-1;0;1;2;3;4\}$.
+		\item $A\cap B=\{0;3\}$.
+		\item $B\setminus A=\{1;2\}$.
+	\end{itemize}
+	}
+\end{bt}
+
+
+%Câu 2...........................
+\begin{bt}%[0D2H1-2]%[Dự án đề kiểm tra Toán 10 GHKI NH23-24- Mui Doan]%[THPT QuocTeAChau ]
+	\,
+	\begin{enumerate}
+		\item Biểu diễn miền nghiệm của bất phương trình $2x - 3y + 6 < 0$.
+		\item Một cửa hàng có kế hoạch nhập về hai loại điện thoại $A$ và $B$, giá mỗi chiếc lần lượt là $20$ triệu đồng và $30$ triệu đồng với số vốn ban đầu không vượt quá $2{,}4$ tỉ đồng. Loại điện thoại $A$ mang lợi nhuận $2$ triệu đồng cho mỗi chiếc bán được và loại điện thoại $B$ mang lợi nhuận $2{,}5$ triệu đồng cho mỗi chiếc. Cửa hàng ước tính rằng tổng nhu cầu hàng tháng sẽ không vượt quá $90$ chiếc cả hai loại. Nếu là chủ cửa hàng thì em cần đầu tư kinh doanh mỗi loại bao nhiêu chiếc để thu được lợi nhuận lớn nhất?
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item Vẽ đường thẳng $d\colon 2x-3y+6=0$.\\
+		Lấy điểm $O(0;0)\notin d$.\\
+		Thế tọa độ $O$ vào bất phương trình ta được $2\cdot 0-3\cdot 0+6<0$ (sai).\\
+		Vậy miền không chứa điểm $O$ (không kể bờ $d$) là miền nghiệm của bất phương trình.
+		\begin{center}
+					\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+					\tikzset{every node/.style={scale=0.9}}
+					\begin{scope}
+						\clip (-4,-1) rectangle (2,3);
+						\fill[pattern=north east lines] (-5,-1.33)--(3,-1.33)--(3,4)--cycle;
+						\draw (1.5,3)--(-4.5,-1) node [pos=0.5, above, sloped] {$2x-3y+6=0$};
+					\end{scope}
+					\draw[->] (-4,0)--(2,0) node[below]{$x$};
+					\draw[->] (0,-1)--(0,3) node[left]{$y$};
+					\draw (0,0) node[below left]{$O$};
+					\foreach \x in {-3}
+					\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+					\foreach \y in {2}
+					\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\y$};
+				\end{tikzpicture}
+		\end{center}
+	\item Gọi số máy loại $A$ và $B$ cần đầu tư lần lượt là $x$ và $y$. ($x, y\in\mathbb{N}$).\\
+	Do tổng số vốn ban đầu không vượt quá $2{,}4$ tỉ đồng nên ta có $$20\cdot 10^6x+30\cdot 10^6y\leq 2{,}4\cdot 10^9\Leftrightarrow 2x+3y\leq 240.$$
+	Vì tổng nhu cầu hàng tháng sẽ không vượt quá $90$ chiếc cả hai loại nên $x+y\leq 90$.\\
+	Lợi nhuận thu được là $F=2\cdot 10^6x+2{,}5\cdot 10^6y=10^6(2x+2{,}5y) $.\\
+	Ta có hệ bất phương trình $\heva{&x+y\leq 90\\&2x+3y\leq 240\\&x\geq 0\\&y\geq 0.} $
+	\begin{center}
+		\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick,scale=0.7]
+				\tikzset{every node/.style={scale=0.9}}
+				\begin{scope}
+					\clip (-1.5,-1.5) rectangle (13.5,10.5);
+					\fill[pattern=north east lines] (-2.5,11.5)--(14.5,11.5)--(14.5,-5.5)--cycle;
+					\fill[pattern=north east lines] (-4.5,11)--(14.5,11)--(14.5,-1.67)--cycle;
+					\fill[pattern=north east lines] (0,-1.5)--(-1.5,-1.5)--(-1.5,10.5)--(0,10.5)--cycle;
+					\fill[pattern=north east lines] (-1.5,0)--(-1.5,-1.5)--(13.5,-1.5)--(13.5,0)--cycle;
+					\draw (-1.5,10.5)--(10.5,-1.5) node [pos=0.7, above, sloped] {$x+y-9=0$};
+					\draw (-3.75,10.5)--(14.25,-1.5) node [pos=0.7, above, sloped] {$2x+3y-24=0$};
+				\end{scope}
+				\draw[->] (-1.5,0)--(13.5,0) node[below]{$x$};
+				\draw[->] (0,-1.5)--(0,10.5) node[left]{$y$};
+				\draw (0,0) node[below left]{$O$};
+				\draw[thin] (9,1pt)--(9,-1pt) node [below] {$90$};
+				\draw[thin] (12,1pt)--(12,-1pt) node [below] {$120$};
+				\draw[thin] (1pt,8)--(-1pt,8) node [right] {$80$};
+				\draw[thin] (1pt,9)--(-1pt,9) node [left] {$90$};
+				\draw[dashed,thin] (3,0)node[below]{$30$}--(3,6)--(0,6)node[left]{$60$}
+				(9,0)node[above right,fill=white]{$A$}
+				(3,6)node[above right,fill=white]{$B$}
+				(0,8)node[below left,fill=white]{$C$}
+				;
+			\end{tikzpicture}
+	\end{center}
+	Miền nghiệm của hệ bất phương trình là miền tứ giác $OABC$ kể cả các cạnh của tứ giác.
+	\begin{itemize}
+		\item Tại $O$ ta có $F=10^6(2\cdot 0+2{,}5\cdot 0)=0$.
+		\item Tại $A(90;0)$ ta có $F=10^6(2\cdot 90+2{,}5\cdot 0)=180\cdot 10^6$.
+		\item Tại $B(30;60)$ ta có $F=10^6(2\cdot 30+2{,}5\cdot 60)=210\cdot 10^6$.
+		\item Tại $C(0;80)$ ta có $F=10^6(2\cdot 0+2{,}5\cdot 80)=200\cdot 10^6$.
+	\end{itemize}
+	$F$ đạt giá trị lớn nhất tại $C $ khi $x=30$ và $y=60$.\\
+	Vậy cần đầu tư kinh doanh điện thoại $A$ là $30$ chiếc và điện thoại $B$ là $60$ chiếc để thu được lợi nhuận lớn nhất.
+	\end{enumerate}
+	}
+\end{bt}

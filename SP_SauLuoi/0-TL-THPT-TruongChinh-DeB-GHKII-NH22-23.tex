@@ -1,0 +1,161 @@
+
+\de{ĐỀ THI GIỮA HỌC KỲ II NĂM HỌC 2022-2023}{THPT Trường Chinh - Đề B}
+
+
+\begin{bt}%[0D4B2-1]%[Dự án đề kiểm tra HKII NH22-23- Hiếu Mai]%[Trường Chinh B]
+Xét dấu và giải bất phương trình sau: $x^2-7 x+12<0$.
+\loigiai{
+$ \bullet $
+$ x^2-7 x+12 = 0 \Rightarrow \hoac{&x=3\\&x=4.} $
+\\
+$ \bullet $ Bảng xét dấu
+\begin{center}
+\begin{tikzpicture}
+	\tkzTabInit[nocadre=false,lgt=3,espcl=2,deltacl=0.6]
+		{$x$ /1, $x^2-7 x+12$ /1}
+		{$-\infty$, $3$, $4$, $+\infty$}
+	\tkzTabLine{,+,$0$,-,$0$,+,}
+\end{tikzpicture}
+\end{center}
+ta thấy
+$$
+	x^2-7 x+12<0
+	\Leftrightarrow
+	3<x<4.
+$$
+}
+\end{bt}
+
+\begin{bt}%[0D4K2-2]%[Dự án đề kiểm tra HKII NH22-23- Hiếu Mai]%[Trường Chinh B]
+Tìm tất cả các giá trị của tham số $m$ để bất phương trình $x^2-m x+1 \ge 0$ nghiệm đúng với mọi $x \in \mathbb{R}$.
+\loigiai{
+Đặt $ f(x)=x^2-m x+1 $ là tam thức bậc hai có $ a=1 $, $ b=-m $, $ c=1 $ và
+$$
+	\Delta = b^2-4ac = m^2-4
+$$
+Để $ f(x) \ge 0 $ với mọi $ x \in \mathbb{R} $ thì
+$$
+	\Delta \le 0 
+	\Leftrightarrow m^2-4 \le 0 
+	\Leftrightarrow -2 \le m \le 2.
+$$
+Vậy $  -2 \le m \le 2 $ thoả yêu cầu bài toán.
+}
+\end{bt}
+
+\begin{bt}%[0D4K3-1]%[Dự án đề kiểm tra HKII NH22-23- Hiếu Mai]%[Trường Chinh B]
+Giải phương trình sau $\sqrt{5 x^2-28 x-29}=\sqrt{x^2-5 x+6}$.
+\loigiai{
+Bình phương hai vế của phương trình đã cho, ta được
+$$
+	5 x^2-28 x-29 = x^2-5 x+6
+	\Leftrightarrow
+	4x^2-23x-35 = 0
+	\Leftrightarrow
+	\hoac{&x=-\dfrac{5}{4}\\&x=7}
+$$
+Lần lượt thay $ x=-\dfrac{5}{4} $ và $ x=7 $ vào phương trình đã cho, ta thấy cả hai giá trị $ x $ đều thoả mãn.
+\\
+Vậy phương trình đã cho có tập nghiệm $ S=\left\{ -\dfrac{5}{4};\, 7 \right\} $.
+}
+\end{bt}
+
+\begin{bt}%[0D4K2-3]%[Dự án đề kiểm tra HKII NH22-23- Hiếu Mai]%[Trường Chinh B]
+Một quả bóng được ném thẳng lên từ độ cao $1,6 m$ so với măt đất với vận tốc $10 \,m / s$. Độ cao của bóng so với măt đất (tính bằng mét) sau $t$ giây được cho bới hàm số $h(t)=-4,9 t^2+10 t+1,6$. Hỏi bóng ở độ cao trên $5 m$ trong khoàng thời gian bao lâu? Làm tròn kết quả đến hàng phần trăm.
+\loigiai{
+Theo yêu cầu bài toán, ta lập được bất phương trình 
+$$ 
+	-4,9 t^2+10 t+1,6 >5 
+	\Leftrightarrow
+	4,9t^2-10t-3,4 <0
+$$
+Bảng xét dấu
+\begin{center}
+\begin{tikzpicture}
+	\tkzTabInit[nocadre=false,lgt=4,espcl=3,deltacl=0.6]
+		{$m$ /1, $ 4{,}9t^2-10t-3{,}4 $ /1}
+		{$-\infty$, $-0{,}30$, $2{,}34$, $+\infty$}
+	\tkzTabLine{,+,$0$,-,$0$,+,}
+\end{tikzpicture}
+\end{center}
+Ta thấy 
+$$ 
+	4,9t^2-10t-3,4 <0 
+	\Leftrightarrow
+	-0,30<t<2,34
+$$
+Mà $ t>0 $ nên $ 0<t<2,34 $.
+\\
+Vậy bóng ở độ cao trên $ 5m $ trong thời gian $ 2,34 $ giây.
+}
+\end{bt}
+
+
+\begin{bt}%[0T8B1-3]%[Dự án đề kiểm tra GHKII NH22-23- TheHung Nguyen]%[THPT TRƯỜNG CHINH -ĐỀ B]
+	Từ các chữ số $0$, $1$, $2$, $3$, $4$, $5$ có thể lập được bao nhiêu số chẵn gồm $4$ chữ số khác nhau?
+\loigiai{
+	Gọi số tự nhiên $n$ thỏa đề bài có dạng $\overline{abcd}$.
+	\begin{enumerate}[$\star$]
+		\item	Trường hợp $1:$ $d=0$ thì
+		\begin{itemize}
+		\item	$a$ có $5$ cách chọn
+		\item	$b$ có $4$ cách chọn
+		\item	$c$ có $3$ cách chọn
+		\end{itemize}
+	Suy ra có $1 \cdot 5 \cdot 4\cdot3=60$ số $n$ chẵn thỏa trường  hợp $1$.
+	\item Trường hợp $2:$ $d \in\{2; 4\}$ thì $d$ có $2$ cách chọn
+	\begin{itemize}
+	\item	$a$ có $4$ cách chọn
+	\item	$b$ có $4$ cách chọn
+	\item	$c$ có $3$ cách chọn
+	\end{itemize}
+Suy ra có $2\cdot 4 \cdot4 \cdot3=96$ số $n$ chẵn thỏa trường  hợp $2$.
+	\end{enumerate}	
+	Vậy lập được tất cả $96+60=156$ số $n$ thỏa mãn đề bài.
+}
+\end{bt}
+
+\begin{bt}%[0T5B3-3]%[Dự án đề kiểm tra GHKII NH22-23- TheHung Nguyen]%[THPT TRƯỜNG CHINH -ĐỀ B]
+	\text{}
+	\begin{enumerate}
+		\item  Trong mặt phẳng tọa độ $Oxy$, cho $\overrightarrow{a}=2 \overrightarrow{i}, \overrightarrow{b}=-3 \vec{j}$. Tìm tọa độ của véc-tơ $\overrightarrow{m}=3 \overrightarrow{a}-2 \overrightarrow{b}$.
+		\item Trong mặt phẳng tọa độ $O x y$, cho $A(2; 1)$, $B(-1;-2)$, $C(-3; 2)$ xác định tọa độ điểm $D$ sao cho tứ giác $ABCD$ là hình bình hành.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+		\item 	Ta có $\overrightarrow{a}=2 \overrightarrow{i}\Rightarrow \overrightarrow{a}(2;0)$ và $\overrightarrow{b}=-3 \vec{j}\Rightarrow \overrightarrow{b}(0;-3)$.\\
+		Ta có $\overrightarrow{m}=3 \overrightarrow{a}-2 \overrightarrow{b}=3\cdot (2;0)-2\cdot (0;-3)\Rightarrow \overrightarrow{m}=(6;6)$.
+		\item Ta có $\overrightarrow{AB}=(-3;-3)$.\\
+		Gọi $D(a;b)$, khi đó $\overrightarrow{DC}=(-3-a;2-b)$.\\
+		Tứ giác $ABCD$ là hình bình hành thì $\overrightarrow{DC}=\overrightarrow{AB}\Leftrightarrow \heva{& -3-a=-3 \\ & 2-b=-3}\Leftrightarrow \heva{& a=0 \\ & b=5.}$\\
+		Vậy $D(0;5)$ thì tứ giác $ABCD$ là hình bình hành.
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[0T9B2-2]%[Dự án đề kiểm tra GHKII NH22-23- TheHung Nguyen]%[THPT TRƯỜNG CHINH -ĐỀ B]
+	\text{}
+	\begin{enumerate}
+	\item Viết phương trình tổng quát của đường thẳng $\Delta$ trong trường hợp sau:
+	Qua $M(2;-3)$ và vuông góc với $AB$ và $A(1;5), B(-4;7)$.
+	\item Tính khoảng cách từ điểm $M$ đến $\Delta$ trong trường họp sau:
+	$M(1,2)$, $\Delta\colon x+3 y-1=0$.
+	\end{enumerate}
+	\loigiai{
+	\begin{enumerate}
+		\item Ta có $\overrightarrow{AB}=(-5;2)$.\\
+		Phương trình đường thẳng qua $M$ và vuông góc với $AB$, do đó sẽ nhận $\overrightarrow{AB}=(-5;2)$ làm véc-tơ pháp tuyến 
+		$$-5(x-2)+2(y+3)\Leftrightarrow -5x+2y+16=0.$$
+		\item Khoảng cách từ $M$ tới đường thẳng $\Delta$ là
+		$$\mathrm{d}(M,\Delta)=\dfrac{|1+3\cdot2-1|}{\sqrt{1^2+3^2}}=\dfrac{3\sqrt{10}}{5}.$$
+	\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[0T9B3-2]%[Dự án đề kiểm tra GHKII NH22-23- TheHung Nguyen]%[THPT TRƯỜNG CHINH -ĐỀ B]
+	Viết phương trình $(C)$ có tâm $I(1; 3)$ và đi qua $B(4; 7)$.
+	\loigiai{Ta có $\overrightarrow{IB}=(3;4)\Rightarrow R=IB=\sqrt{3^2+4^2}=5$.\\
+		Phương trình $(C)$ có tâm $I(1; 3)$ và đi qua $B(4; 7)$ là
+		$(x-1)^2+(y-3)^2=25$.
+	}
+\end{bt}

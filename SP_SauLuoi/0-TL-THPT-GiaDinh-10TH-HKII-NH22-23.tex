@@ -1,0 +1,175 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{THPT Gia Định 10TH}
+
+
+\begin{bt}%[0D4B5-1]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Gia Định - Tích hợp]
+	Giải bất phương trình sau $ - 7x^2 + 10x - 3\geq0$.
+	\loigiai{
+	$- 7x^2 + 10x - 3=0\Leftrightarrow \hoac{& x=1 \\ & x=\dfrac{3}{7}.}$
+	\begin{center}
+		\begin{tikzpicture}[yscale=.8,xscale=1.2]
+			\def\a{6} % số cột nhãn
+			\def\b{2} % số hàng nhãn
+			%\pagecolor{yellow!30}
+			\draw[shift={(-.5,.5)}]
+		%	(-1.5,0.25) rectangle (\a,-\b-.25)
+			(-1.5,-1)--+(0:\a+1.5)
+		%	(-1,-2)--+(0:\a+1)
+		%	(-1,-3)--+(0:\a+1)
+			(1,0)--+(-90:\b)
+		;
+			\path
+			(-.75,0) node {$x$}
+			(-.85,-1) node {$- 7x^2 + 10x - 3$}
+			(1.25,-1) node {$-$}
+			%(1,-2) node {$+$}
+			%(1,-3) node {$-$}
+			(2,0.1) node {$\dfrac{3}{7}$}
+			(2,-1) node {$0$}
+			%(2,-3) node {$0$}
+			(3,-1) node {$+$}
+			%(3,-2) node {$+$}
+			%(3,-3) node {$+$}
+			(4,0) node {$1$}
+			(4,-1) node {$0$}
+			%(4,-3) node {$0$}
+			(5,-1) node {$-$}
+			%(5,-2) node {$-$}
+			%(5,-3) node {$-$}
+			;
+		\end{tikzpicture}
+	\end{center}
+Vậy $\dfrac{3}{7}\leq x\leq 1$.
+}
+\end{bt}
+
+\begin{bt}%[0D3B2-4]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Gia Định - Tích hợp]
+	Giải các phương trình sau
+	\begin{enumerate}
+		\item $\sqrt{x^2 + 3x - 3}=2x - 3$.
+		\item $\sqrt{3x^2 - 2x + 3}=\sqrt{x^2 + 3x + 1}$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\allowdisplaybreaks{
+			\item \begin{eqnarray*}
+				& &\sqrt{x^2 + 3x - 3}=2x - 3 \\
+				&\Leftrightarrow &\heva{& 2x-3\geq0 \\ & x^2+3x-3=(2x-3)^2}\\
+				&\Leftrightarrow&\heva{& 2x\geq 3 \\ & x^2+3x-3=4x^2-12x+9}\\
+				&\Leftrightarrow &\heva{& x\geq\dfrac{3}{2} \\ & 3x^2-15x+12=0}\\
+				&\Leftrightarrow&\heva{& x\geq\dfrac{3}{2} \\ & \hoac{& x=1 \mbox{ (loại)} \\ & x=4 \mbox{ (nhận)}.}}
+			\end{eqnarray*}
+		Vậy $x=4$.
+		\item \begin{eqnarray*}
+			& &\sqrt{3x^2 - 2x + 3}=\sqrt{x^2 + 3x + 1}\\
+			&\Leftrightarrow &\heva{& x^2 + 3x + 1\geq0 \\ & 3x^2-2x+3=x^2 + 3x + 1}\\
+			&\Leftrightarrow&\heva{& \hoac{& x\geq\dfrac{-3+\sqrt{5}}{2} \\ & x\leq\dfrac{-3-\sqrt{5}}{2}} \\ & 2x^2-5x+2=0}\\
+			&\Leftrightarrow&\heva{& \hoac{& x\geq\dfrac{-3+\sqrt{5}}{2} \\ & x\leq\dfrac{-3-\sqrt{5}}{2}} \\ & \hoac{& x=2 \\ & x=\dfrac{1}{2}} \mbox{ (nhận)}.}
+		\end{eqnarray*}}
+	Vậy $x=2$, $x=\dfrac{1}{2}$.
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[1D2K5-5]%[Dự án đề kiểm tra HKII NH22-23- Thành Lê]%[Gia Định - Tích hợp]
+	Trên giá sách có $15$ cuốn sách khác nhau, trong đó có $7$ cuốn sách toán, $5$ cuốn sách lí và $3$ cuốn sách hóa. Bạn Lan chọn ngẫu nhiên $4$ cuốn sách để đem đi tặng bạn. Tính xác suất các biến cố sau
+	\begin{enumerate}
+		\item $A\colon$ \lq\lq $4$ cuốn sách được chọn có đủ $3$ môn toán, lí, hóa\rq\rq.
+		\item $B\colon$ \lq\lq $4$  cuốn sách được chọn có không quá $2$ cuốn toán nhưng vẫn phải có sách toán\rq\rq.
+	\end{enumerate}
+	\loigiai{
+		Bạn Lan chọn ngẫu nhiên $4$ cuốn sách trong $15$ cuốn sách khác nhau nên số phần tử của không gian mẫu là $\mathrm{n}(\Omega)=\mathrm{C}_{15}^4=1\,365$ (phần tử).
+		\begin{enumerate}
+			\item Số phần tử của biến cố $A$ là $\mathrm{n}(A)=\mathrm{C}_7^2\cdot5\cdot3+\mathrm{C}_5^2\cdot7\cdot3+\mathrm{C}_3^2\cdot7\cdot5=630$ (phần tử).\\
+			Xác suất của biến cố $A$ là $\mathrm{P}(A)=\dfrac{630}{1\,365}=\dfrac{6}{13}$.
+			\item Ta có $2$ trường hợp sau
+			\begin{itemize}
+				\item Có $1$ sách toán nên số phần tử của trường hợp này là $$7\cdot\mathrm{C}_8^3=392 \mbox{ (phần tử).}$$ 
+				\item Có $2$ sách toán nên số phần tử của trường hợp này là  
+				$$\mathrm{C}_7^2\cdot\mathrm{C}_8^2= 588\mbox{ (phần tử).}$$ 
+			\end{itemize}
+		Vậy số phần tử của biến cố $B$ là $\mathrm{n}(B)=392+588=980$ (phần tử).\\
+			Xác suất của biến cố $B$ là $\mathrm{P}(B)=\dfrac{980}{1\,365}=\dfrac{28}{39}$.
+		\end{enumerate}
+	}
+\end{bt}
+
+	\begin{bt}%[0T9B3-1]%[0T9K3-3]
+		Trong mặt phẳng toạ độ $Oxy$, cho đường tròn $(C) \colon x^2+y^2-2x+6y+6=0$.
+		\begin{listEX}
+			\item Tìm toạ độ tâm $I$ và bán kính của đường tròn $(C)$.
+			\item Viết phương trình tiếp tuyến $d$ của đường tròn $(C)$, biết tiếp tuyến song song với đường thẳng $\Delta \colon 3x-4y+2023=0$.
+		\end{listEX}
+		\loigiai{
+			\begin{listEX}
+				\item Đường tròn $(C) \colon x^2+y^2-2x+6y+6=0$ có tâm $I(1;-3)$ và bán kính $R=\sqrt{1^2+(-3)^2-6}=2$.
+				\item Do $d \parallel \Delta \colon 3x-4y+2023=0$ nên $d \colon 3x-4y+c=0$ $(c \neq 2023)$.\\
+				Để $d$ tiếp xúc với $(C)$ thì $\mathrm{d}(I,d)=R$
+				$$\Leftrightarrow \dfrac{\big|3\cdot 1-4 \cdot (-3) +c\big|}{\sqrt{3^2+(-4)^2}}=2 
+				\Leftrightarrow \dfrac{\big|15 +c\big|}{5}=2
+				\Leftrightarrow \hoac{&c=-5\\&c=-25} (\text{thoả mãn }c \neq 2023).$$
+				Vậy có hai tiếp tuyến thoả mãn đề bài là $d_1 \colon 3x-4y-5=0$ và $d_2 \colon 3x-4y-25=0$.
+			\end{listEX}
+		}
+	\end{bt}
+	
+	\begin{bt}%[0T9B4-1]%[0T9B4-3]
+		Trong mặt phẳng toạ độ $Oxy$, cho elip $(E) \colon \dfrac{x^2}{25}+\dfrac{y^2}{9}=1$.
+		\begin{listEX}
+			\item Tìm toạ độ các tiêu điểm, các đỉnh, tiêu cự, độ dài trục lớn, độ dài trục bé của $(E)$.
+			\item Gọi $M$, $N$ là các điểm trên $(E)$ sao cho $NF_1+MF_2=8$. Tính giá trị $MF_1+NF_2$. (với $F_1$, $F_2$ là hai tiêu điểm của $(E)$)
+		\end{listEX}
+		\loigiai{
+			\begin{listEX}
+				\item Elip $(E) \colon \dfrac{x^2}{25}+\dfrac{y^2}{9}=1$ có $a=5$ và $b=3$. Suy ra $c=\sqrt{a^2-b^2}=4$. Từ đó
+				\begin{itemize}
+					\item Các tiêu điểm của $(E)$ là $F_1(-4;0)$, $F_2(4;0)$.
+					\item Các đỉnh của $(E)$ là $A_1(-5;0)$, $A_2(5;0)$, $B_1(0;-3)$, $B_2(0;3)$.
+					\item Tiêu cự của $(E)$ là $F_1F_2=2c=8$.
+					\item Độ dài trục lớn của $(E)$ là $A_1A_2=2a=10$.
+					\item Độ dài trục bé của $(E)$ là $B_1B_2=2b=6$.
+				\end{itemize}
+				\item Do $M,N \in (E)$ nên  $\heva{&MF_1+MF_2=2a\\&NF_1+NF_2=2a} \Rightarrow 
+				\heva{&MF_1=10-MF_2\\&NF_2=10-NF_1.}$\\
+				Từ đó $MF_1+NF_2=20-(NF_1+MF_2)=20-8=12$.
+			\end{listEX}
+		}
+	\end{bt}
+	
+	\begin{bt}%[0T7T2-1]
+		\immini{
+			Nhà bác An có một mảnh đất nhỏ trồng rau có dạng hình thang vuông với các kích thước được cho như hình vẽ. Tìm $x$ để diện tích khoảng đất này không vượt quá $7{,}5 \mathrm{\,m}^2$.}
+		{\vspace{-0.5cm}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round]
+				\foreach \x\y\t in {0/0/A, 0/-2/B, 2.6/-2/C, 4/0/D}
+				\coordinate (\t) at (\x,\y);
+				\draw (C)--(D);
+				\draw (A)--(B) node[pos=0.5,left]{$x-4 \;(\mathrm{m})$};
+				\draw (C)--(B) node[pos=0.5,below]{$x-3 \;(\mathrm{m})$};
+				\draw (A)--(D) node[pos=0.5,above]{$2x-5 \;(\mathrm{m})$};
+				\path pic[draw,angle radius=4]{right angle=A--B--C};
+				\path pic[draw,angle radius=4]{right angle=B--A--D};
+		\end{tikzpicture}}
+		\loigiai{
+			Điều kiện của biến số $x$ là $\heva{&x-4>0\\&2x-5>0\\&x-3>0} \Leftrightarrow x>4$.\\
+			Diện tích mảnh đất trồng rau của bác An là 
+			$$S(x)=\dfrac{(2x-5)+(x-3)}{2}\cdot (x-4)=\dfrac{3}{2}x^2-10x+16 \mathrm{\;(m^2)}.$$
+			Diện tích trồng rau đó không vượt quá $7{,}5 \mathrm{\,m}^2$ nghĩa là
+			$$\dfrac{3}{2}x^2-10x+16  \leq  7{,}5 
+			\Leftrightarrow \dfrac{3}{2}x^2-10x+\dfrac{17}{2}  \leq  0.$$
+			Cho $\dfrac{3}{2}x^2-10x+\dfrac{17}{2} = 0 \Leftrightarrow \hoac{&x=1\\&x=\dfrac{17}{3}.}$\\
+			Bảng xét dấu
+			\begin{center}
+				\begin{tikzpicture}
+					\tkzTabInit[nocadre=true,lgt=1.2,espcl=2.,deltacl=0.4]
+					{$x$/1, $f'(x)$/0.9}
+					{$-\infty$, $1$, $4$, $\dfrac{17}{3}$, $+\infty$}
+					\tkzTabLine{,+,0,-,,-,0,+,}
+					\path (0.2,0) coordinate (t);
+					\fill[pattern=north east lines]
+					(T11) rectangle ($(N32)$);
+					\draw ($(N31)$)--($(N32)$);
+				\end{tikzpicture}
+			\end{center}
+			Vậy với $4 <x \leq \dfrac{17}{3}$ thì mảnh đất trồng rau của bác An không vượt quá $7{,}5 \mathrm{\,m}^2$.
+		}
+	\end{bt}

@@ -1,0 +1,822 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Chuyên Nguyễn Huệ - Hà Nội}
+\begin{center}
+	\textbf{PHẦN 1 - TRẮC NGHIỆM}
+\end{center}
+\Opensolutionfile{ans}[ans/ans]
+\begin{ex}%[0D2Y2-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Phần không gạch chéo ở hình sau đây (kể cả các đường biên) là biểu diễn miền nghiệm của hệ bất phương trình nào trong bốn hệ $\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}$?
+	\begin{center}
+		\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+			\tikzset{every node/.style={scale=0.9}}
+			\begin{scope}
+				\clip (-2,-2) rectangle (4,4);
+				\fill[pattern=vertical lines] (-2,0)--(-2,-2)--(4,-2)--(4,0)--cycle;
+				\fill[pattern=vertical lines] (-3,7.5)--(5,7.5)--(5,-4.5)--cycle;
+				\draw (-0.67,4)--(3.33,-2); 
+				%node [pos=0.45, above, sloped] {$3x+2y-6=0$};
+			\end{scope}
+			\draw[->] (-2,0)--(4,0) node[below]{$x$};
+			\draw[->] (0,-2)--(0,4) node[left]{$y$};
+			\draw (0,0) node[below left]{\footnotesize $O$};
+			\foreach \x in {2}
+			\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+			\foreach \y in {3}
+			\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\y$};
+		\end{tikzpicture}
+	\end{center}
+	\choice
+	{\True $\heva{&y \geq 0 \\ &3 x+2 y \leq 6}$}
+	{$\heva{&y \geq 0 \\ &3 x+2 y \leq-6}$}
+	{$\heva{&x>0 \\ &3 x+2 y<6}$}
+	{$\heva{&x>0 \\ &3 x+2 y>-6}$}
+	\loigiai{
+		Dựa vào miền nghiệm đề bài cho ta suy ra phần không gạch chéo là biểu diễn miền nghiệm của hệ bất phương trình $\heva{&y \geq 0 \\ &3 x+2 y \leq 6}$.
+		}
+\end{ex}
+\begin{ex}%[0D1Y2-2] %[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho tập hợp $A=\left\{x \in \mathbb{Z} \mid x^2-1=0\right\}$. Số tập hợp con của tập hợp $A$ là
+	\choice
+	{$2$}
+	{$1$}
+	{\True $4$}
+	{$3$}
+	\loigiai{
+	Ta có $ x \in \mathbb{Z} $ và $ x^2-1=0 \Leftrightarrow x=\pm 1 \Rightarrow A=\left\{1; -1\right\}$.\\
+	Do đó số tập hợp con của tập hợp $A$ là $4$. 
+	}
+\end{ex}
+\begin{ex}%[0D2Y2-1%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Điểm nào sau đây thuộc tập nghiệm của hệ bất phương trình $\heva{&2x-5 y-1>0\\&2x+y+5>0\\&x+y+1<0}$
+	\choice
+	{\True $(0;-2)$}
+	{$(0; 2)$}
+	{$(0; 0)$}
+	{$(1; 0)$}
+	\loigiai{
+	Thay tọa độ các phương án vào hệ bất phương trình ta thấy điểm có tọa độ điểm $(0;-2)$ thỏa đồng thời cả $ 3 $ bất phương trình trong hệ.
+	}
+\end{ex}
+\begin{ex}%[0H3Y1-3]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Trong mặt phẳng tọa độ $Oxy$, cho tam giác $ABC$ với $A(3;-1), B(-4; 2), C(4; 3)$. Biết $ABDC$ là hình bình hành. Tọa độ $D$ bằng
+	\choice
+	{$D(-3;-6)$}
+	{$D(3;-6)$}
+	{\True $D(-3; 6)$}
+	{$D(3; 6)$}
+	\loigiai{
+	Vì tứ giác $ABDC$ là hình bình hành nên $\heva{&x_D=x_B+x_C-x_A=-3\\&y_D=y_B+y_C-y_A=6.}$
+	}
+\end{ex}
+\begin{ex}%[0D1Y2-1]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Tập hợp nào sau đây là tập rỗng?
+	\choice
+	{$P=\left\{x \in \mathbb{Z} \mid 3 x^2+4 x+1=0\right\}$}
+	{\True $N=\left\{x \in \mathbb{N} \mid x^2+3x+2=0\right\}$}
+	{$D=\left\{x \in \mathbb{Q} \mid 16 x^2-1=0\right\}$}
+	{$M=\left\{x \in \mathbb{R} \mid x^2-16=0\right\}$}
+	\loigiai{
+	Ta có $x^2+3x+2=0\Leftrightarrow \hoac{&x=-1\notin\mathbb{N}\\&x=-2\notin\mathbb{N}}\Rightarrow N=\varnothing$.
+	}
+\end{ex}
+
+\begin{ex}%[0H1T3-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Giả sử $CD=h$ là chiều cao của tháp trong đó $C$ là chân tháp. Chọn hai điểm $A, B$ trên mặt đất sao cho ba điểm $A, B, C$ thẳng hàng. Ta đo được $AB=24 m, \widehat{CAD}=63^{\circ} ; \widehat{CBD}=48^{\circ}$. Chiều cao $h$ của khối tháp gần với giá trị nào sau đây?
+	\choice
+	{$60$m}
+	{$18$m}
+	{\True $61,4$m}
+	{$18,5$m}
+	\loigiai{
+	\begin{center}
+		\begin{tikzpicture}[scale=.8, font=\footnotesize, line join=round, line cap=round, >=stealth]
+			\path 
+			(0,0) coordinate (B)
+			(3,0) coordinate (A)
+			(8,0) coordinate (C)
+			(8,4) coordinate (D)
+			;
+			\draw (B)--(A)--(D)--(C) (C)--(A) (B)--(D);
+			\draw pic[draw,angle radius=2mm] {right angle = A--C--D};
+			\draw pic[draw,angle radius=15,angle eccentricity=1.5]{angle=C--B--D};
+			\draw pic[draw,angle radius=13,angle eccentricity=1.5]{angle=C--A--D};
+			\path (1.3,0) node[above]{$48^{\circ}$};
+			\path (4,0) node[above]{$63^{\circ}$};
+			\path (8,2) node[right]{$h$};
+			\path (6,0) node[below]{$x$};
+			\path (1.5,0) node[below]{$24$ m};
+			\foreach \p/\r in {A/-90,B/-90,C/-90,D/90}
+			\fill (\p) circle (1pt) node[shift={(\r:3mm)}]{$\p$};
+		\end{tikzpicture}
+	\end{center}
+	Ta có $\widehat{BAD}=180^{\circ}-63^{\circ}=117^{\circ}\Rightarrow\widehat{BDA}=15^{\circ} $.\\
+	Áp dụng định lí sin cho tam giác $ABD$ có
+	$$\dfrac{AB}{\sin15^{\circ}}=\dfrac{AD}{\sin48^{\circ}}\Rightarrow AD=\dfrac{AB\cdot\sin15^{\circ}}{\sin48^{\circ}}\approx 68{,}9\;\text{(m)}$$
+	Vậy $h=CD=AD\cdot\sin63^{\circ}\approx 61{,}4$ (m).
+	}
+\end{ex}
+\begin{ex}%[0D1B3-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho hai đa thức $f(x)$ và $g(x)$. Xét các tập hợp $A=\{x \in \mathbb{R} \mid f(x)=0\}$, $B=\{x \in \mathbb{R} \mid \mathrm{g}(x)=0\}, C=\left\{x \in \mathbb{R} \mid \dfrac{f(x)}{g(x)}=0\right\}$. Mệnh đề nào sau đây đúng?
+	\choice
+	{\True $C=A \backslash \mathrm{B}$}
+	{$C=A \cap B$}
+	{$C=A \cup B$}
+	{$C=B \backslash A$}
+	\loigiai{
+	Ta có với $x \in \mathbb{R}$, $\dfrac{f(x)}{g(x)}=0 \Rightarrow \heva{&f(x)=0\\&g(x)\ne 0} \Rightarrow \heva{&x\in A\\&x\notin B}\Rightarrow C=A \backslash \mathrm{B}$.		
+	}
+\end{ex}
+\begin{ex}%[0H3Y1-3]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Trong mặt phẳng tọa độ $Oxy$, cho $A(5;3), B(7;8)$. Tọa độ $\vec{AB}$ bằng
+	\choice
+	{$(2; 6)$}
+	{\True $(2; 5)$}
+	{$(15; 10)$}
+	{$(-2; 5)$}
+	\loigiai{
+	Ta có $\vec{AB}=(x_B-x_A; y_B-y_A)=(2; 5)$.
+	}
+\end{ex}
+\begin{ex}%[0D2B2-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Giá trị nhỏ nhất của biết thức $F(x; y)=x-2 y$ với điều kiện  $\heva{&0 \leq y \leq 5\\&x \geq 0\\&x+y-2 \geq 0 \\& x-y-2 \leq 0}$ là
+	\choice
+	{$-6$}
+	{$12$}
+	{$-8$}
+	{\True $-10$}
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[line join=round, line cap=round,>=stealth,thick]
+				\tikzset{every node/.style={scale=0.9}}
+				\begin{scope}
+					\clip (-2,-3) rectangle (10,7);
+					\fill[pattern=vertical lines] (-2,0)--(-2,-3)--(10,-3)--(10,0)--cycle;
+					\fill[pattern=vertical lines] (-2,5)--(-2,7)--(10,7)--(10,5)--cycle;
+					\fill[pattern=vertical lines] (0,-3)--(-2,-3)--(-2,7)--(0,7)--cycle;
+					\fill[pattern=vertical lines] (-6,8)--(-6,-9)--(11,-9)--cycle;
+					\fill[pattern=vertical lines] (-3,-5)--(11,-5)--(11,9)--cycle;
+					\draw (-2,5)--(10,5) node [pos=0.45, above, sloped] {};
+					\draw (-5,7)--(5,-3) node [pos=0.45, above, sloped] {$x+y-2=0$};
+					\draw (9,7)--(-1,-3) node [pos=0.45, above, sloped] {$x-y-2=0$};
+				\end{scope}
+				\draw[->] (-2,0)--(10,0) node[below]{$x$};
+				\draw[->] (0,-3)--(0,7) node[left]{$y$};
+				\draw (0,0) node[below right]{$O$};
+				\foreach \x in {2,7}
+				\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+				\foreach \y in {2,5}
+				\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\y$};
+				\draw[dashed,thin] (7,0)--(7,5)--(0,5);
+			\end{tikzpicture}
+		\end{center}
+	Vẽ và biểu diễn miền nghiệm (phần không bị gạch chéo kể cả biên) của từng bất phương trình trên mặt phẳng tọa độ $ Oxy $. Phần còn lại không bị gạch bỏ là miền nghiệm của hệ bất phương trình đã cho.\\
+	Ta tìm $x$, $y$ thỏa mãn hệ bất phương trình sao cho giá trị $F(x; y)=x-2 y$ nhỏ nhất.\\
+	Ta thấy miền nghiệm của hệ bất phương trình là phần không bị gạch chéo kể cả biên nên $F(x; y)$ đạt giá trị nhỏ nhất tại các điểm $(2;0)$, $(0;2)$, $(0;5)$, $(7;5)$.\\
+	Ta có $F(2;0)=2$, $F(0;2)=-4$, $F(7;5)=-3$, $F(0;5)=-10$.\\
+	Vậy $F(0;5)=-10$ là giá trị nhỏ nhất của $F(x;y)$.\\
+	}
+\end{ex}
+\begin{ex}%[0H1Y2-1]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho $\triangle ABC$ có $\widehat{B}=60^{\circ}, a=8, c=5$. Độ dài cạnh $b$ bằng
+	\choice
+	{$129$}
+	{$49$}
+	{\True $7$}
+	{$\sqrt{129}$}
+	\loigiai{
+	Áp dụng định lí cô-sin ta có  $b^2=a^2+c^2-2ac\cos B=49 \Rightarrow b=7$.
+	}
+\end{ex}
+\begin{ex}%[0H1Y2-1]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho tam giác $ABC$. Mệnh đề nào sau đây đúng?
+	\choice
+	{\True $a^2=b^2+c^2-2 bc\cos A$}
+	{$a^2=b^2+c^2+2 bc\cos A$}
+	{$a^2=b^2+c^2-2 bc\cos C$}
+	{$a^2=b^2+c^2-2 bc\cos B$}
+	\loigiai{
+	Theo định lí cô-sin thì $a^2=b^2+c^2-2 bc\cos A$.
+	}
+\end{ex}
+\begin{ex}%[0D2Y1-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Miền nghiệm của bất phương trình $3(x-1)+4(y-2)<5 x-3$ là nửa mặt phẳng chứa điểm nào trong các điểm sau?
+	\choice
+	{$(-5 ; 3)$}
+	{$(-2 ; 2)$}
+	{$(-4 ; 2)$}
+	{\True $(0 ; 0)$}
+	\loigiai{
+	Thay tọa độ các phương án vào bất phương trình đề bài cho ta thấy điểm có tọa độ $(0; 0)$ thỏa bất phương trình.
+	}
+\end{ex}
+\begin{ex}%[0H1Y1-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Trong các hệ thức sau hệ thức nào đúng?
+	\choice
+	{$\sin\alpha^2+\cos \alpha^2=1$}
+	{\True $\sin^2 2\alpha+\cos^2 2\alpha=1$}
+	{$\sin^2\alpha+\cos^2\dfrac{\alpha}{2}=1$}
+	{$\sin^2\alpha+\cos\alpha^2=1$}
+	\loigiai{
+	Ta luôn có $\sin^2 2\alpha+\cos^2 2\alpha=1$.
+	}
+\end{ex}
+\begin{ex}%[0H1Y1-1] %[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho $\alpha$ và $\beta$ là hai góc khác nhau và bù nhau. Trong các đẳng thức sau đây đẳng thức nào \textbf{sai}?
+	\choice
+	{$\sin \alpha=\sin \beta$}
+	{\True $\cot \alpha=\cot \beta$}
+	{$\tan \alpha=-\tan \beta$}
+	{$\cos \alpha=-\cos \beta$}
+	\loigiai{
+	Vì $\alpha$ và $\beta$ là hai góc khác nhau và bù nhau nên $\cot \alpha=\cot \beta$ là đẳng thức sai.
+	}
+\end{ex}
+\begin{ex}%[0H2B3-5%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho tam giác $ABC$ với $M$ là trung điểm của $BC, I$ là trung điểm của $AM$. Đẳng thức nào sau đây đúng?
+	\choice
+	{$\overrightarrow{AI}=\dfrac{1}{2}(\overrightarrow{AB}-\overrightarrow{AC})$}
+	{$\overrightarrow{AI}=\dfrac{1}{4}(\overrightarrow{AB}-\overrightarrow{AC})$}
+	{\True $\overrightarrow{AI}=\dfrac{1}{4}(\overrightarrow{AB}+\overrightarrow{AC})$}
+	{$\overrightarrow{AI}=\dfrac{1}{2}(\overrightarrow{AB}+\overrightarrow{AC})$}
+	\loigiai{
+	Vì $M$ là trung điểm của $BC, I$ là trung điểm của $AM$ nên $\overrightarrow{AI}=\dfrac{1}{2}\vec{AM}=\dfrac{1}{4}(\overrightarrow{AB}+\overrightarrow{AC})$.
+	}
+\end{ex}
+\begin{ex}%[0D1K3-4]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho hai tập hợp $A=[-2 ; 3)$ và $B=[m ; m+5)$. Có tất cả bao nhiêu các giá trị nguyên của tham số $m$ để $A \cap B \neq \varnothing$?
+	\choice
+	{\True $ 9 $}
+	{$ 3 $}
+	{ $ 5 $}
+	{$ 7 $}
+	\loigiai{
+ 	Ta có $A\cap B=\varnothing\Leftrightarrow \hoac{&m+5\leqslant -2\\&m\geqslant 3}\Leftrightarrow \hoac{&m\leqslant -7\\&m\geqslant 3}\Rightarrow A \cap B \neq \varnothing\Leftrightarrow -7<m<3$.\\
+ 	Vậy có tất cả $9$ giá trị nguyên của tham số $m$ thỏa yêu cầu bài toán.
+	}
+\end{ex}
+\begin{ex}%[0X1Y3-1]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Điểm học kì môn Toán của 10 học sinh tổ 1 được thống kê như sau:
+	$$
+	5 ; 6 ; 7 ; 8 ; 5 ; 6 ; 9 ; 6 ; 9 ; 7
+	$$
+	Số trung bình của mẫu số liệu trên bằng
+	\choice
+	{$ 6{,}5 $}
+	{$ 7{,}5 $}
+	{\True $ 6{,}8 $}
+	{$  7{,}2 $}
+	\loigiai{
+	Số trung bình của mẫu số liệu trên $\overline{x}=\dfrac{5+6+7+8+5+6+9+6+9+7}{10}=6{,}8$.
+	}
+\end{ex}
+\begin{ex}%[0D1Y1-5]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	 Mệnh đề $P(x)\colon\text{\lq \lq}\forall x \in \mathbb{R}, x^2-x+2022<0\text{\rq \rq}$. Lập mệnh đề phủ định của mệnh đề $P$ và xét tính đúng sai của mệnh đề phủ định đó.
+	\choice
+	{$\exists x \in \mathbb{R}, x^2-x+2022>0$. Đây là mệnh đề đúng}
+	{\True $\exists x \in \mathbb{R}, x^2-x+2022 \geq 0$. Đây là mệnh đề đúng}
+	{$\forall x \notin \mathbb{R}, x^2-x+2022 \geq 0$. Đây là mệnh đề sai}
+	{$\forall x \in \mathbb{R}, x^2-x+2022>0$. Đây là mệnh đề sai}
+	\loigiai{
+	Mệnh đề phủ định của mệnh đề $P$ là $\exists x \in \mathbb{R}, x^2-x+2022 \geq 0$. Đây là mệnh đề đúng.
+	}
+\end{ex}
+\begin{ex}%[0D1Y1-5]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho mệnh đề $A=\text{\lq \lq}\forall x \in \mathrm{R}\colon x^2+1>0\text{\rq \rq}$, mệnh đề phủ định của $A$ là
+	\choice
+	{$\overline{A}=\text{\lq \lq}\exists x \in \mathrm{R}\colon x^2+1 \neq 0\text{\rq \rq}$}
+	{$\overline{A}=\text{\lq \lq}\forall x \in \mathrm{R}\colon x^2+1 \leq 0\text{\rq \rq}$}
+	{\True $\overline{A}=\text{\lq \lq}\exists x \in \mathrm{R}\colon x^2+1 \leq 0\text{\rq \rq}$}
+	{$\overline{A}=\text{\lq \lq}\exists x \in \mathrm{R}\colon x^2+1<0\text{\rq \rq}$}
+	\loigiai{
+	Mệnh đề phủ định của $A$ là $\overline{A}=\text{\lq \lq}\exists x \in \mathrm{R}\colon x^2+1 \leq 0\text{\rq \rq}$.
+	}
+\end{ex}
+\begin{ex}%[0H2Y3-1]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho $\vec{a} \neq \overrightarrow{0}$, vectơ nào sau đây cùng hướng với vectơ $\vec{a}$?
+	\choice
+	{$(2-\sqrt{5})\vec{a}$}
+	{$-2022 \vec{a}$}
+	{\True $2022 \vec{a}$}
+	{$(-3) \vec{a}$}
+	\loigiai{
+	Vì $k=2022>0$ nên $2022 \vec{a}$ cùng hướng với vectơ $\vec{a}$.
+	}
+\end{ex}
+\begin{ex}%[0X1Y1-3]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Số quy tròn của số $ 352764 $ đến hàng trăm là
+	\choice
+	{$ 352000 $}
+	{$ 352700 $}
+	{$ 352760 $}
+	{\True $ 352800 $}
+	\loigiai{
+	Số quy tròn của số $ 352764 $ đến hàng trăm là $352800$.
+	}
+\end{ex}
+\begin{ex}%[0D1B1-4]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Trong các mệnh đề sau, mệnh đề nào có mệnh đề đảo \textbf{sai}?
+	\choice
+	{Nếu tứ giác $ABCD$ có hai đường chéo cắt nhau tại trung điểm mỗi đường thì tứ giác $ABCD$ là hình bình hành}
+	{\True Nếu số tự nhiên $n$ có tổng các chữ số bằng $ 6 $ thì số tự nhiên $n$ chia hết cho $ 3 $}
+	{ Nếu $x>y$ thì $x^3>y^3$}
+	{Mọi số tự nhiên có chữ số tận cùng bằng $ 0 $ thì đều chia hết cho $ 10 $}
+	\loigiai{
+	Vì số $2346$ chia hết cho $3$ nhưng có tổng các chữ số không bằng $ 6 $. 
+	}
+\end{ex}
+\begin{ex}%[0D1Y2-2]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho $A$ là một tập hợp nhiều hơn $2$ phần tử và $a$ là một phần tử của tập hợp $A$. Xét các mệnh đề sau:
+	\begin{enumEX}{4}
+		\item [I.]$\{a\} \in A$.
+		\item [II.] $a \in A$.
+		\item [III.] $a \subset A$.
+		\item [	IV.] $\{a\} \subset A$.
+	\end{enumEX}
+	Trong các mệnh đề trên có tất cả bao nhiêu mệnh đề đúng?
+	\choice
+	{$1$}
+	{$4$}
+	{\True $2$}
+	{$3$}
+	\loigiai{
+	Từ giả thiết của đề bài suy ra $a \in A$ và  $\{a\} \subset A$. Do đó có $ 2 $ mệnh đề đúng.
+	}
+\end{ex}
+\begin{ex}%[0H2Y1-1]%[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Cho tam giác $ABC$. Có tất cả bao nhiêu véc-tơ khác $\overrightarrow{0}$ có điểm đầu và điểm cuối là $ 2 $ trong $ 3 $ đỉnh $A, B, C$ trên?
+	\choice
+	{$1$}
+	{$5$}
+	{$3$}
+	{\True $6$}
+	\loigiai{
+	Cứ mỗi đoạn thẳng cho ta $ 2 $ véc-tơ. Do đó với $ 3 $ đỉnh $A, B, C$ cho ta 3 đoạn thẳng.\\
+	Vậy có tất cả là $6$ véc-tơ.
+	}
+\end{ex}
+\begin{ex}%[0D2Y1-1] %[Dự án đề kiểm tra HKI NH22-23 -Ngô Quang Anh]%[Chuyên Nguyễn Huệ]
+	Bất phương trình nào sau đây là bất phương trình bậc nhất hai ẩn?
+	\choice
+	{$2x^2+3x+1>0$}
+	{\True $2x+y>5$}
+	{$2x+5y-3z>0$}
+	{$2x^2+5y^2>3$}
+	\loigiai{
+	Ta thấy $2x+y>5$ là bất phương trình bậc nhất hai ẩn.
+	}
+\end{ex}
+
+\begin{ex}%[0D1Y4-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Điểm học kì môn Toán của 10 học sinh tổ 1 được thống kê như sau:
+	\[5;6;7;8;5;6;9;6;9;7\]
+	Khoảng tứ phân vị của mẫu số liệu trên là 
+	\choice 
+	{\True $2$}
+	{$3$}
+	{$1$}
+	{$4$}
+	\loigiai 
+	{
+		Sắp xếp mẫu số liệu theo dãy không giảm:
+		\[5;5;6;6;6;7;7;8;9;9. \]
+		Trung vị của mẫu số liệu $Q_2=\dfrac{6+7}{2}=6,5$.\\
+		Tứ phân vị thứ nhất $Q_1=6$, tứ phân vị thứ ba $Q_3=8$.\\
+		Khoảng tứ phân vị $\Delta_Q=Q_3-Q_1=8-6=2$.
+	}
+\end{ex}
+
+\begin{ex}%[0H1Y2-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho tam giác $ABC$ có $AB=3$, $BC=5$, $CA=6$. Diện tích tam giác $ABC$ bằng 
+	\choice 
+	{$6$}
+	{$8$}
+	{\True $\sqrt{56}$}
+	{$\sqrt{48}$}
+	\loigiai 
+	{
+		Nửa chu vi của tam giác $ABC$: $p=\dfrac{AB+BC+AC}{2}=7$.\\
+		Khi đó $S_{\triangle ABC}=\sqrt{p(p-AB)(p-BC)(p-CA)}=\sqrt{56}$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1B2-3]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Hình vẽ nào sau đây (phần không bị gạch) minh họa cho tập $A=\{x\in\mathbb{R}\|x\mid\le 1\}$?
+	\choice
+	{\True \begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+			\draw[->] (-3,0)--(3,0);
+			\path (-1,0)node[below=5pt,black]{$-1$}node[black]{$[$};
+			\path (1,0)node[below=5pt,black]{$1$}node[black]{$]$};
+			\path[pattern=north west lines,pattern color=black] (-3,-3pt)rectangle(-1,3pt);
+			\path[pattern=north west lines,pattern color=black] (1,-3pt)rectangle(3,3pt);
+	\end{tikzpicture}}
+	{\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round,>=stealth]%<DTools>
+			\def\xmin{-3};\def\xmax{3};
+			%(-oo;1)
+			\draw[->] (\xmin,0)--(\xmax,0);
+			\node (b0) at (1,{0}){)};
+			\draw (b0.-90)node[below]{$1$};
+			\draw[draw=none, pattern=north west lines] ($(b0)+(90:0.1)$)--(\xmax,0.1)--(\xmax,-0.1)--($(b0)+(-90:0.1)$);
+	\end{tikzpicture}}
+	{\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+			\draw[->] (-3,0)--(3,0);
+			\path (-1,0)node[below=5pt,black]{$-1$}node[black]{$]$};
+			\path (1,0)node[below=5pt,black]{$1$}node[black]{$[$};
+			\path[pattern=north west lines,pattern color=black] (-1,-3pt)rectangle(1,3pt);
+	\end{tikzpicture}}
+	{\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round,>=stealth]%<DTools>
+			\def\xmin{-3};\def\xmax{3};
+			%[1;+oo)
+			\draw[->] (\xmin,0)--(\xmax,0);
+			\node (a0) at (1,{0}){[};
+			\draw (a0.-90)node[below]{$1$};
+			\draw[draw=none, pattern=north west lines] ($(a0)+(90:0.1)$)--(\xmin,0.1)--(\xmin,-0.1)--($(a0)+(-90:0.1)$);
+	\end{tikzpicture}}
+	\loigiai 
+	{
+		Ta có $|x|\le 1\Leftrightarrow -1\le x\le 1$. Vậy $A=[-1;1]$.
+	}
+\end{ex}
+\begin{ex}%[0H2K2-6]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Giả sử có các lực $\overrightarrow{F}_1=\overrightarrow{MA},\overrightarrow{F_2}=\overrightarrow{MB},\overrightarrow{F_3}=\overrightarrow{MC}$ cùng tác động vào một vật tại điểm $M$. Cường độ hai lực $\overrightarrow{F}_1,\overrightarrow{F}_2$ lần lượt là $300N,400N$ và $\widehat{AMB}=90^\circ$. Khi đó cường độ của lực $\overrightarrow{F_3}=\overrightarrow{MC}$ bằng bao nhiêu biết vật đứng yên?
+	\choice 
+	{\True $500N$}
+	{$250N$}
+	{$700N$}
+	{$1000N$}
+	\loigiai 
+	{
+		\immini
+		{
+			Vật đứng yên khi $\overrightarrow{MC}=\overrightarrow{MA}+\overrightarrow{MB}$. Khi đó tứ giác $MACB$ là hình chữ nhật.\\
+			Như vậy $MC=\sqrt{MA^2+MB^2}=500$ N.\\
+			Vậy cường độ của lực $\overrightarrow{F_3}=\overrightarrow{MC}$ bằng $500N$.
+		}
+		{
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+				\foreach \x/\y/\diem in {0/0/M,0/3/A,4/0/B} \coordinate (\diem) at (\x,\y);
+				\coordinate (C) at ($(A)+(B)-(M)$);
+				\foreach \dau/\cuoi in {M/A,M/B,M/C}\draw[->] (\dau)--(\cuoi);
+				\draw (A)--(C)--(B);
+				\def \dolongoc{5}
+				\foreach \x/\dinh/\y in {A/M/B} \draw ($(\dinh)!\dolongoc pt!(\x)$)--($(\dinh)!\dolongoc pt!(\x)+(\dinh)!\dolongoc pt!(\y)-(\dinh)$)--($(\dinh)!\dolongoc pt!(\y)$); 
+				\foreach \diem/\goc in {M/-90,A/180,B/-90,C/45} \fill[black](\diem) circle (0.5pt) ($(\diem)+(\goc:3mm)$) node{$\diem$};
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+\begin{ex}%[0H3B1-3]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Trong mặt phẳng tọa độ $Oxy$, cho tam giác $ABC$ biết $A(-1;1)$, $B(5;-3)$ và đỉnh $C$ thuộc trục $Oy$, trọng tâm $G$ của tam giác $ABC$ thuộc trục $Ox$. Tọa độ điểm $C$ là 
+	\choice 
+	{$C(-4;0)$}
+	{\True $C(0;2)$}
+	{$C(0;-2)$}
+	{$C\left(0;\dfrac{2}{3}\right)$}
+	\loigiai 
+	{
+		Gọi $C(0;y)$, $G(x;0)$. Vì $G$ là trọng tâm của tam giác $ABC$ nên $0=\dfrac{1-3+y}{3}\Rightarrow y=2$.\\
+		Vậy $C(0;2)$.
+	}
+\end{ex}
+\begin{ex}%[0H2B2-2] %[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho ba điểm $A$, $B$, $C$ phân biệt. Khẳng định nào dưới đây \textbf{đúng}?
+	\choice 
+	{$\overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{BC}$}
+	{\True $\overrightarrow{AB}+\overrightarrow{CA}=\overrightarrow{CB}$}
+	{$\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{BC}$}
+	{$\overrightarrow{AB}-\overrightarrow{BC}=\overrightarrow{AC}$}
+	\loigiai 
+	{
+		Đẳng thức đúng là $\overrightarrow{AB}+\overrightarrow{CA}=\overrightarrow{CB}$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1B3-5]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho ba tập hợp $A=[-1;2];B=\{x\in\mathbb{R}:-3<x<0\};C=\{x\in\mathbb{R}:|x|<3\}$. Khi đó 
+	\choice 
+	{\True $(A\cap C)\setminus B=[0;2]$}
+	{$(A\cap C)\setminus B=[0;2)$}
+	{$(A\cap C)\setminus B=(0;2]$}
+	{$(A\cap C)\setminus B=(0;2)$}
+	\loigiai 
+	{
+		Ta có $B=(-3;0)$, $|x|<3\Leftrightarrow -3<x<3\Rightarrow C=(-3;3)$.\\
+		$A\cap C=[-1;2]$, $(A\cap C)\setminus B=[0;2]$.
+	}
+\end{ex}
+
+\begin{ex}%[0H2K2-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho tam giác đều $ABC$ có cạnh là $2a$. $G$ là trọng tâm của tam giác $ABC$. Khi đó $\left|\overrightarrow{AB}-\overrightarrow{GC}\right|$ bằng 
+	\choice 
+	{$\dfrac{2a\sqrt{3}}{3}$}
+	{\True $\dfrac{4a\sqrt{3}}{3}$}
+	{$\dfrac{2a}{3}$}
+	{$\dfrac{a\sqrt{3}}{3}$}
+	\loigiai 
+	{
+		\immini
+		{
+			Gọi $M$ là trung điểm $AB$. Vì tam giác $ABC$ đều nên $CG\perp AB$.\\
+			Đặt $P=|\overrightarrow{AB}-\overrightarrow{GC}|$. Ta có $GC=\dfrac{2}{3}CM=\dfrac{2\sqrt{3}}{3}a$.  Khi đó
+			\begin{align*}
+				P^2&=|\overrightarrow{AB}-\overrightarrow{GC}|^2\\
+				&=\left(\overrightarrow{AB}-\overrightarrow{GC}\right)^2\\
+				&=AB^2-2\overrightarrow{AB}\cdot\overrightarrow{GC}+GC^2\\
+				&=AB^2+GC^2=\dfrac{16}{3}a^2.
+			\end{align*}
+			Vậy $P=\dfrac{4\sqrt{3}}{3}a$.
+		}
+		{
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=1]
+				\def \canh{3}
+				\foreach \x/\y/\diem in {0/0/B,\canh/0/C} \coordinate (\diem) at (\x,\y);
+				\coordinate (A) at ($(B)+(60:\canh)$);
+				\coordinate (M) at ($(A)!0.5!(B)$);
+				\coordinate (G) at ($(C)!2/3!(M)$);
+				\draw (A)--(B)--(C)--cycle (C)--(G);
+				\foreach \diem/\goc in {A/90,B/-90,C/-90,M/180,G/-90} \fill[black](\diem) circle (1pt) ($(\diem)+(\goc:3mm)$) node{$\diem$};
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+
+\begin{ex}%[0H3Y1-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Trong mặt phẳng tọa độ $Oxy$, cho $\overrightarrow{a}=(1;-3),\overrightarrow{b}=(4;0),\overrightarrow{c}=(2;1)$. Tọa độ của $\overrightarrow{u}=2\overrightarrow{a}+3\overrightarrow{b}-\overrightarrow{c}$ bằng 
+	\choice 
+	{\True $\overrightarrow{u}=(12;-7)$}
+	{$\overrightarrow{u}=(3;6)$}
+	{$\overrightarrow{u}=(13;6)$}
+	{$\overrightarrow{u}=(2;-2)$}
+	\loigiai 
+	{
+		Ta có $2\overrightarrow{a}=(2;-6)$ và $3\overrightarrow{b}=(12;0)$.\\
+		Vậy $\overrightarrow{u}=2\overrightarrow{a}+3\overrightarrow{b}-\overrightarrow{c}=(12;-7)$.
+	}
+\end{ex}
+
+\begin{ex}%[0H3K1-3]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Trong mặt phẳng tọa độ $Oxy$, cho $\triangle ABC$ có $A(3;4)$, $B(2;1)$, $C(-1;-2)$. $N$ là điểm có tung độ dương trên đường thẳng $BC$ sao cho $S_{ABC}=3S_{ABN}$. Tọa độ $N$ là 
+	\choice 
+	{$N(3;3)$}
+	{$N(-3;2)$}
+	{\True $N(3;2)$}
+	{$N(2;2)$}
+	\loigiai 
+	{
+		Gọi $H$ là hình chiếu của $A$ lên đường thẳng $BC$. Ta có
+		\[\dfrac{S_{ABC}}{S_{ABN}}=\dfrac{\dfrac{1}{2}AH\cdot BC}{\dfrac{1}{2}AH\cdot BN}=\dfrac{BC}{BN}=3\Rightarrow BC=3BN. \]
+		Mà điểm $N$ thuộc đường thẳng $BC$ nên có hai trường hợp:
+		\begin{enumerate}[TH1.]
+			\item $\overrightarrow{BC}=3\overrightarrow{BN}\Rightarrow \heva{& x_C-x_B=3(x_N-x_B) \\ & y_C-y_B=3(y_N-y_B)}\Leftrightarrow \heva{& x_N=3 \\ & y_N=2}$ (nhận).
+			\item $\overrightarrow{BC}=-3\overrightarrow{BN}\Rightarrow \heva{& x_C-x_B=-3(x_N-x_B) \\ & y_C-y_B=-3(y_N-y_B)}\Leftrightarrow \heva{& x_N=1 \\ & y_N=0}$ (loại).
+		\end{enumerate}
+	Vậy $N(3;2)$ thỏa yêu cầu bài toán.
+	}
+\end{ex}
+
+\begin{ex}%[0H1Y1-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho $\alpha$ là góc tù. Mệnh đề nào đúng trong các mệnh đề sau?
+	\choice 
+	{$\sin\alpha<0$}
+	{$\cos\alpha>0$}
+	{$\cot\alpha>0$}
+	{\True $\tan\alpha<0$}
+	\loigiai 
+	{
+		Vì $\alpha$ là góc tù nên $0^{\circ}<\alpha<90^{\circ}$.\\
+		Suy ra $\sin \alpha >0$, $\cos \alpha <0$, $\tan \alpha <0$ và $\cot \alpha <0$.
+	}
+\end{ex}
+\begin{ex}%[0H1B2-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho tam giác $ABC$ thoả mãn $b^2+c^2-a^2=\sqrt{3} b c$. Khi đó 
+	\choice 
+	{\True $A=30^\circ$}
+	{$A=60^\circ$}
+	{$A=45^\circ$}
+	{$A=75^\circ$}
+	\loigiai 
+	{
+		Ta có $\cos A=\dfrac{b^2+c^2-a^2}{2bc}=\dfrac{\sqrt{3}bc}{2bc}=\dfrac{\sqrt{3}}{2}$.\\
+		Suy ra $\widehat{A}=30^\circ$.
+	}
+\end{ex}
+
+\begin{ex}%[0D2Y2-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Trong các hệ sau hệ nào không phải là hệ bất phương trình bậc nhất hai ẩn?
+	\choice 
+	{$\heva{&2x+y+2\ge 0\\&5x+2y+3>0}$}
+	{$\heva{&y-2<0\\&x+5\ge 0}$}
+	{\True $\heva{&x+y=3\\&x-5y-3=0}$}
+	{$\heva{&-2x+y>2\\&x+y<2}$}
+	\loigiai 
+	{
+		Hệ $\heva{&x+y=3\\&x-5y-3=0}$ không phải là hệ bất phương trình bậc nhất hai ẩn.
+	}
+\end{ex}
+
+\begin{ex}%[0D1B2-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho tập $X=\left\{x\in\mathbb{N}\mid\left(x^2-4\right)\left(x^2-1\right)\left(2x^2-7x+3\right)=0\right\}$. Tổng $S$ các phần tử của tập $X$ bằng 
+	\choice 
+	{$S=5$}
+	{$S=3$}
+	{$S=\dfrac{9}{2}$}
+	{\True $S=6$}
+	\loigiai 
+	{
+		Xét phương trình
+		\begin{align*}
+			\left(x^2-4\right)\left(x^2-1\right)\left(2x^2-7x+3\right)=0&\Leftrightarrow\hoac{& x^2-4=0 \\ & x^2-1=0 \\ & 2x^2-7x+3=0}\\
+			&\Leftrightarrow \hoac{& x=2 \\ & x=-2 \\ & x=1\\ & x=-1\\ & x=3\\ & x=\dfrac{1}{2}.}
+		\end{align*}
+		Vì $x\in \mathbb{N}$ nên suy ra $X=\left\{1;2;3\right\}$.\\
+		Tổng các phần tử của tập $X$ là $S=1+2+3=6$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1Y3-5]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Phần bù của tập $[-2;1)$ trong $\mathbb{R}$ là 
+	\choice 
+	{$(-\infty;1]$}
+	{\True $(-\infty;-2)\cup[1;+\infty)$}
+	{$(-\infty;-2)$}
+	{$(2;+\infty)$}
+	\loigiai 
+	{
+		Ta có $C_{\mathbb{R}}[-2;1)=(-\infty;-2)\cup[1;+\infty)$.
+	}
+\end{ex}
+
+\begin{ex}%[0H3B1-5]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Trong mặt phẳng tọa độ $Oxy$, cho ba vectơ $\overrightarrow{a}=(2;-3),\overrightarrow{b}=(3;1),\overrightarrow{c}=(-1;7)$. Phân tích $\overrightarrow{c}$ theo hai vectơ $\overrightarrow{a},\overrightarrow{b}$ ta được $\overrightarrow{c}=k\cdot\overrightarrow{a}+m\cdot\overrightarrow{b}$. Tổng $k+m$ bằng 
+	\choice 
+	{$-3$}
+	{$1$}
+	{$3$}
+	{\True $-1$}
+	\loigiai 
+	{ Ta có: $k \cdot \vec{a}+m\cdot \vec{b}=\left(2k+3m;-3k+m\right).$ \\
+		Mặt khác $\vec{c}=k\cdot \vec{a}+m \cdot \vec{b}$ nên ta có
+		$\heva{&2k + 3m =  - 1\\ &- 3k + m = 7}\Leftrightarrow \heva{&k=-2\\&m=1.}$\\
+		Vậy $k+m=-2+1=-1$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1Y1-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Làm tròn số $455365$ đến hàng nghìn. Sai số tương đối của số quy tròn gần bằng số nào nhất trong các số sau?
+	\choice 
+	{$0,002\%$}
+	{$0,01\%$}
+	{\True $0,08\%$}
+	{$0,1\%$}
+	\loigiai 
+	{ Kết quả làm tròn số $455365$ đến hàng nghìn là $455000$.\\
+		Sai số tương đối của số quy tròn là $\delta_{a}=\dfrac{|\bar{a}-a|}{|a|}
+		=\dfrac{|455365-455000|}{|455000|}\approx 0,08\%. $
+	}
+\end{ex}
+\begin{ex}%[0D2Y1-1]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Tìm tất cả các giá trị thực của tham số $m$ để bất phương trình: $3x+\left(m^2-1\right) y^2>0$ là một bất phương trình bậc nhất hai ẩn.
+	\choice 
+	{$m>1$}
+	{$m=0$}
+	{$m\ne\pm 1$}
+	{\True $m=\pm 1$}
+	\loigiai 
+	{ Bất phương trình bậc nhất hai ẩn có dạng $ax+by>c$ (tương tự cho các dấu $<, \leq, \geq$).\\
+		Để bất phương trình đã cho là bất phương trình bậc nhất hai ẩn thì $m^2-1=0 \Leftrightarrow m = \pm 1$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1Y3-4]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Thống kê số con của 20 cặp vợ chồng thu được bảng số liệu sau:\\
+	\begin{center}
+		\begin{tabular}{|c|l|l|l|l|}
+			\hline Số con&1&2&3&4\\
+			\hline Số cặp vợ chồng&6&8&4&2\\
+			\hline 
+		\end{tabular}
+	\end{center}
+	Mốt của mẫu số liệu trên là 
+	\choice 
+	{$4$}
+	{\True $2$}
+	{$8$}
+	{$6$}
+	\loigiai 
+	{Xem $x_1=1$, $x_2 = 2$, $x_3=3$, $x_4=4$ và các tần số tương ứng là $n_1=6$, $n_2=8$, $n_3=4$, $n_4=2$.\\
+		Mốt của mẫu số liệu trên là $M_o=x_2=2$.
+	}
+\end{ex}
+
+\begin{ex}%[0H1Y1-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho biết $\cos\alpha=-\dfrac{2}{3}$. Khi đó $\tan\alpha$ bằng 
+	\choice 
+	{$\dfrac{5}{4}$}
+	{\True $-\dfrac{\sqrt{5}}{2}$}
+	{$\dfrac{\sqrt{5}}{2}$}
+	{$-\dfrac{5}{2}$}
+	\loigiai 
+	{Ta có $1+\tan^2{\alpha}=\dfrac{1}{\cos^2{\alpha}}$ suy ra $\tan^2{\alpha}=\dfrac{5}{4}$, do $\alpha$ từ $0^\circ$ đến $180^\circ$ mà $\cos{\alpha}<0$ nên $\tan{\alpha}<0$ do đó ta có $\tan{\alpha}=\dfrac{-\sqrt{5}}{2}$.
+	}
+\end{ex}
+
+\begin{ex}%[0D2Y1-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Miền nghiệm của hệ bất phương trình $\heva{&2x+3y-6<0\\&x\ge 0\\&2x-3y-1\le 0}$ chứa điểm nào sau đây?
+	\choice 
+	{\True $D\left(0;-\dfrac{1}{3}\right)$}
+	{$A(1;2)$}
+	{$C(-1;3)$}
+	{$B(0;2)$}
+	\loigiai 
+	{$x \geq 0$ nên loại phương án $C(-1;3)$.\\
+		Thế các điểm $D, A, B$ vào hệ bất phương trình ta thấy điểm $D\left(0;-\dfrac{1}{3}\right)$ thỏa.
+	}
+\end{ex}
+
+\begin{ex}%[0H1K1-3]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Tổng $\sin^22^\circ+\sin^24^\circ+\sin^26^\circ+\ldots+\sin^284^\circ+\sin^286^\circ+\sin^288^\circ$ bằng 
+	\choice 
+	{$21$}
+	{$24$}
+	{$23$}
+	{\True $22$}
+	\loigiai 
+	{ Ta có: $\sin{88^\circ}=\cos{2^\circ}$ vì $88^\circ + 2^\circ = 90^\circ$; \\
+		tương tự: $\sin{86^\circ}=\cos{4^\circ}, \ldots, \sin{46^\circ}=\cos{44^\circ}$; \\
+		Suy ra
+		\begin{align*}
+			&\sin^22^\circ+\sin^24^\circ+\sin^26^\circ+\ldots+\sin^284^\circ+\sin^286^\circ+\sin^288^\circ\\
+			=&\sin^22^\circ+\sin^24^\circ+\sin^26^\circ+\ldots+\sin^244^\circ+\cos^244^\circ+\cos^242^\circ + \ldots \cos^24^\circ + \cos^22^\circ\\
+			=&\left(\sin^22^\circ+\cos^22^\circ\right)+\left(\sin^24^\circ + \cos^24^\circ\right)+\ldots
+			+\left(\sin^244^\circ+\cos^244^\circ\right)\\
+			=&\underbrace{1+1+...+1}_{22 \text{ số } 1}=22.
+		\end{align*}
+	}
+\end{ex}
+\begin{ex}%[0D2B2-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	\immini
+	{
+		Miền không bị gạch chéo (kể cả các đường thẳng $d_1$ và $d_2$) là miền nghiệm của hệ bất phương trình nào?
+		\choice 
+		{$\heva{&x+y-1\ge 0\\&2x-y+4\le 0}$}
+		{$\heva{&x+y-1\ge 0\\&2x-y+4\ge 0}$}
+		{\True $\heva{&x+y-1\le 0\\&2x-y+4\ge 0}$}
+		{$\heva{&x+y-1\le 0\\&2x-y+4\le 0}$}
+	}
+	{
+		\begin{tikzpicture}[line join = round, line cap = round,>=stealth,font=\footnotesize,scale=.8]
+			\begin{scope}
+				\clip (-4,-2) rectangle (4,5);
+				\fill[pattern=north east lines] (-5,6)--(5,6)--(5,-4)--cycle;
+				\fill[pattern=north east lines] (-5,-6)--(-5,14)--(5,14)--cycle;
+				\draw (-4,5)--(3,-2);
+				\draw (0.5,5)--(-3,-2);
+			\end{scope}
+		\draw (2.5,-1.8) node{$d_2$} (-2.5,-1.8) node{$d_1$};
+			\draw[->] (-4,0)--(4,0) node[below]{$x$};
+			\draw[->] (0,-2)--(0,5) node[left]{$y$};
+			\fill (0,0) circle (1.5pt) node[below left]{$O$};
+			\foreach \x in {-3,-2,-1,1,2,3}
+			\draw[thin] (\x,1pt)--(\x,-1pt) node [below] {$\x$};
+			\foreach \y in {-1,1,2,3,4}
+			\draw[thin] (1pt,\y)--(-1pt,\y) node [left] {$\y$};
+		\end{tikzpicture}
+	}
+	\loigiai 
+	{ Chú ý rằng, đường thẳng $d_1$ đi qua hai điểm $\left(1;0\right)$ và $\left(0;1\right)$ nên $d_1: x+y-1=0$ \\
+		Đường thẳng $d_2$ đi qua hai điểm $\left(-2;0\right)$ và $\left(0;4\right)$ nên $d_2: 2x-y+4=0$.\\
+		Miền không bị gạch chéo chứa điểm $O$ nên phải có $x+y-1 \leq 0$ và $2x-y+4 \geq 0$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1B3-2]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Cho hai tập hợp $A=\{-2;-1;1;2;3\},B=\{1;2;3;4;5;6\}$. Tập hợp $(A\setminus B)\cup(B\setminus A)$ bằng 
+	\choice 
+	{$\varnothing$}
+	{$\{5;6\}$}
+	{$\{-2;-1;1;2;3;4;5;6\}$}
+	{\True $\{-2;-1;4;5;6\}$}
+	\loigiai 
+	{ Ta có: $A \setminus B = \{-2;-1\}$ và $B \setminus A = \{4;5;6\}$.\\
+		Từ đó $(A\setminus B)\cup(B\setminus A)=\{-2;-1;4;5;6\}$.
+	}
+\end{ex}
+
+\begin{ex}%[0D1Y1-3]%[Dự án đề kiểm tra HKI NH22-23- Thy Nguyen]%[Chuyên Nguyễn Huệ-Hà Nội]
+	Đo chiều cao của một tòa nhà cho kết quả là $64,75\pm 0,5m$. Số quy tròn của $64,75$ là 
+	\choice 
+	{$64,7$}
+	{$64,8$}
+	{$64$}
+	{\True $65$}
+	\loigiai 
+	{ Số quy tròn của $64,75$ với $d=0,5$ là $65$.
+	}
+\end{ex}
+
+
+\Closesolutionfile{ans}
+%\begin{center}
+%	\textbf{ĐÁP ÁN}
+%	\inputansbox{10}{ans/ans}	
+%\end{center}
+

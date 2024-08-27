@@ -1,0 +1,229 @@
+\de{ĐỀ THI HỌC KỲ II NĂM HỌC 2022-2023}{THPT Trần Cao Văn}
+
+\begin{bt}%[0T7Y2-1]%[0T7B3-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THCS-THPT Trần Cao Vân]
+Giải phương trình và bất phương trình sau
+\begin{listEX}[2]
+	\item $-x^2+5x+6\le 0$.
+	\item $\sqrt{x^2-4x-12}=x-4$.
+\end{listEX}
+\loigiai{
+	\begin{enumerate}
+		\item Xét $f(x)=-x^2+5x+6=0\Leftrightarrow\hoac{&x=-1\\&x=6.}$\\
+		Bảng xét dấu
+		\begin{center}
+			\begin{tikzpicture}[>=stealth]
+				\tkzTabInit[nocadre=true,lgt=1.2,espcl=2,deltacl=0.5]{$x$/.7 ,$f(x)$/.7}
+				{$-\infty$ , $-1$ , $6$ , $+\infty$}
+				\tkzTabLine{ , - , $0$ , + , $0$ , - , }
+			\end{tikzpicture}
+		\end{center}
+		Khi đó $-x^2+5x+6\le 0\Leftrightarrow x\in (-\infty;-1]\cup[6;+\infty)$.\\
+		Vậy bất phương trình có nghiệm $x\in (-\infty;-1]\cup[6;+\infty)$.
+		\item Bình phương hai vế của phương trình ta có
+		\allowdisplaybreaks
+		\begin{eqnarray*}
+			x^2-4x-12=(x-4)^2&\Leftrightarrow& x^2-4x-12=x^2-8x+16\\
+			&\Leftrightarrow&4x=28\\
+			&\Leftrightarrow&x=7.
+		\end{eqnarray*}
+		Giá trị $x=7$ thỏa mãn phương trình ban đầu.\\
+		Vậy nghiệm của phương trình là $x=7$.
+	\end{enumerate}
+
+}
+\end{bt}
+
+\begin{bt}%[0T8Y2-1]%[0T0B2-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THCS-THPT Trần Cao Vân]
+	\begin{enumerate}
+		\item Từ các chữ số $\{1;2;3;4;5\}$ tạo được bao nhiêu số tự nhiên có $5$ chữ số khác nhau đôi một?
+		\item Trong lớp 10B của trường THPT Trần Cao Vân có $20$ học sinh nam và $15$ học sinh nữ. Hỏi giáo viên chủ nhiệm của lớp có bao nhiêu cách chọn một đội tuyển thi học sinh giỏi gồm $3$ học sinh, trong đó có một bạn thi Toán, một bạn thi Lý, một bạn thi môn Xã hội?
+		\item 	Một tổ có $4$ bạn nam và $5$ bạn nữ. Có bao nhiêu cách cử $3$ bạn của tổ gồm $2$ nam và $1$ nữ làm trực nhật?
+		\item 	Khối $10$ trường THCS-THPT Trần Cao Vân có một nhóm học sinh tham gia đội tình nguyện, gồm $8$ bạn ở cơ sở I, $5$ bạn ở cơ sở II, $7$ bạn ở cơ sở III, $4$ bạn ở cơ sở IV, và $3$ bạn ở cơ sở V. Đội trưởng cử $5$ bạn của nhóm này tham gia một việc tình nguyện. Tính xác suất để $5$ bạn được chọn đều có học sinh của $5$ cơ sở. 
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Mỗi số tự nhiên có $5$ chữ số khác nhau đôi một được lập từ các chữ số $\{1;2;3;4;5\}$ chính là một hoán vị của $5$ phần tử.\\
+			Vậy có $5!=120$ số thỏa mãn yêu cầu bài toán.
+			\item Mỗi cách chọn đội tuyển học sinh giỏi chính là một chỉnh hợp chập $3$ của $35$ phần từ.\\
+			Vậy có $\mathrm{A}_{35}^3=39\,270$ cách chọn.
+			\item Theo đề bài, ta có
+			\begin{itemize}
+				\item Chọn $2$ bạn nam trong $4$ bạn nam có $\mathrm{C}_4^2=6$.
+				\item Chọn $1$ bạn nữ trong $5$ bạn nữ có $\mathrm{C}_5^1=5$.
+			\end{itemize}
+			Vậy có $6\times 5=30$ cách chọn.
+			\item Ta có $n(\Omega)=\mathrm{C}_{27}^5=80\,730$.\\
+			Gọi $A$ là biến cố \lq\lq $5$ bạn được chọn đều có học sinh của $5$ cơ sở\rq\rq.\\
+			Ta có $n(A)=8\times 5\times 7\times 4\times 3=3\,360$.\\
+			Vậy xác suất của biến cố $A$ là $\mathrm{P}(A)=\dfrac{n(A)}{n(\Omega)}=\dfrac{3\,360}{80\,730}=\dfrac{112}{2\,691}$.
+		\end{enumerate}
+	}
+\end{bt}
+\begin{bt}%[0T8Y3-1]%[0T8B3-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THCS-THPT Trần Cao Vân]
+	\begin{enumerate}
+		\item Sử dụng công thức nhị thức Newton, hãy khai triển biểu thức $(x+3)^4$.
+		\item Khai triển và tìm hệ số của $x^3$ trong khai triển $(3-2x)^5$. 
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Ta có
+			\allowdisplaybreaks
+			\begin{eqnarray*}
+				(x+3)^4&=&\mathrm{C}_4^0x^4+\mathrm{C}_4^1x^3\cdot 3+\mathrm{C}_4^2x^2\cdot 3^2+\mathrm{C}_4^3x\cdot 3^3+\mathrm{C}_4^43^4\\
+				&=&x^4+12x^3+54x^2+108x+81.
+			\end{eqnarray*}
+			\item Ta có
+			\allowdisplaybreaks
+			\begin{eqnarray*}
+				(3-2x)^5&=&\mathrm{C}_5^03^5+\mathrm{C}_5^13^4\cdot (-2x)+\mathrm{C}_5^23^3\cdot (-2x)^2+\mathrm{C}_5^33^2\cdot (-2x)^3\\
+				&&\qquad\,+\,\mathrm{C}_5^43\cdot (-2x)^4+\mathrm{C}_5^5(-2x)^5\\
+				&=&-32x^5+240x^4-720x^3+1080x^2-810x+243.
+			\end{eqnarray*}
+		Hệ số của $x^3$ trong khai triển là $-720$.
+		\end{enumerate}
+	}
+\end{bt}
+\begin{bt}%[0T9B2-2]%[0T9B3-2]%[0T9B4-4]%[0T9B4-3]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Cường]%[THCS-THPT Trần Cao Vân]
+	Trong mặt phẳng tọa độ $Oxy$
+	\begin{enumerate}
+		\item Viết phương trình đường thẳng $\Delta$ đi qua điểm $D(2;-5)$ và vuông góc với đường thẳng $d\colon -3x-y+1=0$.
+		\item Viết phương trình đường tròn $(C)$ có tâm $I(5;-1)$ và đi qua điểm $M(4;-9)$.
+		\item Lập phương trình chính tắc của hyperbol $(H)$ có trục thực là $8$ và tiêu cự là $10$.
+		\item Cho elip $(E)\colon \dfrac{x^2}{4}+y^2=1$. Tìm tọa độ các đỉnh, các tiêu điểm và tiêu cự của $(E)$.
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Đường thẳng $\Delta$ vuông góc với $d$ nên đường thẳng $\Delta$ có dạng $-x+3y+c=0$.\\
+			Đường thẳng $\Delta$ đi qua điểm $D(2;-5)$ nên $-2-15+c=0\Leftrightarrow c=17$.\\
+			Vậy $\Delta\colon -x+3y+17=0$.
+			\item Ta có $\overrightarrow{IM}=(-1;-8)\Rightarrow IM=\sqrt{1+64}=\sqrt{65}$.\\
+			Đường tròn $(C)$ có tâm $I(5;-1)$ và bán kính $R=IM=\sqrt{65}$ có phương trình 
+			$$(C)\colon (x-5)^2+(y+1)^2=65.$$
+			\item Ta có trục thực là $2a=8\Rightarrow a=4$.\\
+			Tiêu cự $2c=10\Rightarrow c=5$ và $b^2=c^2-a^2=25-16=9$.\\
+			Vậy phương trình $(H)\colon \dfrac{x^2}{16}-\dfrac{y^2}{9}=1$.
+			\item Ta có $a^2=4\Rightarrow a=2$ và $b^2=1\Rightarrow b=1$.\\
+			Suy ra $c^2=a^2-b^2=4-1=3\Rightarrow c=\sqrt{3}$. Suy ra tiêu cự $2c=2\sqrt{3}$.\\
+			Vậy tọa độ các đỉnh $A_1(-2;0)$, $A_2(2;0)$, $B_1(0;-1)$, $B_2(0;1)$ và các tiêu điểm $F_1\left(-\sqrt{3};0\right)$, $F_2\left(\sqrt{3};0\right)$.
+		\end{enumerate}
+	}
+\end{bt}
+
+\begin{bt}%[0T9B2-4]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Sĩ Đạt]%[THCS-THPT Trần Cao Vân]
+	\begin{enumerate}
+		\item Tính số đo góc giữa hai đường thẳng $\Delta \colon 3x-7y+2022=0$ và $d \colon 7x+3y-2023=0$.
+		\item Tìm tọa độ điểm $A$ là giao điểm của hai đường thẳng $d_1 \colon x-y+1=0$ và $d\colon x+3y-7=0$.
+		\item Cho điểm $M(4;3)$, gọi $M'$ là điểm đối xứng của điểm $M$ qua đường thẳng $\Delta\colon 3x-4y+50=0$. Tính độ dài đoạn thẳng $MM'$.
+	\end{enumerate} 
+	\loigiai{
+		\begin{enumerate}
+			\item $\Delta$ nhận vectơ $\vec{n_1}=(3;-7)$ là vectơ pháp tuyến. \\
+			$d$ nhận vectơ $\vec{n_2}=(7;3)$ là vectơ pháp tuyến. \\
+			Ta có $\cos (\Delta, d)=\dfrac{|\vec{n_1}\cdot \vec{n_2}|}{|\vec{n_1}| \cdot |\vec{n_2}|} = 0 \Rightarrow (\Delta, d) = 90^\circ$. 
+			\item Ta có $d_1 \cap d_2 =A(x;y)$.\\
+			Tọa độ điểm $A$ là nghiệm của hệ phương trình $d_1$ và $d_2$ là 
+				\begin{center}
+					$\heva{& x-y+1=0\\& x+3y-7=0} \Leftrightarrow   \heva{& x=1\\& y=2.}  $
+				\end{center}
+			Vậy $A(1;2)$.
+			\item Có $M'$ đối xứng với $M$ qua đường thẳng $\Delta$, suy ra
+			\begin{center}
+				$MM'=2\cdot \mathrm{d}(M;\Delta) = \dfrac{\left| 3\cdot4     -4\cdot3+50\right| }{\sqrt{(3)^2+(-4)^2}}=2\cdot        10=20$.
+			\end{center}
+			Vậy $MM'=20$.
+		\end{enumerate} 
+	}
+\end{bt}
+
+\begin{bt}%[0T0K2-2]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Sĩ Đạt]%[THCS-THPT Trần Cao Vân]
+	Một hộp chứa $2$ quả bóng xanh và một số quả bóng trắng. Lấy ngẫu nhiên $2$ quả bóng từ hộp. Biết rằng xác suất chọn được hai quả bóng khác màu là $\dfrac{10}{21}$.
+	\begin{enumerate}
+		\item Tính xác suất $2$ quả bóng lấy ra có cùng màu.
+		\item Hỏi trong hộp có bao nhiêu quả bóng? 
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Gọi $A$ là biến cố \lq\lq hai quả bóng lấy ra có cùng màu\rq\rq. Khi đó $\overline{A}$ là biến cố \lq\lq hai quả bóng lấy ra khác màu\rq\rq.\\
+			Theo đề, ta có $P(\overline{A})=\dfrac{10}{21}$. Do đó
+			\begin{eqnarray*}
+				P(A)=1-P(\overline{A})=1-\dfrac{10}{21}=\dfrac{11}{21}.
+			\end{eqnarray*}
+			\item Gọi $n$ là số quả bóng trắng có trong hộp $(n \in \mathbb{N^*})$.\\
+			Biến cố $B$: \lq\lq Chọn được $2$ quả bóng khác màu\rq\rq.\\
+			Số cách chọn $2$ quả bóng khác màu là $n(A)=2n$ (cách).\\
+			Số cách chọn $2$ quả bóng bất kỳ trong $(n+2)$ quả bóng là 
+			\begin{center}
+				$\mathrm{C}_{n+2}^2 = \dfrac{(n+2)!}{n!\cdot 2!} = \dfrac{(n+2)(n+1)}{2}$ (cách).
+			\end{center}
+			Xác suất của biến cố $B$ là \begin{center}
+				$\mathrm{P}(B)=\dfrac{n(B)}{n(\Omega)} = \dfrac{2n}{\dfrac{(n+2)(n+1)}{2}} = \dfrac{4n}{n^2+3n+2}$.
+			\end{center}
+			Khi đó, ta có 
+			\allowdisplaybreaks
+			\begin{eqnarray*}
+			\dfrac{4n}{n^2+3n+2} = \dfrac{10}{21}
+				&\Rightarrow& 84n = 10(n^2+3n+2)\\
+				&\Rightarrow&  10n^2 - 54n +20 =0 \\
+				&\Rightarrow& \hoac{& n=5 \text{ (nhận)} &\\&n= \dfrac{2}{5} \text{ (loại)}.} 
+			\end{eqnarray*}
+			Vậy trong hộp có tất cả $7$ quả bóng.
+		\end{enumerate}
+	}
+\end{bt}
+\begin{bt}%[0T9G4-7]%[Dự án đề kiểm tra HKII NH22-23- Nguyễn Sĩ Đạt]%[THCS-THPT Trần Cao Vân]
+	Một cái cầu có dây cáp treo hình parabol, cầu dài $120$ m và được nâng đỡ bởi những thanh thẳng đứng treo từ cáp xuống, thanh dài nhất là $48$ m, thanh ngắn nhất là $8$ m (Tham khảo hình vẽ). Tính chiều dài của thanh cách điểm giữa cầu $20$ m.
+	\begin{center}
+		\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round,>=stealth]
+			\def\f(#1){((#1)^2)/9+4/5}
+			\draw (-7,0)--(7,0);
+			\draw[smooth,samples=300,domain=-7:7] plot(\x,{\f(\x)});
+			\foreach \x in {-7,-6,-5,-4,-3,-2,-1,0,1,2,4,3,5,6,7}
+			\draw[black] (\x,0)--(\x,{\f(\x)});
+			\foreach \x in {-7,-6,-5,-4,-3,-2,-1,0,1,2,4,3,5,6,7}
+			\fill (\x,{\f(\x)}) circle (1pt);
+			\foreach \y in {-7,-6,-5,-4,-3,-2,-1,0,1,2,4,3,5,6,7}
+			\fill (\y,0) circle (1pt);
+			\draw[<->] (-7,-1)--(7,-1) node[above,midway]{$120$ m};
+			\draw[<->] (-7.2,0)--(-7.2,{\f(-7)}) node[left,midway]{$48$m};
+			\draw[<->,dashed] (0.1,0)--(0.1,{\f(0)}) node[right,midway]{$8$ m};
+		\end{tikzpicture}
+	\end{center}
+	\loigiai{
+		Ta chọn hệ toạ độ sao cho parabol có phương trình $y^2=2px$ $(1)$.
+		\begin{center}
+			\begin{tikzpicture}[font=\footnotesize,scale=1, line join=round, line cap=round, >=stealth,x=1cm,y=1cm]
+				\def\xm{-2.5};
+				\pgfmathsetmacro\ym{0.5*(\xm)^2};
+				\coordinate%[label=below:$M$]
+				(M) at (\ym,-\xm); 
+				\coordinate%[label=below:$N$]
+				(N) at (2,0); 
+				\coordinate%[label=below:$I$]
+				(I) at (-0.75,-2.5); 
+				\coordinate%[label=left:$J$]
+				(J) at (-0.75,2.5); 
+				\coordinate%[label=below:$P$]
+				(P) at (2,-2); 
+				\coordinate%[label=below:$Q$]
+				(Q) at (\ym,\xm); 
+				\path
+				(0,0) coordinate (O)
+				(0.5,0) coordinate (F) 
+				;
+				\draw[->] (-2,0)--(4,0) node[above]{$x$};
+				\draw[->] (0,-3)--(0,3) node[right]{$y$};
+				\draw[rotate=-90,smooth, samples=200, domain=-2.5:2.5] plot (\x,{0.5*(\x)^2});
+				\draw[dashed] (J)--(M)node[pos=0.5,above]{$48$ m}
+				--(Q)--(I) 
+				(I)--(0,-2.5)node[pos=0.5,below]{$8$ m} 
+				; 
+				\draw (I)--(J)node[pos=0.6,left]{$120$ m};
+				\draw[fill=black] (O) circle(1pt)++(-0.2,-0.2) node{$O$};
+			\end{tikzpicture}
+		\end{center}
+		Thay toạ độ điểm $M(40;60)$ vào phương trình $(1)$ ta tính được $p=\dfrac{60^2}{80}=\dfrac{40}{5}$.\\
+		Thay toạ độ điểm $N(x;20)$ vào phương trình $y^2=2 \cdot 45 \cdot x$ ta tính được $x=\dfrac{20^2}{90} \approx 4{,}44$ m.\\
+		Vậy chiều dài của thanh cách điểm giữa cầu $20$ m là khoảng $12{,}44$ m.}
+\end{bt}
+
+

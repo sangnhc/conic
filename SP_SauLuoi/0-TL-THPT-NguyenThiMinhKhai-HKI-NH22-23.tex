@@ -1,0 +1,188 @@
+
+\de{ĐỀ THI HỌC KỲ I NĂM HỌC 2022-2023}{THPT Nguyễn Thị Minh Khai}
+
+
+\begin{bt}%[0T3K1-1]%[0T3G1-4]%[Dự án đề kiểm tra HKI NH22-23- Phan Trung Hiếu]%[THPT Nguyễn Thị Minh Khai]
+	\begin{enumerate}
+		\item Tìm tập xác định của hàm số $y=f(x)=\dfrac{\sqrt{x-1}}{x-2}$.
+		\item Xét tính đơn điệu của hàm số $y=f(x)=\dfrac{2x-1}{x+1}$ trên khoảng $(-\infty;-1)$.
+	\end{enumerate}
+\loigiai{
+\begin{enumerate}
+	\item Hàm số $y=f(x)$ xác định khi và chỉ khi
+	\begin{equation*}
+	\heva{&x-1\geq 0\\&x-2\ne 0}\Leftrightarrow\heva{&x\geq 1\\&x\ne 2.}
+	\end{equation*}
+	Vậy tập xác định của hàm số $y=f(x)$ là $\mathscr{D}=[1;+\infty)\setminus\{2\}$.
+	\item Lấy $x_1$ và $x_2$ là hai số tùy ý trong khoảng $\left(-\infty;-1\right)$ sao cho $x_1<x_2<-1$.\\
+	Suy ra
+	\begin{equation*}
+		(x_1+1)(x_2+1)>0
+	\end{equation*}
+	Ta có
+	\allowdisplaybreaks
+	\begin{eqnarray*}
+		&&3(x_1-x_2)<0\\
+		&\Leftrightarrow& 2x_1x_2 +2x_1 -x_2 -1 -2x_1x_2 -2x_2 +x_1+1< 0\\
+		&\Leftrightarrow&x_2(2x_1-1)+(2x_1-1)-x_1(2x_2-1)-(2x_2-1)<0\\
+		&\Leftrightarrow&(2x_1-1)(x_2+1)-(2x_2-1)(x_1+1)<0\\
+		&\Rightarrow&\dfrac{(2x_1-1)(x_2+1)-(2x_2-1)(x_1+1)}{(x_1+1)(x_2+1)}<0\\
+		&\Leftrightarrow&\dfrac{2x_1-1}{x_1+1}-\dfrac{2x_2-1}{x_2+1}<0\\
+		&\Leftrightarrow&f(x_1)-f(x_2)<0\\
+		&\Leftrightarrow&f(x_1)<f(x_2).
+	\end{eqnarray*}
+	Vậy hàm số đồng biến trên khoảng $(-\infty;-1)$.
+\end{enumerate}
+}
+\end{bt}
+\begin{bt}%[0T3K2-2]%[Dự án đề kiểm tra HKI NH22-23- Tên GV]%[THPT Nguyễn Thị Minh Khai]
+Cho hàm số bậc hai $y=f(x)=x^2+mx+n$. Tìm $m$, $n$ biết đồ thị hàm số là một Parabol có đỉnh $S(1;4)$.
+\loigiai{
+Ta có 
+\begin{equation*}
+	-\dfrac{m}{2}=1\Leftrightarrow m =-2.
+\end{equation*}
+Suy ra, $y=x^2-2x+n$.\\
+Mặt khác, Parabol đi qua đỉnh $S(1;4)$ nên
+\begin{equation*}
+	y_s = x_S^2-2x_S+n\Leftrightarrow 4=1^2-2\cdot1+n\Leftrightarrow n = 5.
+\end{equation*}
+Vậy $m=-2$ và $n=5$.
+}
+\end{bt}
+\begin{bt}%[0T6Y3-4]%[Dự án đề kiểm tra HKI NH22-23- Tên GV]%[THPT Nguyễn Thị Minh Khai]
+Điểm số bài kiểm tra cuối kì I của các bạn học sinh trong một nhóm học tập là $6$; $10$; $6$; $8$; $7$; $10$. Tính số trung bình, trung vị của mẫu số liệu (làm tròn đến 2 chữ số sau dấu phẩy)
+\loigiai{
+Sắp xếp số liệu theo thứ tự không giảm như sau $6$; $6$; $7$; $8$; $10$; $10$.\\
+Khi đó, số trung bình là
+\begin{equation*}
+	\overline{X}=\dfrac{6+6+7+8+10+10}{6}\approx7{,}83.
+\end{equation*}
+Vì mẫu số liệu có $6$ giá trị nên số trung vị là $M_e=\dfrac{7+8}{2}=7{,}5$.
+}
+\end{bt}
+
+%%%%%%%%%%%%%========Câu 4==========
+\begin{bt}%[0D2K2-2]%[Dự án đề kiểm tra HKI NH22-23- Tên GV]%[Nguyễn Thị Minh Khai]
+	Một bạn học sinh lớp $10$ muốn làm $2$ loại sản phẩm A và B để tham gia hội Xuân. Biết rằng mỗi sản phẩm loại A cần $100$ ngàn đồng tiền nguyên liệu, $2$ giờ công và bán được $450$ ngàn đồng; mỗi sản phẩm loại B cần $200$ ngàn đồng tiền nguyên liệu, $3$ giờ công và bán được $750$ ngàn đồng. Bạn có $700$ ngàn đồng tiền vốn và có $12$ giờ chuẩn bị. Hỏi bạn ấy cần làm bao nhiêu sản phẩm mỗi loại để số tiền thu được là lớn nhất?
+\loigiai{
+	\immini{Gọi $x$, $y$ là số sản phẩm loại A, B cần làm.\\
+	Theo yêu cầu bài toán, ta tìm $(x;y)$ sao cho\\
+	$\heva{&100x+200y\ge 700\\&2x+3y\le 12\\&x\ge 0\\&y\ge 0}$\\
+	 và $F(x)=450x+750y$ đạt giá trị lớn nhất.\\
+	Miền nghiệm của hệ là miền tứ giác $OACB$.\\
+	$\bullet\, F(0;0)=0$.\\
+	$\bullet\, F\left(0;\dfrac{7}{2}\right)=2625$.\\
+	$\bullet\, F(3;2)=2850$.\\
+	$\bullet\, F(6;0)=2700$.}
+	{	\begin{tikzpicture}[>=stealth,line join=round, line cap=round, scale=0.7]
+			\draw[->] (-2.2,0)--(8,0) node[above]{$x$};
+			\draw[->] (0,-1)--(0,5) node[left]{$y$};
+			\fill[pattern=north east 
+			lines] (0,0)--(6,0)--(3,2)--(0,3.5)--cycle;
+			\draw[samples=200,smooth] plot[domain=-0.5:7.5] 
+			(\x,{(-1/2*(\x)+7/2});
+			\draw[samples=200,smooth] plot[domain=-0.5:6.5] 
+			(\x,{(-2/3*(\x)+4});
+			\fill (0,0) circle (1.5pt) node[below left]{$O$};
+			\fill (0,7/2) circle (1.5pt) node[below left]{$A\left(0;\tfrac{7}{2}\right)$};
+			\fill (3,2) circle (1.5pt) node[above right]{$C(3;2)$};
+			\fill (6,0) circle (1.5pt) node[below left]{$B(6;0)$};
+			\fill (3,0) circle (1.5pt)   (0,2) circle (1.5pt);
+			\draw[dashed] (3,0)node[below]{$3$}--(3,2)--(0,2)node[left]{$2$};
+	\end{tikzpicture}}
+		Vậy bạn ấy cần $3$ sản phẩm loại A và $2$ sản phẩm loại B.
+}
+\end{bt}
+%%%%%%%%%%%%%========Câu 5==========
+\begin{bt}%%[0H4B2-2]%[0H4B2-1]%[Dự án đề kiểm tra HKI NH22-23- Tên GV]%[Nguyễn Thị Minh Khai]
+	Cho $\triangle A B C$. Đặt $a=BC$, $b=A C$, $c=A B$, $p$ là nửa chu vi tam giác, $R$ là bán kính đường tròn ngoại tiếp tam giác.
+	\begin{enumerate}
+		\item  Chứng minh $p=R \cdot(\sin A+\sin B+\sin C)$.
+		\item  Biết $b=3$, $a=5$, $\widehat{B C A}=60^{\circ}$. Tính $c$, $S_{\triangle A B C}$ (làm tròn đến $2$ chữ số sau dấu phẩy).
+	\end{enumerate}
+	\loigiai{
+		\begin{enumerate}
+			\item Theo định lý sin trong tam giác $ABC$ ta có
+			$$\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}=2R\Leftrightarrow\heva{&a=2R\sin A\\&b=2R\sin B\\&c=2R\sin C.}$$ 
+			Khi đó
+			\allowdisplaybreaks
+			\begin{eqnarray*}
+				\text{Vế trái}&=&\dfrac{1}{2}(a+b+c)\\
+							  &=&\dfrac{1}{2}(2R\sin A+2R\sin B+2R\sin C)\\
+							  &=&R\cdot(\sin A+\sin B+\sin C)\\
+							  &=&\text{Vế phải}.
+			\end{eqnarray*}
+		Vậy $p=R \cdot(\sin A+\sin B+\sin C)$.
+			\item Theo định lý côsin trong tam giác $ABC$ ta có
+			\allowdisplaybreaks
+			\begin{eqnarray*}
+				&&c^2=a^2+b^2-2ac\cdot\cos C\\
+				&\Rightarrow&c=\sqrt{a^2+b^2-2ac\cdot\cos C}\\
+				&\Rightarrow&c=\sqrt{5^2+3^2-2\cdot 5\cdot 3\cdot\dfrac{1}{2}}\\
+				&\Rightarrow&c=\sqrt{19}\approx 4{,}36.
+			\end{eqnarray*}
+			Ngoài ra\\
+			$S_{\triangle A B C}=\dfrac{1}{2}ab\cdot\sin C=\dfrac{1}{2}\cdot 5\cdot 3\cdot\dfrac{\sqrt{3}}{2}=\dfrac{15\sqrt{3}}{4}\approx 6{,}50$.
+				
+		\end{enumerate}
+}
+\end{bt}
+%%%%%%%%%%%%%========Câu 6==========
+\begin{bt}%%[0H5B4-1]%[0H5K4-2]%[0H5G3-6]%[Dự án đề kiểm tra HKI NH22-23- Tên GV]%[Nguyễn Thị Minh Khai]
+	Cho hình vuông $ABCD$ cạnh $a$, tâm $O$.
+	\begin{enumerate}
+		\item Tính các tích vô hướng $\overrightarrow{AB}\cdot \overrightarrow{AC}$, $\overrightarrow{AC}\cdot \overrightarrow{BD}$ theo $a$.
+		\item Chứng minh $2\overrightarrow{MA}\cdot\overrightarrow{MC}=2MO^2-a^2$ (với $M$ là điểm tùy ý).
+		\item  Gọi $I$, $J$ là hai điểm di động thỏa $\overrightarrow{AI}=m \overrightarrow{AB}$, $\overrightarrow{DJ}=(1-n) \overrightarrow{DA}$, $\dfrac{1}{m}+\dfrac{1}{n}=1$. Chứng minh đường thẳng $IJ$ luôn đi qua một điểm cố định.
+	\end{enumerate}
+	\loigiai{
+			\begin{enumerate}
+			\item $\bullet\,\overrightarrow{AB}\cdot \overrightarrow{AC}=AB\cdot AC\cdot\cos\widehat{BAC}=a\cdot a\sqrt{2}\cdot\dfrac{1}{\sqrt{2}}=a^2$.\\
+			$\bullet\overrightarrow{AC}\cdot\overrightarrow{BD}=0$ (do $AC\perp BD$).
+			\item
+			 \allowdisplaybreaks
+			\begin{eqnarray*}
+				\text{Vế trái}&=&2\overrightarrow{MA}\cdot\overrightarrow{MC}\\
+					 &=&2(\overrightarrow{MO}+\overrightarrow{OA})(\overrightarrow{MO}+\overrightarrow{OC})\\
+					 &=&2(\overrightarrow{MO}+\overrightarrow{OA})(\overrightarrow{MO}-\overrightarrow{OA})\\
+					 &=&2MO^2-2OA^2\\
+					 &=&2MO^2-a^2\\
+					 &=&\text{Vế phải}.
+			\end{eqnarray*}
+		Vậy $2\overrightarrow{MA}\cdot\overrightarrow{MC}=2MO^2-a^2$.
+			\item Ta có\\
+			$\bullet\,\overrightarrow{AI}=m \overrightarrow{AB}\Rightarrow\dfrac{1}{m}\overrightarrow{AI}=\overrightarrow{AB}$.\tagEX{1}
+			$\bullet\,\overrightarrow{DJ}=(1-n)\overrightarrow{DA}\Rightarrow\overrightarrow{AJ}-\overrightarrow{AD}=(1-n)\overrightarrow{DA}\Rightarrow\overrightarrow{AJ}=n\overrightarrow{AD}\Rightarrow\dfrac{1}{n}\overrightarrow{AJ}=\overrightarrow{AD}$.\tagEX{2}
+			Cộng $(1)$ và $(2)$, ta có
+			\allowdisplaybreaks
+			\begin{eqnarray*}
+				&&\dfrac{1}{m}\overrightarrow{AI}+\dfrac{1}{n}\overrightarrow{AJ}=\overrightarrow{AB}+\overrightarrow{AD}\\
+				&\Rightarrow&\dfrac{1}{m}\overrightarrow{AI}+\dfrac{1}{n}\overrightarrow{AJ}=\overrightarrow{AC}\\
+				&\Rightarrow&\dfrac{1}{m}\overrightarrow{AI}+\dfrac{1}{n}\overrightarrow{AJ}=\left(\dfrac{1}{m}+\dfrac{1}{n}\right)\overrightarrow{AC}\\
+				&\Rightarrow&\dfrac{1}{m}(\overrightarrow{AI}-\overrightarrow{AC})+\dfrac{1}{n}(\overrightarrow{AJ}-\overrightarrow{AC})=\vec{0}\\
+				&\Rightarrow&\overrightarrow{CI}=\dfrac{-m}{n}\overrightarrow{CJ}.
+			\end{eqnarray*}
+		Suy ra đường thẳng $IJ$ luôn đi qua điểm $C$ cố định.
+		\end{enumerate}
+		\begin{center}
+			\begin{tikzpicture}[scale=0.8]
+				\coordinate [label=above:$A$] (A) at (0,4);
+				\coordinate [label=below:$B$] (B) at (0,0);
+				\coordinate [label=below:$C$] (C) at (4,0);
+				\coordinate [label=above:$D$] (D) at (4,4);
+				\coordinate [label=below:$O$] (O) at ($(A)!.5!(C)$);
+				\foreach \point in {A,B,C,D,O} \fill[black] (\point) circle (1.5pt);
+				\draw (A)--(B)node[pos=.5,left]{$a$}--(C)--(D)--(A)node[pos=.5,above]{$a$}--(C) (B)--(D);
+				\path pic[angle radius=3mm,draw=blue] {right angle = B--A--D};
+				
+			\end{tikzpicture}
+		\end{center}
+}
+\end{bt}
+
+
+
+
+
+
